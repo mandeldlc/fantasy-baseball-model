@@ -34,11 +34,13 @@ def load_roster_from_yahoo():
         
         # Construir token desde secrets/env
         token_data = {
-            "access_token": os.getenv('YAHOO_ACCESS_TOKEN', ''),
-            "refresh_token": os.getenv('YAHOO_REFRESH_TOKEN', ''),
-            "token_type": os.getenv('YAHOO_TOKEN_TYPE', 'bearer'),
-            "consumer_key": os.getenv('YAHOO_CLIENT_ID', ''),
-            "consumer_secret": os.getenv('YAHOO_CLIENT_SECRET', '')
+        "access_token": os.getenv('YAHOO_ACCESS_TOKEN', ''),
+        "refresh_token": os.getenv('YAHOO_REFRESH_TOKEN', ''),
+        "token_type": os.getenv('YAHOO_TOKEN_TYPE', 'bearer'),
+        "consumer_key": os.getenv('YAHOO_CLIENT_ID', ''),
+        "consumer_secret": os.getenv('YAHOO_CLIENT_SECRET', ''),
+        "token_time": float(os.getenv('YAHOO_TOKEN_TIME', '0')),
+        "guid": os.getenv('YAHOO_GUID', '')
         }
 
         query = YahooFantasySportsQuery(
