@@ -30,15 +30,26 @@ st.set_page_config(
 @st.cache_data(ttl=3600)
 def load_roster_from_yahoo():
     try:
+        import json
+        
+        # Construir token desde secrets/env
+        token_data = {
+            "access_token": os.getenv('YAHOO_ACCESS_TOKEN', ''),
+            "refresh_token": os.getenv('YAHOO_REFRESH_TOKEN', ''),
+            "token_type": os.getenv('YAHOO_TOKEN_TYPE', 'bearer'),
+            "consumer_key": os.getenv('YAHOO_CLIENT_ID', ''),
+            "consumer_secret": os.getenv('YAHOO_CLIENT_SECRET', '')
+        }
+
         query = YahooFantasySportsQuery(
             league_id="31891",
             game_code="mlb",
             game_id=469,
             yahoo_consumer_key=os.getenv('YAHOO_CLIENT_ID'),
             yahoo_consumer_secret=os.getenv('YAHOO_CLIENT_SECRET'),
-            yahoo_access_token_json=None,
+            yahoo_access_token_json=json.dumps(token_data),
             env_file_location=Path("."),
-            save_token_data_to_env_file=True
+            save_token_data_to_env_file=False
         )
         roster = query.get_team_roster_by_week(team_id=6, chosen_week=1)
         jugadores = []
