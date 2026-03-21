@@ -1,3 +1,8 @@
+import streamlit as st
+import pandas as pd
+import plotly.express as px
+import plotly.graph_objects as go
+from yfpy.query import YahooFantasySportsQuery
 from dotenv import load_dotenv
 from pathlib import Path
 import os
@@ -6,8 +11,9 @@ import subprocess
 load_dotenv()
 
 try:
-    if hasattr(st, 'secrets'):
-        for key, val in st.secrets.items():
+    import streamlit as _st
+    if hasattr(_st, 'secrets'):
+        for key, val in _st.secrets.items():
             os.environ[key] = str(val)
 except Exception:
     pass
