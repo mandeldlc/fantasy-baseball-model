@@ -1,23 +1,23 @@
-Name,Team,Pos,Status
-Salvador Perez,KC,C,starter
-Josh Naylor,SEA,1B,starter
-Nico Hoerner,CHC,2B,starter
-Junior Caminero,TB,3B,starter
-Zach Neto,LAA,SS,starter
-Kyle Tucker,LAD,OF,starter
-Jarren Duran,BOS,OF,starter
-Riley Greene,DET,OF,starter
-Bo Bichette,NYM,UTIL,starter
-Michael Harris II,ATL,UTIL,starter
-Johnathan Wilson,ATH,SS,bench
-Dylan Crews,WSH,OF,bench
-Heliot Ramos,SF,OF,bench
-Otto Lopez,MIA,2B,bench
-Logan Gilbert,SEA,SP,starter
-Luis Castillo,SEA,SP,starter
-Ryne Nelson,AZ,RP,starter
-Dennis Santana,PIT,RP,starter
-Trey Yesavage,TOR,SP,bench
-Andrew Abbott,CIN,SP,bench
-Carlos Rodón,NYY,SP,bench
-Shane Bieber,TOR,SP,bench
+Name,Pos,Team,Status
+Salvador Perez,C,KC,active
+Josh Naylor,1B,SEA,active
+Nico Hoerner,2B,CHC,active
+Junior Caminero,3B,TB,active
+Zach Neto,SS,LAA,active
+Kyle Tucker,OF,LAD,active
+Jarren Duran,OF,BOS,active
+Riley Greene,OF,DET,active
+Bo Bichette,Util,NYM,active
+Michael Harris II,Util,ATL,active
+Jacob Wilson,BN,ATH,active
+Dylan Crews,BN,WSH,NA
+Heliot Ramos,BN,SF,active
+Otto Lopez,BN,MIA,active
+Logan Gilbert,SP,SEA,active
+Luis Castillo,SP,SEA,active
+Dennis Santana,RP,PIT,active
+Ryne Nelson,RP,AZ,active
+Trey Yesavage,P,TOR,DTD
+Andrew Abbott,P,CIN,active
+Carlos Rodón,P,NYY,DTD
+Shane Bieber,P,TOR,DTD
