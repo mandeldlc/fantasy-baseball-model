@@ -81,13 +81,23 @@ def load_data():
     return bateo, pitcheo, pred_bat, pred_pit
 
 @st.cache_data(ttl=3600)
+def load_proyecciones():
+    try:
+        bat = pd.read_csv('data/proyeccion_semanal_bat.csv')
+        pit = pd.read_csv('data/proyeccion_semanal_pit.csv')
+        return bat, pit
+    except FileNotFoundError:
+        return None, None
+
+@st.cache_data(ttl=3600)
 def load_waivers():
     try:
         waivers_bat = pd.read_csv('data/waivers_bateadores.csv')
-        waivers_pit = pd.read_csv('data/waivers_pitchers.csv')
-        return waivers_bat, waivers_pit
+        waivers_sp = pd.read_csv('data/waivers_sp.csv')
+        waivers_rp = pd.read_csv('data/waivers_rp.csv')
+        return waivers_bat, waivers_sp, waivers_rp
     except FileNotFoundError:
-        return None, None
+        return None, None, None
 
 bateo, pitcheo, pred_bat, pred_pit = load_data()
 
@@ -148,7 +158,7 @@ st.divider()
 # ================================
 # TABS
 # ================================
-tab1, tab2, tab3, tab4, tab5 = st.tabs(["🏏 Bateadores", "⚾ Pitchers", "🔮 Predicciones 2026", "⚠️ Alertas", "🔥 Waivers"])
+tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(["🏏 Bateadores", "⚾ Pitchers", "🔮 Predicciones 2026", "⚠️ Alertas", "🔥 Waivers", "📅 Proyección Semanal"])
 
 # TAB 1 - BATEADORES
 with tab1:
@@ -309,97 +319,188 @@ with tab4:
 
 # TAB 5 - WAIVERS
 with tab5:
-    st.subheader("🔥 Agentes Libres — Breakout Candidates")
-    st.caption("Jugadores disponibles en tu liga con mayor potencial de mejora")
+    st.subheader("🔥 Agentes Libres — Activos disponibles en tu liga")
+    st.caption("Ordenados por breakout score — actualizados diariamente")
 
-    waivers_bat, waivers_pit = load_waivers()
+    waivers_bat, waivers_sp, waivers_rp = load_waivers()
 
     if waivers_bat is None:
         st.warning("Presiona '🔥 Actualizar Waivers' en el sidebar para generar el análisis.")
     else:
-        col1, col2, col3, col4 = st.columns(4)
+        col1, col2, col3 = st.columns(3)
         with col1:
             st.metric("Bateadores libres", len(waivers_bat))
         with col2:
-            st.metric("Pitchers libres", len(waivers_pit))
+            st.metric("SP libres", len(waivers_sp))
         with col3:
-            st.metric("Mejor pickup bat", waivers_bat.iloc[0]['Name'])
-        with col4:
-            st.metric("Mejor pickup pit", waivers_pit.iloc[0]['Name'])
+            st.metric("RP libres", len(waivers_rp))
 
         st.divider()
-        col1, col2 = st.columns(2)
+        tab_bat, tab_sp, tab_rp = st.tabs(["🏏 Bateadores", "⚾ SP", "🔥 RP"])
 
-        with col1:
-            st.markdown("#### 📈 Bateadores Breakout")
-            st.caption("xwOBA > wOBA = subestimados, van a explotar")
-            fig_w = px.bar(
-                waivers_bat.head(15).sort_values('breakout_score'),
-                x='breakout_score',
-                y='Name',
-                orientation='h',
-                color='diff_xwoba',
-                color_continuous_scale=['yellow', 'green'],
-                title='Top 15 Bateadores Libres',
-                labels={'breakout_score': 'Breakout Score', 'Name': ''}
-            )
-            fig_w.update_layout(height=500, showlegend=False)
-            st.plotly_chart(fig_w, use_container_width=True)
+        with tab_bat:
+            st.caption(f"{len(waivers_bat)} bateadores activos disponibles")
             st.dataframe(
                 waivers_bat[['Name', 'pa', 'home_run', 'woba', 'xwoba',
-                             'diff_xwoba', 'babip', 'breakout_score']].head(15).rename(columns={
+                             'diff_xwoba', 'babip', 'exit_velocity_avg', 'breakout_score']].rename(columns={
                     'pa': 'PA',
                     'home_run': 'HR',
                     'woba': 'wOBA',
                     'xwoba': 'xwOBA',
                     'diff_xwoba': 'xwOBA-wOBA',
                     'babip': 'BABIP',
+                    'exit_velocity_avg': 'EV',
                     'breakout_score': 'Score'
                 }),
                 hide_index=True,
-                height=400
+                height=600
             )
 
-        with col2:
-            st.markdown("#### 📈 Pitchers Breakout")
-            st.caption("xERA << ERA = mejores de lo que parecen")
-            fig_wp = px.bar(
-                waivers_pit.head(15).sort_values('breakout_score'),
-                x='breakout_score',
-                y='Name',
-                orientation='h',
-                color='diff_xera',
-                color_continuous_scale=['yellow', 'green'],
-                title='Top 15 Pitchers Libres',
-                labels={'breakout_score': 'Breakout Score', 'Name': ''}
-            )
-            fig_wp.update_layout(height=500, showlegend=False)
-            st.plotly_chart(fig_wp, use_container_width=True)
+        with tab_sp:
+            st.caption(f"{len(waivers_sp)} SP activos disponibles")
             st.dataframe(
-                waivers_pit[['Name', 'p_era', 'xera', 'diff_xera',
-                             'p_strikeout', 'p_save', 'xwoba', 'breakout_score']].head(15).rename(columns={
+                waivers_sp[['Name', 'p_era', 'xera', 'diff_xera',
+                            'p_strikeout', 'p_win', 'xwoba', 'exit_velocity_avg', 'breakout_score']].rename(columns={
+                    'p_era': 'ERA',
+                    'xera': 'xERA',
+                    'diff_xera': 'ERA-xERA',
+                    'p_strikeout': 'Ks',
+                    'p_win': 'W',
+                    'xwoba': 'xwOBA',
+                    'exit_velocity_avg': 'EV',
+                    'breakout_score': 'Score'
+                }),
+                hide_index=True,
+                height=600
+            )
+
+        with tab_rp:
+            st.caption(f"{len(waivers_rp)} RP activos disponibles")
+            st.dataframe(
+                waivers_rp[['Name', 'p_era', 'xera', 'diff_xera',
+                            'p_strikeout', 'p_save', 'xwoba', 'exit_velocity_avg', 'breakout_score']].rename(columns={
                     'p_era': 'ERA',
                     'xera': 'xERA',
                     'diff_xera': 'ERA-xERA',
                     'p_strikeout': 'Ks',
                     'p_save': 'SV',
                     'xwoba': 'xwOBA',
+                    'exit_velocity_avg': 'EV',
                     'breakout_score': 'Score'
+                }),
+                hide_index=True,
+                height=600
+            )
+
+        st.divider()
+        st.subheader("⚡ Agarra ahora")
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            st.success("🏏 Bateadores")
+            top5 = waivers_bat[waivers_bat['diff_xwoba'] > 0.020].head(5)
+            for _, r in top5.iterrows():
+                st.markdown(f"**{r['Name']}** — xwOBA +{r['diff_xwoba']:.3f}")
+        with col2:
+            st.success("⚾ SP")
+            top5_sp = waivers_sp[waivers_sp['diff_xera'] > 1.0].head(5)
+            for _, r in top5_sp.iterrows():
+                st.markdown(f"**{r['Name']}** — ERA {r['p_era']:.2f} xERA {r['xera']:.2f}")
+        with col3:
+            st.success("🔥 RP")
+            top5_rp = waivers_rp[waivers_rp['diff_xera'] > 1.0].head(5)
+            for _, r in top5_rp.iterrows():
+                st.markdown(f"**{r['Name']}** — ERA {r['p_era']:.2f} xERA {r['xera']:.2f} SV:{r['p_save']:.0f}")
+
+# TAB 6 - PROYECCIÓN SEMANAL
+with tab6:
+    st.subheader("📅 Proyección Semanal — Próximos 7 días")
+    st.caption("Modelo ML con 50 variables de Baseball Savant")
+
+    proy_bat, proy_pit = load_proyecciones()
+
+    if proy_bat is None:
+        st.warning("Corre primero: python src/modelo_avanzado.py")
+    else:
+        col1, col2 = st.columns(2)
+
+        with col1:
+            st.markdown("#### 🏏 Bateadores")
+            proy_bat['tendencia'] = proy_bat.apply(
+                lambda r: '📈' if r['fantasy_score_proyectado'] > r['fantasy_score_actual'] else '📉', axis=1
+            )
+            proy_bat['diff'] = (proy_bat['fantasy_score_proyectado'] - proy_bat['fantasy_score_actual']).round(1)
+
+            fig_p = px.bar(
+                proy_bat.sort_values('fantasy_score_proyectado'),
+                x='fantasy_score_proyectado',
+                y='Name',
+                orientation='h',
+                color='diff',
+                color_continuous_scale=['red', 'yellow', 'green'],
+                title='Fantasy Score proyectado 7 días',
+                labels={'fantasy_score_proyectado': 'Score proyectado', 'Name': ''}
+            )
+            fig_p.update_layout(height=500, showlegend=False)
+            st.plotly_chart(fig_p, use_container_width=True)
+
+            st.dataframe(
+                proy_bat[['Name', 'fantasy_score_actual', 'fantasy_score_proyectado', 'diff', 'tendencia']].sort_values(
+                    'fantasy_score_proyectado', ascending=False
+                ).rename(columns={
+                    'fantasy_score_actual': 'Score actual',
+                    'fantasy_score_proyectado': 'Score 7 días',
+                    'diff': 'Diferencia',
+                    'tendencia': 'Tendencia'
+                }),
+                hide_index=True,
+                height=400
+            )
+
+        with col2:
+            st.markdown("#### ⚾ Pitchers")
+            proy_pit['tendencia'] = proy_pit.apply(
+                lambda r: '📈' if r['fantasy_score_proyectado'] > r['fantasy_score_actual'] else '📉', axis=1
+            )
+            proy_pit['diff'] = (proy_pit['fantasy_score_proyectado'] - proy_pit['fantasy_score_actual']).round(1)
+
+            fig_pp = px.bar(
+                proy_pit.sort_values('fantasy_score_proyectado'),
+                x='fantasy_score_proyectado',
+                y='Name',
+                orientation='h',
+                color='diff',
+                color_continuous_scale=['red', 'yellow', 'green'],
+                title='Fantasy Score proyectado 7 días',
+                labels={'fantasy_score_proyectado': 'Score proyectado', 'Name': ''}
+            )
+            fig_pp.update_layout(height=500, showlegend=False)
+            st.plotly_chart(fig_pp, use_container_width=True)
+
+            st.dataframe(
+                proy_pit[['Name', 'fantasy_score_actual', 'fantasy_score_proyectado', 'diff', 'tendencia']].sort_values(
+                    'fantasy_score_proyectado', ascending=False
+                ).rename(columns={
+                    'fantasy_score_actual': 'Score actual',
+                    'fantasy_score_proyectado': 'Score 7 días',
+                    'diff': 'Diferencia',
+                    'tendencia': 'Tendencia'
                 }),
                 hide_index=True,
                 height=400
             )
 
         st.divider()
-        st.subheader("⚡ Agarra ahora")
+        st.subheader("⚡ Decisiones de la semana")
         col1, col2 = st.columns(2)
+
         with col1:
-            st.success("🏏 Bateadores — pickup inmediato")
-            top5 = waivers_bat[waivers_bat['diff_xwoba'] > 0.020].head(5)
-            for _, r in top5.iterrows():
-                st.markdown(f"**{r['Name']}** — xwOBA {r['xwoba']:.3f} vs wOBA {r['woba']:.3f} (+{r['diff_xwoba']:.3f})")
+            st.success("✅ Arrancar esta semana")
+            arrancar = proy_bat[proy_bat['diff'] > 0].sort_values('fantasy_score_proyectado', ascending=False).head(5)
+            for _, r in arrancar.iterrows():
+                st.markdown(f"**{r['Name']}** — proyección {r['fantasy_score_proyectado']:.0f} (+{r['diff']:.0f})")
+
         with col2:
-            st.success("⚾ Pitchers — pickup inmediato")
-            top5_p = waivers_pit[waivers_pit['diff_xera'] > 1.0].head(5)
-            for _, r in top5_p.iterrows():
-                st.markdown(f"**{r['Name']}** — ERA {r['p_era']:.2f} pero xERA {r['xera']:.2f} (diff +{r['diff_xera']:.2f})")
+            st.error("⚠️ Considerar sentar")
+            sentar = proy_bat[proy_bat['diff'] < -20].sort_values('diff').head(5)
+            for _, r in sentar.iterrows():
+                st.markdown(f"**{r['Name']}** — proyección {r['fantasy_score_proyectado']:.0f} ({r['diff']:.0f})")

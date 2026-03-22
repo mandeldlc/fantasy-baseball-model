@@ -38,19 +38,15 @@ def get_jugadores_tomados():
 
 # ================================
 # NORMALIZAR NOMBRES
-# Para hacer match entre Yahoo y Baseball Savant
 # ================================
 def normalizar_nombre(nombre):
     if not isinstance(nombre, str):
         return ""
     import unicodedata
     import re
-    # Quitar sufijos de Yahoo como (Batter), (Pitcher), (IL60), etc.
     nombre = re.sub(r'\(.*?\)', '', nombre).strip()
-    # Quitar acentos
     nombre = unicodedata.normalize('NFD', nombre)
     nombre = ''.join(c for c in nombre if unicodedata.category(c) != 'Mn')
-    # Minúsculas y limpiar
     nombre = nombre.lower().strip()
     nombre = nombre.replace('.', '').replace('-', ' ').replace("'", '')
     return nombre
@@ -99,14 +95,9 @@ print(f"✅ Total pitchers: {len(todos_pitcheo)}")
 # FILTRAR JUGADORES TOMADOS
 # ================================
 jugadores_tomados = get_jugadores_tomados()
-
-# Normalizar nombres de Yahoo también
 tomados_norm = [normalizar_nombre(n) for n in jugadores_tomados]
-
-# Guardar lista para debug
 pd.DataFrame({'yahoo_name': jugadores_tomados, 'yahoo_norm': tomados_norm}).to_csv('data/jugadores_tomados.csv', index=False)
 
-# Filtrar usando nombre normalizado
 libres_bateo = todos_bateo[~todos_bateo['Name_norm'].isin(tomados_norm)].copy()
 libres_pitcheo = todos_pitcheo[~todos_pitcheo['Name_norm'].isin(tomados_norm)].copy()
 
@@ -114,16 +105,33 @@ print(f"\nJugadores realmente libres en tu liga:")
 print(f"  Bateadores: {len(libres_bateo)}")
 print(f"  Pitchers: {len(libres_pitcheo)}")
 
-# Verificar que Ohtani NO aparece
+# Verificar Ohtani
 ohtani_check = libres_bateo[libres_bateo['Name'].str.contains('Ohtani', case=False)]
 if len(ohtani_check) > 0:
-    print(f"\n⚠️  Ohtani sigue apareciendo — verificando nombre en Yahoo...")
-    ohtani_yahoo = [n for n in jugadores_tomados if 'ohtani' in n.lower()]
-    print(f"  Nombre en Yahoo: {ohtani_yahoo}")
-    ohtani_savant = todos_bateo[todos_bateo['Name'].str.contains('Ohtani', case=False)]['Name'].tolist()
-    print(f"  Nombre en Savant: {ohtani_savant}")
+    print(f"\n⚠️  Ohtani sigue apareciendo")
 else:
     print("\n✅ Ohtani correctamente excluido")
+
+# ================================
+# FILTRAR ACTIVOS EN GRANDES LIGAS
+# ================================
+print("\nFiltrando jugadores activos...")
+
+# Bateadores activos: PA >= 30, average real, exit velocity válida
+libres_bateo = libres_bateo[
+    (libres_bateo['pa'] >= 30) &
+    (libres_bateo['batting_avg'] > 0) &
+    (libres_bateo['exit_velocity_avg'] > 80)
+].copy()
+
+# Pitchers activos: ERA <= 15, al menos 1 juego
+libres_pitcheo = libres_pitcheo[
+    (libres_pitcheo['p_era'] <= 15) &
+    (libres_pitcheo['p_game'] >= 1)
+].copy()
+
+print(f"  Bateadores activos libres: {len(libres_bateo)}")
+print(f"  Pitchers activos libres: {len(libres_pitcheo)}")
 
 # ================================
 # SCORE BREAKOUT BATEADORES
@@ -148,17 +156,30 @@ libres_pitcheo['breakout_score'] += (92 - libres_pitcheo['exit_velocity_avg']) *
 libres_pitcheo['breakout_score'] += libres_pitcheo['p_strikeout'] * 0.05
 
 # ================================
-# TOP RESULTADOS
+# SEPARAR SP Y RP
 # ================================
-top_bat = libres_bateo.sort_values('breakout_score', ascending=False).head(20)
-top_pit = libres_pitcheo.sort_values('breakout_score', ascending=False).head(20)
+libres_pitcheo['pitcher_type'] = 'SP'
+libres_pitcheo.loc[
+    (libres_pitcheo['p_formatted_ip'] < 50) |
+    (libres_pitcheo['p_save'] > 0),
+    'pitcher_type'
+] = 'RP'
 
+sp_libres = libres_pitcheo[libres_pitcheo['pitcher_type'] == 'SP'].sort_values('breakout_score', ascending=False)
+rp_libres = libres_pitcheo[libres_pitcheo['pitcher_type'] == 'RP'].sort_values('breakout_score', ascending=False)
+
+print(f"\nSP libres: {len(sp_libres)}")
+print(f"RP libres: {len(rp_libres)}")
+
+# ================================
+# MOSTRAR RESULTADOS
+# ================================
 print("\n" + "=" * 70)
-print("TOP 20 BATEADORES BREAKOUT EN AGENCIA LIBRE")
+print("BATEADORES ACTIVOS EN AGENCIA LIBRE")
 print("=" * 70)
 print(f"{'Jugador':<22} {'PA':>4} {'HR':>4} {'wOBA':>6} {'xwOBA':>6} {'xBA':>6} {'EV':>6} {'BABIP':>6} {'Score':>7}")
 print("-" * 70)
-for _, r in top_bat.iterrows():
+for _, r in libres_bateo.sort_values('breakout_score', ascending=False).iterrows():
     diff = r['diff_xwoba']
     arrow = "📈" if diff > 0.020 else "➡️ "
     print(f"{arrow} {r['Name']:<20} {r['pa']:>4.0f} {r['home_run']:>4.0f} "
@@ -166,18 +187,26 @@ for _, r in top_bat.iterrows():
           f"{r['exit_velocity_avg']:>6.1f} {r['babip']:>6.3f} {r['breakout_score']:>7.1f}")
 
 print("\n" + "=" * 70)
-print("TOP 20 PITCHERS BREAKOUT EN AGENCIA LIBRE")
+print("SP ACTIVOS EN AGENCIA LIBRE")
 print("=" * 70)
-print(f"{'Pitcher':<22} {'ERA':>5} {'xERA':>6} {'Ks':>4} {'SV':>4} {'xwOBA':>6} {'EV':>6} {'Score':>7}")
-print("-" * 70)
-for _, r in top_pit.iterrows():
-    diff = r['diff_xera']
-    arrow = "📈" if diff > 0.30 else "➡️ "
-    print(f"{arrow} {r['Name']:<20} {r['p_era']:>5.2f} {r['xera']:>6.2f} "
-          f"{r['p_strikeout']:>4.0f} {r['p_save']:>4.0f} "
-          f"{r['xwoba']:>6.3f} {r['exit_velocity_avg']:>6.1f} {r['breakout_score']:>7.1f}")
+for _, r in sp_libres.iterrows():
+    arrow = "📈" if r['diff_xera'] > 0.30 else "➡️ "
+    print(f"{arrow} {r['Name']:<20} ERA:{r['p_era']:>5.2f} xERA:{r['xera']:>6.2f} "
+          f"Ks:{r['p_strikeout']:>4.0f} Score:{r['breakout_score']:>7.1f}")
 
-# Guardar
-top_bat.to_csv('data/waivers_bateadores.csv', index=False)
-top_pit.to_csv('data/waivers_pitchers.csv', index=False)
-print("\n✅ Guardado en data/waivers_bateadores.csv y data/waivers_pitchers.csv")
+print("\n" + "=" * 70)
+print("RP ACTIVOS EN AGENCIA LIBRE")
+print("=" * 70)
+for _, r in rp_libres.iterrows():
+    arrow = "📈" if r['diff_xera'] > 0.30 else "➡️ "
+    print(f"{arrow} {r['Name']:<20} ERA:{r['p_era']:>5.2f} xERA:{r['xera']:>6.2f} "
+          f"SV:{r['p_save']:>3.0f} Ks:{r['p_strikeout']:>4.0f} Score:{r['breakout_score']:>7.1f}")
+
+# ================================
+# GUARDAR
+# ================================
+libres_bateo.sort_values('breakout_score', ascending=False).to_csv('data/waivers_bateadores.csv', index=False)
+sp_libres.to_csv('data/waivers_sp.csv', index=False)
+rp_libres.to_csv('data/waivers_rp.csv', index=False)
+libres_pitcheo.sort_values('breakout_score', ascending=False).to_csv('data/waivers_pitchers.csv', index=False)
+print("\n✅ Guardado en data/")
