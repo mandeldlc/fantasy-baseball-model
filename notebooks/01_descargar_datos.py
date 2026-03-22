@@ -56,3 +56,53 @@ print(f"✅ Pitchers: {len(pitcheo)} registros")
 print("\n--- TOP 5 HR 2025 ---")
 bateo_2025 = bateo[bateo['year'] == 2025]
 print(bateo_2025.sort_values('home_run', ascending=False)[['last_name, first_name', 'home_run', 'stolen_base', 'on_base_pct']].head())
+
+print("\nDescargando estadísticas avanzadas adicionales...")
+headers = {'User-Agent': 'Mozilla/5.0'}
+
+for year in [2022, 2023, 2024, 2025]:
+    print(f"  Bateo avanzado {year}...")
+    url = (
+        f"https://baseballsavant.mlb.com/leaderboard/custom"
+        f"?year={year}&type=batter&filter=&min=10"
+        f"&selections=player_age,ab,pa,hit,single,double,triple,home_run,walk,"
+        f"bb_percent,batting_avg,slg_percent,on_base_percent,on_base_plus_slg,"
+        f"isolated_power,babip,b_rbi,b_total_bases,r_total_stolen_base,"
+        f"b_ab_scoring,b_game,b_intent_walk,r_stolen_base_pct,"
+        f"xba,xslg,woba,xwoba,xobp,xiso,xbadiff,xslgdiff,"
+        f"avg_swing_speed,fast_swing_rate,blasts_contact,blasts_swing,"
+        f"squared_up_contact,squared_up_swing,avg_swing_length,swords,"
+        f"attack_angle,attack_direction,ideal_angle_rate,vertical_swing_path,"
+        f"exit_velocity_avg,launch_angle_avg,sweet_spot_percent,"
+        f"barrel_batted_rate,solidcontact_percent,hard_hit_percent"
+        f"&chart=false&csv=true"
+    )
+    r = requests.get(url, headers=headers)
+    df = pd.read_csv(StringIO(r.text))
+    df['year'] = year
+    df.to_csv(f'data/bateo_avanzado_{year}.csv', index=False)
+    print(f"    ✅ {len(df)} bateadores")
+
+for year in [2022, 2023, 2024, 2025]:
+    print(f"  Pitcheo avanzado {year}...")
+    url = (
+        f"https://baseballsavant.mlb.com/leaderboard/custom"
+        f"?year={year}&type=pitcher&filter=&min=5"
+        f"&selections=k_percent,bb_percent,p_out,p_win,p_shutout,p_era,"
+        f"p_opp_batting_avg,p_total_strike,z_swing_miss_percent,"
+        f"oz_swing_miss_percent,pitch_count_fastball,pitch_count_breaking,"
+        f"in_zone_percent,whiff_percent,f_strike_percent,"
+        f"ff_avg_speed,ff_avg_spin,n_sl_formatted,sl_avg_speed,sl_avg_spin,"
+        f"ch_avg_speed,ch_avg_spin,cu_avg_speed,cu_avg_spin,"
+        f"si_avg_speed,si_avg_spin,fc_avg_speed,fc_avg_spin,"
+        f"fs_avg_speed,fs_avg_spin,st_avg_speed,st_avg_spin,"
+        f"fastball_avg_speed,fastball_avg_spin"
+        f"&chart=false&csv=true"
+    )
+    r = requests.get(url, headers=headers)
+    df = pd.read_csv(StringIO(r.text))
+    df['year'] = year
+    df.to_csv(f'data/pitcheo_avanzado_{year}.csv', index=False)
+    print(f"    ✅ {len(df)} pitchers")
+
+print("\n✅ Datos avanzados descargados")
