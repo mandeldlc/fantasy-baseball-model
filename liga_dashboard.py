@@ -1,125 +1,188 @@
-import streamlit as st
+from yfpy.query import YahooFantasySportsQuery
+from dotenv import load_dotenv
+from pathlib import Path
+import os
 import pandas as pd
-import plotly.express as px
-from datetime import datetime
+import numpy as np
+from datetime import date
 
-st.set_page_config(
-    page_title="Liga Fantasy Baseball 2026",
-    page_icon="🏆",
-    layout="wide"
+load_dotenv()
+
+query = YahooFantasySportsQuery(
+    league_id="31891",
+    game_code="mlb",
+    game_id=469,
+    yahoo_consumer_key=os.getenv('YAHOO_CLIENT_ID'),
+    yahoo_consumer_secret=os.getenv('YAHOO_CLIENT_SECRET'),
+    yahoo_access_token_json=None,
+    env_file_location=Path("."),
+    save_token_data_to_env_file=True
 )
 
-@st.cache_data(ttl=3600)
-def load_odds():
+print("Obteniendo datos de la liga...")
+
+bateo = pd.read_csv('data/bateo_historico.csv')
+pitcheo = pd.read_csv('data/pitcheo_historico.csv')
+
+bateo[['last_name', 'first_name']] = bateo['last_name, first_name'].str.split(', ', expand=True)
+bateo['Name'] = bateo['first_name'] + ' ' + bateo['last_name']
+pitcheo[['last_name', 'first_name']] = pitcheo['last_name, first_name'].str.split(', ', expand=True)
+pitcheo['Name'] = pitcheo['first_name'] + ' ' + pitcheo['last_name']
+
+bateo_2025 = bateo[bateo['year'] == 2025]
+pitcheo_2025 = pitcheo[pitcheo['year'] == 2025]
+
+equipos = []
+for team_id in range(1, 13):
     try:
-        return pd.read_csv('data/liga_odds.csv')
-    except:
-        return None
+        team = query.get_team_info(team_id=team_id)
+        roster = query.get_team_roster_by_week(team_id=team_id, chosen_week=1)
+        standings = query.get_team_standings(team_id=team_id)
 
-df = load_odds()
+        jugadores = [p.name.full for p in roster.players]
+
+        # Score bateadores
+        bat_stats = bateo_2025[bateo_2025['Name'].isin(jugadores)]
+        bat_score = (
+            bat_stats['woba'].mean() * 30 +
+            bat_stats['xwoba'].mean() * 20 +
+            bat_stats['home_run'].mean() * 0.5 +
+            bat_stats['exit_velocity_avg'].mean() * 0.3
+        ) if len(bat_stats) > 0 else 0
+
+        # Score pitchers
+        pit_stats = pitcheo_2025[pitcheo_2025['Name'].isin(jugadores)]
+        pit_score = (
+            (5 - pit_stats['p_era'].mean()) * 5 +
+            (5 - pit_stats['xera'].mean()) * 3 +
+            pit_stats['p_strikeout'].mean() * 0.05 +
+            (0.32 - pit_stats['xwoba'].mean()) * 20
+        ) if len(pit_stats) > 0 else 0
+
+        roster_score = bat_score + pit_score
+
+        # Record actual W-L-T
+        try:
+            wins = standings.outcome_totals.wins
+            losses = standings.outcome_totals.losses
+            ties = standings.outcome_totals.ties
+            total_games = wins + losses + ties
+            win_pct = (wins + ties * 0.5) / total_games if total_games > 0 else 0.5
+        except:
+            wins, losses, ties, win_pct = 0, 0, 0, 0.5
+
+        # Felo score = historial acumulado todas las temporadas
+        try:
+            managers = team.managers
+            if isinstance(managers, list):
+                manager_obj = managers[0]
+            elif hasattr(managers, 'manager'):
+                manager_obj = managers.manager
+            else:
+                manager_obj = managers
+            felo_score = int(manager_obj.felo_score) if hasattr(manager_obj, 'felo_score') and manager_obj.felo_score else 600
+            manager_name = str(manager_obj.nickname) if hasattr(manager_obj, 'nickname') else 'N/A'
+        except:
+            felo_score = 600
+            manager_name = 'N/A'
+
+        team_name = team.name.decode('utf-8') if isinstance(team.name, bytes) else team.name
+
+        equipos.append({
+            'team_id': team_id,
+            'team_name': team_name,
+            'manager': manager_name,
+            'bat_score': round(bat_score, 2),
+            'pit_score': round(pit_score, 2),
+            'roster_score': round(roster_score, 2),
+            'wins': wins,
+            'losses': losses,
+            'ties': ties,
+            'win_pct': round(win_pct, 3),
+            'felo_score': felo_score,
+            'jugadores': len(jugadores)
+        })
+        print(f"  ✅ {team_name}: roster={round(roster_score,1)} W-L={wins}-{losses} felo={felo_score}")
+
+    except Exception as e:
+        print(f"  ❌ Equipo {team_id}: {e}")
+
+df = pd.DataFrame(equipos)
 
 # ================================
-# HEADER
+# CALCULAR PROBABILIDADES PONDERADAS
+# 50% roster, 30% record actual, 20% historial felo
 # ================================
-st.title("🏆 Liga Fantasy Baseball 2026")
-st.caption(f"Probabilidades actualizadas — {datetime.now().strftime('%B %d, %Y')}")
-st.divider()
 
-if df is None:
-    st.error("No hay datos disponibles aún.")
+def normalize(series):
+    mn, mx = series.min(), series.max()
+    if mx == mn:
+        return series * 0 + 0.5
+    return (series - mn) / (mx - mn)
+
+df['roster_norm'] = normalize(df['roster_score'])
+df['winpct_norm'] = normalize(df['win_pct'])
+df['felo_norm'] = normalize(df['felo_score'])
+
+df['score_compuesto'] = (
+    df['roster_norm'] * 0.50 +
+    df['winpct_norm'] * 0.30 +
+    df['felo_norm'] * 0.20
+)
+
+total = df['score_compuesto'].sum()
+df['prob_camp'] = (df['score_compuesto'] / total * 100).round(1)
+
+def prob_to_odds(prob):
+    if prob <= 0:
+        return "N/A"
+    if prob >= 50:
+        return str(-round((prob / (100 - prob)) * 100))
+    else:
+        return f"+{round(((100 - prob) / prob) * 100)}"
+
+df['odds'] = df['prob_camp'].apply(prob_to_odds)
+
+# ================================
+# PROYECCIÓN INICIAL
+# Se reinicia el 25 de marzo (inicio de temporada)
+# ================================
+FECHA_INICIO_TEMPORADA = date(2026, 3, 25)
+hoy = date.today()
+
+if hoy == FECHA_INICIO_TEMPORADA and os.path.exists('data/liga_odds_inicial.csv'):
+    os.remove('data/liga_odds_inicial.csv')
+    print("🔄 Proyección inicial reiniciada — inicio de temporada")
+
+if os.path.exists('data/liga_odds_inicial.csv'):
+    inicial = pd.read_csv('data/liga_odds_inicial.csv')[['team_name', 'prob_camp']]
+    inicial.columns = ['team_name', 'prob_inicial']
+    df = df.merge(inicial, on='team_name', how='left')
+    df['prob_inicial'] = df['prob_inicial'].fillna(df['prob_camp'])
 else:
-    # ================================
-    # TOP 3
-    # ================================
-    col1, col2, col3 = st.columns(3)
-    with col1:
-        t = df.iloc[0]
-        st.metric("🥇 Favorito", t['team_name'], f"{t['prob_camp']:.1f}% — {t['odds']}")
-    with col2:
-        t = df.iloc[1]
-        st.metric("🥈 Segundo", t['team_name'], f"{t['prob_camp']:.1f}% — {t['odds']}")
-    with col3:
-        t = df.iloc[2]
-        st.metric("🥉 Tercero", t['team_name'], f"{t['prob_camp']:.1f}% — {t['odds']}")
+    df['prob_inicial'] = df['prob_camp']
+    df.to_csv('data/liga_odds_inicial.csv', index=False)
+    print(f"✅ Proyección inicial creada — {hoy}")
 
-    st.divider()
+df['tendencia'] = df.apply(
+    lambda r: '📈' if r['prob_camp'] > r['prob_inicial']
+    else '📉' if r['prob_camp'] < r['prob_inicial']
+    else '➡️', axis=1
+)
+df['diff'] = (df['prob_camp'] - df['prob_inicial']).round(1)
 
-    # ================================
-    # TABLA PRINCIPAL
-    # ================================
-    st.subheader("📊 Tabla de Probabilidades")
+df = df.sort_values('prob_camp', ascending=False).reset_index(drop=True)
+df['rank'] = range(1, len(df) + 1)
 
-    col1, col2 = st.columns([2, 1])
+print("\n" + "=" * 75)
+print("PROBABILIDADES DE CAMPEONATO — MODELO COMPLETO")
+print("=" * 75)
+print(f"{'#':>2} {'Equipo':<28} {'Prob%':>6} {'Odds':>6} {'W-L':>6} {'Felo':>5} {'Tend':>5}")
+print("-" * 75)
+for _, r in df.iterrows():
+    flag = "🏆" if r['rank'] == 1 else "  "
+    wl = f"{int(r['wins'])}-{int(r['losses'])}"
+    print(f"{flag} {r['rank']:>2}. {r['team_name']:<26} {r['prob_camp']:>5.1f}% {r['odds']:>6} {wl:>6} {int(r['felo_score']):>5} {r['tendencia']:>5}")
 
-    with col1:
-        fig = px.bar(
-            df.sort_values('prob_camp'),
-            x='prob_camp',
-            y='team_name',
-            orientation='h',
-            color='prob_camp',
-            color_continuous_scale=['red', 'yellow', 'green'],
-            title='Probabilidad de Campeonato por Equipo',
-            labels={'prob_camp': 'Probabilidad %', 'team_name': ''}
-        )
-        fig.update_layout(height=500, showlegend=False)
-        st.plotly_chart(fig, use_container_width=True)
-
-    with col2:
-        st.dataframe(
-            df[['rank', 'team_name', 'prob_camp', 'odds']].rename(columns={
-                'rank': '#',
-                'team_name': 'Equipo',
-                'prob_camp': 'Prob %',
-                'odds': 'Odds'
-            }),
-            hide_index=True,
-            height=500
-        )
-
-    st.divider()
-
-   # ================================
-    # TABLA DETALLADA CON ODDS
-    # ================================
-    st.subheader("🎰 Odds Completos")
-
-    # Headers
-    col1, col2, col3, col4, col5, col6 = st.columns([3, 2, 2, 2, 2, 2])
-    with col1:
-        st.markdown("**Equipo**")
-    with col2:
-        st.markdown("**Odds**")
-    with col3:
-        st.markdown("**Prob. hoy**")
-    with col4:
-        st.markdown("**Proj. inicial**")
-    with col5:
-        st.markdown("**Cambio**")
-    with col6:
-        st.markdown("**Tendencia**")
-
-    st.divider()
-
-    for _, r in df.iterrows():
-        col1, col2, col3, col4, col5, col6 = st.columns([3, 2, 2, 2, 2, 2])
-        rank_emoji = "🏆" if r['rank'] == 1 else "🔥" if r['rank'] <= 3 else "⚾"
-
-        prob_inicial = r.get('prob_inicial', r['prob_camp'])
-        diff = r.get('diff', 0)
-        tendencia = r.get('tendencia', '➡️')
-
-        with col1:
-            st.markdown(f"{rank_emoji} **{r['team_name']}**")
-        with col2:
-            st.markdown(f"**{r['odds']}**")
-        with col3:
-            st.markdown(f"**{r['prob_camp']:.1f}%**")
-        with col4:
-            st.markdown(f"{prob_inicial:.1f}%")
-        with col5:
-            color = "green" if diff > 0 else "red" if diff < 0 else "gray"
-            signo = "+" if diff > 0 else ""
-            st.markdown(f":{color}[{signo}{diff:.1f}%]")
-        with col6:
-            st.markdown(f"**{tendencia}**")
+df.to_csv('data/liga_odds.csv', index=False)
+print("\n✅ Guardado en data/liga_odds.csv")
