@@ -108,6 +108,13 @@ def load_matchup_siguiente():
     except:
         return None
 
+@st.cache_data(ttl=3600)
+def load_historial():
+    try:
+        return pd.read_csv('data/historial_matchups.csv')
+    except:
+        return None
+
 bateo, pitcheo, pred_bat, pred_pit = load_data()
 
 # ================================
@@ -137,13 +144,21 @@ with st.sidebar:
     bench = roster[roster['Pos'].isin(['BN', 'P'])]
     st.markdown("**Titulares**")
     for _, r in titulares.iterrows():
-        status_icon = "🟢" if r['Status'] == 'active' else "🔴"
-        st.markdown(f"{status_icon} {r['Name']} — {r['Pos']}")
+        if r['Status'] in ['DTD', 'DL10', 'DL15', 'DL60', 'NA']:
+            st.markdown(f"🔴 **{r['Name']}** — {r['Pos']} ⚠️ {r['Status']}")
+        elif r['Status'] == 'active':
+            st.markdown(f"🟢 {r['Name']} — {r['Pos']}")
+        else:
+            st.markdown(f"🟡 {r['Name']} — {r['Pos']} ({r['Status']})")
     st.divider()
     st.markdown("**Bench**")
     for _, r in bench.iterrows():
-        status_icon = "🟢" if r['Status'] == 'active' else "🔴"
-        st.markdown(f"{status_icon} {r['Name']} — {r['Pos']}")
+        if r['Status'] in ['DTD', 'DL10', 'DL15', 'DL60', 'NA']:
+            st.markdown(f"🔴 **{r['Name']}** — {r['Pos']} ⚠️ {r['Status']}")
+        elif r['Status'] == 'active':
+            st.markdown(f"🟢 {r['Name']} — {r['Pos']}")
+        else:
+            st.markdown(f"🟡 {r['Name']} — {r['Pos']} ({r['Status']})")
 
 # ================================
 # HEADER
@@ -169,14 +184,21 @@ with col4:
     riesgo = pitcheo[pitcheo['score'] < 20]
     st.metric("Pitchers en riesgo", f"{len(riesgo)}", "⚠️ revisar")
 
+# Alertas de lesiones
+lesionados = roster[roster['Status'].isin(['DTD', 'DL10', 'DL15', 'DL60', 'NA'])]
+if len(lesionados) > 0:
+    with st.expander(f"🚨 {len(lesionados)} jugadores lesionados — click para ver", expanded=True):
+        for _, r in lesionados.iterrows():
+            st.error(f"**{r['Name']}** ({r['Pos']}) — {r['Status']}")
+
 st.divider()
 
 # ================================
 # TABS
 # ================================
-tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs([
+tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8 = st.tabs([
     "🏏 Bateadores", "⚾ Pitchers", "🔮 Predicciones 2026",
-    "⚠️ Alertas", "🔥 Waivers", "📅 Proyección Semanal", "⚔️ Matchup"
+    "⚠️ Alertas", "🔥 Waivers", "📅 Proyección Semanal", "⚔️ Matchup", "📊 Historial"
 ])
 
 # TAB 1 - BATEADORES
@@ -550,3 +572,40 @@ with tab7:
                 render_matchup(matchup_sig)
             else:
                 st.warning("No hay matchup disponible para la semana siguiente.")
+
+# TAB 8 - HISTORIAL
+with tab8:
+    st.subheader("📊 Historial de Matchups — Temporada 2026")
+    historial = load_historial()
+
+    if historial is None or len(historial) == 0:
+        st.info("La temporada empieza el 25 de marzo — el historial se actualizará automáticamente cada semana.")
+    else:
+        wins = len(historial[historial['resultado'] == 'W'])
+        losses = len(historial[historial['resultado'] == 'L'])
+        ties = len(historial[historial['resultado'] == 'T'])
+
+        col1, col2, col3, col4 = st.columns(4)
+        with col1:
+            st.metric("Victorias", wins, "✅")
+        with col2:
+            st.metric("Derrotas", losses, "❌")
+        with col3:
+            st.metric("Empates", ties, "➡️")
+        with col4:
+            pct = round(wins / len(historial) * 100, 1) if len(historial) > 0 else 0
+            st.metric("Win %", f"{pct}%")
+
+        st.divider()
+        st.dataframe(
+            historial[['semana', 'week_start', 'oponente', 'mis_puntos', 'opp_puntos', 'resultado']].rename(columns={
+                'semana': 'Semana',
+                'week_start': 'Inicio',
+                'oponente': 'Oponente',
+                'mis_puntos': 'Mis Pts',
+                'opp_puntos': 'Opp Pts',
+                'resultado': 'Resultado'
+            }),
+            hide_index=True,
+            height=400
+        )
