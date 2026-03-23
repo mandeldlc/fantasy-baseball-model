@@ -124,6 +124,13 @@ with st.sidebar:
             st.cache_data.clear()
             st.rerun()
     roster = load_roster_from_yahoo()
+
+    if st.button("⚔️ Actualizar Matchup"):
+        with st.spinner("Actualizando matchup..."):
+            subprocess.run(['python', 'src/matchup.py'])
+            st.cache_data.clear()
+            st.rerun()
+            
     st.caption(f"{len(roster)} jugadores")
     st.divider()
     titulares = roster[~roster['Pos'].isin(['BN', 'P'])]
@@ -435,7 +442,6 @@ with tab6:
             for _, r in sentar.iterrows():
                 st.markdown(f"**{r['Name']}** — proyección {r['fantasy_score_proyectado']:.0f} ({r['diff']:.0f})")
 
-# TAB 7 - MATCHUP
 # TAB 7 - MATCHUP
 with tab7:
     matchup = load_matchup()

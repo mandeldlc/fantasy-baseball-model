@@ -23,13 +23,25 @@ query = YahooFantasySportsQuery(
 # ================================
 # OBTENER MATCHUP POR FECHA
 # ================================
-def get_matchup_by_date(target_date):
-    matchups = query.get_team_matchups(team_id=6)
-    for m in matchups:
+def get_all_matchups():
+    return query.get_team_matchups(team_id=6)
+
+def get_matchup_by_date(target_date, all_matchups):
+    for m in all_matchups:
         try:
             start = date.fromisoformat(m.week_start)
             end = date.fromisoformat(m.week_end)
             if start <= target_date <= end:
+                return m
+        except:
+            continue
+    return None
+
+def get_next_matchup(hoy, all_matchups):
+    for m in all_matchups:
+        try:
+            start = date.fromisoformat(m.week_start)
+            if start >= hoy:
                 return m
         except:
             continue
@@ -40,7 +52,6 @@ def procesar_matchup(matchup):
         return None
 
     teams = matchup.teams
-    mi_equipo = None
     oponente = None
 
     for t in teams:
@@ -52,10 +63,11 @@ def procesar_matchup(matchup):
             team_id = team.team_id
         except:
             team_id = team.get('team_id')
-        if team_id == 6:
-            mi_equipo = team
-        else:
+        if team_id != 6:
             oponente = team
+
+    if oponente is None:
+        return None
 
     oponente_name = oponente.name.decode('utf-8') if isinstance(oponente.name, bytes) else oponente.name
     oponente_id = oponente.team_id
@@ -66,12 +78,10 @@ def procesar_matchup(matchup):
     print(f"\n⚔️  Semana {week}: Dando Tabla vs {oponente_name}")
     print(f"📅 {week_start} — {week_end}")
 
-    # Roster del oponente
     print(f"Obteniendo roster de {oponente_name}...")
     roster_oponente = query.get_team_roster_by_week(team_id=oponente_id, chosen_week=week)
     jugadores_oponente = [p.name.full for p in roster_oponente.players]
 
-    # Stats
     bateo = pd.read_csv('data/bateo_historico.csv')
     pitcheo = pd.read_csv('data/pitcheo_historico.csv')
     bateo[['last_name', 'first_name']] = bateo['last_name, first_name'].str.split(', ', expand=True)
@@ -134,14 +144,28 @@ def procesar_matchup(matchup):
 # PROCESAR SEMANA ACTUAL Y SIGUIENTE
 # ================================
 hoy = date.today()
-semana_siguiente = hoy + timedelta(weeks=1)
+print("Cargando todos los matchups...")
+all_matchups = get_all_matchups()
 
 print("Obteniendo matchup semana actual...")
-matchup_actual = get_matchup_by_date(hoy)
+matchup_actual = get_matchup_by_date(hoy, all_matchups)
+
+# Si no hay matchup hoy, usar el próximo disponible
+if matchup_actual is None:
+    print("No hay matchup esta semana, usando el próximo disponible...")
+    matchup_actual = get_next_matchup(hoy, all_matchups)
+
 resultado_actual = procesar_matchup(matchup_actual)
 
+# Semana siguiente basada en el fin de la semana actual
 print("\nObteniendo matchup semana siguiente...")
-matchup_siguiente = get_matchup_by_date(semana_siguiente)
+if matchup_actual is not None:
+    fin_semana_actual = date.fromisoformat(str(matchup_actual.week_end))
+    inicio_semana_siguiente = fin_semana_actual + timedelta(days=1)
+    matchup_siguiente = get_matchup_by_date(inicio_semana_siguiente, all_matchups)
+else:
+    matchup_siguiente = None
+
 resultado_siguiente = procesar_matchup(matchup_siguiente)
 
 # Guardar

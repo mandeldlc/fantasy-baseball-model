@@ -1,1 +1,45 @@
-null
+{
+  "semana": 1,
+  "oponente": "EVERYONE'S TERROR",
+  "oponente_id": 7,
+  "week_start": "2026-03-25",
+  "week_end": "2026-03-29",
+  "mis_bat": {
+    "equipo": "Dando Tabla",
+    "jugadores": 14,
+    "HR_avg": 21.4,
+    "OPS": 0.764,
+    "wOBA": 0.329,
+    "xwOBA": 0.333,
+    "EV": 89.8,
+    "Barrel%": 9.6
+  },
+  "opp_bat": {
+    "equipo": "EVERYONE'S TERROR",
+    "jugadores": 14,
+    "HR_avg": 17.9,
+    "OPS": 0.738,
+    "wOBA": 0.32,
+    "xwOBA": 0.322,
+    "EV": 89.8,
+    "Barrel%": 8.1
+  },
+  "mis_pit": {
+    "equipo": "Dando Tabla",
+    "jugadores": 8,
+    "ERA": 3.16,
+    "xERA": 3.76,
+    "Ks": 116.5,
+    "xwOBA": 0.301,
+    "EV_against": 90.6
+  },
+  "opp_pit": {
+    "equipo": "EVERYONE'S TERROR",
+    "jugadores": 7,
+    "ERA": 4.33,
+    "xERA": 4.84,
+    "Ks": 100.6,
+    "xwOBA": 0.327,
+    "EV_against": 89.1
+  }
+}
