@@ -114,6 +114,15 @@ def load_historial():
         return pd.read_csv('data/historial_matchups.csv')
     except:
         return None
+    
+@st.cache_data(ttl=3600)
+def load_streaks():
+    try:
+        bat = pd.read_csv('data/streaks_bat.csv')
+        pit = pd.read_csv('data/streaks_pit.csv')
+        return bat, pit
+    except:
+        return None, None
 
 bateo, pitcheo, pred_bat, pred_pit = load_data()
 
@@ -196,9 +205,9 @@ st.divider()
 # ================================
 # TABS
 # ================================
-tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8 = st.tabs([
+tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9 = st.tabs([
     "🏏 Bateadores", "⚾ Pitchers", "🔮 Predicciones 2026",
-    "⚠️ Alertas", "🔥 Waivers", "📅 Proyección Semanal", "⚔️ Matchup", "📊 Historial"
+    "⚠️ Alertas", "🔥 Waivers", "📅 Proyección Semanal", "⚔️ Matchup", "📊 Historial", "🔥 Streaks"
 ])
 
 # TAB 1 - BATEADORES
@@ -609,3 +618,79 @@ with tab8:
             hide_index=True,
             height=400
         )
+
+# TAB 9 - STREAKS
+with tab9:
+    st.subheader("🔥 Hot / Cold Streaks")
+    st.caption("Comparativo 2024 vs 2025 — tu roster y waivers disponibles")
+
+    streaks_bat, streaks_pit = load_streaks()
+
+    if streaks_bat is None:
+        st.warning("Corre primero: python src/streaks.py")
+    else:
+        filtro = st.radio("Mostrar:", ["Todo", "Mi Roster", "Waiver"], horizontal=True)
+
+        if filtro != "Todo":
+            streaks_bat = streaks_bat[streaks_bat['Fuente'] == filtro]
+            streaks_pit = streaks_pit[streaks_pit['Fuente'] == filtro]
+
+        tab_bat, tab_pit = st.tabs(["🏏 Bateadores", "⚾ Pitchers"])
+
+        with tab_bat:
+            col1, col2, col3 = st.columns(3)
+            with col1:
+                st.metric("🔥 HOT", len(streaks_bat[streaks_bat['Streak'] == '🔥 HOT']))
+            with col2:
+                st.metric("🥶 COLD", len(streaks_bat[streaks_bat['Streak'] == '🥶 COLD']))
+            with col3:
+                st.metric("➡️ Neutral", len(streaks_bat[streaks_bat['Streak'] == '➡️ NEUTRAL']))
+
+            st.divider()
+
+            streak_filter = st.selectbox("Filtrar por streak:", ["Todos", "🔥 HOT", "🥶 COLD", "➡️ NEUTRAL"], key="bat_streak")
+            if streak_filter != "Todos":
+                mostrar_bat = streaks_bat[streaks_bat['Streak'] == streak_filter]
+            else:
+                mostrar_bat = streaks_bat
+
+            st.dataframe(
+                mostrar_bat[['Name', 'Fuente', 'wOBA 2024', 'wOBA 2025', 'xwOBA 2025', 'EV', 'Barrel%', 'Diff', 'Streak']].rename(columns={
+                    'wOBA 2024': 'wOBA 24',
+                    'wOBA 2025': 'wOBA 25',
+                    'xwOBA 2025': 'xwOBA 25',
+                    'Diff': 'Δ wOBA'
+                }),
+                hide_index=True,
+                height=500
+            )
+
+        with tab_pit:
+            col1, col2, col3 = st.columns(3)
+            with col1:
+                st.metric("🔥 HOT", len(streaks_pit[streaks_pit['Streak'] == '🔥 HOT']))
+            with col2:
+                st.metric("🥶 COLD", len(streaks_pit[streaks_pit['Streak'] == '🥶 COLD']))
+            with col3:
+                st.metric("➡️ Neutral", len(streaks_pit[streaks_pit['Streak'] == '➡️ NEUTRAL']))
+
+            st.divider()
+
+            streak_filter_p = st.selectbox("Filtrar por streak:", ["Todos", "🔥 HOT", "🥶 COLD", "➡️ NEUTRAL"], key="pit_streak")
+            if streak_filter_p != "Todos":
+                mostrar_pit = streaks_pit[streaks_pit['Streak'] == streak_filter_p]
+            else:
+                mostrar_pit = streaks_pit
+
+            st.dataframe(
+                mostrar_pit[['Name', 'Fuente', 'ERA 2024', 'ERA 2025', 'xERA 2025', 'Ks', 'Diff ERA', 'Streak']].rename(columns={
+                    'ERA 2024': 'ERA 24',
+                    'ERA 2025': 'ERA 25',
+                    'xERA 2025': 'xERA 25',
+                    'Diff ERA': 'Δ ERA'
+                }),
+                hide_index=True,
+                height=500
+            )
+
+        st.caption("⚠️ Streaks basados en 2024 vs 2025. Cuando haya data del 2026 se actualizará automáticamente.")

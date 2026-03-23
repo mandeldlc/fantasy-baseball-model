@@ -55,3 +55,12 @@ jobs:
           git add data/
           git diff --staged --quiet || git commit -m "auto: actualizar datos $(date +'%Y-%m-%d')"
           git push
+
+      - name: Actualizar matchup semanal
+        run: python src/matchup.py
+      
+      - name: Actualizar historial matchups
+        run: python src/historial.py
+
+      - name: Actualizar streaks
+        run: python src/streaks.py
