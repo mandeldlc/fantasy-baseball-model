@@ -1,19 +1,94 @@
 oponente,pedir,categoria_pedir,valor_pedir,mi_debilidad,mis_fortalezas,tipo
+Team Frank Yankee,Aaron Judge,R,137.0,74.929,SB,Bateador
+Team Frank Yankee,Francisco Lindor,R,117.0,74.929,SB,Bateador
+Los Calvoneros unidos,Noah Cameron,K,114.0,116.5,N/A,Pitcher
+Team Frank Yankee,George Springer,R,106.0,74.929,SB,Bateador
+LOS GORDITOS DAD & JR 2026 MLB,Edwin Díaz,K,98.0,116.5,ERA,Pitcher
+THE PUNISHER X,Garrett Whitlock,K,91.0,116.5,"ERA, NSV",Pitcher
+LOS GORDITOS DAD & JR 2026 MLB,Devin Williams,K,90.0,116.5,ERA,Pitcher
+THE PUNISHER X,Jacob Misiorowski,K,87.0,116.5,"ERA, NSV",Pitcher
+Team Frank Yankee,David Bednar,K,86.0,116.5,N/A,Pitcher
+Team Frank Yankee,Andrés Muñoz,K,83.0,116.5,N/A,Pitcher
+Team Frank Yankee,Jhoan Duran,K,80.0,116.5,N/A,Pitcher
+Los Calvoneros unidos,Josh Hader,K,76.0,116.5,N/A,Pitcher
+THE PUNISHER X,Chase Burns,K,67.0,116.5,"ERA, NSV",Pitcher
 LOS GORDITOS DAD & JR 2026 MLB,Cal Raleigh,HR,60.0,21.357,N/A,Bateador
+Los Calvoneros unidos,Trevor Megill,K,60.0,116.5,N/A,Pitcher
 LOS GORDITOS DAD & JR 2026 MLB,Kyle Schwarber,HR,56.0,21.357,N/A,Bateador
-Team Frank Yankee,Aaron Judge,HR,53.0,21.357,N/A,Bateador
-Todos somos Bstrong,Juan Soto,HR,43.0,21.357,N/A,Bateador
+Team Frank Yankee,Aaron Judge,HR,53.0,21.357,SB,Bateador
++ Fe que talento,José Caballero,SB,49.0,15.0,"HR, RBI",Bateador
+THE PUNISHER X,José Ramírez,SB,44.0,15.0,N/A,Bateador
+LOS GORDITOS DAD & JR 2026 MLB,Chandler Simpson,SB,44.0,15.0,N/A,Bateador
+Todos somos Bstrong,Juan Soto,HR,43.0,21.357,SB,Bateador
 LOS GORDITOS DAD & JR 2026 MLB,Pete Alonso,HR,38.0,21.357,N/A,Bateador
+LOS GORDITOS DAD & JR 2026 MLB,Parker Messick,K,38.0,116.5,ERA,Pitcher
++ Fe que talento,Oneil Cruz,SB,38.0,15.0,"HR, RBI",Bateador
 B-Strong,Nick Kurtz,HR,36.0,21.357,N/A,Bateador
+THE PUNISHER X,Trea Turner,SB,36.0,15.0,N/A,Bateador
 B-Strong,Taylor Ward,HR,36.0,21.357,N/A,Bateador
-Todos somos Bstrong,Rafael Devers,HR,35.0,21.357,N/A,Bateador
-Team Frank Yankee,Michael Busch,HR,34.0,21.357,N/A,Bateador
-Team Frank Yankee,George Springer,HR,32.0,21.357,N/A,Bateador
-Todos somos Bstrong,Vinnie Pasquantino,HR,32.0,21.357,N/A,Bateador
+Todos somos Bstrong,Rafael Devers,HR,35.0,21.357,SB,Bateador
+Team Frank Yankee,Michael Busch,HR,34.0,21.357,SB,Bateador
+LOS GORDITOS DAD & JR 2026 MLB,Victor Scott II,SB,34.0,15.0,N/A,Bateador
+Team Frank Yankee,George Springer,HR,32.0,21.357,SB,Bateador
+Todos somos Bstrong,Vinnie Pasquantino,HR,32.0,21.357,SB,Bateador
+THE PUNISHER X,Corbin Carroll,SB,32.0,15.0,N/A,Bateador
 B-Strong,Pete Crow-Armstrong,HR,31.0,21.357,N/A,Bateador
+LOS GORDITOS DAD & JR 2026 MLB,CJ Abrams,SB,31.0,15.0,N/A,Bateador
 San Safari Baseball,Jazz Chisholm Jr.,HR,31.0,21.357,N/A,Bateador
 San Safari Baseball,Matt Olson,HR,29.0,21.357,N/A,Bateador
++ Fe que talento,Geraldo Perdomo,SB,27.0,15.0,"HR, RBI",Bateador
 San Safari Baseball,Jose Altuve,HR,26.0,21.357,N/A,Bateador
-Team Frank Yankee,Aaron Judge,SLG,0.688,0.44,N/A,Bateador
-Team Frank Yankee,Giancarlo Stanton,SLG,0.594,0.44,N/A,Bateador
-Team Frank Yankee,George Springer,SLG,0.56,0.44,N/A,Bateador
+Los Calvoneros unidos,Dylan Cease,W,8.0,7.625,N/A,Pitcher
+Team Frank Yankee,Jhoan Duran,W,7.0,7.625,N/A,Pitcher
+Los Calvoneros unidos,Trevor Megill,W,6.0,7.625,N/A,Pitcher
+Los Calvoneros unidos,Josh Hader,W,6.0,7.625,N/A,Pitcher
+Team Frank Yankee,David Bednar,W,6.0,7.625,N/A,Pitcher
+Todos somos Bstrong,Ryan Walker,W,5.0,7.625,N/A,Pitcher
+Todos somos Bstrong,Kenley Jansen,W,5.0,7.625,N/A,Pitcher
+B-Strong,Aroldis Chapman,W,5.0,7.625,N/A,Pitcher
+Todos somos Bstrong,Ryan Walker,ERA,4.11,3.161,N/A,Pitcher
+B-Strong,Bubba Chandler,W,4.0,7.625,N/A,Pitcher
+Team Frank Yankee,Jack Leiter,ERA,3.86,3.161,N/A,Pitcher
+Team Frank Yankee,Shota Imanaga,ERA,3.73,3.161,N/A,Pitcher
+Team Frank Yankee,Brayan Bello,ERA,3.35,3.161,N/A,Pitcher
+Todos somos Bstrong,Brandon Woodruff,ERA,3.2,3.161,N/A,Pitcher
+Todos somos Bstrong,Gavin Williams,ERA,3.06,3.161,N/A,Pitcher
+B-Strong,Cade Cavalli,W,3.0,7.625,N/A,Pitcher
+Team Frank Yankee,Andrés Muñoz,W,3.0,7.625,N/A,Pitcher
+Todos somos Bstrong,Daniel Palencia,W,1.0,7.625,N/A,Pitcher
+Team Frank Yankee,Aaron Judge,SLG,0.688,0.44,SB,Bateador
+Team Frank Yankee,Giancarlo Stanton,SLG,0.594,0.44,SB,Bateador
+Team Frank Yankee,George Springer,SLG,0.56,0.44,SB,Bateador
+Team Frank Yankee,Aaron Judge,OBP,0.457,0.323,SB,Bateador
+Team Frank Yankee,Will Smith,OBP,0.404,0.323,SB,Bateador
+Team Frank Yankee,George Springer,OBP,0.399,0.323,SB,Bateador
+Team Frank Yankee,Shota Imanaga,NSV,0.0,2.125,N/A,Pitcher
+Team Frank Yankee,Cristopher Sánchez,NSV,0.0,2.125,N/A,Pitcher
+Team Frank Yankee,Brayan Bello,NSV,0.0,2.125,N/A,Pitcher
+Los Inmensos Amos BT,Edward Cabrera,NSV,0.0,2.125,N/A,Pitcher
+Los Inmensos Amos BT,Framber Valdez,NSV,0.0,2.125,N/A,Pitcher
+Los Inmensos Amos BT,Eury Pérez,NSV,0.0,2.125,N/A,Pitcher
+A.Rod Gangs,Cole Ragans,NSV,0.0,2.125,"W, ERA",Pitcher
+A.Rod Gangs,Sean Manaea,NSV,0.0,2.125,"W, ERA",Pitcher
+B-Strong,Garrett Crochet,NSV,0.0,2.125,N/A,Pitcher
+LOS GORDITOS DAD & JR 2026 MLB,Shane Baz,NSV,0.0,2.125,ERA,Pitcher
+A.Rod Gangs,MacKenzie Gore,NSV,0.0,2.125,"W, ERA",Pitcher
+LOS GORDITOS DAD & JR 2026 MLB,Parker Messick,NSV,0.0,2.125,ERA,Pitcher
+LOS GORDITOS DAD & JR 2026 MLB,Tanner Bibee,NSV,0.0,2.125,ERA,Pitcher
+EVERYONE'S TERROR,Michael Wacha,NSV,0.0,2.125,"W, K, ERA, WHIP",Pitcher
++ Fe que talento,Spencer Strider,NSV,0.0,2.125,"W, K",Pitcher
++ Fe que talento,Hunter Greene,NSV,0.0,2.125,"W, K",Pitcher
++ Fe que talento,Tarik Skubal,NSV,0.0,2.125,"W, K",Pitcher
+EVERYONE'S TERROR,Zac Gallen,NSV,0.0,2.125,"W, K, ERA, WHIP",Pitcher
+B-Strong,Bryan Woo,NSV,0.0,2.125,N/A,Pitcher
+B-Strong,Matthew Liberatore,NSV,0.0,2.125,N/A,Pitcher
+EVERYONE'S TERROR,Reynaldo López,NSV,0.0,2.125,"W, K, ERA, WHIP",Pitcher
+Los Calvoneros unidos,Kevin Gausman,NSV,0.0,2.125,N/A,Pitcher
+San Safari Baseball,Griffin Jax,NSV,0.0,2.125,"W, K",Pitcher
+San Safari Baseball,Blake Snell,NSV,0.0,2.125,"W, K",Pitcher
+San Safari Baseball,Cade Horton,NSV,0.0,2.125,"W, K",Pitcher
+Los Calvoneros unidos,Matthew Boyd,NSV,0.0,2.125,N/A,Pitcher
+Los Calvoneros unidos,Kris Bubic,NSV,0.0,2.125,N/A,Pitcher
+Todos somos Bstrong,Yoshinobu Yamamoto,NSV,0.0,2.125,N/A,Pitcher
+Todos somos Bstrong,Nolan McLean,NSV,0.0,2.125,N/A,Pitcher
+Todos somos Bstrong,Brandon Woodruff,NSV,0.0,2.125,N/A,Pitcher

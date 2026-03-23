@@ -123,6 +123,13 @@ def load_streaks():
         return bat, pit
     except:
         return None, None
+    
+@st.cache_data(ttl=3600)
+def load_trades():
+    try:
+        return pd.read_csv('data/trades_sugeridos.csv')
+    except:
+        return None
 
 bateo, pitcheo, pred_bat, pred_pit = load_data()
 
@@ -205,9 +212,9 @@ st.divider()
 # ================================
 # TABS
 # ================================
-tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9 = st.tabs([
+tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10 = st.tabs([
     "🏏 Bateadores", "⚾ Pitchers", "🔮 Predicciones 2026",
-    "⚠️ Alertas", "🔥 Waivers", "📅 Proyección Semanal", "⚔️ Matchup", "📊 Historial", "🔥 Streaks"
+    "⚠️ Alertas", "🔥 Waivers", "📅 Proyección Semanal", "⚔️ Matchup", "📊 Historial", "🔥 Streaks", "🔄 Trades"
 ])
 
 # TAB 1 - BATEADORES
@@ -694,3 +701,49 @@ with tab9:
             )
 
         st.caption("⚠️ Streaks basados en 2024 vs 2025. Cuando haya data del 2026 se actualizará automáticamente.")
+
+# TAB 10 - TRADES
+with tab10:
+    st.subheader("🔄 Sugerencias de Trades")
+    st.caption("Jugadores que puedes pedir a cambio para mejorar tus categorías débiles")
+
+    trades = load_trades()
+
+    if trades is None or len(trades) == 0:
+        st.info("Corre primero: python src/trades.py")
+    else:
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            st.metric("Trades sugeridos", len(trades))
+        with col2:
+            equipos = trades['oponente'].nunique()
+            st.metric("Equipos con oportunidades", equipos)
+        with col3:
+            cats = trades['categoria_pedir'].nunique()
+            st.metric("Categorías a mejorar", cats)
+
+        st.divider()
+
+        # Filtros
+        col1, col2 = st.columns(2)
+        with col1:
+            equipo_sel = st.selectbox("Filtrar por equipo:", ["Todos"] + trades['oponente'].unique().tolist())
+        with col2:
+            cat_sel = st.selectbox("Filtrar por categoría:", ["Todas"] + trades['categoria_pedir'].unique().tolist())
+
+        df_filtrado = trades.copy()
+        if equipo_sel != "Todos":
+            df_filtrado = df_filtrado[df_filtrado['oponente'] == equipo_sel]
+        if cat_sel != "Todas":
+            df_filtrado = df_filtrado[df_filtrado['categoria_pedir'] == cat_sel]
+
+        st.divider()
+
+        for _, r in df_filtrado.head(20).iterrows():
+            tipo_icon = "🏏" if r['tipo'] == 'Bateador' else "⚾"
+            st.markdown(f"""
+            **{tipo_icon} Pide: {r['pedir']}** de *{r['oponente']}*
+            - Categoría que mejoras: **{r['categoria_pedir']}** — ellos tienen `{r['valor_pedir']}` vs tú `{r['mi_debilidad']}`
+            - Tus fortalezas para ofrecer: `{r['mis_fortalezas']}`
+            ---
+            """)
