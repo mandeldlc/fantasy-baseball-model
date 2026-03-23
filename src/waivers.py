@@ -60,9 +60,10 @@ headers = {'User-Agent': 'Mozilla/5.0'}
 url_bat = (
     "https://baseballsavant.mlb.com/leaderboard/custom"
     "?year=2025&type=batter&filter=&min=50"
-    "&selections=pa,ab,hit,home_run,stolen_base,walk,strikeout,"
-    "batting_avg,on_base_plus_slg,isolated_power,babip,"
-    "xba,xslg,woba,xwoba,exit_velocity_avg,launch_angle_avg,barrel_batted_rate"
+    "&selections=pa,ab,hit,home_run,r_total_stolen_base,walk,strikeout,"
+    "batting_avg,on_base_percent,slg_percent,on_base_plus_slg,isolated_power,babip,"
+    "xba,xslg,woba,xwoba,exit_velocity_avg,launch_angle_avg,barrel_batted_rate,"
+    "r_run,b_rbi"
     "&chart=false&csv=true"
 )
 r = requests.get(url_bat, headers=headers)
@@ -72,7 +73,7 @@ url_pit = (
     "https://baseballsavant.mlb.com/leaderboard/custom"
     "?year=2025&type=pitcher&filter=&min=20"
     "&selections=p_game,p_formatted_ip,p_win,p_loss,p_strikeout,"
-    "p_walk,p_era,whip,p_save,xera,xba,xslg,xwoba,"
+    "p_walk,hit,p_era,p_save,xera,xba,xslg,xwoba,"
     "exit_velocity_avg,barrel_batted_rate"
     "&chart=false&csv=true"
 )
@@ -148,6 +149,8 @@ libres_bateo['breakout_score'] += libres_bateo['woba'] * 20
 # ================================
 # SCORE BREAKOUT PITCHERS
 # ================================
+# Calcular WHIP
+todos_pitcheo['p_whip'] = ((todos_pitcheo['p_walk'] + todos_pitcheo['hit']) / todos_pitcheo['p_formatted_ip']).round(3)
 libres_pitcheo['diff_xera'] = libres_pitcheo['p_era'] - libres_pitcheo['xera']
 libres_pitcheo['breakout_score'] = 0
 libres_pitcheo['breakout_score'] += libres_pitcheo['diff_xera'] * 15
