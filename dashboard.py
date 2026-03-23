@@ -741,9 +741,13 @@ with tab10:
 
         for _, r in df_filtrado.head(20).iterrows():
             tipo_icon = "🏏" if r['tipo'] == 'Bateador' else "⚾"
+            valor_pedir = r['valor_pedir'] if pd.notna(r['valor_pedir']) else 'N/A'
+            mi_debilidad = r['mi_debilidad'] if pd.notna(r['mi_debilidad']) else 'N/A'
+            fortalezas = r['mis_fortalezas'] if pd.notna(r['mis_fortalezas']) else 'N/A'
+            
             st.markdown(f"""
             **{tipo_icon} Pide: {r['pedir']}** de *{r['oponente']}*
-            - Categoría que mejoras: **{r['categoria_pedir']}** — ellos tienen `{r['valor_pedir']}` vs tú `{r['mi_debilidad']}`
-            - Tus fortalezas para ofrecer: `{r['mis_fortalezas']}`
+            - Categoría que mejoras: **{r['categoria_pedir']}** — ellos tienen `{valor_pedir}` vs tú `{mi_debilidad}`
+            - Tus fortalezas para ofrecer: `{fortalezas}`
             ---
             """)
