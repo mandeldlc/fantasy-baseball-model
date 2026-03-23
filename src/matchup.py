@@ -20,9 +20,6 @@ query = YahooFantasySportsQuery(
     save_token_data_to_env_file=True
 )
 
-# ================================
-# OBTENER MATCHUP POR FECHA
-# ================================
 def get_all_matchups():
     return query.get_team_matchups(team_id=6)
 
@@ -128,6 +125,37 @@ def procesar_matchup(matchup):
     mis_pit = calc_pit_stats(mis_jugadores, 'Dando Tabla')
     opp_pit = calc_pit_stats(jugadores_oponente, oponente_name)
 
+    # ================================
+    # CALCULAR PROBABILIDAD DE GANAR
+    # ================================
+    def calc_team_score(bat, pit):
+        score = 0
+        score += bat.get('wOBA', 0) * 30
+        score += bat.get('xwOBA', 0) * 20
+        score += bat.get('HR_avg', 0) * 0.5
+        score += bat.get('Barrel%', 0) * 0.3
+        score += bat.get('EV', 0) * 0.2
+        score += (5 - pit.get('ERA', 5)) * 5
+        score += (5 - pit.get('xERA', 5)) * 3
+        score += pit.get('Ks', 0) * 0.05
+        score += (0.32 - pit.get('xwOBA', 0.32)) * 20
+        return max(score, 0.1)
+
+    mi_score = calc_team_score(mis_bat, mis_pit)
+    opp_score = calc_team_score(opp_bat, opp_pit)
+    total_score = mi_score + opp_score
+
+    prob_ganar = round((mi_score / total_score) * 100, 1)
+    prob_perder = round(100 - prob_ganar, 1)
+
+    def score_to_odds(prob):
+        if prob >= 50:
+            return f"-{round((prob / (100 - prob)) * 100)}"
+        else:
+            return f"+{round(((100 - prob) / prob) * 100)}"
+
+    print(f"🎯 Prob. ganar: {prob_ganar}% ({score_to_odds(prob_ganar)})")
+
     return {
         'semana': week,
         'oponente': oponente_name,
@@ -137,7 +165,11 @@ def procesar_matchup(matchup):
         'mis_bat': mis_bat,
         'opp_bat': opp_bat,
         'mis_pit': mis_pit,
-        'opp_pit': opp_pit
+        'opp_pit': opp_pit,
+        'prob_ganar': prob_ganar,
+        'prob_perder': prob_perder,
+        'odds_ganar': score_to_odds(prob_ganar),
+        'odds_perder': score_to_odds(prob_perder)
     }
 
 # ================================
@@ -150,14 +182,12 @@ all_matchups = get_all_matchups()
 print("Obteniendo matchup semana actual...")
 matchup_actual = get_matchup_by_date(hoy, all_matchups)
 
-# Si no hay matchup hoy, usar el próximo disponible
 if matchup_actual is None:
     print("No hay matchup esta semana, usando el próximo disponible...")
     matchup_actual = get_next_matchup(hoy, all_matchups)
 
 resultado_actual = procesar_matchup(matchup_actual)
 
-# Semana siguiente basada en el fin de la semana actual
 print("\nObteniendo matchup semana siguiente...")
 if matchup_actual is not None:
     fin_semana_actual = date.fromisoformat(str(matchup_actual.week_end))
@@ -168,7 +198,6 @@ else:
 
 resultado_siguiente = procesar_matchup(matchup_siguiente)
 
-# Guardar
 with open('data/matchup_semana.json', 'w') as f:
     json.dump(resultado_actual, f, indent=2)
 

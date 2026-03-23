@@ -130,7 +130,7 @@ with st.sidebar:
             subprocess.run(['python', 'src/matchup.py'])
             st.cache_data.clear()
             st.rerun()
-            
+
     st.caption(f"{len(roster)} jugadores")
     st.divider()
     titulares = roster[~roster['Pos'].isin(['BN', 'P'])]
@@ -457,6 +457,33 @@ with tab7:
 
         def render_matchup(m):
             st.caption(f"📅 {m['week_start']} — {m['week_end']}")
+
+            # ================================
+            # BARRA DE PROBABILIDAD
+            # ================================
+            prob_ganar = m.get('prob_ganar', 50)
+            prob_perder = m.get('prob_perder', 50)
+            odds_ganar = m.get('odds_ganar', '+100')
+            odds_perder = m.get('odds_perder', '+100')
+
+            st.markdown(f"""
+            <div style='border-radius: 12px; padding: 16px; margin: 10px 0; border: 1px solid #333'>
+                <div style='display: flex; justify-content: space-between; margin-bottom: 8px'>
+                    <span style='font-weight: 700; font-size: 15px'>🏟️ Dando Tabla &nbsp;<span style='color: #1D9E75; font-size: 13px'>{odds_ganar}</span></span>
+                    <span style='font-weight: 700; font-size: 15px'><span style='color: #E24B4A; font-size: 13px'>{odds_perder}</span>&nbsp; {m['oponente']} 🏟️</span>
+                </div>
+                <div style='display: flex; border-radius: 8px; overflow: hidden; height: 32px'>
+                    <div style='width: {prob_ganar}%; background: #1D9E75; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 14px'>{prob_ganar}%</div>
+                    <div style='width: {prob_perder}%; background: #E24B4A; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 14px'>{prob_perder}%</div>
+                </div>
+                <div style='text-align: center; margin-top: 10px; font-size: 13px; opacity: 0.7'>
+                    {'🏆 Favorito esta semana' if prob_ganar >= 50 else '⚠️ Underdog esta semana'}
+                </div>
+            </div>
+            """, unsafe_allow_html=True)
+
+            st.divider()
+
             mis_bat = m['mis_bat']
             opp_bat = m['opp_bat']
             mis_pit = m['mis_pit']

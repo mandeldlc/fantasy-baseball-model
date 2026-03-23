@@ -41,5 +41,9 @@
     "Ks": 100.6,
     "xwOBA": 0.327,
     "EV_against": 89.1
-  }
+  },
+  "prob_ganar": 55.4,
+  "prob_perder": 44.6,
+  "odds_ganar": "-124",
+  "odds_perder": "+124"
 }
