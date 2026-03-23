@@ -42,6 +42,12 @@ jobs:
       - name: Actualizar waivers
         run: python src/waivers.py
 
+      - name: Actualizar proyecciones semanales
+        run: python src/modelo_avanzado.py
+
+      - name: Actualizar matchup semanal
+        run: python src/matchup.py
+
       - name: Commit datos actualizados
         run: |
           git config --global user.email "action@github.com"

@@ -1,0 +1,45 @@
+{
+  "semana": 2,
+  "oponente": "A.Rod Gangs",
+  "oponente_id": 3,
+  "week_start": "2026-03-30",
+  "week_end": "2026-04-05",
+  "mis_bat": {
+    "equipo": "Dando Tabla",
+    "jugadores": 14,
+    "HR_avg": 21.4,
+    "OPS": 0.764,
+    "wOBA": 0.329,
+    "xwOBA": 0.333,
+    "EV": 89.8,
+    "Barrel%": 9.6
+  },
+  "opp_bat": {
+    "equipo": "A.Rod Gangs",
+    "jugadores": 11,
+    "HR_avg": 22.8,
+    "OPS": 0.777,
+    "wOBA": 0.335,
+    "xwOBA": 0.338,
+    "EV": 90.6,
+    "Barrel%": 12.1
+  },
+  "mis_pit": {
+    "equipo": "Dando Tabla",
+    "jugadores": 8,
+    "ERA": 3.16,
+    "xERA": 3.76,
+    "Ks": 116.5,
+    "xwOBA": 0.301,
+    "EV_against": 90.6
+  },
+  "opp_pit": {
+    "equipo": "A.Rod Gangs",
+    "jugadores": 10,
+    "ERA": 3.95,
+    "xERA": 3.62,
+    "Ks": 126.6,
+    "xwOBA": 0.295,
+    "EV_against": 89.4
+  }
+}
