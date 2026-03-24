@@ -51,7 +51,9 @@ features_bat = [
     'barrel_batted_rate', 'hard_hit_percent',
     'sweet_spot_percent', 'exit_velocity_avg',
     'babip', 'isolated_power', 'on_base_plus_slg',
-    'pa', 'player_age'
+    'pa', 'player_age',
+    'r_total_stolen_base', 'on_base_percent',
+    'slg_percent', 'b_rbi'
 ]
 
 # Target: Fantasy Score ponderado
