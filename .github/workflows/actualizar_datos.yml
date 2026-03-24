@@ -64,3 +64,6 @@ jobs:
 
       - name: Actualizar streaks
         run: python src/streaks.py
+      
+      - name: Analizar trades
+        run: python src/trades.py
