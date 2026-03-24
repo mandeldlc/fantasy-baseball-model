@@ -36,14 +36,14 @@
   "opp_pit": {
     "equipo": "A.Rod Gangs",
     "jugadores": 10,
-    "ERA": 3.95,
-    "xERA": 3.62,
-    "Ks": 126.6,
-    "xwOBA": 0.295,
-    "EV_against": 89.4
+    "ERA": 3.83,
+    "xERA": 3.67,
+    "Ks": 136.2,
+    "xwOBA": 0.297,
+    "EV_against": 89.6
   },
-  "prob_ganar": 50.4,
-  "prob_perder": 49.6,
-  "odds_ganar": "-102",
-  "odds_perder": "+102"
+  "prob_ganar": 50.0,
+  "prob_perder": 50.0,
+  "odds_ganar": "-100",
+  "odds_perder": "-100"
 }
