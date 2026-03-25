@@ -21,6 +21,11 @@ waivers_bat = pd.read_csv('data/waivers_bateadores.csv')
 waivers_sp = pd.read_csv('data/waivers_sp.csv')
 waivers_rp = pd.read_csv('data/waivers_rp.csv')
 
+# Excluir jugadores NA
+waivers_bat = waivers_bat[waivers_bat['Name'].notna()]
+waivers_sp = waivers_sp[waivers_sp['Name'].notna()]
+waivers_rp = waivers_rp[waivers_rp['Name'].notna()]
+
 # ================================
 # ALERTAS BATEADORES
 # ================================

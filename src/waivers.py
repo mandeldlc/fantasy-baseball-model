@@ -9,7 +9,7 @@ import os
 load_dotenv()
 
 # ================================
-# OBTENER JUGADORES TOMADOS EN LA LIGA
+# OBTENER JUGADORES TOMADOS Y SU STATUS
 # ================================
 def get_jugadores_tomados():
     print("Conectando a Yahoo para ver jugadores tomados...")
@@ -35,6 +35,37 @@ def get_jugadores_tomados():
 
     print(f"✅ Jugadores tomados en la liga: {len(tomados)}")
     return tomados
+
+def get_jugadores_status():
+    """Obtener status de jugadores libres desde Yahoo"""
+    print("Obteniendo status de jugadores libres...")
+    query = YahooFantasySportsQuery(
+        league_id="31891",
+        game_code="mlb",
+        game_id=469,
+        yahoo_consumer_key=os.getenv('YAHOO_CLIENT_ID'),
+        yahoo_consumer_secret=os.getenv('YAHOO_CLIENT_SECRET'),
+        yahoo_access_token_json=None,
+        env_file_location=Path("."),
+        save_token_data_to_env_file=True
+    )
+
+    status_map = {}
+    try:
+        # Obtener jugadores libres desde Yahoo
+        free_agents = query.get_league_players(player_count=500)
+        for player in free_agents:
+            try:
+                nombre = player.name.full
+                status = player.status if player.status else 'active'
+                status_map[nombre] = status
+            except:
+                continue
+    except Exception as e:
+        print(f"  ⚠️ Error obteniendo status: {e}")
+
+    print(f"  ✅ Status obtenidos: {len(status_map)}")
+    return status_map
 
 # ================================
 # NORMALIZAR NOMBRES
@@ -106,29 +137,45 @@ print(f"\nJugadores realmente libres en tu liga:")
 print(f"  Bateadores: {len(libres_bateo)}")
 print(f"  Pitchers: {len(libres_pitcheo)}")
 
-# Verificar Ohtani
-ohtani_check = libres_bateo[libres_bateo['Name'].str.contains('Ohtani', case=False)]
-if len(ohtani_check) > 0:
-    print(f"\n⚠️  Ohtani sigue apareciendo")
-else:
-    print("\n✅ Ohtani correctamente excluido")
+# ================================
+# OBTENER STATUS Y FILTRAR NA/IL
+# ================================
+status_map = get_jugadores_status()
+
+def get_status(nombre):
+    return status_map.get(nombre, 'active')
+
+libres_bateo['yahoo_status'] = libres_bateo['Name'].apply(get_status)
+libres_pitcheo['yahoo_status'] = libres_pitcheo['Name'].apply(get_status)
+
+# Excluir jugadores inactivos
+STATUS_EXCLUIR = ['NA', 'IL10', 'IL15', 'IL60', 'IL7', 'NA-DL']
+libres_bateo = libres_bateo[~libres_bateo['yahoo_status'].isin(STATUS_EXCLUIR)].copy()
+libres_pitcheo = libres_pitcheo[~libres_pitcheo['yahoo_status'].isin(STATUS_EXCLUIR)].copy()
+
+print(f"\nDespués de excluir NA/IL:")
+print(f"  Bateadores activos: {len(libres_bateo)}")
+print(f"  Pitchers activos: {len(libres_pitcheo)}")
 
 # ================================
 # FILTRAR ACTIVOS EN GRANDES LIGAS
 # ================================
 print("\nFiltrando jugadores activos...")
 
-# Bateadores activos: PA >= 30, average real, exit velocity válida
 libres_bateo = libres_bateo[
     (libres_bateo['pa'] >= 30) &
     (libres_bateo['batting_avg'] > 0) &
-    (libres_bateo['exit_velocity_avg'] > 80)
+    (libres_bateo['batting_avg'].notna()) &
+    (libres_bateo['exit_velocity_avg'] > 80) &
+    (libres_bateo['woba'].notna()) &
+    (libres_bateo['xwoba'].notna())
 ].copy()
 
-# Pitchers activos: ERA <= 15, al menos 1 juego
 libres_pitcheo = libres_pitcheo[
     (libres_pitcheo['p_era'] <= 15) &
-    (libres_pitcheo['p_game'] >= 1)
+    (libres_pitcheo['p_era'].notna()) &
+    (libres_pitcheo['p_game'] >= 1) &
+    (libres_pitcheo['xera'].notna())
 ].copy()
 
 print(f"  Bateadores activos libres: {len(libres_bateo)}")
@@ -149,7 +196,6 @@ libres_bateo['breakout_score'] += libres_bateo['woba'] * 20
 # ================================
 # SCORE BREAKOUT PITCHERS
 # ================================
-# Calcular WHIP
 todos_pitcheo['p_whip'] = ((todos_pitcheo['p_walk'] + todos_pitcheo['hit']) / todos_pitcheo['p_formatted_ip']).round(3)
 libres_pitcheo['diff_xera'] = libres_pitcheo['p_era'] - libres_pitcheo['xera']
 libres_pitcheo['breakout_score'] = 0
@@ -180,9 +226,7 @@ print(f"RP libres: {len(rp_libres)}")
 print("\n" + "=" * 70)
 print("BATEADORES ACTIVOS EN AGENCIA LIBRE")
 print("=" * 70)
-print(f"{'Jugador':<22} {'PA':>4} {'HR':>4} {'wOBA':>6} {'xwOBA':>6} {'xBA':>6} {'EV':>6} {'BABIP':>6} {'Score':>7}")
-print("-" * 70)
-for _, r in libres_bateo.sort_values('breakout_score', ascending=False).iterrows():
+for _, r in libres_bateo.sort_values('breakout_score', ascending=False).head(20).iterrows():
     diff = r['diff_xwoba']
     arrow = "📈" if diff > 0.020 else "➡️ "
     print(f"{arrow} {r['Name']:<20} {r['pa']:>4.0f} {r['home_run']:>4.0f} "
@@ -192,7 +236,7 @@ for _, r in libres_bateo.sort_values('breakout_score', ascending=False).iterrows
 print("\n" + "=" * 70)
 print("SP ACTIVOS EN AGENCIA LIBRE")
 print("=" * 70)
-for _, r in sp_libres.iterrows():
+for _, r in sp_libres.head(20).iterrows():
     arrow = "📈" if r['diff_xera'] > 0.30 else "➡️ "
     print(f"{arrow} {r['Name']:<20} ERA:{r['p_era']:>5.2f} xERA:{r['xera']:>6.2f} "
           f"Ks:{r['p_strikeout']:>4.0f} Score:{r['breakout_score']:>7.1f}")
@@ -200,7 +244,7 @@ for _, r in sp_libres.iterrows():
 print("\n" + "=" * 70)
 print("RP ACTIVOS EN AGENCIA LIBRE")
 print("=" * 70)
-for _, r in rp_libres.iterrows():
+for _, r in rp_libres.head(20).iterrows():
     arrow = "📈" if r['diff_xera'] > 0.30 else "➡️ "
     print(f"{arrow} {r['Name']:<20} ERA:{r['p_era']:>5.2f} xERA:{r['xera']:>6.2f} "
           f"SV:{r['p_save']:>3.0f} Ks:{r['p_strikeout']:>4.0f} Score:{r['breakout_score']:>7.1f}")
