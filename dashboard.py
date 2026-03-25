@@ -148,6 +148,13 @@ def load_alertas():
         return bat, pit
     except:
         return None, None
+    
+@st.cache_data(ttl=3600)
+def load_closers():
+    try:
+        return pd.read_csv('data/closers.csv')
+    except:
+        return None
 
 bateo, pitcheo, pred_bat, pred_pit = load_data()
 
@@ -230,10 +237,10 @@ st.divider()
 # ================================
 # TABS
 # ================================
-tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11, tab12 = st.tabs([
+tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11, tab12, tab13 = st.tabs([
     "🏏 Bateadores", "⚾ Pitchers", "🔮 Predicciones 2026",
     "⚠️ Alertas", "🔥 Waivers", "📅 Proyección Semanal",
-    "⚔️ Matchup", "📊 Historial", "🔥 Streaks", "🔄 Trades", "📆 Schedule SP", "💥 Explosión"
+    "⚔️ Matchup", "📊 Historial", "🔥 Streaks", "🔄 Trades", "📆 Schedule SP", "💥 Explosión", "🔒 Closers"
 ])
 # TAB 1 - BATEADORES
 with tab1:
@@ -871,3 +878,43 @@ with tab12:
                             st.metric("xERA", r['xERA'])
                         with col3:
                             st.metric("EV permitida", r['EV'])
+
+# TAB 13 - CLOSERS
+with tab13:
+    st.subheader("🔒 Closers Confirmados en Waivers")
+    st.caption("RP con historial de saves — los SV son escasos, agarra los mejores")
+
+    closers = load_closers()
+
+    if closers is None or len(closers) == 0:
+        st.warning("Corre primero: python src/closers.py")
+    else:
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            elite = len(closers[closers['SV_2025'] >= 20])
+            st.metric("🔒 Closers élite", elite, "20+ SV 2025")
+        with col2:
+            confirmados = len(closers[closers['SV_2025'] >= 10])
+            st.metric("✅ Closers confirmados", confirmados, "10+ SV 2025")
+        with col3:
+            oportunidades = len(closers[closers['SV_2025'] >= 3])
+            st.metric("👀 Con oportunidades", oportunidades, "3+ SV 2025")
+
+        st.divider()
+
+        st.dataframe(
+            closers[['Name', 'SV_2025', 'SV_2024', 'ERA', 'xERA', 'xwOBA', 'Closer_Score', 'Tipo']].rename(columns={
+                'SV_2025': 'SV 25',
+                'SV_2024': 'SV 24',
+                'Closer_Score': 'Score',
+                'Tipo': 'Detalle'
+            }),
+            hide_index=True,
+            height=500
+        )
+
+        st.divider()
+        st.subheader("⚡ Agarra ahora")
+        top_closers = closers[closers['SV_2025'] >= 10].head(5)
+        for _, r in top_closers.iterrows():
+            st.success(f"🔒 **{r['Name']}** — {r['SV_2025']:.0f} SV 2025 | ERA {r['ERA']:.2f} | xERA {r['xERA']:.2f}")

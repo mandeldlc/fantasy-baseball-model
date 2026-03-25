@@ -69,7 +69,9 @@ for _, row in waivers_rp.iterrows():
         closer_score += 2
         tipo.append(f"xERA élite {xera_2025:.2f}")
 
-    if closer_score >= 2:
+    # Solo incluir si tiene saves reales o historial confirmado
+    tiene_saves = sv_2025 >= 3 or sv_2024 >= 10
+    if closer_score >= 2 and tiene_saves:
         closers.append({
             'Name': nombre,
             'SV_2025': sv_2025,
