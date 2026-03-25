@@ -130,6 +130,24 @@ def load_trades():
         return pd.read_csv('data/trades_sugeridos.csv')
     except:
         return None
+    
+@st.cache_data(ttl=3600)
+def load_schedule():
+    try:
+        waivers = pd.read_csv('data/schedule_waivers_sp.csv')
+        roster = pd.read_csv('data/schedule_roster.csv')
+        return waivers, roster
+    except:
+        return None, None
+    
+@st.cache_data(ttl=3600)
+def load_alertas():
+    try:
+        bat = pd.read_csv('data/alertas_explosion_bat.csv')
+        pit = pd.read_csv('data/alertas_explosion_pit.csv')
+        return bat, pit
+    except:
+        return None, None
 
 bateo, pitcheo, pred_bat, pred_pit = load_data()
 
@@ -212,11 +230,11 @@ st.divider()
 # ================================
 # TABS
 # ================================
-tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10 = st.tabs([
+tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11, tab12 = st.tabs([
     "🏏 Bateadores", "⚾ Pitchers", "🔮 Predicciones 2026",
-    "⚠️ Alertas", "🔥 Waivers", "📅 Proyección Semanal", "⚔️ Matchup", "📊 Historial", "🔥 Streaks", "🔄 Trades"
+    "⚠️ Alertas", "🔥 Waivers", "📅 Proyección Semanal",
+    "⚔️ Matchup", "📊 Historial", "🔥 Streaks", "🔄 Trades", "📆 Schedule SP", "💥 Explosión"
 ])
-
 # TAB 1 - BATEADORES
 with tab1:
     st.subheader("Ranking de Bateadores — Semana actual")
@@ -751,3 +769,105 @@ with tab10:
             - Tus fortalezas para ofrecer: `{fortalezas}`
             ---
             """)
+
+# TAB 11 - SCHEDULE SP
+with tab11:
+    st.subheader("📆 Schedule SP — Starts y Favorabilidad")
+    st.caption("Pitchers con doble start y matchups favorables esta semana")
+
+    sched_waivers, sched_roster = load_schedule()
+
+    if sched_waivers is None:
+        st.warning("Corre primero: python src/schedule.py")
+    else:
+        st.markdown("#### 📋 Mis Pitchers esta semana")
+        mis_pit = sched_roster[sched_roster['Pos'].isin(['SP', 'RP', 'P'])]
+        for _, r in mis_pit.iterrows():
+            if r['Starts'] >= 2:
+                st.success(f"⭐ **{r['Name']}** ({r['Pos']}) — {r['Doble_Start']} | Fav: {r['Favorabilidad']} | {r['Oponentes']}")
+            elif r['Starts'] == 1:
+                st.info(f"➡️ **{r['Name']}** ({r['Pos']}) — {r['Doble_Start']} | Fav: {r['Favorabilidad']} | {r['Oponentes']}")
+            else:
+                st.error(f"❌ **{r['Name']}** ({r['Pos']}) — Sin start esta semana")
+
+        st.divider()
+
+        col1, col2 = st.columns(2)
+        with col1:
+            dobles = len(sched_waivers[sched_waivers['Starts'] >= 2])
+            st.metric("SP doble start en waivers", dobles)
+        with col2:
+            simples = len(sched_waivers[sched_waivers['Starts'] == 1])
+            st.metric("SP simple start en waivers", simples)
+
+        st.divider()
+
+        tab_doble, tab_simple = st.tabs(["⭐ Doble Start", "➡️ Simple Start"])
+
+        with tab_doble:
+            dobles_df = sched_waivers[sched_waivers['Starts'] >= 2]
+            if len(dobles_df) == 0:
+                st.info("No hay doble starts anunciados aún — los pitchers probables se anuncian 1-2 días antes")
+            else:
+                st.dataframe(
+                    dobles_df[['Name', 'Doble_Start', 'Favorabilidad', 'ERA', 'xERA', 'Breakout_Score', 'Oponentes']],
+                    hide_index=True, height=400
+                )
+
+        with tab_simple:
+            simples_df = sched_waivers[sched_waivers['Starts'] == 1].head(20)
+            st.dataframe(
+                simples_df[['Name', 'Favorabilidad', 'ERA', 'xERA', 'Breakout_Score', 'Oponentes']],
+                hide_index=True, height=400
+            )
+
+# TAB 12 - ALERTAS EXPLOSION
+with tab12:
+    st.subheader("💥 Jugadores a Punto de Explotar")
+    st.caption("Múltiples señales simultáneas de mala suerte — agarra antes que los demás")
+
+    alertas_bat, alertas_pit = load_alertas()
+
+    if alertas_bat is None:
+        st.warning("Corre primero: python src/alertas_explosion.py")
+    else:
+        col1, col2 = st.columns(2)
+        with col1:
+            st.metric("🏏 Bateadores detectados", len(alertas_bat))
+        with col2:
+            st.metric("⚾ Pitchers detectados", len(alertas_pit))
+
+        st.divider()
+        tab_bat, tab_pit = st.tabs(["🏏 Bateadores", "⚾ Pitchers"])
+
+        with tab_bat:
+            if len(alertas_bat) == 0:
+                st.info("No hay bateadores detectados")
+            else:
+                for _, r in alertas_bat.head(15).iterrows():
+                    with st.expander(f"🔥 **{r['Name']}** — {r['Señales']} señales (Score: {r['Score_Explosion']})"):
+                        st.markdown(f"**Señales:** {r['Detalle']}")
+                        col1, col2, col3, col4 = st.columns(4)
+                        with col1:
+                            st.metric("wOBA", r['wOBA'])
+                        with col2:
+                            st.metric("xwOBA", r['xwOBA'])
+                        with col3:
+                            st.metric("BABIP", r['BABIP'])
+                        with col4:
+                            st.metric("EV", r['EV'])
+
+        with tab_pit:
+            if len(alertas_pit) == 0:
+                st.info("No hay pitchers detectados")
+            else:
+                for _, r in alertas_pit.head(15).iterrows():
+                    with st.expander(f"🔥 **{r['Name']}** — {r['Señales']} señales (Score: {r['Score_Explosion']})"):
+                        st.markdown(f"**Señales:** {r['Detalle']}")
+                        col1, col2, col3 = st.columns(3)
+                        with col1:
+                            st.metric("ERA", r['ERA'])
+                        with col2:
+                            st.metric("xERA", r['xERA'])
+                        with col3:
+                            st.metric("EV permitida", r['EV'])

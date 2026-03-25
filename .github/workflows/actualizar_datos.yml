@@ -63,6 +63,9 @@ jobs:
       - name: Analizar schedule SP
         run: python src/schedule.py
 
+      - name: Alertas de explosion
+        run: python src/alertas_explosion.py
+
       - name: Commit datos actualizados
         run: |
           git config --global user.email "action@github.com"
