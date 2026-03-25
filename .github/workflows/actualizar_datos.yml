@@ -3,7 +3,7 @@ name: Actualizar datos diario
 on:
   schedule:
     - cron: '0 12 * * *'  # 8am hora RD (UTC-4)
-  workflow_dispatch:  # permite correrlo manual también
+  workflow_dispatch:
 
 jobs:
   actualizar:
@@ -48,6 +48,21 @@ jobs:
       - name: Actualizar matchup semanal
         run: python src/matchup.py
 
+      - name: Actualizar historial matchups
+        run: python src/historial.py
+
+      - name: Actualizar streaks
+        run: python src/streaks.py
+
+      - name: Analizar trades
+        run: python src/trades.py
+
+      - name: Actualizar offense por equipo
+        run: python src/team_offense.py
+
+      - name: Analizar schedule SP
+        run: python src/schedule.py
+
       - name: Commit datos actualizados
         run: |
           git config --global user.email "action@github.com"
@@ -55,15 +70,3 @@ jobs:
           git add data/
           git diff --staged --quiet || git commit -m "auto: actualizar datos $(date +'%Y-%m-%d')"
           git push
-
-      - name: Actualizar matchup semanal
-        run: python src/matchup.py
-      
-      - name: Actualizar historial matchups
-        run: python src/historial.py
-
-      - name: Actualizar streaks
-        run: python src/streaks.py
-      
-      - name: Analizar trades
-        run: python src/trades.py
