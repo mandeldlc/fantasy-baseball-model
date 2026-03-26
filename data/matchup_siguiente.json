@@ -27,11 +27,11 @@
   "mis_pit": {
     "equipo": "Dando Tabla",
     "jugadores": 8,
-    "ERA": 3.16,
-    "xERA": 3.76,
-    "Ks": 116.5,
-    "xwOBA": 0.301,
-    "EV_against": 90.6
+    "ERA": 3.31,
+    "xERA": 3.71,
+    "Ks": 114.0,
+    "xwOBA": 0.299,
+    "EV_against": 90.0
   },
   "opp_pit": {
     "equipo": "A.Rod Gangs",
@@ -42,8 +42,8 @@
     "xwOBA": 0.297,
     "EV_against": 89.6
   },
-  "prob_ganar": 50.0,
-  "prob_perder": 50.0,
-  "odds_ganar": "-100",
-  "odds_perder": "-100"
+  "prob_ganar": 49.8,
+  "prob_perder": 50.2,
+  "odds_ganar": "+101",
+  "odds_perder": "-101"
 }

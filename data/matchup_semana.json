@@ -27,11 +27,11 @@
   "mis_pit": {
     "equipo": "Dando Tabla",
     "jugadores": 8,
-    "ERA": 3.16,
-    "xERA": 3.76,
-    "Ks": 116.5,
-    "xwOBA": 0.301,
-    "EV_against": 90.6
+    "ERA": 3.31,
+    "xERA": 3.71,
+    "Ks": 114.0,
+    "xwOBA": 0.299,
+    "EV_against": 90.0
   },
   "opp_pit": {
     "equipo": "EVERYONE'S TERROR",
@@ -42,8 +42,8 @@
     "xwOBA": 0.327,
     "EV_against": 89.1
   },
-  "prob_ganar": 55.4,
-  "prob_perder": 44.6,
-  "odds_ganar": "-124",
-  "odds_perder": "+124"
+  "prob_ganar": 55.1,
+  "prob_perder": 44.9,
+  "odds_ganar": "-123",
+  "odds_perder": "+123"
 }
