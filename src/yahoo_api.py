@@ -3,6 +3,7 @@ from dotenv import load_dotenv
 from pathlib import Path
 import os
 import pandas as pd
+from datetime import date
 
 load_dotenv()
 
@@ -22,17 +23,21 @@ query = YahooFantasySportsQuery(
 
 def get_roster():
     print("Obteniendo tu roster de Yahoo Fantasy...")
-    roster = query.get_team_roster_by_week(team_id=6, chosen_week=1)
-
+    roster = query.get_team_roster_player_info_by_date(team_id=6, chosen_date=str(date.today()))
     jugadores = []
-    for player in roster.players:
-        jugadores.append({
-            'Name': player.name.full,
-            'Pos': player.selected_position.position,
-            'Team': player.editorial_team_abbr,
-            'Status': player.status if player.status else 'active'
-        })
-
+    players = roster.players if hasattr(roster, 'players') else roster
+    for player in players:
+        if hasattr(player, 'player'):
+            player = player.player
+        try:
+            jugadores.append({
+                'Name': player.name.full,
+                'Pos': player.selected_position.position,
+                'Team': player.editorial_team_abbr,
+                'Status': player.status if player.status else 'active'
+            })
+        except Exception as e:
+            print(f"  Error jugador: {e}")
     df = pd.DataFrame(jugadores)
     df.to_csv('data/roster.csv', index=False)
     print(f"✅ Roster actualizado: {len(df)} jugadores")
