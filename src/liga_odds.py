@@ -1,11 +1,14 @@
 from yfpy.query import YahooFantasySportsQuery
 from dotenv import load_dotenv
 from pathlib import Path
+from datetime import date
 import os
 import pandas as pd
 import numpy as np
 
 load_dotenv()
+
+SEASON = date.today().year
 
 query = YahooFantasySportsQuery(
     league_id="31891",
@@ -28,8 +31,12 @@ bateo['Name'] = bateo['first_name'] + ' ' + bateo['last_name']
 pitcheo[['last_name', 'first_name']] = pitcheo['last_name, first_name'].str.split(', ', expand=True)
 pitcheo['Name'] = pitcheo['first_name'] + ' ' + pitcheo['last_name']
 
-bateo_2025 = bateo[bateo['year'] == 2025]
-pitcheo_2025 = pitcheo[pitcheo['year'] == 2025]
+bateo_curr = bateo[bateo['year'] == SEASON]
+pitcheo_curr = pitcheo[pitcheo['year'] == SEASON]
+if len(bateo_curr) < 50:
+    bateo_curr = bateo[bateo['year'] == SEASON - 1]
+if len(pitcheo_curr) < 50:
+    pitcheo_curr = pitcheo[pitcheo['year'] == SEASON - 1]
 
 equipos = []
 for team_id in range(1, 13):
@@ -41,7 +48,7 @@ for team_id in range(1, 13):
         jugadores = [p.name.full for p in roster.players]
 
         # Score bateadores
-        bat_stats = bateo_2025[bateo_2025['Name'].isin(jugadores)]
+        bat_stats = bateo_curr[bateo_curr['Name'].isin(jugadores)]
         bat_score = (
             bat_stats['woba'].mean() * 30 +
             bat_stats['xwoba'].mean() * 20 +
@@ -50,7 +57,7 @@ for team_id in range(1, 13):
         ) if len(bat_stats) > 0 else 0
 
         # Score pitchers
-        pit_stats = pitcheo_2025[pitcheo_2025['Name'].isin(jugadores)]
+        pit_stats = pitcheo_curr[pitcheo_curr['Name'].isin(jugadores)]
         pit_score = (
             (5 - pit_stats['p_era'].mean()) * 5 +
             (5 - pit_stats['xera'].mean()) * 3 +
@@ -66,11 +73,12 @@ for team_id in range(1, 13):
             losses = standings.outcome_totals.losses
             ties = standings.outcome_totals.ties
             total_games = wins + losses + ties
+            # T vale 0.5W
             win_pct = (wins + ties * 0.5) / total_games if total_games > 0 else 0.5
         except:
             wins, losses, ties, win_pct = 0, 0, 0, 0.5
 
-        # Felo score = historial acumulado todas las temporadas
+        # Felo score
         try:
             managers = team.managers
             if isinstance(managers, list):
@@ -81,7 +89,7 @@ for team_id in range(1, 13):
                 manager_obj = managers
             felo_score = int(manager_obj.felo_score) if hasattr(manager_obj, 'felo_score') and manager_obj.felo_score else 600
             manager_name = str(manager_obj.nickname) if hasattr(manager_obj, 'nickname') else 'N/A'
-        except Exception as fe:
+        except:
             felo_score = 600
             manager_name = 'N/A'
 
@@ -101,7 +109,7 @@ for team_id in range(1, 13):
             'felo_score': felo_score,
             'jugadores': len(jugadores)
         })
-        print(f"  ✅ {team_name}: roster={round(roster_score,1)} W-L={wins}-{losses} felo={felo_score}")
+        print(f"  ✅ {team_name}: roster={round(roster_score,1)} W-L-T={wins}-{losses}-{ties} felo={felo_score}")
 
     except Exception as e:
         print(f"  ❌ Equipo {team_id}: {e}")
@@ -110,14 +118,20 @@ df = pd.DataFrame(equipos)
 
 # ================================
 # CALCULAR PROBABILIDADES PONDERADAS
-# 50% roster, 30% record actual, 20% historial felo
+# 50% roster, 30% record W-L-T, 20% historial felo
+# T vale 0.5W en el win_pct
 # ================================
-
 def normalize(series):
     mn, mx = series.min(), series.max()
     if mx == mn:
         return series * 0 + 0.5
     return (series - mn) / (mx - mn)
+
+# Recalcular win_pct con T = 0.5W
+df['win_pct'] = df.apply(
+    lambda r: (r['wins'] + r['ties'] * 0.5) / (r['wins'] + r['losses'] + r['ties'])
+    if (r['wins'] + r['losses'] + r['ties']) > 0 else 0.5, axis=1
+)
 
 df['roster_norm'] = normalize(df['roster_score'])
 df['winpct_norm'] = normalize(df['win_pct'])
@@ -166,12 +180,12 @@ df['rank'] = range(1, len(df) + 1)
 print("\n" + "=" * 75)
 print("PROBABILIDADES DE CAMPEONATO — MODELO COMPLETO")
 print("=" * 75)
-print(f"{'#':>2} {'Equipo':<28} {'Prob%':>6} {'Odds':>6} {'W-L':>6} {'Felo':>5} {'Tend':>5}")
+print(f"{'#':>2} {'Equipo':<28} {'Prob%':>6} {'Odds':>6} {'W-L-T':>7} {'Felo':>5} {'Tend':>5}")
 print("-" * 75)
 for _, r in df.iterrows():
     flag = "🏆" if r['rank'] == 1 else "  "
-    wl = f"{int(r['wins'])}-{int(r['losses'])}"
-    print(f"{flag} {r['rank']:>2}. {r['team_name']:<26} {r['prob_camp']:>5.1f}% {r['odds']:>6} {wl:>6} {int(r['felo_score']):>5} {r['tendencia']:>5}")
+    wlt = f"{int(r['wins'])}-{int(r['losses'])}-{int(r['ties'])}"
+    print(f"{flag} {r['rank']:>2}. {r['team_name']:<26} {r['prob_camp']:>5.1f}% {r['odds']:>6} {wlt:>7} {int(r['felo_score']):>5} {r['tendencia']:>5}")
 
 df.to_csv('data/liga_odds.csv', index=False)
 print("\n✅ Guardado en data/liga_odds.csv")
