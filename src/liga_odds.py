@@ -5,10 +5,13 @@ from datetime import date
 import os
 import pandas as pd
 import numpy as np
+import sys
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from src.blend_utils import get_season, get_curr_data
 
 load_dotenv()
 
-SEASON = date.today().year
+SEASON = get_season()
 
 query = YahooFantasySportsQuery(
     league_id="31891",
@@ -31,12 +34,10 @@ bateo['Name'] = bateo['first_name'] + ' ' + bateo['last_name']
 pitcheo[['last_name', 'first_name']] = pitcheo['last_name, first_name'].str.split(', ', expand=True)
 pitcheo['Name'] = pitcheo['first_name'] + ' ' + pitcheo['last_name']
 
-bateo_curr = bateo[bateo['year'] == SEASON]
-pitcheo_curr = pitcheo[pitcheo['year'] == SEASON]
-if len(bateo_curr) < 50:
-    bateo_curr = bateo[bateo['year'] == SEASON - 1]
-if len(pitcheo_curr) < 50:
-    pitcheo_curr = pitcheo[pitcheo['year'] == SEASON - 1]
+# Usar data actual si hay al menos 1 entrada, sino la anterior
+bateo_curr = get_curr_data(bateo, min_registros=1)
+pitcheo_curr = get_curr_data(pitcheo, min_registros=1)
+print(f"  Usando data: bateo {bateo_curr['year'].iloc[0]}, pitcheo {pitcheo_curr['year'].iloc[0]}")
 
 equipos = []
 for team_id in range(1, 13):
@@ -73,7 +74,6 @@ for team_id in range(1, 13):
             losses = standings.outcome_totals.losses
             ties = standings.outcome_totals.ties
             total_games = wins + losses + ties
-            # T vale 0.5W
             win_pct = (wins + ties * 0.5) / total_games if total_games > 0 else 0.5
         except:
             wins, losses, ties, win_pct = 0, 0, 0, 0.5
@@ -116,18 +116,12 @@ for team_id in range(1, 13):
 
 df = pd.DataFrame(equipos)
 
-# ================================
-# CALCULAR PROBABILIDADES PONDERADAS
-# 50% roster, 30% record W-L-T, 20% historial felo
-# T vale 0.5W en el win_pct
-# ================================
 def normalize(series):
     mn, mx = series.min(), series.max()
     if mx == mn:
         return series * 0 + 0.5
     return (series - mn) / (mx - mn)
 
-# Recalcular win_pct con T = 0.5W
 df['win_pct'] = df.apply(
     lambda r: (r['wins'] + r['ties'] * 0.5) / (r['wins'] + r['losses'] + r['ties'])
     if (r['wins'] + r['losses'] + r['ties']) > 0 else 0.5, axis=1
@@ -156,7 +150,6 @@ def prob_to_odds(prob):
 
 df['odds'] = df['prob_camp'].apply(prob_to_odds)
 
-# Proyección inicial
 if os.path.exists('data/liga_odds_inicial.csv'):
     inicial = pd.read_csv('data/liga_odds_inicial.csv')[['team_name', 'prob_camp']]
     inicial.columns = ['team_name', 'prob_inicial']
@@ -173,7 +166,6 @@ df['tendencia'] = df.apply(
     else '➡️', axis=1
 )
 df['diff'] = (df['prob_camp'] - df['prob_inicial']).round(1)
-
 df = df.sort_values('prob_camp', ascending=False).reset_index(drop=True)
 df['rank'] = range(1, len(df) + 1)
 

@@ -19,11 +19,8 @@ W_HIST, W_CURR = get_blend_weights()
 MIN_PA = get_min_pa()
 MIN_IP = get_min_ip()
 
-print(f"Temporada {SEASON} — Blend {int(W_HIST*100)}% hist / {int(W_CURR*100)}% 2026")
+print(f"Temporada {SEASON} — Blend {int(W_HIST*100)}% hist / {int(W_CURR*100)}% {SEASON}")
 
-# ================================
-# FUNCIONES YAHOO
-# ================================
 def get_jugadores_tomados():
     print("Conectando a Yahoo para ver jugadores tomados...")
     query = YahooFantasySportsQuery(
@@ -107,15 +104,14 @@ bat_prev = descargar_bateo(SEASON_PREV, min_pa=50)
 pit_prev = descargar_pitcheo(SEASON_PREV, min_ip=20)
 print(f"  {SEASON_PREV}: {len(bat_prev)} bateadores, {len(pit_prev)} pitchers")
 
-# Blend bateadores — para jugadores con data 2026 combinar stats, para los demás usar 2025
 def blend_bateo(curr, prev):
     curr_names = set(curr['Name_norm']) if len(curr) > 0 else set()
-    # Jugadores con data 2026
     blend_rows = []
     for _, r in prev.iterrows():
         if r['Name_norm'] in curr_names:
             r_curr = curr[curr['Name_norm'] == r['Name_norm']].iloc[0]
             pa_curr = r_curr.get('pa', 0)
+            # Con al menos 1 PA ya aplicamos blend proporcional
             w = min(W_CURR * (pa_curr / 50), W_CURR) if pa_curr < 50 else W_CURR
             w_h = 1 - w
             blended = r.copy()
@@ -125,10 +121,8 @@ def blend_bateo(curr, prev):
             blend_rows.append(blended)
         else:
             blend_rows.append(r)
-    # Agregar jugadores solo en 2026
-    solo_2026 = curr[~curr['Name_norm'].isin(set(prev['Name_norm']))] if len(prev) > 0 else curr
-    result = pd.concat([pd.DataFrame(blend_rows), solo_2026], ignore_index=True)
-    return result
+    solo_curr = curr[~curr['Name_norm'].isin(set(prev['Name_norm']))] if len(prev) > 0 else curr
+    return pd.concat([pd.DataFrame(blend_rows), solo_curr], ignore_index=True)
 
 def blend_pitcheo(curr, prev):
     curr_names = set(curr['Name_norm']) if len(curr) > 0 else set()
@@ -137,6 +131,7 @@ def blend_pitcheo(curr, prev):
         if r['Name_norm'] in curr_names:
             r_curr = curr[curr['Name_norm'] == r['Name_norm']].iloc[0]
             ip_curr = r_curr.get('p_formatted_ip', 0)
+            # Con al menos 1 IP ya aplicamos blend proporcional
             w = min(W_CURR * (ip_curr / 20), W_CURR) if ip_curr < 20 else W_CURR
             w_h = 1 - w
             blended = r.copy()
@@ -146,9 +141,8 @@ def blend_pitcheo(curr, prev):
             blend_rows.append(blended)
         else:
             blend_rows.append(r)
-    solo_2026 = curr[~curr['Name_norm'].isin(set(prev['Name_norm']))] if len(prev) > 0 else curr
-    result = pd.concat([pd.DataFrame(blend_rows), solo_2026], ignore_index=True)
-    return result
+    solo_curr = curr[~curr['Name_norm'].isin(set(prev['Name_norm']))] if len(prev) > 0 else curr
+    return pd.concat([pd.DataFrame(blend_rows), solo_curr], ignore_index=True)
 
 print("\nAplicando blend...")
 todos_bateo = blend_bateo(bat_curr, bat_prev)
@@ -249,7 +243,7 @@ for _, r in sp_libres.head(20).iterrows():
     print(f"{arrow} {r['Name']:<20} ERA:{r['p_era']:>5.2f} xERA:{r['xera']:>6.2f} Ks:{r['p_strikeout']:>4.0f} Score:{r['breakout_score']:>7.1f}")
 
 print("\n" + "=" * 70)
-print(f"RP — {SEASON} (blend {int(W_HIST*100)}/{int(W_CURR*100)})")
+print(f"RP — {SEASON} (blend {int(W_CURR*100)}/{int(W_CURR*100)})")
 print("=" * 70)
 for _, r in rp_libres.head(20).iterrows():
     arrow = "📈" if r['diff_xera'] > 0.30 else "➡️ "

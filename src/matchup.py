@@ -8,12 +8,11 @@ from datetime import date, timedelta
 import json
 import sys
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from src.blend_utils import get_season
+from src.blend_utils import get_season, get_curr_data
 
 load_dotenv()
 
 SEASON = get_season()
-SEASON_PREV = SEASON - 1
 
 query = YahooFantasySportsQuery(
     league_id="31891",
@@ -92,13 +91,9 @@ def procesar_matchup(matchup):
     pitcheo[['last_name', 'first_name']] = pitcheo['last_name, first_name'].str.split(', ', expand=True)
     pitcheo['Name'] = pitcheo['first_name'] + ' ' + pitcheo['last_name']
 
-    # Usar temporada actual si tiene datos, sino la anterior
-    bateo_curr = bateo[bateo['year'] == SEASON]
-    pitcheo_curr = pitcheo[pitcheo['year'] == SEASON]
-    if len(bateo_curr) < 50:
-        bateo_curr = bateo[bateo['year'] == SEASON_PREV]
-    if len(pitcheo_curr) < 50:
-        pitcheo_curr = pitcheo[pitcheo['year'] == SEASON_PREV]
+    # Usar data actual si hay al menos 1 entrada, sino la anterior
+    bateo_curr = get_curr_data(bateo, min_registros=1)
+    pitcheo_curr = get_curr_data(pitcheo, min_registros=1)
 
     mi_roster = pd.read_csv('data/roster.csv')
     mis_jugadores = mi_roster['Name'].tolist()
