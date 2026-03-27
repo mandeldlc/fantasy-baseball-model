@@ -140,7 +140,7 @@ if len(df_closers) > 0:
     for _, r in df_closers.iterrows():
         sv_curr_val = r.get('SV_2025', 0)
         sv_prev_val = r.get('SV_2024', 0)
-        print(f"  🔒 {r['Name']}: SV{SEASON}={sv_curr_val:.0f} SV{SEASON_1}={sv_prev_val:.0f} ERA={r['ERA']:.2f} xERA={r['xERA']:.2f} Score={r['Closer_Score']}")
+        print(f"  🔒 {r['Name']}: SV{SEASON}={float(sv_curr_val):.0f} SV{SEASON_1}={float(sv_prev_val):.0f} ERA={float(r['ERA']):.2f} xERA={float(r['xERA']):.2f} Score={r['Closer_Score']}")
         print(f"     {r['Tipo']}")
 else:
     print("  Ninguno detectado")
