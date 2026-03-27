@@ -1,3 +1,4 @@
+from src.blend_utils import get_season
 from yfpy.query import YahooFantasySportsQuery
 from dotenv import load_dotenv
 from pathlib import Path
@@ -8,7 +9,6 @@ from datetime import date, timedelta
 import json
 import sys
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from src.blend_utils import get_season, get_curr_data
 
 load_dotenv()
 
@@ -92,8 +92,23 @@ def procesar_matchup(matchup):
     pitcheo['Name'] = pitcheo['first_name'] + ' ' + pitcheo['last_name']
 
     # Usar data actual si hay al menos 1 entrada, sino la anterior
-    bateo_curr = get_curr_data(bateo, min_registros=1)
-    pitcheo_curr = get_curr_data(pitcheo, min_registros=1)
+    # Blend: usar año actual si existe para ese jugador, sino el más reciente disponible
+    SEASON_local = get_season()
+    bateo_curr = bateo[bateo['year'] == SEASON_local].copy()
+    pitcheo_curr = pitcheo[pitcheo['year'] == SEASON_local].copy()
+
+    # Para jugadores sin data 2026, agregar su data más reciente
+    bat_nombres_2026 = set(bateo_curr['Name']) if len(bateo_curr) > 0 else set()
+    pit_nombres_2026 = set(pitcheo_curr['Name']) if len(pitcheo_curr) > 0 else set()
+
+    bat_prev = bateo[bateo['year'] == SEASON_local - 1].copy()
+    pit_prev = pitcheo[pitcheo['year'] == SEASON_local - 1].copy()
+
+    bat_faltantes = bat_prev[~bat_prev['Name'].isin(bat_nombres_2026)]
+    pit_faltantes = pit_prev[~pit_prev['Name'].isin(pit_nombres_2026)]
+
+    bateo_curr = pd.concat([bateo_curr, bat_faltantes], ignore_index=True)
+    pitcheo_curr = pd.concat([pitcheo_curr, pit_faltantes], ignore_index=True)
 
     mi_roster = pd.read_csv('data/roster.csv')
     mis_jugadores = mi_roster['Name'].tolist()
