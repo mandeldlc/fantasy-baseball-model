@@ -14,8 +14,11 @@ waivers_rp = pd.read_csv('data/waivers_rp.csv')
 waivers_rp = waivers_rp[waivers_rp['Name'].notna()]
 
 # Stats 2025
-pit_2025 = pitcheo[pitcheo['year'] == 2025]
-pit_2024 = pitcheo[pitcheo['year'] == 2024]
+from datetime import date
+SEASON = date.today().year
+pit_2025 = pitcheo[pitcheo['year'] == SEASON]
+if len(pit_2025) < 50:
+    pit_2025 = pitcheo[pitcheo['year'] == SEASON - 1]
 
 # ================================
 # IDENTIFICAR CLOSERS

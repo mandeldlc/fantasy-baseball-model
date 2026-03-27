@@ -32,8 +32,14 @@ pitcheo['Name'] = pitcheo['first_name'] + ' ' + pitcheo['last_name']
 pitcheo['p_formatted_ip'] = pd.to_numeric(pitcheo['p_formatted_ip'], errors='coerce')
 pitcheo['p_whip'] = ((pitcheo['p_walk'] + pitcheo['hit']) / pitcheo['p_formatted_ip']).round(3)
 
-bateo_2025 = bateo[bateo['year'] == 2025]
-pitcheo_2025 = pitcheo[pitcheo['year'] == 2025]
+from datetime import date
+SEASON = date.today().year
+bateo_2025 = bateo[bateo['year'] == SEASON]
+pitcheo_2025 = pitcheo[pitcheo['year'] == SEASON]
+if len(bateo_2025) < 50:
+    bateo_2025 = bateo[bateo['year'] == SEASON - 1]
+if len(pitcheo_2025) < 50:
+    pitcheo_2025 = pitcheo[pitcheo['year'] == SEASON - 1]
 
 mi_roster = pd.read_csv('data/roster.csv')
 mis_jugadores = mi_roster['Name'].tolist()

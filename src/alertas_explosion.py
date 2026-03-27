@@ -14,8 +14,16 @@ bateo['Name'] = bateo['first_name'] + ' ' + bateo['last_name']
 pitcheo[['last_name', 'first_name']] = pitcheo['last_name, first_name'].str.split(', ', expand=True)
 pitcheo['Name'] = pitcheo['first_name'] + ' ' + pitcheo['last_name']
 
-bateo_2025 = bateo[bateo['year'] == 2025]
-pitcheo_2025 = pitcheo[pitcheo['year'] == 2025]
+from datetime import date
+SEASON = date.today().year
+bateo_curr = bateo[bateo['year'] == SEASON]
+pitcheo_curr = pitcheo[pitcheo['year'] == SEASON]
+if len(bateo_curr) < 50:
+    bateo_curr = bateo[bateo['year'] == SEASON - 1]
+if len(pitcheo_curr) < 50:
+    pitcheo_curr = pitcheo[pitcheo['year'] == SEASON - 1]
+bateo_2025 = bateo_curr
+pitcheo_2025 = pitcheo_curr
 
 waivers_bat = pd.read_csv('data/waivers_bateadores.csv')
 waivers_sp = pd.read_csv('data/waivers_sp.csv')

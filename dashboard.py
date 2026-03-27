@@ -405,6 +405,7 @@ with tab6:
             }), hide_index=True, height=400)
 
 # TAB 7 - MATCHUP
+# TAB 7 - MATCHUP
 with tab7:
     matchup = load_matchup()
     matchup_sig = load_matchup_siguiente()
@@ -480,35 +481,38 @@ with tab7:
     if matchup is None:
         st.warning("Corre primero: python src/matchup.py")
     else:
-        # Construir labels de todos los tabs
-        label_actual = f"⚔️ Sem {matchup['semana']} — vs {matchup['oponente']}"
-        label_siguiente = f"🔭 Sem {matchup_sig['semana'] if matchup_sig else '?'} — vs {matchup_sig['oponente'] if matchup_sig else '?'}"
-
         if todas_semanas:
-            labels_temporada = []
+            # Usar solo matchup_temporada.json — tiene todas las semanas
+            labels = []
             for s in todas_semanas:
                 p = s['prob_ganar']
                 ic = "🟢" if p > 55 else "🔴" if p < 45 else "🟡"
-                labels_temporada.append(f"Sem {s['semana']} {ic} vs {s['oponente'][:15]}")
-            todos_labels = [label_actual, label_siguiente] + labels_temporada
-        else:
-            todos_labels = [label_actual, label_siguiente]
+                sem_num = s['semana']
+                oponente_corto = s['oponente'][:18]
+                # Marcar semana actual y siguiente
+                if s['semana'] == matchup['semana']:
+                    labels.append(f"⚔️ Sem {sem_num} — vs {oponente_corto}")
+                elif matchup_sig and s['semana'] == matchup_sig['semana']:
+                    labels.append(f"🔭 Sem {sem_num} — vs {oponente_corto}")
+                else:
+                    labels.append(f"Sem {sem_num} {ic} vs {oponente_corto}")
 
-        todos_tabs = st.tabs(todos_labels)
+            todos_tabs = st.tabs(labels)
 
-        with todos_tabs[0]:
-            render_matchup(matchup)
-
-        with todos_tabs[1]:
-            if matchup_sig:
-                render_matchup(matchup_sig)
-            else:
-                st.warning("No hay matchup disponible.")
-
-        if todas_semanas:
             for i, m in enumerate(todas_semanas):
-                with todos_tabs[i + 2]:
+                with todos_tabs[i]:
                     render_matchup(m)
+        else:
+            # Fallback si no hay temporada completa
+            tab_actual, tab_siguiente = st.tabs([
+                f"⚔️ Sem {matchup['semana']} — vs {matchup['oponente']}",
+                f"🔭 Sem {matchup_sig['semana'] if matchup_sig else '?'} — vs {matchup_sig['oponente'] if matchup_sig else '?'}"
+            ])
+            with tab_actual:
+                render_matchup(matchup)
+            with tab_siguiente:
+                if matchup_sig:
+                    render_matchup(matchup_sig)
 
 # TAB 8 - HISTORIAL
 with tab8:
