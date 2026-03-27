@@ -60,9 +60,27 @@ features_pit = [f for f in [
 
 features_team = ['woba', 'xwoba', 'exit_velocity', 'barrel_rate', 'hard_hit', 'obp', 'slg']
 
-pit_2025 = pitcheo[pitcheo['year'] == 2025].copy()
-pit_av_2025 = pitcheo_av[pitcheo_av['year'] == 2025].copy()
-team_2025 = team_offense[team_offense['year'] == 2025].copy()
+import sys, os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from src.blend_utils import get_season, get_blend_weights
+
+SEASON = get_season()
+SEASON_PREV = SEASON - 1
+W_HIST, W_CURR = get_blend_weights()
+
+pit_curr = pitcheo[pitcheo['year'] == SEASON].copy()
+pit_prev = pitcheo[pitcheo['year'] == SEASON_PREV].copy()
+pit_av_curr = pitcheo_av[pitcheo_av['year'] == SEASON].copy()
+pit_av_prev = pitcheo_av[pitcheo_av['year'] == SEASON_PREV].copy()
+
+# Blend pitcheo
+pit_2025 = pit_curr if len(pit_curr) >= 50 else pit_prev
+pit_av_2025 = pit_av_curr if len(pit_av_curr) >= 50 else pit_av_prev
+
+# Team offense — usar año más reciente disponible
+year_max = team_offense['year'].max()
+team_2025 = team_offense[team_offense['year'] == year_max].copy()
+print(f"  Usando team offense {year_max}, pitcheo {SEASON if len(pit_curr) >= 50 else SEASON_PREV}")
 
 dataset = []
 for _, match in matchup_hist.iterrows():

@@ -183,8 +183,47 @@ print("=" * 65)
 roster = pd.read_csv('data/roster.csv')
 mis_jugadores = roster['Name'].tolist()
 
-bat_2025 = bateo[bateo['year'] == 2025].copy()
-pit_2025 = pitcheo[pitcheo['year'] == 2025].copy()
+from datetime import date
+import sys, os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from src.blend_utils import get_season, get_blend_weights
+
+SEASON = get_season()
+SEASON_PREV = SEASON - 1
+W_HIST, W_CURR = get_blend_weights()
+
+# Usar blend de temporada actual + anterior
+bat_curr = bateo[bateo['year'] == SEASON].copy()
+bat_prev = bateo[bateo['year'] == SEASON_PREV].copy()
+pit_curr = pitcheo[pitcheo['year'] == SEASON].copy()
+pit_prev = pitcheo[pitcheo['year'] == SEASON_PREV].copy()
+
+# Si hay suficiente data 2026, hacer blend
+def blend_df(curr, prev, stat_cols):
+    if len(curr) < 10:
+        return prev
+    curr_names = set(curr['Name'])
+    rows = []
+    for _, r in prev.iterrows():
+        if r['Name'] in curr_names:
+            r_curr = curr[curr['Name'] == r['Name']].iloc[0]
+            blended = r.copy()
+            for col in stat_cols:
+                if col in r and col in r_curr and pd.notna(r[col]) and pd.notna(r_curr[col]):
+                    blended[col] = round(W_HIST * r[col] + W_CURR * r_curr[col], 3)
+            rows.append(blended)
+        else:
+            rows.append(r)
+    solo_curr = curr[~curr['Name'].isin(set(prev['Name']))]
+    return pd.concat([pd.DataFrame(rows), solo_curr], ignore_index=True)
+
+bat_stat_cols = ['woba', 'xwoba', 'exit_velocity_avg', 'barrel_batted_rate', 'babip', 'on_base_percent', 'slg_percent']
+pit_stat_cols = ['p_era', 'xera', 'xwoba', 'exit_velocity_avg', 'barrel_batted_rate']
+
+bat_2025 = blend_df(bat_curr, bat_prev, bat_stat_cols)
+pit_2025 = blend_df(pit_curr, pit_prev, pit_stat_cols)
+
+print(f"  Data blend {SEASON_PREV}/{SEASON}: {len(bat_2025)} bateadores, {len(pit_2025)} pitchers")
 
 # Bateadores
 mis_bat = bat_2025[bat_2025['Name'].isin(mis_jugadores)].copy()
