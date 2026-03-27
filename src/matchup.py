@@ -6,8 +6,14 @@ import pandas as pd
 import numpy as np
 from datetime import date, timedelta
 import json
+import sys
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from src.blend_utils import get_season
 
 load_dotenv()
+
+SEASON = get_season()
+SEASON_PREV = SEASON - 1
 
 query = YahooFantasySportsQuery(
     league_id="31891",
@@ -85,14 +91,20 @@ def procesar_matchup(matchup):
     bateo['Name'] = bateo['first_name'] + ' ' + bateo['last_name']
     pitcheo[['last_name', 'first_name']] = pitcheo['last_name, first_name'].str.split(', ', expand=True)
     pitcheo['Name'] = pitcheo['first_name'] + ' ' + pitcheo['last_name']
-    bateo_2025 = bateo[bateo['year'] == 2025]
-    pitcheo_2025 = pitcheo[pitcheo['year'] == 2025]
+
+    # Usar temporada actual si tiene datos, sino la anterior
+    bateo_curr = bateo[bateo['year'] == SEASON]
+    pitcheo_curr = pitcheo[pitcheo['year'] == SEASON]
+    if len(bateo_curr) < 50:
+        bateo_curr = bateo[bateo['year'] == SEASON_PREV]
+    if len(pitcheo_curr) < 50:
+        pitcheo_curr = pitcheo[pitcheo['year'] == SEASON_PREV]
 
     mi_roster = pd.read_csv('data/roster.csv')
     mis_jugadores = mi_roster['Name'].tolist()
 
     def calc_bat_stats(jugadores, label):
-        stats = bateo_2025[bateo_2025['Name'].isin(jugadores)]
+        stats = bateo_curr[bateo_curr['Name'].isin(jugadores)]
         if len(stats) == 0:
             return {}
         return {
@@ -107,7 +119,7 @@ def procesar_matchup(matchup):
         }
 
     def calc_pit_stats(jugadores, label):
-        stats = pitcheo_2025[pitcheo_2025['Name'].isin(jugadores)]
+        stats = pitcheo_curr[pitcheo_curr['Name'].isin(jugadores)]
         if len(stats) == 0:
             return {}
         return {
@@ -125,9 +137,6 @@ def procesar_matchup(matchup):
     mis_pit = calc_pit_stats(mis_jugadores, 'Dando Tabla')
     opp_pit = calc_pit_stats(jugadores_oponente, oponente_name)
 
-    # ================================
-    # CALCULAR PROBABILIDAD DE GANAR
-    # ================================
     def calc_team_score(bat, pit):
         score = 0
         score += bat.get('wOBA', 0) * 30

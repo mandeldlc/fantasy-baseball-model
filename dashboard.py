@@ -410,116 +410,105 @@ with tab7:
     matchup_sig = load_matchup_siguiente()
     todas_semanas = load_matchup_temporada()
 
+    def render_matchup(m):
+        st.caption(f"📅 {m['week_start']} — {m['week_end']}")
+        prob_ganar = m.get('prob_ganar', 50)
+        prob_perder = m.get('prob_perder', 50)
+        odds_ganar = m.get('odds_ganar', '+100')
+        odds_perder = m.get('odds_perder', '+100')
+        st.markdown(f"""
+        <div style='border-radius: 12px; padding: 16px; margin: 10px 0; border: 1px solid #333'>
+            <div style='display: flex; justify-content: space-between; margin-bottom: 8px'>
+                <span style='font-weight: 700; font-size: 15px'>🏟️ Dando Tabla &nbsp;<span style='color: #1D9E75; font-size: 13px'>{odds_ganar}</span></span>
+                <span style='font-weight: 700; font-size: 15px'><span style='color: #E24B4A; font-size: 13px'>{odds_perder}</span>&nbsp; {m['oponente']} 🏟️</span>
+            </div>
+            <div style='display: flex; border-radius: 8px; overflow: hidden; height: 32px'>
+                <div style='width: {prob_ganar}%; background: #1D9E75; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 14px'>{prob_ganar}%</div>
+                <div style='width: {prob_perder}%; background: #E24B4A; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 14px'>{prob_perder}%</div>
+            </div>
+            <div style='text-align: center; margin-top: 10px; font-size: 13px; opacity: 0.7'>
+                {'🏆 Favorito esta semana' if prob_ganar >= 50 else '⚠️ Underdog esta semana'}
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
+        st.divider()
+        mis_bat = m['mis_bat']
+        opp_bat = m['opp_bat']
+        mis_pit = m['mis_pit']
+        opp_pit = m['opp_pit']
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            ventajas_bat = sum(1 for s in ['HR_avg', 'OPS', 'wOBA', 'xwOBA', 'Barrel%'] if mis_bat.get(s, 0) > opp_bat.get(s, 0))
+            st.metric("Ventajas en bateo", f"{ventajas_bat}/5", "✅ Superior" if ventajas_bat >= 3 else "⚠️ Revisar")
+        with col2:
+            ventajas_pit = sum(1 for s in ['ERA', 'xERA', 'Ks', 'xwOBA'] if (mis_pit.get(s, 0) < opp_pit.get(s, 0) if s in ['ERA', 'xERA', 'xwOBA'] else mis_pit.get(s, 0) > opp_pit.get(s, 0)))
+            st.metric("Ventajas en pitcheo", f"{ventajas_pit}/4", "✅ Superior" if ventajas_pit >= 2 else "⚠️ Revisar")
+        with col3:
+            total_v = ventajas_bat + ventajas_pit
+            st.metric("Ventaja total", f"{total_v}/9", "🏆 Favorito" if total_v >= 5 else "⚠️ Parejo")
+        st.divider()
+        col1, col2 = st.columns(2)
+        with col1:
+            st.markdown("#### 🏏 Comparativo Bateadores")
+            bat_data = [{'Stat': s, 'Dando Tabla': mis_bat.get(s, 0), m['oponente']: opp_bat.get(s, 0),
+                         'Ventaja': "✅ Tú" if mis_bat.get(s, 0) > opp_bat.get(s, 0) else "❌ Ellos"}
+                        for s in ['HR_avg', 'OPS', 'wOBA', 'xwOBA', 'EV', 'Barrel%']]
+            st.dataframe(pd.DataFrame(bat_data), hide_index=True, height=250)
+        with col2:
+            st.markdown("#### ⚾ Comparativo Pitchers")
+            pit_data = []
+            for s in ['ERA', 'xERA', 'Ks', 'xwOBA', 'EV_against']:
+                mi_val = mis_pit.get(s, 0)
+                opp_val = opp_pit.get(s, 0)
+                if s in ['ERA', 'xERA', 'xwOBA', 'EV_against']:
+                    ventaja = "✅ Tú" if mi_val < opp_val else "❌ Ellos"
+                else:
+                    ventaja = "✅ Tú" if mi_val > opp_val else "❌ Ellos"
+                pit_data.append({'Stat': s, 'Dando Tabla': mi_val, m['oponente']: opp_val, 'Ventaja': ventaja})
+            st.dataframe(pd.DataFrame(pit_data), hide_index=True, height=220)
+        st.divider()
+        st.subheader("⚡ Recomendaciones")
+        if ventajas_bat >= 3:
+            st.success("✅ Tu lineup de bateadores es superior — arranca todos tus titulares")
+        else:
+            st.warning("⚠️ Tu bateo está débil — revisa waivers para reforzar")
+        if ventajas_pit >= 2:
+            st.success("✅ Tu pitcheo tiene ventaja — mantén tus SP titulares")
+        else:
+            st.warning("⚠️ Tu pitcheo está en desventaja — busca SP en waivers")
+
     if matchup is None:
         st.warning("Corre primero: python src/matchup.py")
     else:
-        tab_actual, tab_siguiente, tab_temporada = st.tabs([
-            f"⚔️ Semana {matchup['semana']} — vs {matchup['oponente']}",
-            f"🔭 Semana {matchup_sig['semana'] if matchup_sig else '?'} — vs {matchup_sig['oponente'] if matchup_sig else '?'}",
-            "📅 Temporada Completa"
-        ])
+        # Construir labels de todos los tabs
+        label_actual = f"⚔️ Sem {matchup['semana']} — vs {matchup['oponente']}"
+        label_siguiente = f"🔭 Sem {matchup_sig['semana'] if matchup_sig else '?'} — vs {matchup_sig['oponente'] if matchup_sig else '?'}"
 
-        def render_matchup(m):
-            st.caption(f"📅 {m['week_start']} — {m['week_end']}")
-            prob_ganar = m.get('prob_ganar', 50)
-            prob_perder = m.get('prob_perder', 50)
-            odds_ganar = m.get('odds_ganar', '+100')
-            odds_perder = m.get('odds_perder', '+100')
-            st.markdown(f"""
-            <div style='border-radius: 12px; padding: 16px; margin: 10px 0; border: 1px solid #333'>
-                <div style='display: flex; justify-content: space-between; margin-bottom: 8px'>
-                    <span style='font-weight: 700; font-size: 15px'>🏟️ Dando Tabla &nbsp;<span style='color: #1D9E75; font-size: 13px'>{odds_ganar}</span></span>
-                    <span style='font-weight: 700; font-size: 15px'><span style='color: #E24B4A; font-size: 13px'>{odds_perder}</span>&nbsp; {m['oponente']} 🏟️</span>
-                </div>
-                <div style='display: flex; border-radius: 8px; overflow: hidden; height: 32px'>
-                    <div style='width: {prob_ganar}%; background: #1D9E75; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 14px'>{prob_ganar}%</div>
-                    <div style='width: {prob_perder}%; background: #E24B4A; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 14px'>{prob_perder}%</div>
-                </div>
-                <div style='text-align: center; margin-top: 10px; font-size: 13px; opacity: 0.7'>
-                    {'🏆 Favorito esta semana' if prob_ganar >= 50 else '⚠️ Underdog esta semana'}
-                </div>
-            </div>
-            """, unsafe_allow_html=True)
-            st.divider()
-            mis_bat = m['mis_bat']
-            opp_bat = m['opp_bat']
-            mis_pit = m['mis_pit']
-            opp_pit = m['opp_pit']
-            col1, col2, col3 = st.columns(3)
-            with col1:
-                ventajas_bat = sum(1 for s in ['HR_avg', 'OPS', 'wOBA', 'xwOBA', 'Barrel%'] if mis_bat.get(s, 0) > opp_bat.get(s, 0))
-                st.metric("Ventajas en bateo", f"{ventajas_bat}/5", "✅ Superior" if ventajas_bat >= 3 else "⚠️ Revisar")
-            with col2:
-                ventajas_pit = sum(1 for s in ['ERA', 'xERA', 'Ks', 'xwOBA'] if (mis_pit.get(s, 0) < opp_pit.get(s, 0) if s in ['ERA', 'xERA', 'xwOBA'] else mis_pit.get(s, 0) > opp_pit.get(s, 0)))
-                st.metric("Ventajas en pitcheo", f"{ventajas_pit}/4", "✅ Superior" if ventajas_pit >= 2 else "⚠️ Revisar")
-            with col3:
-                total_v = ventajas_bat + ventajas_pit
-                st.metric("Ventaja total", f"{total_v}/9", "🏆 Favorito" if total_v >= 5 else "⚠️ Parejo")
-            st.divider()
-            col1, col2 = st.columns(2)
-            with col1:
-                st.markdown("#### 🏏 Comparativo Bateadores")
-                bat_data = [{'Stat': s, 'Dando Tabla': mis_bat.get(s, 0), m['oponente']: opp_bat.get(s, 0),
-                             'Ventaja': "✅ Tú" if mis_bat.get(s, 0) > opp_bat.get(s, 0) else "❌ Ellos"}
-                            for s in ['HR_avg', 'OPS', 'wOBA', 'xwOBA', 'EV', 'Barrel%']]
-                st.dataframe(pd.DataFrame(bat_data), hide_index=True, height=250)
-            with col2:
-                st.markdown("#### ⚾ Comparativo Pitchers")
-                pit_data = []
-                for s in ['ERA', 'xERA', 'Ks', 'xwOBA', 'EV_against']:
-                    mi_val = mis_pit.get(s, 0)
-                    opp_val = opp_pit.get(s, 0)
-                    if s in ['ERA', 'xERA', 'xwOBA', 'EV_against']:
-                        ventaja = "✅ Tú" if mi_val < opp_val else "❌ Ellos"
-                    else:
-                        ventaja = "✅ Tú" if mi_val > opp_val else "❌ Ellos"
-                    pit_data.append({'Stat': s, 'Dando Tabla': mi_val, m['oponente']: opp_val, 'Ventaja': ventaja})
-                st.dataframe(pd.DataFrame(pit_data), hide_index=True, height=220)
-            st.divider()
-            st.subheader("⚡ Recomendaciones")
-            if ventajas_bat >= 3:
-                st.success("✅ Tu lineup de bateadores es superior — arranca todos tus titulares")
-            else:
-                st.warning("⚠️ Tu bateo está débil — revisa waivers para reforzar")
-            if ventajas_pit >= 2:
-                st.success("✅ Tu pitcheo tiene ventaja — mantén tus SP titulares")
-            else:
-                st.warning("⚠️ Tu pitcheo está en desventaja — busca SP en waivers")
+        if todas_semanas:
+            labels_temporada = []
+            for s in todas_semanas:
+                p = s['prob_ganar']
+                ic = "🟢" if p > 55 else "🔴" if p < 45 else "🟡"
+                labels_temporada.append(f"Sem {s['semana']} {ic} vs {s['oponente'][:15]}")
+            todos_labels = [label_actual, label_siguiente] + labels_temporada
+        else:
+            todos_labels = [label_actual, label_siguiente]
 
-        with tab_actual:
+        todos_tabs = st.tabs(todos_labels)
+
+        with todos_tabs[0]:
             render_matchup(matchup)
 
-        with tab_siguiente:
+        with todos_tabs[1]:
             if matchup_sig:
                 render_matchup(matchup_sig)
             else:
-                st.warning("No hay matchup disponible para la semana siguiente.")
+                st.warning("No hay matchup disponible.")
 
-        with tab_temporada:
-            st.subheader("📅 Schedule Completo — Temporada 2026")
-            if todas_semanas is None:
-                st.warning("Corre primero: python src/matchup.py")
-            else:
-                faciles = sum(1 for s in todas_semanas if s['prob_ganar'] > 55)
-                dificiles = sum(1 for s in todas_semanas if s['prob_ganar'] < 45)
-                parejos = len(todas_semanas) - faciles - dificiles
-                col1, col2, col3, col4 = st.columns(4)
-                with col1: st.metric("Total semanas", len(todas_semanas))
-                with col2: st.metric("🟢 Fáciles", faciles)
-                with col3: st.metric("🟡 Parejos", parejos)
-                with col4: st.metric("🔴 Difíciles", dificiles)
-                st.divider()
-
-                labels = []
-                for s in todas_semanas:
-                    p = s['prob_ganar']
-                    ic = "🟢" if p > 55 else "🔴" if p < 45 else "🟡"
-                    labels.append(f"Sem {s['semana']} {ic}")
-
-                semana_tabs = st.tabs(labels)
-                for tab_s, m in zip(semana_tabs, todas_semanas):
-                    with tab_s:
-                        render_matchup(m)
+        if todas_semanas:
+            for i, m in enumerate(todas_semanas):
+                with todos_tabs[i + 2]:
+                    render_matchup(m)
 
 # TAB 8 - HISTORIAL
 with tab8:
