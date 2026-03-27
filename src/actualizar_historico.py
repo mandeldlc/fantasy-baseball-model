@@ -42,7 +42,8 @@ def descargar_pit(year):
 # AÑOS A ACTUALIZAR
 # Temporada actual + últimas 2 completas por si hay correcciones
 # ================================
-years_to_update = [SEASON - 2, SEASON - 1, SEASON]
+# 3 últimas temporadas completas + actual en progreso
+years_to_update = [SEASON - 3, SEASON - 2, SEASON - 1, SEASON]
 
 print(f"Actualizando histórico para años: {years_to_update}")
 
