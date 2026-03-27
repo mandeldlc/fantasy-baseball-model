@@ -27,10 +27,10 @@
     },
     "mis_pit": {},
     "opp_pit": {},
-    "prob_ganar": 36.5,
-    "prob_perder": 63.5,
-    "odds_ganar": "+174",
-    "odds_perder": "-174"
+    "prob_ganar": 40.0,
+    "prob_perder": 60.0,
+    "odds_ganar": "+150",
+    "odds_perder": "-150"
   },
   {
     "semana": 2,
@@ -60,10 +60,10 @@
     },
     "mis_pit": {},
     "opp_pit": {},
-    "prob_ganar": 55.9,
-    "prob_perder": 44.1,
-    "odds_ganar": "-127",
-    "odds_perder": "+127"
+    "prob_ganar": 53.8,
+    "prob_perder": 46.2,
+    "odds_ganar": "-116",
+    "odds_perder": "+116"
   },
   {
     "semana": 3,
@@ -84,10 +84,10 @@
     "opp_bat": {},
     "mis_pit": {},
     "opp_pit": {},
-    "prob_ganar": 99.6,
-    "prob_perder": 0.4,
-    "odds_ganar": "-24900",
-    "odds_perder": "+24900"
+    "prob_ganar": 41.4,
+    "prob_perder": 58.6,
+    "odds_ganar": "+142",
+    "odds_perder": "-142"
   },
   {
     "semana": 4,
@@ -117,10 +117,10 @@
     },
     "mis_pit": {},
     "opp_pit": {},
-    "prob_ganar": 32.7,
-    "prob_perder": 67.3,
-    "odds_ganar": "+206",
-    "odds_perder": "-206"
+    "prob_ganar": 36.8,
+    "prob_perder": 63.2,
+    "odds_ganar": "+172",
+    "odds_perder": "-172"
   },
   {
     "semana": 5,
@@ -158,10 +158,10 @@
       "xwOBA": 0.31,
       "EV_against": 91.7
     },
-    "prob_ganar": 31.4,
-    "prob_perder": 68.6,
-    "odds_ganar": "+218",
-    "odds_perder": "-218"
+    "prob_ganar": 40.4,
+    "prob_perder": 59.6,
+    "odds_ganar": "+148",
+    "odds_perder": "-148"
   },
   {
     "semana": 6,
@@ -190,10 +190,10 @@
       "xwOBA": 0.375,
       "EV_against": 89.9
     },
-    "prob_ganar": 99.6,
-    "prob_perder": 0.4,
-    "odds_ganar": "-24900",
-    "odds_perder": "+24900"
+    "prob_ganar": 82.4,
+    "prob_perder": 17.6,
+    "odds_ganar": "-468",
+    "odds_perder": "+468"
   },
   {
     "semana": 7,
@@ -223,10 +223,10 @@
     },
     "mis_pit": {},
     "opp_pit": {},
-    "prob_ganar": 38.4,
-    "prob_perder": 61.6,
-    "odds_ganar": "+160",
-    "odds_perder": "-160"
+    "prob_ganar": 41.6,
+    "prob_perder": 58.4,
+    "odds_ganar": "+140",
+    "odds_perder": "-140"
   },
   {
     "semana": 8,
@@ -256,10 +256,10 @@
     },
     "mis_pit": {},
     "opp_pit": {},
-    "prob_ganar": 43.6,
-    "prob_perder": 56.4,
-    "odds_ganar": "+129",
-    "odds_perder": "-129"
+    "prob_ganar": 45.5,
+    "prob_perder": 54.5,
+    "odds_ganar": "+120",
+    "odds_perder": "-120"
   },
   {
     "semana": 9,
@@ -289,10 +289,10 @@
     },
     "mis_pit": {},
     "opp_pit": {},
-    "prob_ganar": 46.4,
-    "prob_perder": 53.6,
-    "odds_ganar": "+116",
-    "odds_perder": "-116"
+    "prob_ganar": 47.5,
+    "prob_perder": 52.5,
+    "odds_ganar": "+111",
+    "odds_perder": "-111"
   },
   {
     "semana": 10,
@@ -322,10 +322,10 @@
     },
     "mis_pit": {},
     "opp_pit": {},
-    "prob_ganar": 42.4,
-    "prob_perder": 57.6,
-    "odds_ganar": "+136",
-    "odds_perder": "-136"
+    "prob_ganar": 44.6,
+    "prob_perder": 55.4,
+    "odds_ganar": "+124",
+    "odds_perder": "-124"
   },
   {
     "semana": 11,
@@ -355,10 +355,10 @@
     },
     "mis_pit": {},
     "opp_pit": {},
-    "prob_ganar": 46.6,
-    "prob_perder": 53.4,
-    "odds_ganar": "+115",
-    "odds_perder": "-115"
+    "prob_ganar": 47.7,
+    "prob_perder": 52.3,
+    "odds_ganar": "+110",
+    "odds_perder": "-110"
   },
   {
     "semana": 12,
@@ -388,10 +388,10 @@
     },
     "mis_pit": {},
     "opp_pit": {},
-    "prob_ganar": 36.5,
-    "prob_perder": 63.5,
-    "odds_ganar": "+174",
-    "odds_perder": "-174"
+    "prob_ganar": 40.0,
+    "prob_perder": 60.0,
+    "odds_ganar": "+150",
+    "odds_perder": "-150"
   },
   {
     "semana": 13,
@@ -421,10 +421,10 @@
     },
     "mis_pit": {},
     "opp_pit": {},
-    "prob_ganar": 55.9,
-    "prob_perder": 44.1,
-    "odds_ganar": "-127",
-    "odds_perder": "+127"
+    "prob_ganar": 53.8,
+    "prob_perder": 46.2,
+    "odds_ganar": "-116",
+    "odds_perder": "+116"
   },
   {
     "semana": 14,
@@ -445,10 +445,10 @@
     "opp_bat": {},
     "mis_pit": {},
     "opp_pit": {},
-    "prob_ganar": 99.6,
-    "prob_perder": 0.4,
-    "odds_ganar": "-24900",
-    "odds_perder": "+24900"
+    "prob_ganar": 41.4,
+    "prob_perder": 58.6,
+    "odds_ganar": "+142",
+    "odds_perder": "-142"
   },
   {
     "semana": 15,
@@ -478,10 +478,10 @@
     },
     "mis_pit": {},
     "opp_pit": {},
-    "prob_ganar": 32.7,
-    "prob_perder": 67.3,
-    "odds_ganar": "+206",
-    "odds_perder": "-206"
+    "prob_ganar": 36.8,
+    "prob_perder": 63.2,
+    "odds_ganar": "+172",
+    "odds_perder": "-172"
   },
   {
     "semana": 16,
@@ -519,10 +519,10 @@
       "xwOBA": 0.31,
       "EV_against": 91.7
     },
-    "prob_ganar": 31.4,
-    "prob_perder": 68.6,
-    "odds_ganar": "+218",
-    "odds_perder": "-218"
+    "prob_ganar": 40.4,
+    "prob_perder": 59.6,
+    "odds_ganar": "+148",
+    "odds_perder": "-148"
   },
   {
     "semana": 17,
@@ -551,10 +551,10 @@
       "xwOBA": 0.375,
       "EV_against": 89.9
     },
-    "prob_ganar": 99.6,
-    "prob_perder": 0.4,
-    "odds_ganar": "-24900",
-    "odds_perder": "+24900"
+    "prob_ganar": 82.4,
+    "prob_perder": 17.6,
+    "odds_ganar": "-468",
+    "odds_perder": "+468"
   },
   {
     "semana": 18,
@@ -584,10 +584,10 @@
     },
     "mis_pit": {},
     "opp_pit": {},
-    "prob_ganar": 38.4,
-    "prob_perder": 61.6,
-    "odds_ganar": "+160",
-    "odds_perder": "-160"
+    "prob_ganar": 41.6,
+    "prob_perder": 58.4,
+    "odds_ganar": "+140",
+    "odds_perder": "-140"
   },
   {
     "semana": 19,
@@ -617,9 +617,9 @@
     },
     "mis_pit": {},
     "opp_pit": {},
-    "prob_ganar": 43.6,
-    "prob_perder": 56.4,
-    "odds_ganar": "+129",
-    "odds_perder": "-129"
+    "prob_ganar": 45.5,
+    "prob_perder": 54.5,
+    "odds_ganar": "+120",
+    "odds_perder": "-120"
   }
 ]

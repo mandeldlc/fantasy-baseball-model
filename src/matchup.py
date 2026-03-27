@@ -134,15 +134,16 @@ def procesar_matchup(matchup):
 
     def calc_team_score(bat, pit):
         score = 0
-        score += bat.get('wOBA', 0) * 30
-        score += bat.get('xwOBA', 0) * 20
-        score += bat.get('HR_avg', 0) * 0.5
-        score += bat.get('Barrel%', 0) * 0.3
-        score += bat.get('EV', 0) * 0.2
-        score += (5 - pit.get('ERA', 5)) * 5
-        score += (5 - pit.get('xERA', 5)) * 3
-        score += pit.get('Ks', 0) * 0.05
-        score += (0.32 - pit.get('xwOBA', 0.32)) * 20
+        # Si no hay stats usar valores promedio de la liga
+        score += bat.get('wOBA', 0.320) * 30
+        score += bat.get('xwOBA', 0.320) * 20
+        score += bat.get('HR_avg', 15) * 0.5
+        score += bat.get('Barrel%', 8) * 0.3
+        score += bat.get('EV', 88) * 0.2
+        score += (5 - pit.get('ERA', 4.0)) * 5
+        score += (5 - pit.get('xERA', 4.0)) * 3
+        score += pit.get('Ks', 100) * 0.05
+        score += (0.32 - pit.get('xwOBA', 0.320)) * 20
         return max(score, 0.1)
 
     mi_score = calc_team_score(mis_bat, mis_pit)

@@ -26,8 +26,8 @@
   },
   "mis_pit": {},
   "opp_pit": {},
-  "prob_ganar": 36.5,
-  "prob_perder": 63.5,
-  "odds_ganar": "+174",
-  "odds_perder": "-174"
+  "prob_ganar": 40.0,
+  "prob_perder": 60.0,
+  "odds_ganar": "+150",
+  "odds_perder": "-150"
 }
