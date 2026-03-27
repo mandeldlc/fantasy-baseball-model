@@ -101,6 +101,14 @@ def load_matchup_siguiente():
         return None
 
 @st.cache_data(ttl=3600)
+def load_matchup_temporada():
+    try:
+        with open('data/matchup_temporada.json', 'r') as f:
+            return json.load(f)
+    except:
+        return None
+
+@st.cache_data(ttl=3600)
 def load_historial():
     try:
         return pd.read_csv('data/historial_matchups.csv')
@@ -146,13 +154,6 @@ def load_closers():
 def load_favorabilidad():
     try:
         return pd.read_csv('data/favorabilidad_semana.csv')
-    except:
-        return None
-
-@st.cache_data(ttl=3600)
-def load_schedule_temporada():
-    try:
-        return pd.read_csv('data/schedule_temporada.csv')
     except:
         return None
 
@@ -407,6 +408,7 @@ with tab6:
 with tab7:
     matchup = load_matchup()
     matchup_sig = load_matchup_siguiente()
+    todas_semanas = load_matchup_temporada()
 
     if matchup is None:
         st.warning("Corre primero: python src/matchup.py")
@@ -467,7 +469,10 @@ with tab7:
                 for s in ['ERA', 'xERA', 'Ks', 'xwOBA', 'EV_against']:
                     mi_val = mis_pit.get(s, 0)
                     opp_val = opp_pit.get(s, 0)
-                    ventaja = "✅ Tú" if mi_val < opp_val else "❌ Ellos" if s in ['ERA', 'xERA', 'xwOBA', 'EV_against'] else "✅ Tú" if mi_val > opp_val else "❌ Ellos"
+                    if s in ['ERA', 'xERA', 'xwOBA', 'EV_against']:
+                        ventaja = "✅ Tú" if mi_val < opp_val else "❌ Ellos"
+                    else:
+                        ventaja = "✅ Tú" if mi_val > opp_val else "❌ Ellos"
                     pit_data.append({'Stat': s, 'Dando Tabla': mi_val, m['oponente']: opp_val, 'Ventaja': ventaja})
                 st.dataframe(pd.DataFrame(pit_data), hide_index=True, height=220)
             st.divider()
@@ -483,53 +488,38 @@ with tab7:
 
         with tab_actual:
             render_matchup(matchup)
+
         with tab_siguiente:
             if matchup_sig:
                 render_matchup(matchup_sig)
             else:
                 st.warning("No hay matchup disponible para la semana siguiente.")
+
         with tab_temporada:
             st.subheader("📅 Schedule Completo — Temporada 2026")
-            schedule_temp = load_schedule_temporada()
-            if schedule_temp is None:
-                st.warning("Corre primero: python src/schedule_temporada.py")
+            if todas_semanas is None:
+                st.warning("Corre primero: python src/matchup.py")
             else:
-                total = len(schedule_temp)
-                faciles = len(schedule_temp[schedule_temp['prob_ganar'] > 55])
-                dificiles = len(schedule_temp[schedule_temp['prob_ganar'] < 45])
-                parejos = total - faciles - dificiles
+                faciles = sum(1 for s in todas_semanas if s['prob_ganar'] > 55)
+                dificiles = sum(1 for s in todas_semanas if s['prob_ganar'] < 45)
+                parejos = len(todas_semanas) - faciles - dificiles
                 col1, col2, col3, col4 = st.columns(4)
-                with col1: st.metric("Total semanas", total)
+                with col1: st.metric("Total semanas", len(todas_semanas))
                 with col2: st.metric("🟢 Fáciles", faciles)
                 with col3: st.metric("🟡 Parejos", parejos)
                 with col4: st.metric("🔴 Difíciles", dificiles)
                 st.divider()
-                for _, r in schedule_temp.iterrows():
-                    semana = int(r['semana'])
-                    oponente = r['oponente']
-                    prob = r['prob_ganar']
-                    inicio = r['week_start']
-                    fin = r['week_end']
-                    status = r['status']
-                    if prob > 55:
-                        icon = "🟢"
-                        color = "success"
-                    elif prob < 45:
-                        icon = "🔴"
-                        color = "error"
-                    else:
-                        icon = "🟡"
-                        color = "warning"
-                    if status == 'postevent':
-                        label = "✅ Jugado"
-                    elif status == 'midevent':
-                        label = "⚔️ En curso"
-                    else:
-                        label = "⏳ Pendiente"
-                    getattr(st, color)(
-                        f"**Semana {semana}** ({inicio} — {fin}) | {icon} vs **{oponente}** | "
-                        f"Prob ganar: {prob}% | {label}"
-                    )
+
+                labels = []
+                for s in todas_semanas:
+                    p = s['prob_ganar']
+                    ic = "🟢" if p > 55 else "🔴" if p < 45 else "🟡"
+                    labels.append(f"Sem {s['semana']} {ic}")
+
+                semana_tabs = st.tabs(labels)
+                for tab_s, m in zip(semana_tabs, todas_semanas):
+                    with tab_s:
+                        render_matchup(m)
 
 # TAB 8 - HISTORIAL
 with tab8:
@@ -574,7 +564,6 @@ with tab9:
             st.divider()
             streak_filter = st.selectbox("Filtrar:", ["Todos", "🔥 HOT", "🥶 COLD", "➡️ NEUTRAL"], key="bat_streak")
             mostrar_bat = streaks_bat[streaks_bat['Streak'] == streak_filter] if streak_filter != "Todos" else streaks_bat
-            # Columnas dinámicas
             cols_bat = [c for c in mostrar_bat.columns if c in ['Name', 'Fuente', 'Diff', 'Streak', 'EV', 'Barrel%'] or 'wOBA' in c or 'xwOBA' in c]
             st.dataframe(mostrar_bat[cols_bat], hide_index=True, height=500)
         with tab_pit:

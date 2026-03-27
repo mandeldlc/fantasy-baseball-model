@@ -206,3 +206,23 @@ if resultado_siguiente:
         json.dump(resultado_siguiente, f, indent=2)
 
 print("\n✅ Guardado en data/matchup_semana.json y data/matchup_siguiente.json")
+
+# ================================
+# PROCESAR TODAS LAS SEMANAS
+# ================================
+print("\nProcesando todas las semanas de la temporada...")
+todas_semanas = []
+
+for m in all_matchups:
+    try:
+        resultado = procesar_matchup(m)
+        if resultado:
+            todas_semanas.append(resultado)
+            print(f"  ✅ Semana {resultado['semana']}: vs {resultado['oponente']} — {resultado['prob_ganar']}%")
+    except Exception as e:
+        print(f"  ❌ Error semana: {e}")
+
+with open('data/matchup_temporada.json', 'w') as f:
+    json.dump(todas_semanas, f, indent=2)
+
+print(f"\n✅ {len(todas_semanas)} semanas guardadas en data/matchup_temporada.json")
