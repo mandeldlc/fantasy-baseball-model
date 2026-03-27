@@ -4,9 +4,12 @@ from io import StringIO
 from yfpy.query import YahooFantasySportsQuery
 from dotenv import load_dotenv
 from pathlib import Path
+from datetime import date
 import os
 
 load_dotenv()
+
+SEASON = date.today().year
 
 # ================================
 # OBTENER JUGADORES TOMADOS Y SU STATUS
@@ -23,7 +26,6 @@ def get_jugadores_tomados():
         env_file_location=Path("."),
         save_token_data_to_env_file=True
     )
-
     tomados = []
     for team_id in range(1, 13):
         try:
@@ -32,12 +34,10 @@ def get_jugadores_tomados():
                 tomados.append(player.name.full)
         except Exception as e:
             print(f"  Error equipo {team_id}: {e}")
-
     print(f"✅ Jugadores tomados en la liga: {len(tomados)}")
     return tomados
 
 def get_jugadores_status():
-    """Obtener status de jugadores libres desde Yahoo"""
     print("Obteniendo status de jugadores libres...")
     query = YahooFantasySportsQuery(
         league_id="31891",
@@ -49,10 +49,8 @@ def get_jugadores_status():
         env_file_location=Path("."),
         save_token_data_to_env_file=True
     )
-
     status_map = {}
     try:
-        # Obtener jugadores libres desde Yahoo
         free_agents = query.get_league_players(player_count=500)
         for player in free_agents:
             try:
@@ -63,13 +61,9 @@ def get_jugadores_status():
                 continue
     except Exception as e:
         print(f"  ⚠️ Error obteniendo status: {e}")
-
     print(f"  ✅ Status obtenidos: {len(status_map)}")
     return status_map
 
-# ================================
-# NORMALIZAR NOMBRES
-# ================================
 def normalizar_nombre(nombre):
     if not isinstance(nombre, str):
         return ""
@@ -83,14 +77,14 @@ def normalizar_nombre(nombre):
     return nombre
 
 # ================================
-# DESCARGAR DATOS MLB 2025
+# DESCARGAR DATOS MLB
 # ================================
-print("Descargando todos los jugadores MLB 2025...")
+print(f"Descargando todos los jugadores MLB {SEASON}...")
 headers = {'User-Agent': 'Mozilla/5.0'}
 
 url_bat = (
     "https://baseballsavant.mlb.com/leaderboard/custom"
-    "?year=2025&type=batter&filter=&min=50"
+    f"?year={SEASON}&type=batter&filter=&min=50"
     "&selections=pa,ab,hit,home_run,r_total_stolen_base,walk,strikeout,"
     "batting_avg,on_base_percent,slg_percent,on_base_plus_slg,isolated_power,babip,"
     "xba,xslg,woba,xwoba,exit_velocity_avg,launch_angle_avg,barrel_batted_rate,"
@@ -102,7 +96,7 @@ todos_bateo = pd.read_csv(StringIO(r.text))
 
 url_pit = (
     "https://baseballsavant.mlb.com/leaderboard/custom"
-    "?year=2025&type=pitcher&filter=&min=20"
+    f"?year={SEASON}&type=pitcher&filter=&min=20"
     "&selections=p_game,p_formatted_ip,p_win,p_loss,p_strikeout,"
     "p_walk,hit,p_era,p_save,xera,xba,xslg,xwoba,"
     "exit_velocity_avg,barrel_batted_rate"
@@ -111,7 +105,6 @@ url_pit = (
 r = requests.get(url_pit, headers=headers)
 todos_pitcheo = pd.read_csv(StringIO(r.text))
 
-# Arreglar nombres
 todos_bateo[['last_name', 'first_name']] = todos_bateo['last_name, first_name'].str.split(', ', expand=True)
 todos_bateo['Name'] = todos_bateo['first_name'] + ' ' + todos_bateo['last_name']
 todos_bateo['Name_norm'] = todos_bateo['Name'].apply(normalizar_nombre)
@@ -148,7 +141,6 @@ def get_status(nombre):
 libres_bateo['yahoo_status'] = libres_bateo['Name'].apply(get_status)
 libres_pitcheo['yahoo_status'] = libres_pitcheo['Name'].apply(get_status)
 
-# Excluir jugadores inactivos
 STATUS_EXCLUIR = ['NA', 'IL10', 'IL15', 'IL60', 'IL7', 'NA-DL']
 libres_bateo = libres_bateo[~libres_bateo['yahoo_status'].isin(STATUS_EXCLUIR)].copy()
 libres_pitcheo = libres_pitcheo[~libres_pitcheo['yahoo_status'].isin(STATUS_EXCLUIR)].copy()
@@ -224,7 +216,7 @@ print(f"RP libres: {len(rp_libres)}")
 # MOSTRAR RESULTADOS
 # ================================
 print("\n" + "=" * 70)
-print("BATEADORES ACTIVOS EN AGENCIA LIBRE")
+print(f"BATEADORES ACTIVOS EN AGENCIA LIBRE — {SEASON}")
 print("=" * 70)
 for _, r in libres_bateo.sort_values('breakout_score', ascending=False).head(20).iterrows():
     diff = r['diff_xwoba']
@@ -234,7 +226,7 @@ for _, r in libres_bateo.sort_values('breakout_score', ascending=False).head(20)
           f"{r['exit_velocity_avg']:>6.1f} {r['babip']:>6.3f} {r['breakout_score']:>7.1f}")
 
 print("\n" + "=" * 70)
-print("SP ACTIVOS EN AGENCIA LIBRE")
+print(f"SP ACTIVOS EN AGENCIA LIBRE — {SEASON}")
 print("=" * 70)
 for _, r in sp_libres.head(20).iterrows():
     arrow = "📈" if r['diff_xera'] > 0.30 else "➡️ "
@@ -242,7 +234,7 @@ for _, r in sp_libres.head(20).iterrows():
           f"Ks:{r['p_strikeout']:>4.0f} Score:{r['breakout_score']:>7.1f}")
 
 print("\n" + "=" * 70)
-print("RP ACTIVOS EN AGENCIA LIBRE")
+print(f"RP ACTIVOS EN AGENCIA LIBRE — {SEASON}")
 print("=" * 70)
 for _, r in rp_libres.head(20).iterrows():
     arrow = "📈" if r['diff_xera'] > 0.30 else "➡️ "

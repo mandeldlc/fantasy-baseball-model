@@ -1,6 +1,9 @@
 import requests
 from bs4 import BeautifulSoup
+from datetime import date
 import pandas as pd
+
+SEASON = date.today().year
 
 TEAM_IDS = {
     109: 'Arizona Diamondbacks',
@@ -49,8 +52,6 @@ def scrape_team_offense(year):
         celdas = fila.find_all(['td', 'th'])
         if len(celdas) < 25:
             continue
-
-        # Obtener team_id del href
         try:
             href = celdas[0].find('a')['href']
             team_id = int(href.split('/team/')[1])
@@ -86,16 +87,16 @@ def scrape_team_offense(year):
             'xslg': get_val(celdas[23]),
             'xwoba': get_val(celdas[24]),
         })
-
     return resultados
 
 # ================================
 # MAIN
 # ================================
-print("Descargando stats ofensivos Statcast por equipo 2022-2025...")
+years = list(range(2022, SEASON + 1))
+print(f"Descargando stats ofensivos Statcast por equipo {years[0]}-{years[-1]}...")
 
 all_data = []
-for year in [2022, 2023, 2024, 2025]:
+for year in years:
     try:
         data = scrape_team_offense(year)
         all_data.extend(data)
@@ -105,7 +106,6 @@ for year in [2022, 2023, 2024, 2025]:
 
 df = pd.DataFrame(all_data)
 
-# Calcular offense score con categorías del fantasy
 df['offense_score'] = (
     df['woba'].fillna(0) * 30 +
     df['xwoba'].fillna(0) * 20 +
@@ -117,7 +117,6 @@ df['offense_score'] = (
     df['slg'].fillna(0) * 10
 ).round(2)
 
-# Normalizar por año
 df['offense_score_norm'] = 50.0
 for year in df['year'].unique():
     mask = df['year'] == year
@@ -132,14 +131,14 @@ df['dificultad'] = df['offense_score_norm'].apply(
 
 df.to_csv('data/team_offense.csv', index=False)
 
-# Mostrar ranking 2025
+year_max = df['year'].max()
 print("\n" + "=" * 75)
-print("RANKING OFENSIVO STATCAST 2025 — Más peligrosos para pitchers")
+print(f"RANKING OFENSIVO STATCAST {year_max} — Más peligrosos para pitchers")
 print("=" * 75)
-df_2025 = df[df['year'] == 2025].sort_values('offense_score_norm', ascending=False)
+df_latest = df[df['year'] == year_max].sort_values('offense_score_norm', ascending=False)
 print(f"{'Equipo':<30} {'wOBA':>6} {'xwOBA':>6} {'EV':>5} {'Barrel%':>7} {'Score':>7} {'Dific':>10}")
 print("-" * 75)
-for _, r in df_2025.iterrows():
+for _, r in df_latest.iterrows():
     print(f"{r['team_name']:<30} {r['woba']:>6.3f} {r['xwoba']:>6.3f} {r['exit_velocity']:>5.1f} {r['barrel_rate']:>7.1f} {r['offense_score_norm']:>7.1f} {r['dificultad']:>10}")
 
 print(f"\n✅ {len(df)} registros guardados en data/team_offense.csv")
