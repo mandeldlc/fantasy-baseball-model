@@ -16,13 +16,13 @@
   },
   "opp_bat": {
     "equipo": "A.Rod Gangs",
-    "jugadores": 11,
-    "HR_avg": 22.8,
-    "OPS": 0.777,
-    "wOBA": 0.335,
+    "jugadores": 12,
+    "HR_avg": 22.9,
+    "OPS": 0.781,
+    "wOBA": 0.336,
     "xwOBA": 0.338,
-    "EV": 90.6,
-    "Barrel%": 12.1
+    "EV": 90.5,
+    "Barrel%": 12.2
   },
   "mis_pit": {
     "equipo": "Dando Tabla",
