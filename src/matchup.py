@@ -1,4 +1,3 @@
-from src.blend_utils import get_season
 from yfpy.query import YahooFantasySportsQuery
 from dotenv import load_dotenv
 from pathlib import Path
@@ -9,6 +8,7 @@ from datetime import date, timedelta
 import json
 import sys
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from src.blend_utils import get_season
 
 load_dotenv()
 
@@ -91,21 +91,18 @@ def procesar_matchup(matchup):
     pitcheo[['last_name', 'first_name']] = pitcheo['last_name, first_name'].str.split(', ', expand=True)
     pitcheo['Name'] = pitcheo['first_name'] + ' ' + pitcheo['last_name']
 
-    # Usar data actual si hay al menos 1 entrada, sino la anterior
-    # Blend: usar año actual si existe para ese jugador, sino el más reciente disponible
-    SEASON_local = get_season()
-    bateo_curr = bateo[bateo['year'] == SEASON_local].copy()
-    pitcheo_curr = pitcheo[pitcheo['year'] == SEASON_local].copy()
+    # Temporada actual — si un jugador no tiene data 2026, usar 2025
+    bateo_curr = bateo[bateo['year'] == SEASON].copy()
+    pitcheo_curr = pitcheo[pitcheo['year'] == SEASON].copy()
 
-    # Para jugadores sin data 2026, agregar su data más reciente
-    bat_nombres_2026 = set(bateo_curr['Name']) if len(bateo_curr) > 0 else set()
-    pit_nombres_2026 = set(pitcheo_curr['Name']) if len(pitcheo_curr) > 0 else set()
+    bat_nombres_curr = set(bateo_curr['Name']) if len(bateo_curr) > 0 else set()
+    pit_nombres_curr = set(pitcheo_curr['Name']) if len(pitcheo_curr) > 0 else set()
 
-    bat_prev = bateo[bateo['year'] == SEASON_local - 1].copy()
-    pit_prev = pitcheo[pitcheo['year'] == SEASON_local - 1].copy()
+    bat_prev = bateo[bateo['year'] == SEASON - 1].copy()
+    pit_prev = pitcheo[pitcheo['year'] == SEASON - 1].copy()
 
-    bat_faltantes = bat_prev[~bat_prev['Name'].isin(bat_nombres_2026)]
-    pit_faltantes = pit_prev[~pit_prev['Name'].isin(pit_nombres_2026)]
+    bat_faltantes = bat_prev[~bat_prev['Name'].isin(bat_nombres_curr)]
+    pit_faltantes = pit_prev[~pit_prev['Name'].isin(pit_nombres_curr)]
 
     bateo_curr = pd.concat([bateo_curr, bat_faltantes], ignore_index=True)
     pitcheo_curr = pd.concat([pitcheo_curr, pit_faltantes], ignore_index=True)
@@ -149,7 +146,6 @@ def procesar_matchup(matchup):
 
     def calc_team_score(bat, pit):
         score = 0
-        # Si no hay stats usar valores promedio de la liga
         score += bat.get('wOBA', 0.320) * 30
         score += bat.get('xwOBA', 0.320) * 20
         score += bat.get('HR_avg', 15) * 0.5

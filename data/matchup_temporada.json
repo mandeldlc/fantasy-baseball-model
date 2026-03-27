@@ -7,30 +7,46 @@
     "week_end": "2026-03-29",
     "mis_bat": {
       "equipo": "Dando Tabla",
-      "jugadores": 1,
-      "HR_avg": 0.0,
-      "OPS": 0.5,
-      "wOBA": 0.261,
-      "xwOBA": 0.228,
-      "EV": 72.8,
-      "Barrel%": 0.0
+      "jugadores": 15,
+      "HR_avg": 18.5,
+      "OPS": 0.831,
+      "wOBA": 0.362,
+      "xwOBA": 0.313,
+      "EV": 88.5,
+      "Barrel%": 8.4
     },
     "opp_bat": {
       "equipo": "EVERYONE'S TERROR",
-      "jugadores": 2,
-      "HR_avg": 0.0,
-      "OPS": 1.125,
-      "wOBA": 0.581,
-      "xwOBA": 0.542,
-      "EV": 93.0,
-      "Barrel%": 0.0
+      "jugadores": 14,
+      "HR_avg": 15.9,
+      "OPS": 0.796,
+      "wOBA": 0.359,
+      "xwOBA": 0.356,
+      "EV": 90.4,
+      "Barrel%": 7.3
     },
-    "mis_pit": {},
-    "opp_pit": {},
-    "prob_ganar": 40.0,
-    "prob_perder": 60.0,
-    "odds_ganar": "+150",
-    "odds_perder": "-150"
+    "mis_pit": {
+      "equipo": "Dando Tabla",
+      "jugadores": 8,
+      "ERA": 3.31,
+      "xERA": 3.71,
+      "Ks": 114.0,
+      "xwOBA": 0.299,
+      "EV_against": 90.0
+    },
+    "opp_pit": {
+      "equipo": "EVERYONE'S TERROR",
+      "jugadores": 7,
+      "ERA": 4.33,
+      "xERA": 4.84,
+      "Ks": 100.6,
+      "xwOBA": 0.327,
+      "EV_against": 89.1
+    },
+    "prob_ganar": 54.3,
+    "prob_perder": 45.7,
+    "odds_ganar": "-119",
+    "odds_perder": "+119"
   },
   {
     "semana": 2,
@@ -40,30 +56,46 @@
     "week_end": "2026-04-05",
     "mis_bat": {
       "equipo": "Dando Tabla",
-      "jugadores": 1,
-      "HR_avg": 0.0,
-      "OPS": 0.5,
-      "wOBA": 0.261,
-      "xwOBA": 0.228,
-      "EV": 72.8,
-      "Barrel%": 0.0
+      "jugadores": 15,
+      "HR_avg": 18.5,
+      "OPS": 0.831,
+      "wOBA": 0.362,
+      "xwOBA": 0.313,
+      "EV": 88.5,
+      "Barrel%": 8.4
     },
     "opp_bat": {
       "equipo": "A.Rod Gangs",
-      "jugadores": 1,
-      "HR_avg": 0.0,
-      "OPS": 0.0,
-      "wOBA": 0.0,
-      "xwOBA": 0.21,
-      "EV": 85.4,
-      "Barrel%": 0.0
+      "jugadores": 11,
+      "HR_avg": 20.1,
+      "OPS": 0.71,
+      "wOBA": 0.305,
+      "xwOBA": 0.327,
+      "EV": 90.3,
+      "Barrel%": 10.9
     },
-    "mis_pit": {},
-    "opp_pit": {},
-    "prob_ganar": 53.8,
-    "prob_perder": 46.2,
-    "odds_ganar": "-116",
-    "odds_perder": "+116"
+    "mis_pit": {
+      "equipo": "Dando Tabla",
+      "jugadores": 8,
+      "ERA": 3.31,
+      "xERA": 3.71,
+      "Ks": 114.0,
+      "xwOBA": 0.299,
+      "EV_against": 90.0
+    },
+    "opp_pit": {
+      "equipo": "A.Rod Gangs",
+      "jugadores": 10,
+      "ERA": 3.83,
+      "xERA": 3.67,
+      "Ks": 136.2,
+      "xwOBA": 0.297,
+      "EV_against": 89.6
+    },
+    "prob_ganar": 50.3,
+    "prob_perder": 49.7,
+    "odds_ganar": "-101",
+    "odds_perder": "+101"
   },
   {
     "semana": 3,
@@ -73,21 +105,46 @@
     "week_end": "2026-04-12",
     "mis_bat": {
       "equipo": "Dando Tabla",
-      "jugadores": 1,
-      "HR_avg": 0.0,
-      "OPS": 0.5,
-      "wOBA": 0.261,
-      "xwOBA": 0.228,
-      "EV": 72.8,
-      "Barrel%": 0.0
+      "jugadores": 15,
+      "HR_avg": 18.5,
+      "OPS": 0.831,
+      "wOBA": 0.362,
+      "xwOBA": 0.313,
+      "EV": 88.5,
+      "Barrel%": 8.4
     },
-    "opp_bat": {},
-    "mis_pit": {},
-    "opp_pit": {},
-    "prob_ganar": 41.4,
-    "prob_perder": 58.6,
-    "odds_ganar": "+142",
-    "odds_perder": "-142"
+    "opp_bat": {
+      "equipo": "B-Strong",
+      "jugadores": 11,
+      "HR_avg": 20.8,
+      "OPS": 0.72,
+      "wOBA": 0.309,
+      "xwOBA": 0.299,
+      "EV": 90.0,
+      "Barrel%": 11.5
+    },
+    "mis_pit": {
+      "equipo": "Dando Tabla",
+      "jugadores": 8,
+      "ERA": 3.31,
+      "xERA": 3.71,
+      "Ks": 114.0,
+      "xwOBA": 0.299,
+      "EV_against": 90.0
+    },
+    "opp_pit": {
+      "equipo": "B-Strong",
+      "jugadores": 10,
+      "ERA": 2.99,
+      "xERA": 3.28,
+      "Ks": 112.8,
+      "xwOBA": 0.281,
+      "EV_against": 89.0
+    },
+    "prob_ganar": 48.6,
+    "prob_perder": 51.4,
+    "odds_ganar": "+106",
+    "odds_perder": "-106"
   },
   {
     "semana": 4,
@@ -97,30 +154,46 @@
     "week_end": "2026-04-19",
     "mis_bat": {
       "equipo": "Dando Tabla",
-      "jugadores": 1,
-      "HR_avg": 0.0,
-      "OPS": 0.5,
-      "wOBA": 0.261,
-      "xwOBA": 0.228,
-      "EV": 72.8,
-      "Barrel%": 0.0
+      "jugadores": 15,
+      "HR_avg": 18.5,
+      "OPS": 0.831,
+      "wOBA": 0.362,
+      "xwOBA": 0.313,
+      "EV": 88.5,
+      "Barrel%": 8.4
     },
     "opp_bat": {
       "equipo": "LOS GORDITOS DAD & JR 2026 MLB",
-      "jugadores": 1,
-      "HR_avg": 0.0,
-      "OPS": 0.8,
-      "wOBA": 0.416,
-      "xwOBA": 0.511,
-      "EV": 89.1,
-      "Barrel%": 50.0
+      "jugadores": 10,
+      "HR_avg": 24.4,
+      "OPS": 0.769,
+      "wOBA": 0.338,
+      "xwOBA": 0.35,
+      "EV": 89.7,
+      "Barrel%": 15.0
     },
-    "mis_pit": {},
-    "opp_pit": {},
-    "prob_ganar": 36.8,
-    "prob_perder": 63.2,
-    "odds_ganar": "+172",
-    "odds_perder": "-172"
+    "mis_pit": {
+      "equipo": "Dando Tabla",
+      "jugadores": 8,
+      "ERA": 3.31,
+      "xERA": 3.71,
+      "Ks": 114.0,
+      "xwOBA": 0.299,
+      "EV_against": 90.0
+    },
+    "opp_pit": {
+      "equipo": "LOS GORDITOS DAD & JR 2026 MLB",
+      "jugadores": 11,
+      "ERA": 3.55,
+      "xERA": 3.31,
+      "Ks": 133.8,
+      "xwOBA": 0.283,
+      "EV_against": 88.7
+    },
+    "prob_ganar": 47.6,
+    "prob_perder": 52.4,
+    "odds_ganar": "+110",
+    "odds_perder": "-110"
   },
   {
     "semana": 5,
@@ -130,38 +203,46 @@
     "week_end": "2026-04-26",
     "mis_bat": {
       "equipo": "Dando Tabla",
-      "jugadores": 1,
-      "HR_avg": 0.0,
-      "OPS": 0.5,
-      "wOBA": 0.261,
-      "xwOBA": 0.228,
-      "EV": 72.8,
-      "Barrel%": 0.0
+      "jugadores": 15,
+      "HR_avg": 18.5,
+      "OPS": 0.831,
+      "wOBA": 0.362,
+      "xwOBA": 0.313,
+      "EV": 88.5,
+      "Barrel%": 8.4
     },
     "opp_bat": {
       "equipo": "De espalda al aro mmg",
-      "jugadores": 1,
-      "HR_avg": 0.0,
-      "OPS": 0.5,
-      "wOBA": 0.261,
-      "xwOBA": 0.283,
-      "EV": 91.0,
-      "Barrel%": 0.0
+      "jugadores": 11,
+      "HR_avg": 19.7,
+      "OPS": 0.752,
+      "wOBA": 0.327,
+      "xwOBA": 0.336,
+      "EV": 90.9,
+      "Barrel%": 11.4
     },
-    "mis_pit": {},
+    "mis_pit": {
+      "equipo": "Dando Tabla",
+      "jugadores": 8,
+      "ERA": 3.31,
+      "xERA": 3.71,
+      "Ks": 114.0,
+      "xwOBA": 0.299,
+      "EV_against": 90.0
+    },
     "opp_pit": {
       "equipo": "De espalda al aro mmg",
-      "jugadores": 1,
-      "ERA": 0.0,
-      "xERA": 4.36,
-      "Ks": 4.0,
-      "xwOBA": 0.31,
-      "EV_against": 91.7
+      "jugadores": 10,
+      "ERA": 2.46,
+      "xERA": 3.42,
+      "Ks": 103.1,
+      "xwOBA": 0.285,
+      "EV_against": 89.1
     },
-    "prob_ganar": 40.4,
-    "prob_perder": 59.6,
-    "odds_ganar": "+148",
-    "odds_perder": "-148"
+    "prob_ganar": 47.7,
+    "prob_perder": 52.3,
+    "odds_ganar": "+110",
+    "odds_perder": "-110"
   },
   {
     "semana": 6,
@@ -171,29 +252,46 @@
     "week_end": "2026-05-03",
     "mis_bat": {
       "equipo": "Dando Tabla",
-      "jugadores": 1,
-      "HR_avg": 0.0,
-      "OPS": 0.5,
-      "wOBA": 0.261,
-      "xwOBA": 0.228,
-      "EV": 72.8,
-      "Barrel%": 0.0
+      "jugadores": 15,
+      "HR_avg": 18.5,
+      "OPS": 0.831,
+      "wOBA": 0.362,
+      "xwOBA": 0.313,
+      "EV": 88.5,
+      "Barrel%": 8.4
     },
-    "opp_bat": {},
-    "mis_pit": {},
+    "opp_bat": {
+      "equipo": "THE PUNISHER X",
+      "jugadores": 11,
+      "HR_avg": 22.6,
+      "OPS": 0.797,
+      "wOBA": 0.341,
+      "xwOBA": 0.337,
+      "EV": 90.3,
+      "Barrel%": 10.1
+    },
+    "mis_pit": {
+      "equipo": "Dando Tabla",
+      "jugadores": 8,
+      "ERA": 3.31,
+      "xERA": 3.71,
+      "Ks": 114.0,
+      "xwOBA": 0.299,
+      "EV_against": 90.0
+    },
     "opp_pit": {
       "equipo": "THE PUNISHER X",
-      "jugadores": 1,
-      "ERA": 10.8,
-      "xERA": 6.73,
-      "Ks": 7.0,
-      "xwOBA": 0.375,
-      "EV_against": 89.9
+      "jugadores": 11,
+      "ERA": 4.43,
+      "xERA": 3.96,
+      "Ks": 106.3,
+      "xwOBA": 0.305,
+      "EV_against": 89.6
     },
-    "prob_ganar": 82.4,
-    "prob_perder": 17.6,
-    "odds_ganar": "-468",
-    "odds_perder": "+468"
+    "prob_ganar": 51.6,
+    "prob_perder": 48.4,
+    "odds_ganar": "-107",
+    "odds_perder": "+107"
   },
   {
     "semana": 7,
@@ -203,30 +301,46 @@
     "week_end": "2026-05-10",
     "mis_bat": {
       "equipo": "Dando Tabla",
-      "jugadores": 1,
-      "HR_avg": 0.0,
-      "OPS": 0.5,
-      "wOBA": 0.261,
-      "xwOBA": 0.228,
-      "EV": 72.8,
-      "Barrel%": 0.0
+      "jugadores": 15,
+      "HR_avg": 18.5,
+      "OPS": 0.831,
+      "wOBA": 0.362,
+      "xwOBA": 0.313,
+      "EV": 88.5,
+      "Barrel%": 8.4
     },
     "opp_bat": {
       "equipo": "San Safari Baseball",
-      "jugadores": 1,
-      "HR_avg": 0.0,
-      "OPS": 0.833,
-      "wOBA": 0.462,
-      "xwOBA": 0.53,
-      "EV": 93.6,
-      "Barrel%": 0.0
+      "jugadores": 10,
+      "HR_avg": 20.7,
+      "OPS": 0.797,
+      "wOBA": 0.354,
+      "xwOBA": 0.363,
+      "EV": 91.3,
+      "Barrel%": 9.8
     },
-    "mis_pit": {},
-    "opp_pit": {},
-    "prob_ganar": 41.6,
-    "prob_perder": 58.4,
-    "odds_ganar": "+140",
-    "odds_perder": "-140"
+    "mis_pit": {
+      "equipo": "Dando Tabla",
+      "jugadores": 8,
+      "ERA": 3.31,
+      "xERA": 3.71,
+      "Ks": 114.0,
+      "xwOBA": 0.299,
+      "EV_against": 90.0
+    },
+    "opp_pit": {
+      "equipo": "San Safari Baseball",
+      "jugadores": 9,
+      "ERA": 3.32,
+      "xERA": 3.61,
+      "Ks": 85.7,
+      "xwOBA": 0.295,
+      "EV_against": 89.6
+    },
+    "prob_ganar": 49.3,
+    "prob_perder": 50.7,
+    "odds_ganar": "+103",
+    "odds_perder": "-103"
   },
   {
     "semana": 8,
@@ -236,30 +350,46 @@
     "week_end": "2026-05-17",
     "mis_bat": {
       "equipo": "Dando Tabla",
-      "jugadores": 1,
-      "HR_avg": 0.0,
-      "OPS": 0.5,
-      "wOBA": 0.261,
-      "xwOBA": 0.228,
-      "EV": 72.8,
-      "Barrel%": 0.0
+      "jugadores": 15,
+      "HR_avg": 18.5,
+      "OPS": 0.831,
+      "wOBA": 0.362,
+      "xwOBA": 0.313,
+      "EV": 88.5,
+      "Barrel%": 8.4
     },
     "opp_bat": {
       "equipo": "Los Inmensos Amos BT",
-      "jugadores": 1,
-      "HR_avg": 0.0,
-      "OPS": 0.65,
-      "wOBA": 0.361,
-      "xwOBA": 0.281,
-      "EV": 92.4,
-      "Barrel%": 0.0
+      "jugadores": 14,
+      "HR_avg": 14.1,
+      "OPS": 0.773,
+      "wOBA": 0.34,
+      "xwOBA": 0.34,
+      "EV": 91.0,
+      "Barrel%": 9.7
     },
-    "mis_pit": {},
-    "opp_pit": {},
-    "prob_ganar": 45.5,
-    "prob_perder": 54.5,
-    "odds_ganar": "+120",
-    "odds_perder": "-120"
+    "mis_pit": {
+      "equipo": "Dando Tabla",
+      "jugadores": 8,
+      "ERA": 3.31,
+      "xERA": 3.71,
+      "Ks": 114.0,
+      "xwOBA": 0.299,
+      "EV_against": 90.0
+    },
+    "opp_pit": {
+      "equipo": "Los Inmensos Amos BT",
+      "jugadores": 10,
+      "ERA": 3.82,
+      "xERA": 3.75,
+      "Ks": 104.9,
+      "xwOBA": 0.301,
+      "EV_against": 89.8
+    },
+    "prob_ganar": 51.8,
+    "prob_perder": 48.2,
+    "odds_ganar": "-107",
+    "odds_perder": "+107"
   },
   {
     "semana": 9,
@@ -269,30 +399,46 @@
     "week_end": "2026-05-24",
     "mis_bat": {
       "equipo": "Dando Tabla",
-      "jugadores": 1,
-      "HR_avg": 0.0,
-      "OPS": 0.5,
-      "wOBA": 0.261,
-      "xwOBA": 0.228,
-      "EV": 72.8,
-      "Barrel%": 0.0
+      "jugadores": 15,
+      "HR_avg": 18.5,
+      "OPS": 0.831,
+      "wOBA": 0.362,
+      "xwOBA": 0.313,
+      "EV": 88.5,
+      "Barrel%": 8.4
     },
     "opp_bat": {
       "equipo": "+ Fe que talento",
-      "jugadores": 1,
-      "HR_avg": 0.0,
-      "OPS": 0.5,
-      "wOBA": 0.261,
-      "xwOBA": 0.355,
-      "EV": 81.3,
-      "Barrel%": 0.0
+      "jugadores": 12,
+      "HR_avg": 17.5,
+      "OPS": 0.735,
+      "wOBA": 0.323,
+      "xwOBA": 0.341,
+      "EV": 90.2,
+      "Barrel%": 10.6
     },
-    "mis_pit": {},
-    "opp_pit": {},
-    "prob_ganar": 47.5,
-    "prob_perder": 52.5,
-    "odds_ganar": "+111",
-    "odds_perder": "-111"
+    "mis_pit": {
+      "equipo": "Dando Tabla",
+      "jugadores": 8,
+      "ERA": 3.31,
+      "xERA": 3.71,
+      "Ks": 114.0,
+      "xwOBA": 0.299,
+      "EV_against": 90.0
+    },
+    "opp_pit": {
+      "equipo": "+ Fe que talento",
+      "jugadores": 11,
+      "ERA": 3.52,
+      "xERA": 3.91,
+      "Ks": 92.9,
+      "xwOBA": 0.303,
+      "EV_against": 89.1
+    },
+    "prob_ganar": 51.1,
+    "prob_perder": 48.9,
+    "odds_ganar": "-104",
+    "odds_perder": "+104"
   },
   {
     "semana": 10,
@@ -302,30 +448,46 @@
     "week_end": "2026-05-31",
     "mis_bat": {
       "equipo": "Dando Tabla",
-      "jugadores": 1,
-      "HR_avg": 0.0,
-      "OPS": 0.5,
-      "wOBA": 0.261,
-      "xwOBA": 0.228,
-      "EV": 72.8,
-      "Barrel%": 0.0
+      "jugadores": 15,
+      "HR_avg": 18.5,
+      "OPS": 0.831,
+      "wOBA": 0.362,
+      "xwOBA": 0.313,
+      "EV": 88.5,
+      "Barrel%": 8.4
     },
     "opp_bat": {
       "equipo": "Team Frank Yankee",
-      "jugadores": 2,
-      "HR_avg": 0.0,
-      "OPS": 0.5,
-      "wOBA": 0.26,
-      "xwOBA": 0.233,
-      "EV": 96.2,
-      "Barrel%": 16.6
+      "jugadores": 14,
+      "HR_avg": 17.5,
+      "OPS": 0.714,
+      "wOBA": 0.315,
+      "xwOBA": 0.309,
+      "EV": 91.0,
+      "Barrel%": 11.4
     },
-    "mis_pit": {},
-    "opp_pit": {},
-    "prob_ganar": 44.6,
-    "prob_perder": 55.4,
-    "odds_ganar": "+124",
-    "odds_perder": "-124"
+    "mis_pit": {
+      "equipo": "Dando Tabla",
+      "jugadores": 8,
+      "ERA": 3.31,
+      "xERA": 3.71,
+      "Ks": 114.0,
+      "xwOBA": 0.299,
+      "EV_against": 90.0
+    },
+    "opp_pit": {
+      "equipo": "Team Frank Yankee",
+      "jugadores": 10,
+      "ERA": 3.04,
+      "xERA": 3.6,
+      "Ks": 132.8,
+      "xwOBA": 0.293,
+      "EV_against": 89.0
+    },
+    "prob_ganar": 49.2,
+    "prob_perder": 50.8,
+    "odds_ganar": "+103",
+    "odds_perder": "-103"
   },
   {
     "semana": 11,
@@ -335,30 +497,46 @@
     "week_end": "2026-06-07",
     "mis_bat": {
       "equipo": "Dando Tabla",
-      "jugadores": 1,
-      "HR_avg": 0.0,
-      "OPS": 0.5,
-      "wOBA": 0.261,
-      "xwOBA": 0.228,
-      "EV": 72.8,
-      "Barrel%": 0.0
+      "jugadores": 15,
+      "HR_avg": 18.5,
+      "OPS": 0.831,
+      "wOBA": 0.362,
+      "xwOBA": 0.313,
+      "EV": 88.5,
+      "Barrel%": 8.4
     },
     "opp_bat": {
       "equipo": "Los Calvoneros unidos",
-      "jugadores": 2,
-      "HR_avg": 0.0,
-      "OPS": 0.325,
-      "wOBA": 0.199,
-      "xwOBA": 0.31,
-      "EV": 93.4,
-      "Barrel%": 0.0
+      "jugadores": 13,
+      "HR_avg": 16.5,
+      "OPS": 0.729,
+      "wOBA": 0.324,
+      "xwOBA": 0.339,
+      "EV": 90.9,
+      "Barrel%": 9.1
     },
-    "mis_pit": {},
-    "opp_pit": {},
-    "prob_ganar": 47.7,
-    "prob_perder": 52.3,
-    "odds_ganar": "+110",
-    "odds_perder": "-110"
+    "mis_pit": {
+      "equipo": "Dando Tabla",
+      "jugadores": 8,
+      "ERA": 3.31,
+      "xERA": 3.71,
+      "Ks": 114.0,
+      "xwOBA": 0.299,
+      "EV_against": 90.0
+    },
+    "opp_pit": {
+      "equipo": "Los Calvoneros unidos",
+      "jugadores": 9,
+      "ERA": 3.19,
+      "xERA": 3.39,
+      "Ks": 133.1,
+      "xwOBA": 0.285,
+      "EV_against": 88.8
+    },
+    "prob_ganar": 49.3,
+    "prob_perder": 50.7,
+    "odds_ganar": "+103",
+    "odds_perder": "-103"
   },
   {
     "semana": 12,
@@ -368,30 +546,46 @@
     "week_end": "2026-06-14",
     "mis_bat": {
       "equipo": "Dando Tabla",
-      "jugadores": 1,
-      "HR_avg": 0.0,
-      "OPS": 0.5,
-      "wOBA": 0.261,
-      "xwOBA": 0.228,
-      "EV": 72.8,
-      "Barrel%": 0.0
+      "jugadores": 15,
+      "HR_avg": 18.5,
+      "OPS": 0.831,
+      "wOBA": 0.362,
+      "xwOBA": 0.313,
+      "EV": 88.5,
+      "Barrel%": 8.4
     },
     "opp_bat": {
       "equipo": "EVERYONE'S TERROR",
-      "jugadores": 2,
-      "HR_avg": 0.0,
-      "OPS": 1.125,
-      "wOBA": 0.581,
-      "xwOBA": 0.542,
-      "EV": 93.0,
-      "Barrel%": 0.0
+      "jugadores": 14,
+      "HR_avg": 15.9,
+      "OPS": 0.796,
+      "wOBA": 0.359,
+      "xwOBA": 0.356,
+      "EV": 90.4,
+      "Barrel%": 7.3
     },
-    "mis_pit": {},
-    "opp_pit": {},
-    "prob_ganar": 40.0,
-    "prob_perder": 60.0,
-    "odds_ganar": "+150",
-    "odds_perder": "-150"
+    "mis_pit": {
+      "equipo": "Dando Tabla",
+      "jugadores": 8,
+      "ERA": 3.31,
+      "xERA": 3.71,
+      "Ks": 114.0,
+      "xwOBA": 0.299,
+      "EV_against": 90.0
+    },
+    "opp_pit": {
+      "equipo": "EVERYONE'S TERROR",
+      "jugadores": 7,
+      "ERA": 4.33,
+      "xERA": 4.84,
+      "Ks": 100.6,
+      "xwOBA": 0.327,
+      "EV_against": 89.1
+    },
+    "prob_ganar": 54.3,
+    "prob_perder": 45.7,
+    "odds_ganar": "-119",
+    "odds_perder": "+119"
   },
   {
     "semana": 13,
@@ -401,30 +595,46 @@
     "week_end": "2026-06-21",
     "mis_bat": {
       "equipo": "Dando Tabla",
-      "jugadores": 1,
-      "HR_avg": 0.0,
-      "OPS": 0.5,
-      "wOBA": 0.261,
-      "xwOBA": 0.228,
-      "EV": 72.8,
-      "Barrel%": 0.0
+      "jugadores": 15,
+      "HR_avg": 18.5,
+      "OPS": 0.831,
+      "wOBA": 0.362,
+      "xwOBA": 0.313,
+      "EV": 88.5,
+      "Barrel%": 8.4
     },
     "opp_bat": {
       "equipo": "A.Rod Gangs",
-      "jugadores": 1,
-      "HR_avg": 0.0,
-      "OPS": 0.0,
-      "wOBA": 0.0,
-      "xwOBA": 0.21,
-      "EV": 85.4,
-      "Barrel%": 0.0
+      "jugadores": 11,
+      "HR_avg": 20.1,
+      "OPS": 0.71,
+      "wOBA": 0.305,
+      "xwOBA": 0.327,
+      "EV": 90.3,
+      "Barrel%": 10.9
     },
-    "mis_pit": {},
-    "opp_pit": {},
-    "prob_ganar": 53.8,
-    "prob_perder": 46.2,
-    "odds_ganar": "-116",
-    "odds_perder": "+116"
+    "mis_pit": {
+      "equipo": "Dando Tabla",
+      "jugadores": 8,
+      "ERA": 3.31,
+      "xERA": 3.71,
+      "Ks": 114.0,
+      "xwOBA": 0.299,
+      "EV_against": 90.0
+    },
+    "opp_pit": {
+      "equipo": "A.Rod Gangs",
+      "jugadores": 10,
+      "ERA": 3.83,
+      "xERA": 3.67,
+      "Ks": 136.2,
+      "xwOBA": 0.297,
+      "EV_against": 89.6
+    },
+    "prob_ganar": 50.3,
+    "prob_perder": 49.7,
+    "odds_ganar": "-101",
+    "odds_perder": "+101"
   },
   {
     "semana": 14,
@@ -434,21 +644,46 @@
     "week_end": "2026-06-28",
     "mis_bat": {
       "equipo": "Dando Tabla",
-      "jugadores": 1,
-      "HR_avg": 0.0,
-      "OPS": 0.5,
-      "wOBA": 0.261,
-      "xwOBA": 0.228,
-      "EV": 72.8,
-      "Barrel%": 0.0
+      "jugadores": 15,
+      "HR_avg": 18.5,
+      "OPS": 0.831,
+      "wOBA": 0.362,
+      "xwOBA": 0.313,
+      "EV": 88.5,
+      "Barrel%": 8.4
     },
-    "opp_bat": {},
-    "mis_pit": {},
-    "opp_pit": {},
-    "prob_ganar": 41.4,
-    "prob_perder": 58.6,
-    "odds_ganar": "+142",
-    "odds_perder": "-142"
+    "opp_bat": {
+      "equipo": "B-Strong",
+      "jugadores": 11,
+      "HR_avg": 20.8,
+      "OPS": 0.72,
+      "wOBA": 0.309,
+      "xwOBA": 0.299,
+      "EV": 90.0,
+      "Barrel%": 11.5
+    },
+    "mis_pit": {
+      "equipo": "Dando Tabla",
+      "jugadores": 8,
+      "ERA": 3.31,
+      "xERA": 3.71,
+      "Ks": 114.0,
+      "xwOBA": 0.299,
+      "EV_against": 90.0
+    },
+    "opp_pit": {
+      "equipo": "B-Strong",
+      "jugadores": 10,
+      "ERA": 2.99,
+      "xERA": 3.28,
+      "Ks": 112.8,
+      "xwOBA": 0.281,
+      "EV_against": 89.0
+    },
+    "prob_ganar": 48.6,
+    "prob_perder": 51.4,
+    "odds_ganar": "+106",
+    "odds_perder": "-106"
   },
   {
     "semana": 15,
@@ -458,30 +693,46 @@
     "week_end": "2026-07-05",
     "mis_bat": {
       "equipo": "Dando Tabla",
-      "jugadores": 1,
-      "HR_avg": 0.0,
-      "OPS": 0.5,
-      "wOBA": 0.261,
-      "xwOBA": 0.228,
-      "EV": 72.8,
-      "Barrel%": 0.0
+      "jugadores": 15,
+      "HR_avg": 18.5,
+      "OPS": 0.831,
+      "wOBA": 0.362,
+      "xwOBA": 0.313,
+      "EV": 88.5,
+      "Barrel%": 8.4
     },
     "opp_bat": {
       "equipo": "LOS GORDITOS DAD & JR 2026 MLB",
-      "jugadores": 1,
-      "HR_avg": 0.0,
-      "OPS": 0.8,
-      "wOBA": 0.416,
-      "xwOBA": 0.511,
-      "EV": 89.1,
-      "Barrel%": 50.0
+      "jugadores": 10,
+      "HR_avg": 24.4,
+      "OPS": 0.769,
+      "wOBA": 0.338,
+      "xwOBA": 0.35,
+      "EV": 89.7,
+      "Barrel%": 15.0
     },
-    "mis_pit": {},
-    "opp_pit": {},
-    "prob_ganar": 36.8,
-    "prob_perder": 63.2,
-    "odds_ganar": "+172",
-    "odds_perder": "-172"
+    "mis_pit": {
+      "equipo": "Dando Tabla",
+      "jugadores": 8,
+      "ERA": 3.31,
+      "xERA": 3.71,
+      "Ks": 114.0,
+      "xwOBA": 0.299,
+      "EV_against": 90.0
+    },
+    "opp_pit": {
+      "equipo": "LOS GORDITOS DAD & JR 2026 MLB",
+      "jugadores": 11,
+      "ERA": 3.55,
+      "xERA": 3.31,
+      "Ks": 133.8,
+      "xwOBA": 0.283,
+      "EV_against": 88.7
+    },
+    "prob_ganar": 47.6,
+    "prob_perder": 52.4,
+    "odds_ganar": "+110",
+    "odds_perder": "-110"
   },
   {
     "semana": 16,
@@ -491,38 +742,46 @@
     "week_end": "2026-07-12",
     "mis_bat": {
       "equipo": "Dando Tabla",
-      "jugadores": 1,
-      "HR_avg": 0.0,
-      "OPS": 0.5,
-      "wOBA": 0.261,
-      "xwOBA": 0.228,
-      "EV": 72.8,
-      "Barrel%": 0.0
+      "jugadores": 15,
+      "HR_avg": 18.5,
+      "OPS": 0.831,
+      "wOBA": 0.362,
+      "xwOBA": 0.313,
+      "EV": 88.5,
+      "Barrel%": 8.4
     },
     "opp_bat": {
       "equipo": "De espalda al aro mmg",
-      "jugadores": 1,
-      "HR_avg": 0.0,
-      "OPS": 0.5,
-      "wOBA": 0.261,
-      "xwOBA": 0.283,
-      "EV": 91.0,
-      "Barrel%": 0.0
+      "jugadores": 11,
+      "HR_avg": 19.7,
+      "OPS": 0.752,
+      "wOBA": 0.327,
+      "xwOBA": 0.336,
+      "EV": 90.9,
+      "Barrel%": 11.4
     },
-    "mis_pit": {},
+    "mis_pit": {
+      "equipo": "Dando Tabla",
+      "jugadores": 8,
+      "ERA": 3.31,
+      "xERA": 3.71,
+      "Ks": 114.0,
+      "xwOBA": 0.299,
+      "EV_against": 90.0
+    },
     "opp_pit": {
       "equipo": "De espalda al aro mmg",
-      "jugadores": 1,
-      "ERA": 0.0,
-      "xERA": 4.36,
-      "Ks": 4.0,
-      "xwOBA": 0.31,
-      "EV_against": 91.7
+      "jugadores": 10,
+      "ERA": 2.46,
+      "xERA": 3.42,
+      "Ks": 103.1,
+      "xwOBA": 0.285,
+      "EV_against": 89.1
     },
-    "prob_ganar": 40.4,
-    "prob_perder": 59.6,
-    "odds_ganar": "+148",
-    "odds_perder": "-148"
+    "prob_ganar": 47.7,
+    "prob_perder": 52.3,
+    "odds_ganar": "+110",
+    "odds_perder": "-110"
   },
   {
     "semana": 17,
@@ -532,29 +791,46 @@
     "week_end": "2026-07-26",
     "mis_bat": {
       "equipo": "Dando Tabla",
-      "jugadores": 1,
-      "HR_avg": 0.0,
-      "OPS": 0.5,
-      "wOBA": 0.261,
-      "xwOBA": 0.228,
-      "EV": 72.8,
-      "Barrel%": 0.0
+      "jugadores": 15,
+      "HR_avg": 18.5,
+      "OPS": 0.831,
+      "wOBA": 0.362,
+      "xwOBA": 0.313,
+      "EV": 88.5,
+      "Barrel%": 8.4
     },
-    "opp_bat": {},
-    "mis_pit": {},
+    "opp_bat": {
+      "equipo": "THE PUNISHER X",
+      "jugadores": 11,
+      "HR_avg": 22.6,
+      "OPS": 0.797,
+      "wOBA": 0.341,
+      "xwOBA": 0.337,
+      "EV": 90.3,
+      "Barrel%": 10.1
+    },
+    "mis_pit": {
+      "equipo": "Dando Tabla",
+      "jugadores": 8,
+      "ERA": 3.31,
+      "xERA": 3.71,
+      "Ks": 114.0,
+      "xwOBA": 0.299,
+      "EV_against": 90.0
+    },
     "opp_pit": {
       "equipo": "THE PUNISHER X",
-      "jugadores": 1,
-      "ERA": 10.8,
-      "xERA": 6.73,
-      "Ks": 7.0,
-      "xwOBA": 0.375,
-      "EV_against": 89.9
+      "jugadores": 11,
+      "ERA": 4.43,
+      "xERA": 3.96,
+      "Ks": 106.3,
+      "xwOBA": 0.305,
+      "EV_against": 89.6
     },
-    "prob_ganar": 82.4,
-    "prob_perder": 17.6,
-    "odds_ganar": "-468",
-    "odds_perder": "+468"
+    "prob_ganar": 51.6,
+    "prob_perder": 48.4,
+    "odds_ganar": "-107",
+    "odds_perder": "+107"
   },
   {
     "semana": 18,
@@ -564,30 +840,46 @@
     "week_end": "2026-08-02",
     "mis_bat": {
       "equipo": "Dando Tabla",
-      "jugadores": 1,
-      "HR_avg": 0.0,
-      "OPS": 0.5,
-      "wOBA": 0.261,
-      "xwOBA": 0.228,
-      "EV": 72.8,
-      "Barrel%": 0.0
+      "jugadores": 15,
+      "HR_avg": 18.5,
+      "OPS": 0.831,
+      "wOBA": 0.362,
+      "xwOBA": 0.313,
+      "EV": 88.5,
+      "Barrel%": 8.4
     },
     "opp_bat": {
       "equipo": "San Safari Baseball",
-      "jugadores": 1,
-      "HR_avg": 0.0,
-      "OPS": 0.833,
-      "wOBA": 0.462,
-      "xwOBA": 0.53,
-      "EV": 93.6,
-      "Barrel%": 0.0
+      "jugadores": 10,
+      "HR_avg": 20.7,
+      "OPS": 0.797,
+      "wOBA": 0.354,
+      "xwOBA": 0.363,
+      "EV": 91.3,
+      "Barrel%": 9.8
     },
-    "mis_pit": {},
-    "opp_pit": {},
-    "prob_ganar": 41.6,
-    "prob_perder": 58.4,
-    "odds_ganar": "+140",
-    "odds_perder": "-140"
+    "mis_pit": {
+      "equipo": "Dando Tabla",
+      "jugadores": 8,
+      "ERA": 3.31,
+      "xERA": 3.71,
+      "Ks": 114.0,
+      "xwOBA": 0.299,
+      "EV_against": 90.0
+    },
+    "opp_pit": {
+      "equipo": "San Safari Baseball",
+      "jugadores": 9,
+      "ERA": 3.32,
+      "xERA": 3.61,
+      "Ks": 85.7,
+      "xwOBA": 0.295,
+      "EV_against": 89.6
+    },
+    "prob_ganar": 49.3,
+    "prob_perder": 50.7,
+    "odds_ganar": "+103",
+    "odds_perder": "-103"
   },
   {
     "semana": 19,
@@ -597,29 +889,45 @@
     "week_end": "2026-08-09",
     "mis_bat": {
       "equipo": "Dando Tabla",
-      "jugadores": 1,
-      "HR_avg": 0.0,
-      "OPS": 0.5,
-      "wOBA": 0.261,
-      "xwOBA": 0.228,
-      "EV": 72.8,
-      "Barrel%": 0.0
+      "jugadores": 15,
+      "HR_avg": 18.5,
+      "OPS": 0.831,
+      "wOBA": 0.362,
+      "xwOBA": 0.313,
+      "EV": 88.5,
+      "Barrel%": 8.4
     },
     "opp_bat": {
       "equipo": "Los Inmensos Amos BT",
-      "jugadores": 1,
-      "HR_avg": 0.0,
-      "OPS": 0.65,
-      "wOBA": 0.361,
-      "xwOBA": 0.281,
-      "EV": 92.4,
-      "Barrel%": 0.0
+      "jugadores": 14,
+      "HR_avg": 14.1,
+      "OPS": 0.773,
+      "wOBA": 0.34,
+      "xwOBA": 0.34,
+      "EV": 91.0,
+      "Barrel%": 9.7
     },
-    "mis_pit": {},
-    "opp_pit": {},
-    "prob_ganar": 45.5,
-    "prob_perder": 54.5,
-    "odds_ganar": "+120",
-    "odds_perder": "-120"
+    "mis_pit": {
+      "equipo": "Dando Tabla",
+      "jugadores": 8,
+      "ERA": 3.31,
+      "xERA": 3.71,
+      "Ks": 114.0,
+      "xwOBA": 0.299,
+      "EV_against": 90.0
+    },
+    "opp_pit": {
+      "equipo": "Los Inmensos Amos BT",
+      "jugadores": 10,
+      "ERA": 3.82,
+      "xERA": 3.75,
+      "Ks": 104.9,
+      "xwOBA": 0.301,
+      "EV_against": 89.8
+    },
+    "prob_ganar": 51.8,
+    "prob_perder": 48.2,
+    "odds_ganar": "-107",
+    "odds_perder": "+107"
   }
 ]
