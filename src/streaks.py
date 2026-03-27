@@ -112,8 +112,12 @@ bat_waivers = calc_streak_bat(jugadores_waivers_bat, 'Waiver')
 pit_roster = calc_streak_pit(mis_jugadores, 'Mi Roster')
 pit_waivers = calc_streak_pit(jugadores_waivers_pit, 'Waiver')
 
-df_bat = pd.DataFrame(bat_roster + bat_waivers).sort_values('Diff', ascending=False)
-df_pit = pd.DataFrame(pit_roster + pit_waivers).sort_values('Diff ERA', ascending=True)
+df_bat = pd.DataFrame(bat_roster + bat_waivers)
+df_pit = pd.DataFrame(pit_roster + pit_waivers)
+if len(df_bat) > 0 and 'Diff' in df_bat.columns:
+    df_bat = df_bat.sort_values('Diff', ascending=False)
+if len(df_pit) > 0 and 'Diff ERA' in df_pit.columns:
+    df_pit = df_pit.sort_values('Diff ERA', ascending=True)
 
 df_bat.to_csv('data/streaks_bat.csv', index=False)
 df_pit.to_csv('data/streaks_pit.csv', index=False)

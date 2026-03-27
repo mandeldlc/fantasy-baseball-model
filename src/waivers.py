@@ -82,9 +82,12 @@ def normalizar_nombre(nombre):
 print(f"Descargando todos los jugadores MLB {SEASON}...")
 headers = {'User-Agent': 'Mozilla/5.0'}
 
+MIN_PA = 10 if SEASON == date.today().year and date.today().month <= 4 else 50
+MIN_IP = 5 if SEASON == date.today().year and date.today().month <= 4 else 20
+
 url_bat = (
     "https://baseballsavant.mlb.com/leaderboard/custom"
-    f"?year={SEASON}&type=batter&filter=&min=50"
+    f"?year={SEASON}&type=batter&filter=&min={MIN_PA}"
     "&selections=pa,ab,hit,home_run,r_total_stolen_base,walk,strikeout,"
     "batting_avg,on_base_percent,slg_percent,on_base_plus_slg,isolated_power,babip,"
     "xba,xslg,woba,xwoba,exit_velocity_avg,launch_angle_avg,barrel_batted_rate,"
@@ -96,7 +99,7 @@ todos_bateo = pd.read_csv(StringIO(r.text))
 
 url_pit = (
     "https://baseballsavant.mlb.com/leaderboard/custom"
-    f"?year={SEASON}&type=pitcher&filter=&min=20"
+    f"?year={SEASON}&type=pitcher&filter=&min={MIN_IP}"
     "&selections=p_game,p_formatted_ip,p_win,p_loss,p_strikeout,"
     "p_walk,hit,p_era,p_save,xera,xba,xslg,xwoba,"
     "exit_velocity_avg,barrel_batted_rate"
@@ -154,8 +157,9 @@ print(f"  Pitchers activos: {len(libres_pitcheo)}")
 # ================================
 print("\nFiltrando jugadores activos...")
 
+MIN_PA_FILTER = 5 if date.today().month <= 4 else 30
 libres_bateo = libres_bateo[
-    (libres_bateo['pa'] >= 30) &
+    (libres_bateo['pa'] >= MIN_PA_FILTER) &
     (libres_bateo['batting_avg'] > 0) &
     (libres_bateo['batting_avg'].notna()) &
     (libres_bateo['exit_velocity_avg'] > 80) &
@@ -163,10 +167,11 @@ libres_bateo = libres_bateo[
     (libres_bateo['xwoba'].notna())
 ].copy()
 
+MIN_GAMES_FILTER = 1 if date.today().month <= 4 else 3
 libres_pitcheo = libres_pitcheo[
     (libres_pitcheo['p_era'] <= 15) &
     (libres_pitcheo['p_era'].notna()) &
-    (libres_pitcheo['p_game'] >= 1) &
+    (libres_pitcheo['p_game'] >= MIN_GAMES_FILTER) &
     (libres_pitcheo['xera'].notna())
 ].copy()
 
