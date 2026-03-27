@@ -1,0 +1,20 @@
+semana,week_start,week_end,oponente,oponente_id,status,is_playoffs,prob_ganar,prob_perder,opp_prob_camp,mi_prob_camp
+1,2026-03-25,2026-03-29,EVERYONE'S TERROR,7,midevent,0,54.5,45.5,2.3,7.3
+2,2026-03-30,2026-04-05,A.Rod Gangs,3,preevent,0,50.0,50.0,9.5,7.3
+3,2026-04-06,2026-04-12,B-Strong,5,preevent,0,48.7,51.3,8.9,7.3
+4,2026-04-13,2026-04-19,LOS GORDITOS DAD & JR 2026 MLB,4,preevent,0,48.4,51.6,9.6,7.3
+5,2026-04-20,2026-04-26,De espalda al aro mmg,12,preevent,0,47.8,52.2,9.9,7.3
+6,2026-04-27,2026-05-03,THE PUNISHER X,11,preevent,0,50.1,49.9,8.0,7.3
+7,2026-05-04,2026-05-10,San Safari Baseball,10,preevent,0,49.6,50.4,10.5,7.3
+8,2026-05-11,2026-05-17,Los Inmensos Amos BT,1,preevent,0,51.7,48.3,7.3,7.3
+9,2026-05-18,2026-05-24,+ Fe que talento,8,preevent,0,51.5,48.5,7.7,7.3
+10,2026-05-25,2026-05-31,Team Frank Yankee,2,preevent,0,47.9,52.1,9.8,7.3
+11,2026-06-01,2026-06-07,Los Calvoneros unidos,9,preevent,0,48.2,51.8,9.3,7.3
+12,2026-06-08,2026-06-14,EVERYONE'S TERROR,7,preevent,0,54.5,45.5,2.3,7.3
+13,2026-06-15,2026-06-21,A.Rod Gangs,3,preevent,0,50.0,50.0,9.5,7.3
+14,2026-06-22,2026-06-28,B-Strong,5,preevent,0,48.7,51.3,8.9,7.3
+15,2026-06-29,2026-07-05,LOS GORDITOS DAD & JR 2026 MLB,4,preevent,0,48.4,51.6,9.6,7.3
+16,2026-07-06,2026-07-12,De espalda al aro mmg,12,preevent,0,47.8,52.2,9.9,7.3
+17,2026-07-13,2026-07-26,THE PUNISHER X,11,preevent,0,50.1,49.9,8.0,7.3
+18,2026-07-27,2026-08-02,San Safari Baseball,10,preevent,0,49.6,50.4,10.5,7.3
+19,2026-08-03,2026-08-09,Los Inmensos Amos BT,1,preevent,0,51.7,48.3,7.3,7.3
