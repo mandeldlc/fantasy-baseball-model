@@ -95,11 +95,26 @@ sp = pd.read_csv('data/waivers_sp.csv')
 rp = pd.read_csv('data/waivers_rp.csv')
 roster = pd.read_csv('data/roster.csv')
 
-top_sp = sp.nlargest(50, 'breakout_score')['Name'].tolist()
-top_rp = rp.nlargest(50, 'breakout_score')['Name'].tolist()
-roster_pit = roster[roster['Pos'].isin(['SP', 'RP', 'P'])]['Name'].tolist()
-
-todos_pitchers = list(set(top_sp + top_rp + roster_pit))
+# Solo pitchers con start esta semana
+try:
+    schedule_waivers = pd.read_csv('data/schedule_waivers_sp.csv')
+    schedule_roster = pd.read_csv('data/schedule_roster.csv')
+    pit_semana = schedule_waivers[schedule_waivers['Starts'] >= 1]['Name'].tolist()
+    pit_roster_semana = schedule_roster[
+        (schedule_roster['Starts'] >= 1) & 
+        (schedule_roster['Pos'].isin(['SP', 'RP', 'P']))
+    ]['Name'].tolist()
+    todos_pitchers = list(set(pit_semana + pit_roster_semana))
+    print(f"Pitchers con start esta semana: {len(todos_pitchers)}")
+except:
+    # Fallback a top 50 SP
+    sp = pd.read_csv('data/waivers_sp.csv')
+    roster = pd.read_csv('data/roster.csv')
+    todos_pitchers = list(set(
+        sp.nlargest(50, 'breakout_score')['Name'].tolist() +
+        roster[roster['Pos'].isin(['SP', 'RP', 'P'])]['Name'].tolist()
+    ))
+    print(f"Fallback — pitchers totales: {len(todos_pitchers)}")
 print(f"Total pitchers a analizar: {len(todos_pitchers)}")
 
 # Cargar resultados existentes para no repetir

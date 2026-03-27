@@ -33,6 +33,9 @@ jobs:
           echo "YAHOO_TOKEN_TYPE=${{ secrets.YAHOO_TOKEN_TYPE }}" >> .env
           echo "YAHOO_GUID=${{ secrets.YAHOO_GUID }}" >> .env
 
+      - name: Actualizar historico temporada actual
+        run: python src/actualizar_historico.py
+        
       - name: Actualizar roster
         run: python src/yahoo_api.py
 
