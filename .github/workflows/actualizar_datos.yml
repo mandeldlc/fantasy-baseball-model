@@ -63,9 +63,19 @@ jobs:
       - name: Analizar schedule SP
         run: python src/schedule.py
 
+      - name: Matchup pitcher vs equipo
+        run: python src/matchup_pitcher_equipo.py
+
+      - name: Modelo favorabilidad
+        run: python src/modelo_favorabilidad.py
+
       - name: Alertas de explosion
         run: python src/alertas_explosion.py
 
+      - name: Identificar closers
+        run: python src/closers.py
+
+      
       - name: Commit datos actualizados
         run: |
           git config --global user.email "action@github.com"

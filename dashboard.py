@@ -99,7 +99,7 @@ def load_matchup():
             return json.load(f)
     except:
         return None
-    
+
 @st.cache_data(ttl=3600)
 def load_matchup_siguiente():
     try:
@@ -114,7 +114,7 @@ def load_historial():
         return pd.read_csv('data/historial_matchups.csv')
     except:
         return None
-    
+
 @st.cache_data(ttl=3600)
 def load_streaks():
     try:
@@ -123,14 +123,14 @@ def load_streaks():
         return bat, pit
     except:
         return None, None
-    
+
 @st.cache_data(ttl=3600)
 def load_trades():
     try:
         return pd.read_csv('data/trades_sugeridos.csv')
     except:
         return None
-    
+
 @st.cache_data(ttl=3600)
 def load_schedule():
     try:
@@ -139,7 +139,7 @@ def load_schedule():
         return waivers, roster
     except:
         return None, None
-    
+
 @st.cache_data(ttl=3600)
 def load_alertas():
     try:
@@ -148,11 +148,18 @@ def load_alertas():
         return bat, pit
     except:
         return None, None
-    
+
 @st.cache_data(ttl=3600)
 def load_closers():
     try:
         return pd.read_csv('data/closers.csv')
+    except:
+        return None
+
+@st.cache_data(ttl=3600)
+def load_favorabilidad():
+    try:
+        return pd.read_csv('data/favorabilidad_semana.csv')
     except:
         return None
 
@@ -225,7 +232,6 @@ with col4:
     riesgo = pitcheo[pitcheo['score'] < 20]
     st.metric("Pitchers en riesgo", f"{len(riesgo)}", "⚠️ revisar")
 
-# Alertas de lesiones
 lesionados = roster[roster['Status'].isin(['DTD', 'DL10', 'DL15', 'DL60', 'NA'])]
 if len(lesionados) > 0:
     with st.expander(f"🚨 {len(lesionados)} jugadores lesionados — click para ver", expanded=True):
@@ -242,6 +248,7 @@ tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11, tab12, tab13
     "⚠️ Alertas", "🔥 Waivers", "📅 Proyección Semanal",
     "⚔️ Matchup", "📊 Historial", "🔥 Streaks", "🔄 Trades", "📆 Schedule SP", "💥 Explosión", "🔒 Closers"
 ])
+
 # TAB 1 - BATEADORES
 with tab1:
     st.subheader("Ranking de Bateadores — Semana actual")
@@ -520,10 +527,6 @@ with tab7:
 
         def render_matchup(m):
             st.caption(f"📅 {m['week_start']} — {m['week_end']}")
-
-            # ================================
-            # BARRA DE PROBABILIDAD
-            # ================================
             prob_ganar = m.get('prob_ganar', 50)
             prob_perder = m.get('prob_perder', 50)
             odds_ganar = m.get('odds_ganar', '+100')
@@ -546,7 +549,6 @@ with tab7:
             """, unsafe_allow_html=True)
 
             st.divider()
-
             mis_bat = m['mis_bat']
             opp_bat = m['opp_bat']
             mis_pit = m['mis_pit']
@@ -580,7 +582,6 @@ with tab7:
                     ventaja = "✅ Tú" if mi_val > opp_val else "❌ Ellos"
                     bat_data.append({'Stat': stat, 'Dando Tabla': mi_val, m['oponente']: opp_val, 'Ventaja': ventaja})
                 st.dataframe(pd.DataFrame(bat_data), hide_index=True, height=250)
-
             with col2:
                 st.markdown("#### ⚾ Comparativo Pitchers")
                 pit_data = []
@@ -607,7 +608,6 @@ with tab7:
 
         with tab_actual:
             render_matchup(matchup)
-
         with tab_siguiente:
             if matchup_sig:
                 render_matchup(matchup_sig)
@@ -618,14 +618,12 @@ with tab7:
 with tab8:
     st.subheader("📊 Historial de Matchups — Temporada 2026")
     historial = load_historial()
-
     if historial is None or len(historial) == 0:
         st.info("La temporada empieza el 25 de marzo — el historial se actualizará automáticamente cada semana.")
     else:
         wins = len(historial[historial['resultado'] == 'W'])
         losses = len(historial[historial['resultado'] == 'L'])
         ties = len(historial[historial['resultado'] == 'T'])
-
         col1, col2, col3, col4 = st.columns(4)
         with col1:
             st.metric("Victorias", wins, "✅")
@@ -636,39 +634,27 @@ with tab8:
         with col4:
             pct = round(wins / len(historial) * 100, 1) if len(historial) > 0 else 0
             st.metric("Win %", f"{pct}%")
-
         st.divider()
         st.dataframe(
             historial[['semana', 'week_start', 'oponente', 'mis_puntos', 'opp_puntos', 'resultado']].rename(columns={
-                'semana': 'Semana',
-                'week_start': 'Inicio',
-                'oponente': 'Oponente',
-                'mis_puntos': 'Mis Pts',
-                'opp_puntos': 'Opp Pts',
-                'resultado': 'Resultado'
-            }),
-            hide_index=True,
-            height=400
+                'semana': 'Semana', 'week_start': 'Inicio', 'oponente': 'Oponente',
+                'mis_puntos': 'Mis Pts', 'opp_puntos': 'Opp Pts', 'resultado': 'Resultado'
+            }), hide_index=True, height=400
         )
 
 # TAB 9 - STREAKS
 with tab9:
     st.subheader("🔥 Hot / Cold Streaks")
     st.caption("Comparativo 2024 vs 2025 — tu roster y waivers disponibles")
-
     streaks_bat, streaks_pit = load_streaks()
-
     if streaks_bat is None:
         st.warning("Corre primero: python src/streaks.py")
     else:
         filtro = st.radio("Mostrar:", ["Todo", "Mi Roster", "Waiver"], horizontal=True)
-
         if filtro != "Todo":
             streaks_bat = streaks_bat[streaks_bat['Fuente'] == filtro]
             streaks_pit = streaks_pit[streaks_pit['Fuente'] == filtro]
-
         tab_bat, tab_pit = st.tabs(["🏏 Bateadores", "⚾ Pitchers"])
-
         with tab_bat:
             col1, col2, col3 = st.columns(3)
             with col1:
@@ -677,26 +663,14 @@ with tab9:
                 st.metric("🥶 COLD", len(streaks_bat[streaks_bat['Streak'] == '🥶 COLD']))
             with col3:
                 st.metric("➡️ Neutral", len(streaks_bat[streaks_bat['Streak'] == '➡️ NEUTRAL']))
-
             st.divider()
-
             streak_filter = st.selectbox("Filtrar por streak:", ["Todos", "🔥 HOT", "🥶 COLD", "➡️ NEUTRAL"], key="bat_streak")
-            if streak_filter != "Todos":
-                mostrar_bat = streaks_bat[streaks_bat['Streak'] == streak_filter]
-            else:
-                mostrar_bat = streaks_bat
-
+            mostrar_bat = streaks_bat[streaks_bat['Streak'] == streak_filter] if streak_filter != "Todos" else streaks_bat
             st.dataframe(
                 mostrar_bat[['Name', 'Fuente', 'wOBA 2024', 'wOBA 2025', 'xwOBA 2025', 'EV', 'Barrel%', 'Diff', 'Streak']].rename(columns={
-                    'wOBA 2024': 'wOBA 24',
-                    'wOBA 2025': 'wOBA 25',
-                    'xwOBA 2025': 'xwOBA 25',
-                    'Diff': 'Δ wOBA'
-                }),
-                hide_index=True,
-                height=500
+                    'wOBA 2024': 'wOBA 24', 'wOBA 2025': 'wOBA 25', 'xwOBA 2025': 'xwOBA 25', 'Diff': 'Δ wOBA'
+                }), hide_index=True, height=500
             )
-
         with tab_pit:
             col1, col2, col3 = st.columns(3)
             with col1:
@@ -705,35 +679,21 @@ with tab9:
                 st.metric("🥶 COLD", len(streaks_pit[streaks_pit['Streak'] == '🥶 COLD']))
             with col3:
                 st.metric("➡️ Neutral", len(streaks_pit[streaks_pit['Streak'] == '➡️ NEUTRAL']))
-
             st.divider()
-
             streak_filter_p = st.selectbox("Filtrar por streak:", ["Todos", "🔥 HOT", "🥶 COLD", "➡️ NEUTRAL"], key="pit_streak")
-            if streak_filter_p != "Todos":
-                mostrar_pit = streaks_pit[streaks_pit['Streak'] == streak_filter_p]
-            else:
-                mostrar_pit = streaks_pit
-
+            mostrar_pit = streaks_pit[streaks_pit['Streak'] == streak_filter_p] if streak_filter_p != "Todos" else streaks_pit
             st.dataframe(
                 mostrar_pit[['Name', 'Fuente', 'ERA 2024', 'ERA 2025', 'xERA 2025', 'Ks', 'Diff ERA', 'Streak']].rename(columns={
-                    'ERA 2024': 'ERA 24',
-                    'ERA 2025': 'ERA 25',
-                    'xERA 2025': 'xERA 25',
-                    'Diff ERA': 'Δ ERA'
-                }),
-                hide_index=True,
-                height=500
+                    'ERA 2024': 'ERA 24', 'ERA 2025': 'ERA 25', 'xERA 2025': 'xERA 25', 'Diff ERA': 'Δ ERA'
+                }), hide_index=True, height=500
             )
-
         st.caption("⚠️ Streaks basados en 2024 vs 2025. Cuando haya data del 2026 se actualizará automáticamente.")
 
 # TAB 10 - TRADES
 with tab10:
     st.subheader("🔄 Sugerencias de Trades")
     st.caption("Jugadores que puedes pedir a cambio para mejorar tus categorías débiles")
-
     trades = load_trades()
-
     if trades is None or len(trades) == 0:
         st.info("Corre primero: python src/trades.py")
     else:
@@ -741,35 +701,26 @@ with tab10:
         with col1:
             st.metric("Trades sugeridos", len(trades))
         with col2:
-            equipos = trades['oponente'].nunique()
-            st.metric("Equipos con oportunidades", equipos)
+            st.metric("Equipos con oportunidades", trades['oponente'].nunique())
         with col3:
-            cats = trades['categoria_pedir'].nunique()
-            st.metric("Categorías a mejorar", cats)
-
+            st.metric("Categorías a mejorar", trades['categoria_pedir'].nunique())
         st.divider()
-
-        # Filtros
         col1, col2 = st.columns(2)
         with col1:
             equipo_sel = st.selectbox("Filtrar por equipo:", ["Todos"] + trades['oponente'].unique().tolist())
         with col2:
             cat_sel = st.selectbox("Filtrar por categoría:", ["Todas"] + trades['categoria_pedir'].unique().tolist())
-
         df_filtrado = trades.copy()
         if equipo_sel != "Todos":
             df_filtrado = df_filtrado[df_filtrado['oponente'] == equipo_sel]
         if cat_sel != "Todas":
             df_filtrado = df_filtrado[df_filtrado['categoria_pedir'] == cat_sel]
-
         st.divider()
-
         for _, r in df_filtrado.head(20).iterrows():
             tipo_icon = "🏏" if r['tipo'] == 'Bateador' else "⚾"
             valor_pedir = r['valor_pedir'] if pd.notna(r['valor_pedir']) else 'N/A'
             mi_debilidad = r['mi_debilidad'] if pd.notna(r['mi_debilidad']) else 'N/A'
             fortalezas = r['mis_fortalezas'] if pd.notna(r['mis_fortalezas']) else 'N/A'
-            
             st.markdown(f"""
             **{tipo_icon} Pide: {r['pedir']}** de *{r['oponente']}*
             - Categoría que mejoras: **{r['categoria_pedir']}** — ellos tienen `{valor_pedir}` vs tú `{mi_debilidad}`
@@ -783,6 +734,19 @@ with tab11:
     st.caption("Pitchers con doble start y matchups favorables esta semana")
 
     sched_waivers, sched_roster = load_schedule()
+    fav_modelo = load_favorabilidad()
+
+    def get_fav_modelo(nombre, oponentes_str):
+        if fav_modelo is None or len(fav_modelo) == 0:
+            return None
+        try:
+            opp = oponentes_str.split('vs ')[1].split(' (')[0].strip()
+            match = fav_modelo[(fav_modelo['Name'] == nombre) & (fav_modelo['Oponente'] == opp)]
+            if len(match) > 0:
+                return match.iloc[0]
+        except:
+            pass
+        return None
 
     if sched_waivers is None:
         st.warning("Corre primero: python src/schedule.py")
@@ -790,51 +754,55 @@ with tab11:
         st.markdown("#### 📋 Mis Pitchers esta semana")
         mis_pit = sched_roster[sched_roster['Pos'].isin(['SP', 'RP', 'P'])]
         for _, r in mis_pit.iterrows():
+            fav = get_fav_modelo(r['Name'], r.get('Oponentes', ''))
             if r['Starts'] >= 2:
                 st.success(f"⭐ **{r['Name']}** ({r['Pos']}) — {r['Doble_Start']} | Fav: {r['Favorabilidad']} | {r['Oponentes']}")
             elif r['Starts'] == 1:
-                st.info(f"➡️ **{r['Name']}** ({r['Pos']}) — {r['Doble_Start']} | Fav: {r['Favorabilidad']} | {r['Oponentes']}")
+                if fav is not None:
+                    st.info(f"➡️ **{r['Name']}** ({r['Pos']}) — {fav['Clasificacion']} | xwOBA: {fav['xwOBA_pred']:.3f} | Prob: {fav['Prob_favorable']:.0f}% | {r['Oponentes']}")
+                else:
+                    st.info(f"➡️ **{r['Name']}** ({r['Pos']}) — {r['Doble_Start']} | Fav: {r['Favorabilidad']} | {r['Oponentes']}")
             else:
                 st.error(f"❌ **{r['Name']}** ({r['Pos']}) — Sin start esta semana")
 
         st.divider()
-
         col1, col2 = st.columns(2)
         with col1:
-            dobles = len(sched_waivers[sched_waivers['Starts'] >= 2])
-            st.metric("SP doble start en waivers", dobles)
+            st.metric("SP doble start en waivers", len(sched_waivers[sched_waivers['Starts'] >= 2]))
         with col2:
-            simples = len(sched_waivers[sched_waivers['Starts'] == 1])
-            st.metric("SP simple start en waivers", simples)
+            st.metric("SP simple start en waivers", len(sched_waivers[sched_waivers['Starts'] == 1]))
 
         st.divider()
-
-        tab_doble, tab_simple = st.tabs(["⭐ Doble Start", "➡️ Simple Start"])
+        tab_doble, tab_simple, tab_ml = st.tabs(["⭐ Doble Start", "➡️ Simple Start", "🤖 Modelo ML"])
 
         with tab_doble:
             dobles_df = sched_waivers[sched_waivers['Starts'] >= 2]
             if len(dobles_df) == 0:
                 st.info("No hay doble starts anunciados aún — los pitchers probables se anuncian 1-2 días antes")
             else:
-                st.dataframe(
-                    dobles_df[['Name', 'Doble_Start', 'Favorabilidad', 'ERA', 'xERA', 'Breakout_Score', 'Oponentes']],
-                    hide_index=True, height=400
-                )
+                st.dataframe(dobles_df[['Name', 'Doble_Start', 'Favorabilidad', 'ERA', 'xERA', 'Breakout_Score', 'Oponentes']], hide_index=True, height=400)
 
         with tab_simple:
             simples_df = sched_waivers[sched_waivers['Starts'] == 1].head(20)
-            st.dataframe(
-                simples_df[['Name', 'Favorabilidad', 'ERA', 'xERA', 'Breakout_Score', 'Oponentes']],
-                hide_index=True, height=400
-            )
+            st.dataframe(simples_df[['Name', 'Favorabilidad', 'ERA', 'xERA', 'Breakout_Score', 'Oponentes']], hide_index=True, height=400)
+
+        with tab_ml:
+            st.caption("Favorabilidad basada en historial Statcast 2022-2025 + modelo ML (96.6% accuracy)")
+            if fav_modelo is not None and len(fav_modelo) > 0:
+                df_show = fav_modelo[['Name', 'Oponente', 'xwOBA_pred', 'Prob_favorable', 'Clasificacion', 'PA_hist', 'xwOBA_hist', 'Fuente_pred']].copy()
+                df_show = df_show.rename(columns={
+                    'xwOBA_pred': 'xwOBA Pred', 'Prob_favorable': 'Prob%',
+                    'PA_hist': 'PA Hist', 'xwOBA_hist': 'xwOBA Hist', 'Fuente_pred': 'Fuente'
+                })
+                st.dataframe(df_show, hide_index=True, height=500)
+            else:
+                st.info("Corre primero: python src/modelo_favorabilidad.py")
 
 # TAB 12 - ALERTAS EXPLOSION
 with tab12:
     st.subheader("💥 Jugadores a Punto de Explotar")
     st.caption("Múltiples señales simultáneas de mala suerte — agarra antes que los demás")
-
     alertas_bat, alertas_pit = load_alertas()
-
     if alertas_bat is None:
         st.warning("Corre primero: python src/alertas_explosion.py")
     else:
@@ -843,10 +811,8 @@ with tab12:
             st.metric("🏏 Bateadores detectados", len(alertas_bat))
         with col2:
             st.metric("⚾ Pitchers detectados", len(alertas_pit))
-
         st.divider()
         tab_bat, tab_pit = st.tabs(["🏏 Bateadores", "⚾ Pitchers"])
-
         with tab_bat:
             if len(alertas_bat) == 0:
                 st.info("No hay bateadores detectados")
@@ -863,7 +829,6 @@ with tab12:
                             st.metric("BABIP", r['BABIP'])
                         with col4:
                             st.metric("EV", r['EV'])
-
         with tab_pit:
             if len(alertas_pit) == 0:
                 st.info("No hay pitchers detectados")
@@ -883,38 +848,24 @@ with tab12:
 with tab13:
     st.subheader("🔒 Closers Confirmados en Waivers")
     st.caption("RP con historial de saves — los SV son escasos, agarra los mejores")
-
     closers = load_closers()
-
     if closers is None or len(closers) == 0:
         st.warning("Corre primero: python src/closers.py")
     else:
         col1, col2, col3 = st.columns(3)
         with col1:
-            elite = len(closers[closers['SV_2025'] >= 20])
-            st.metric("🔒 Closers élite", elite, "20+ SV 2025")
+            st.metric("🔒 Closers élite", len(closers[closers['SV_2025'] >= 20]), "20+ SV 2025")
         with col2:
-            confirmados = len(closers[closers['SV_2025'] >= 10])
-            st.metric("✅ Closers confirmados", confirmados, "10+ SV 2025")
+            st.metric("✅ Closers confirmados", len(closers[closers['SV_2025'] >= 10]), "10+ SV 2025")
         with col3:
-            oportunidades = len(closers[closers['SV_2025'] >= 3])
-            st.metric("👀 Con oportunidades", oportunidades, "3+ SV 2025")
-
+            st.metric("👀 Con oportunidades", len(closers[closers['SV_2025'] >= 3]), "3+ SV 2025")
         st.divider()
-
         st.dataframe(
             closers[['Name', 'SV_2025', 'SV_2024', 'ERA', 'xERA', 'xwOBA', 'Closer_Score', 'Tipo']].rename(columns={
-                'SV_2025': 'SV 25',
-                'SV_2024': 'SV 24',
-                'Closer_Score': 'Score',
-                'Tipo': 'Detalle'
-            }),
-            hide_index=True,
-            height=500
+                'SV_2025': 'SV 25', 'SV_2024': 'SV 24', 'Closer_Score': 'Score', 'Tipo': 'Detalle'
+            }), hide_index=True, height=500
         )
-
         st.divider()
         st.subheader("⚡ Agarra ahora")
-        top_closers = closers[closers['SV_2025'] >= 10].head(5)
-        for _, r in top_closers.iterrows():
+        for _, r in closers[closers['SV_2025'] >= 10].head(5).iterrows():
             st.success(f"🔒 **{r['Name']}** — {r['SV_2025']:.0f} SV 2025 | ERA {r['ERA']:.2f} | xERA {r['xERA']:.2f}")
