@@ -1,29 +1,31 @@
 Name,Starts,Doble_Start,Favorabilidad,Oponentes,ERA,xERA,Breakout_Score
-Emerson Hancock,1,➡️ Simple,100.0,2026-03-29 vs Cleveland Guardians (🟢 Fácil) wOBA:0.292,4.9,5.51,-3.749999999999989
-Shane Smith,1,➡️ Simple,86.7,2026-03-26 vs Milwaukee Brewers (🟢 Fácil) wOBA:0.322,3.81,3.99,8.950000000000005
-Sean Burke,1,➡️ Simple,86.7,2026-03-28 vs Milwaukee Brewers (🟢 Fácil) wOBA:0.322,4.22,4.96,-1.8499999999999923
-Max Meyer,1,➡️ Simple,86.1,2026-03-29 vs Colorado Rockies (🟢 Fácil) wOBA:0.296,4.73,4.8,0.8499999999999965
-Joe Boyle,1,➡️ Simple,84.9,2026-03-28 vs St. Louis Cardinals (🟢 Fácil) wOBA:0.304,4.67,4.04,14.950000000000012
-Kyle Freeland,1,➡️ Simple,83.1,2026-03-27 vs Miami Marlins (🟢 Fácil) wOBA:0.309,4.98,4.96,6.1000000000000165
-Chad Patrick,1,➡️ Simple,81.6,2026-03-28 vs Chicago White Sox (🟢 Fácil) wOBA:0.296,3.53,3.88,7.699999999999989
-Grant Holmes,1,➡️ Simple,79.8,2026-03-29 vs Kansas City Royals (🟢 Fácil) wOBA:0.307,3.99,4.55,0.6500000000000163
-Jack Kochanowicz,1,➡️ Simple,76.3,2026-03-29 vs Houston Astros (🟢 Fácil) wOBA:0.312,6.81,5.88,12.550000000000008
-Yusei Kikuchi,1,➡️ Simple,76.3,2026-03-27 vs Houston Astros (🟢 Fácil) wOBA:0.312,3.99,4.48,2.649999999999997
-Michael McGreevy,1,➡️ Simple,75.5,2026-03-28 vs Tampa Bay Rays (🟢 Fácil) wOBA:0.311,4.42,4.67,0.8499999999999996
-Luis Severino,1,➡️ Simple,62.2,2026-03-27 vs Toronto Blue Jays (🟡 Normal) wOBA:0.330,4.54,4.61,11.45
-Jeffrey Springs,1,➡️ Simple,62.2,2026-03-28 vs Toronto Blue Jays (🟡 Normal) wOBA:0.330,4.11,4.3,11.350000000000014
-Taj Bradley,1,➡️ Simple,60.9,2026-03-28 vs Baltimore Orioles (🟡 Normal) wOBA:0.305,5.05,4.1,26.8
-Bailey Ober,1,➡️ Simple,60.9,2026-03-29 vs Baltimore Orioles (🟡 Normal) wOBA:0.305,5.1,4.36,21.6
-Seth Lugo,1,➡️ Simple,59.7,2026-03-29 vs Atlanta Braves (🟡 Normal) wOBA:0.315,4.15,5.2,-9.799999999999995
-Eric Lauer,1,➡️ Simple,58.0,2026-03-29 vs Athletics (🟡 Normal) wOBA:0.324,3.18,3.88,-1.1999999999999824
-Randy Vásquez,1,➡️ Simple,56.4,2026-03-28 vs Detroit Tigers (🟡 Normal) wOBA:0.317,3.84,5.37,-16.64999999999999
-Jake Irvin,1,➡️ Simple,44.0,2026-03-29 vs Chicago Cubs (🟡 Normal) wOBA:0.325,5.7,5.59,7.049999999999995
-Miles Mikolas,1,➡️ Simple,44.0,2026-03-28 vs Chicago Cubs (🟡 Normal) wOBA:0.325,4.84,5.27,0.8500000000000121
-Slade Cecconi,1,➡️ Simple,38.2,2026-03-29 vs Seattle Mariners (🟡 Normal) wOBA:0.321,4.3,4.99,-6.600000000000013
-Eduardo Rodriguez,1,➡️ Simple,30.9,2026-03-28 vs Los Angeles Dodgers (🔴 Difícil) wOBA:0.331,5.02,4.51,21.59999999999999
-Mitch Keller,1,➡️ Simple,26.6,2026-03-28 vs New York Mets (🔴 Difícil) wOBA:0.326,4.19,4.45,6.800000000000014
-Carmen Mlodzinski,1,➡️ Simple,26.6,2026-03-29 vs New York Mets (🔴 Difícil) wOBA:0.326,3.55,4.07,0.9499999999999876
-Tyler Mahle,1,➡️ Simple,0.0,2026-03-28 vs New York Yankees (🔴 Difícil) wOBA:0.338,2.18,4.24,-20.5
+Jack Kochanowicz,1,➡️ Simple,98.3,2026-03-29 vs Houston Astros (🟢 Fácil) wOBA:0.229,6.81,5.88,12.550000000000008
+Yusei Kikuchi,1,➡️ Simple,98.3,2026-03-27 vs Houston Astros (🟢 Fácil) wOBA:0.229,3.99,4.48,2.649999999999997
+Taj Bradley,1,➡️ Simple,86.8,2026-03-28 vs Baltimore Orioles (🟢 Fácil) wOBA:0.251,5.05,4.1,26.8
+Bailey Ober,1,➡️ Simple,86.8,2026-03-29 vs Baltimore Orioles (🟢 Fácil) wOBA:0.251,5.1,4.36,21.6
+Michael McGreevy,1,➡️ Simple,74.6,2026-03-28 vs Tampa Bay Rays (🟢 Fácil) wOBA:0.481,4.42,4.67,0.8499999999999996
+Randy Vásquez,1,➡️ Simple,68.2,2026-03-28 vs Detroit Tigers (🟢 Fácil) wOBA:0.428,3.84,5.37,-16.64999999999999
+Joe Boyle,1,➡️ Simple,50.5,2026-03-28 vs St. Louis Cardinals (🟡 Normal) wOBA:0.493,4.67,4.04,14.950000000000012
+Luis Severino,1,➡️ Simple,50.0,2026-03-27 vs Toronto Blue Jays (🟡 Normal) wOBA:0.310,4.54,4.61,11.45
+Jeffrey Springs,1,➡️ Simple,50.0,2026-03-28 vs Toronto Blue Jays (🟡 Normal) wOBA:0.310,4.11,4.3,11.350000000000014
+Michael Lorenzen,1,➡️ Simple,50.0,2026-03-28 vs Miami Marlins (🟡 Normal) wOBA:0.310,4.64,4.61,11.099999999999994
+Kyle Freeland,1,➡️ Simple,50.0,2026-03-27 vs Miami Marlins (🟡 Normal) wOBA:0.310,4.98,4.96,6.1000000000000165
+Max Meyer,1,➡️ Simple,50.0,2026-03-29 vs Colorado Rockies (🟡 Normal) wOBA:0.310,4.73,4.8,0.8499999999999965
+Grant Holmes,1,➡️ Simple,50.0,2026-03-29 vs Kansas City Royals (🟡 Normal) wOBA:0.310,3.99,4.55,0.6500000000000163
+Eric Lauer,1,➡️ Simple,50.0,2026-03-29 vs Athletics (🟡 Normal) wOBA:0.310,3.18,3.88,-1.1999999999999824
+Seth Lugo,1,➡️ Simple,50.0,2026-03-29 vs Atlanta Braves (🟡 Normal) wOBA:0.310,4.15,5.2,-9.799999999999995
+Jose Quintana,1,➡️ Simple,50.0,2026-03-29 vs Miami Marlins (🟡 Normal) wOBA:0.310,3.96,5.2,-10.450000000000006
+Tyler Mahle,1,➡️ Simple,48.6,2026-03-28 vs New York Yankees (🟡 Normal) wOBA:0.364,2.18,4.24,-20.5
+Jake Irvin,1,➡️ Simple,47.2,2026-03-29 vs Chicago Cubs (🟡 Normal) wOBA:0.350,5.7,5.59,7.049999999999995
+Miles Mikolas,1,➡️ Simple,47.2,2026-03-28 vs Chicago Cubs (🟡 Normal) wOBA:0.350,4.84,5.27,0.8500000000000121
+Mitch Keller,1,➡️ Simple,43.9,2026-03-28 vs New York Mets (🟡 Normal) wOBA:0.539,4.19,4.45,6.800000000000014
+Carmen Mlodzinski,1,➡️ Simple,43.9,2026-03-29 vs New York Mets (🟡 Normal) wOBA:0.539,3.55,4.07,0.9499999999999876
+Shane Smith,1,➡️ Simple,36.4,2026-03-26 vs Milwaukee Brewers (🟡 Normal) wOBA:0.571,3.81,3.99,8.950000000000005
+Sean Burke,1,➡️ Simple,36.4,2026-03-28 vs Milwaukee Brewers (🟡 Normal) wOBA:0.571,4.22,4.96,-1.8499999999999923
+Emerson Hancock,1,➡️ Simple,22.2,2026-03-29 vs Cleveland Guardians (🔴 Difícil) wOBA:0.502,4.9,5.51,-3.749999999999989
+Chad Patrick,1,➡️ Simple,13.5,2026-03-28 vs Chicago White Sox (🔴 Difícil) wOBA:0.320,3.53,3.88,7.699999999999989
+Eduardo Rodriguez,1,➡️ Simple,12.0,2026-03-28 vs Los Angeles Dodgers (🔴 Difícil) wOBA:0.498,5.02,4.51,21.59999999999999
+Slade Cecconi,1,➡️ Simple,0.0,2026-03-29 vs Seattle Mariners (🔴 Difícil) wOBA:0.469,4.3,4.99,-6.600000000000013
 Yu Darvish,0,❌ Sin start,50.0,Sin start asignado,5.38,3.64,41.2
 Brandon Young,0,❌ Sin start,50.0,Sin start asignado,6.24,4.27,37.1
 Jake Bird,0,❌ Sin start,50.0,Sin start asignado,5.53,3.85,37.0
@@ -69,7 +71,6 @@ David Festa,0,❌ Sin start,50.0,Sin start asignado,5.4,4.86,12.049999999999988
 Tyler Holton,0,❌ Sin start,50.0,Sin start asignado,3.66,3.79,11.549999999999995
 Hunter Dobbins,0,❌ Sin start,50.0,Sin start asignado,4.13,3.96,11.300000000000006
 Angel Zerpa,0,❌ Sin start,50.0,Sin start asignado,4.18,4.02,11.200000000000005
-Michael Lorenzen,0,❌ Sin start,50.0,Sin start asignado,4.64,4.61,11.099999999999994
 Jonathan Cannon,0,❌ Sin start,50.0,Sin start asignado,5.82,5.37,11.050000000000011
 Tyler Rogers,0,❌ Sin start,50.0,Sin start asignado,1.98,2.67,10.850000000000009
 Tylor Megill,0,❌ Sin start,50.0,Sin start asignado,3.95,3.88,10.300000000000011
@@ -131,7 +132,6 @@ Reese Olson,0,❌ Sin start,50.0,Sin start asignado,3.15,4.07,-8.850000000000005
 Logan Evans,0,❌ Sin start,50.0,Sin start asignado,4.32,5.23,-9.50000000000001
 Griffin Canning,0,❌ Sin start,50.0,Sin start asignado,3.77,4.7,-10.25000000000001
 Davis Martin,0,❌ Sin start,50.0,Sin start asignado,4.1,5.13,-10.350000000000003
-Jose Quintana,0,❌ Sin start,50.0,Sin start asignado,3.96,5.2,-10.450000000000006
 Brenan Hanifee,0,❌ Sin start,50.0,Sin start asignado,3.0,4.13,-11.45
 Joe Ross,0,❌ Sin start,50.0,Sin start asignado,5.12,6.08,-12.34999999999999
 Tomoyuki Sugano,0,❌ Sin start,50.0,Sin start asignado,4.64,5.81,-12.849999999999994

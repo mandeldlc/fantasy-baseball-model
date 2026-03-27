@@ -6,44 +6,28 @@
   "week_end": "2026-03-29",
   "mis_bat": {
     "equipo": "Dando Tabla",
-    "jugadores": 14,
-    "HR_avg": 21.4,
-    "OPS": 0.764,
-    "wOBA": 0.329,
-    "xwOBA": 0.333,
-    "EV": 89.8,
-    "Barrel%": 9.6
+    "jugadores": 1,
+    "HR_avg": 0.0,
+    "OPS": 0.5,
+    "wOBA": 0.261,
+    "xwOBA": 0.228,
+    "EV": 72.8,
+    "Barrel%": 0.0
   },
   "opp_bat": {
     "equipo": "EVERYONE'S TERROR",
-    "jugadores": 14,
-    "HR_avg": 17.9,
-    "OPS": 0.738,
-    "wOBA": 0.32,
-    "xwOBA": 0.322,
-    "EV": 89.8,
-    "Barrel%": 8.1
+    "jugadores": 2,
+    "HR_avg": 0.0,
+    "OPS": 1.125,
+    "wOBA": 0.581,
+    "xwOBA": 0.542,
+    "EV": 93.0,
+    "Barrel%": 0.0
   },
-  "mis_pit": {
-    "equipo": "Dando Tabla",
-    "jugadores": 8,
-    "ERA": 3.31,
-    "xERA": 3.71,
-    "Ks": 114.0,
-    "xwOBA": 0.299,
-    "EV_against": 90.0
-  },
-  "opp_pit": {
-    "equipo": "EVERYONE'S TERROR",
-    "jugadores": 7,
-    "ERA": 4.33,
-    "xERA": 4.84,
-    "Ks": 100.6,
-    "xwOBA": 0.327,
-    "EV_against": 89.1
-  },
-  "prob_ganar": 55.1,
-  "prob_perder": 44.9,
-  "odds_ganar": "-123",
-  "odds_perder": "+123"
+  "mis_pit": {},
+  "opp_pit": {},
+  "prob_ganar": 36.5,
+  "prob_perder": 63.5,
+  "odds_ganar": "+174",
+  "odds_perder": "-174"
 }
