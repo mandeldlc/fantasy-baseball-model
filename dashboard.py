@@ -135,6 +135,13 @@ def load_schedule():
         return pd.read_csv('data/schedule_waivers_sp.csv'), pd.read_csv('data/schedule_roster.csv')
     except:
         return None, None
+    
+@st.cache_data(ttl=3600)
+def load_schedule_universo():
+    try:
+        return pd.read_csv('data/schedule_universo.csv')
+    except:
+        return None
 
 @st.cache_data(ttl=3600)
 def load_alertas():
@@ -644,7 +651,7 @@ with tab11:
         with col1: st.metric("SP doble start en waivers", len(sched_waivers[sched_waivers['Starts'] >= 2]))
         with col2: st.metric("SP simple start en waivers", len(sched_waivers[sched_waivers['Starts'] == 1]))
         st.divider()
-        tab_doble, tab_simple, tab_ml = st.tabs(["⭐ Doble Start", "➡️ Simple Start", "🤖 Modelo ML"])
+        tab_doble, tab_simple, tab_ml, tab_universo = st.tabs(["⭐ Doble Start", "➡️ Simple Start", "🤖 Modelo ML", "🌎 Universo"])
         with tab_doble:
             dobles_df = sched_waivers[sched_waivers['Starts'] >= 2]
             if len(dobles_df) == 0:
@@ -662,7 +669,36 @@ with tab11:
                 }), hide_index=True, height=500)
             else:
                 st.info("Corre primero: python src/modelo_favorabilidad.py")
-
+with tab_universo:
+            st.caption("Todos los pitchers probables esta semana — Mi Roster, Rivales y Waivers")
+            universo = load_schedule_universo()
+            if universo is None:
+                st.info("Corre primero: python src/schedule.py")
+            else:
+                col1, col2, col3 = st.columns(3)
+                with col1:
+                    st.metric("🏟️ Mi Roster", len(universo[universo['Ubicacion'] == '🏟️ Mi Roster']))
+                with col2:
+                    st.metric("⚔️ Rivales", len(universo[universo['Ubicacion'] == '⚔️ Rival']))
+                with col3:
+                    st.metric("🔓 Waivers", len(universo[universo['Ubicacion'] == '🔓 Waiver']))
+                st.divider()
+                filtro_ub = st.radio("Filtrar:", ["Todos", "🏟️ Mi Roster", "⚔️ Rival", "🔓 Waiver"], horizontal=True)
+                filtro_st = st.radio("Starts:", ["Todos", "⭐ Doble", "➡️ Simple"], horizontal=True, key="univ_starts")
+                df_univ = universo.copy()
+                if filtro_ub != "Todos":
+                    df_univ = df_univ[df_univ['Ubicacion'] == filtro_ub]
+                if filtro_st == "⭐ Doble":
+                    df_univ = df_univ[df_univ['Starts'] >= 2]
+                elif filtro_st == "➡️ Simple":
+                    df_univ = df_univ[df_univ['Starts'] == 1]
+                st.dataframe(
+                    df_univ[['Ubicacion', 'Name', 'Starts', 'Favorabilidad', 'ERA', 'xERA', 'Ks', 'xwOBA', 'Oponentes']].rename(columns={
+                        'Ubicacion': 'Dónde', 'Favorabilidad': 'Fav%'
+                    }),
+                    hide_index=True, height=600
+                )
+                
 # TAB 12 - ALERTAS EXPLOSION
 with tab12:
     st.subheader("💥 Jugadores a Punto de Explotar")
