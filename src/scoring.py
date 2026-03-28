@@ -3,18 +3,20 @@ import numpy as np
 import os
 import sys
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from src.blend_utils import get_season, get_curr_data
+from src.blend_utils import get_season, get_blend_weights
 
 SEASON = get_season()
+W_HIST, W_CURR = get_blend_weights()
 
 # ================================
 # CARGAR ROSTER ACTUAL
 # ================================
 roster = pd.read_csv('data/roster.csv')
-mis_jugadores = roster['Name'].tolist()
+mis_bateadores_list = roster[~roster['Pos'].isin(['SP', 'RP', 'P', 'IL'])]['Name'].tolist()
+mis_pitchers_list = roster[roster['Pos'].isin(['SP', 'RP', 'P', 'IL', 'BN'])]['Name'].tolist()
 
 # ================================
-# CARGAR HISTÓRICO CON BLEND
+# CARGAR HISTÓRICO
 # ================================
 bateo_hist = pd.read_csv('data/bateo_historico.csv')
 bateo_hist[['last_name', 'first_name']] = bateo_hist['last_name, first_name'].str.split(', ', expand=True)
@@ -24,27 +26,63 @@ pitcheo_hist = pd.read_csv('data/pitcheo_historico.csv')
 pitcheo_hist[['last_name', 'first_name']] = pitcheo_hist['last_name, first_name'].str.split(', ', expand=True)
 pitcheo_hist['Name'] = pitcheo_hist['first_name'] + ' ' + pitcheo_hist['last_name']
 
-# Temporada actual + fallback al año anterior
+# ================================
+# BLEND BATEADORES
+# ================================
 bat_curr = bateo_hist[bateo_hist['year'] == SEASON].copy()
 bat_prev = bateo_hist[bateo_hist['year'] == SEASON - 1].copy()
-bat_faltantes = bat_prev[~bat_prev['Name'].isin(set(bat_curr['Name']))]
-bateo = pd.concat([bat_curr, bat_faltantes], ignore_index=True)
 
+blend_bat_rows = []
+for _, r in bat_prev.iterrows():
+    curr = bat_curr[bat_curr['Name'] == r['Name']]
+    if len(curr) > 0:
+        r_curr = curr.iloc[0]
+        pa_curr = float(r_curr.get('pa', 0)) if pd.notna(r_curr.get('pa', 0)) else 0
+        w = min(W_CURR * (pa_curr / 50), W_CURR) if pa_curr < 50 else W_CURR
+        w_h = 1 - w
+        blended = r.copy()
+        for col in ['woba', 'xwoba', 'babip', 'exit_velocity_avg', 'barrel_batted_rate', 'on_base_plus_slg', 'home_run']:
+            if col in r and col in r_curr and pd.notna(r[col]) and pd.notna(r_curr[col]):
+                blended[col] = round(w_h * float(r[col]) + w * float(r_curr[col]), 3)
+        blend_bat_rows.append(blended)
+    else:
+        blend_bat_rows.append(r)
+
+solo_bat_curr = bat_curr[~bat_curr['Name'].isin(set(bat_prev['Name']))]
+bateo = pd.concat([pd.DataFrame(blend_bat_rows), solo_bat_curr], ignore_index=True)
+
+# ================================
+# BLEND PITCHEO
+# ================================
 pit_curr = pitcheo_hist[pitcheo_hist['year'] == SEASON].copy()
 pit_prev = pitcheo_hist[pitcheo_hist['year'] == SEASON - 1].copy()
-pit_faltantes = pit_prev[~pit_prev['Name'].isin(set(pit_curr['Name']))]
-pitcheo = pd.concat([pit_curr, pit_faltantes], ignore_index=True)
 
-# Filtrar solo mis jugadores
-# Separar bateadores y pitchers del roster
-mis_bateadores = roster[~roster['Pos'].isin(['SP', 'RP', 'P', 'IL'])]['Name'].tolist()
-mis_pitchers = roster[roster['Pos'].isin(['SP', 'RP', 'P', 'IL', 'BN'])]['Name'].tolist()
+blend_pit_rows = []
+for _, r in pit_prev.iterrows():
+    curr = pit_curr[pit_curr['Name'] == r['Name']]
+    if len(curr) > 0:
+        r_curr = curr.iloc[0]
+        ip_curr = float(r_curr.get('p_formatted_ip', 0)) if pd.notna(r_curr.get('p_formatted_ip', 0)) else 0
+        w = min(W_CURR * (ip_curr / 20), W_CURR) if ip_curr < 20 else W_CURR
+        w_h = 1 - w
+        blended = r.copy()
+        for col in ['p_era', 'xera', 'xwoba', 'exit_velocity_avg', 'barrel_batted_rate', 'p_strikeout']:
+            if col in r and col in r_curr and pd.notna(r[col]) and pd.notna(r_curr[col]):
+                blended[col] = round(w_h * float(r[col]) + w * float(r_curr[col]), 3)
+        blend_pit_rows.append(blended)
+    else:
+        blend_pit_rows.append(r)
 
-# Filtrar
-bateo = bateo[bateo['Name'].isin(mis_bateadores)].copy()
-pitcheo = pitcheo[pitcheo['Name'].isin(mis_jugadores)].copy()
+solo_pit_curr = pit_curr[~pit_curr['Name'].isin(set(pit_prev['Name']))]
+pitcheo = pd.concat([pd.DataFrame(blend_pit_rows), solo_pit_curr], ignore_index=True)
 
-print(f"Roster: {len(mis_jugadores)} jugadores")
+# ================================
+# FILTRAR POR POSICIÓN DEL ROSTER
+# ================================
+bateo = bateo[bateo['Name'].isin(mis_bateadores_list)].copy()
+pitcheo = pitcheo[pitcheo['Name'].isin(mis_pitchers_list)].copy()
+
+print(f"Blend {SEASON-1}/{SEASON} — Pesos: {int(W_HIST*100)}% hist / {int(W_CURR*100)}% actual")
 print(f"Bateadores con data: {len(bateo)}")
 print(f"Pitchers con data: {len(pitcheo)}")
 
@@ -90,22 +128,22 @@ if len(pitcheo) > 0:
 # MOSTRAR
 # ================================
 print("\n" + "=" * 65)
-print("RECOMENDACIONES SEMANALES - BATEADORES")
+print(f"RECOMENDACIONES SEMANALES - BATEADORES (blend {SEASON-1}/{SEASON})")
 print("=" * 65)
 print(f"{'Jugador':<22} {'HR':>4} {'OPS':>6} {'wOBA':>6} {'xwOBA':>6} {'Score':>6}")
 print("-" * 65)
 for _, r in bateo.iterrows():
     emoji = "🟢" if r['score'] >= 70 else "🟡" if r['score'] >= 40 else "🔴"
-    print(f"{emoji} {r['Name']:<20} {r['home_run']:>4} {r['on_base_plus_slg']:>6.3f} {r['woba']:>6.3f} {r['xwoba']:>6.3f} {r['score']:>6.1f}")
+    print(f"{emoji} {r['Name']:<20} {r['home_run']:>4.0f} {r['on_base_plus_slg']:>6.3f} {r['woba']:>6.3f} {r['xwoba']:>6.3f} {r['score']:>6.1f}")
 
 print("\n" + "=" * 65)
-print("RECOMENDACIONES SEMANALES - PITCHERS")
+print(f"RECOMENDACIONES SEMANALES - PITCHERS (blend {SEASON-1}/{SEASON})")
 print("=" * 65)
 print(f"{'Pitcher':<22} {'ERA':>5} {'xERA':>6} {'Ks':>4} {'W':>3} {'SV':>3} {'Score':>6}")
 print("-" * 65)
 for _, r in pitcheo.iterrows():
     emoji = "🟢" if r['score'] >= 70 else "🟡" if r['score'] >= 40 else "🔴"
-    print(f"{emoji} {r['Name']:<20} {r['p_era']:>5.2f} {r['xera']:>6.2f} {r['p_strikeout']:>4} {r['p_win']:>3} {r['p_save']:>3} {r['score']:>6.1f}")
+    print(f"{emoji} {r['Name']:<20} {r['p_era']:>5.2f} {r['xera']:>6.2f} {r['p_strikeout']:>4.0f} {r['p_win']:>3.0f} {r['p_save']:>3.0f} {r['score']:>6.1f}")
 
 print("\n" + "=" * 65)
 print("ALERTAS DE LA SEMANA")

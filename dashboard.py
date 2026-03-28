@@ -8,6 +8,8 @@ from pathlib import Path
 import os
 import subprocess
 import json
+from datetime import date
+SEASON = date.today().year
 
 load_dotenv()
 
@@ -263,7 +265,7 @@ with tab1:
     st.subheader("wOBA real vs xwOBA esperado")
     fig2 = px.scatter(bateo, x='woba', y='xwoba', text='Name', color='score',
                       color_continuous_scale=['red', 'yellow', 'green'],
-                      labels={'woba': 'wOBA 2025', 'xwoba': 'xwOBA 2025'})
+                      labels={'woba': f'wOBA blend {SEASON-1}/{SEASON}', 'xwoba': f'xwOBA blend {SEASON-1}/{SEASON}'})
     min_val = min(bateo['woba'].min(), bateo['xwoba'].min()) - 0.01
     max_val = max(bateo['woba'].max(), bateo['xwoba'].max()) + 0.01
     fig2.add_shape(type='line', x0=min_val, y0=min_val, x1=max_val, y1=max_val, line=dict(color='gray', dash='dash'))
@@ -288,7 +290,7 @@ with tab2:
     st.subheader("ERA real vs xERA esperado")
     fig3 = px.scatter(pitcheo, x='p_era', y='xera', text='Name', color='score',
                       color_continuous_scale=['green', 'yellow', 'red'],
-                      labels={'p_era': 'ERA 2025', 'xera': 'xERA 2025'})
+                      labels={'p_era': f'ERA blend {SEASON-1}/{SEASON}', 'xera': f'xERA blend {SEASON-1}/{SEASON}'})
     min_val = min(pitcheo['p_era'].min(), pitcheo['xera'].min()) - 0.1
     max_val = max(pitcheo['p_era'].max(), pitcheo['xera'].max()) + 0.1
     fig3.add_shape(type='line', x0=min_val, y0=min_val, x1=max_val, y1=max_val, line=dict(color='gray', dash='dash'))
@@ -555,7 +557,7 @@ with tab9:
         if filtro != "Todo":
             streaks_bat = streaks_bat[streaks_bat['Fuente'] == filtro]
             streaks_pit = streaks_pit[streaks_pit['Fuente'] == filtro]
-        tab_bat, tab_pit = st.tabs(["🏏 Bateadores", "⚾ Pitchers"])
+            tab_bat, tab_pit = st.tabs(["🏏 Bateadores", "⚾ Pitchers"])
         with tab_bat:
             col1, col2, col3 = st.columns(3)
             with col1: st.metric("🔥 HOT", len(streaks_bat[streaks_bat['Streak'] == '🔥 HOT']))
@@ -636,40 +638,69 @@ with tab11:
         st.markdown("#### 📋 Mis Pitchers esta semana")
         mis_pit = sched_roster[sched_roster['Pos'].isin(['SP', 'RP', 'P'])]
         for _, r in mis_pit.iterrows():
+            if r['Starts'] == 0:
+                continue  # No mostrar pitchers sin start
             fav = get_fav_modelo(r['Name'], r.get('Oponentes', ''))
             if r['Starts'] >= 2:
-                st.success(f"⭐ **{r['Name']}** ({r['Pos']}) — {r['Doble_Start']} | Fav: {r['Favorabilidad']} | {r['Oponentes']}")
+                st.success(f"⭐ **{r['Name']}** ({r['Pos']}) — Doble Start | {r['Oponentes']}")
             elif r['Starts'] == 1:
                 if fav is not None:
-                    st.info(f"➡️ **{r['Name']}** ({r['Pos']}) — {fav['Clasificacion']} | xwOBA: {fav['xwOBA_pred']:.3f} | Prob: {fav['Prob_favorable']:.0f}% | {r['Oponentes']}")
+                    clasif = fav['Clasificacion']
+                    xwoba = fav['xwOBA_pred']
+                    color = "success" if xwoba < 0.300 else "warning" if xwoba <= 0.330 else "error"
+                    getattr(st, color)(
+                        f"➡️ **{r['Name']}** ({r['Pos']}) — {clasif} | xwOBA pred: {xwoba:.3f} | {r['Oponentes']}"
+                    )
                 else:
-                    st.info(f"➡️ **{r['Name']}** ({r['Pos']}) — {r['Doble_Start']} | Fav: {r['Favorabilidad']} | {r['Oponentes']}")
-            else:
-                st.error(f"❌ **{r['Name']}** ({r['Pos']}) — Sin start esta semana")
+                    fav_num = r['Favorabilidad']
+                    color = "success" if fav_num > 60 else "warning" if fav_num >= 40 else "error"
+                    getattr(st, color)(
+                        f"➡️ **{r['Name']}** ({r['Pos']}) — Fav: {fav_num} | {r['Oponentes']}"
+                    )
+
         st.divider()
         col1, col2 = st.columns(2)
-        with col1: st.metric("SP doble start en waivers", len(sched_waivers[sched_waivers['Starts'] >= 2]))
-        with col2: st.metric("SP simple start en waivers", len(sched_waivers[sched_waivers['Starts'] == 1]))
+        with col1:
+            st.metric("SP doble start en waivers", len(sched_waivers[sched_waivers['Starts'] >= 2]))
+        with col2:
+            st.metric("SP simple start en waivers", len(sched_waivers[sched_waivers['Starts'] == 1]))
         st.divider()
-        tab_doble, tab_simple, tab_ml, tab_universo = st.tabs(["⭐ Doble Start", "➡️ Simple Start", "🤖 Modelo ML", "🌎 Universo"])
+
+        tab_doble, tab_simple, tab_ml, tab_universo = st.tabs([
+            "⭐ Doble Start", "➡️ Simple Start", "🤖 Modelo ML", "🌎 Universo"
+        ])
+
         with tab_doble:
             dobles_df = sched_waivers[sched_waivers['Starts'] >= 2]
             if len(dobles_df) == 0:
                 st.info("No hay doble starts anunciados aún")
             else:
-                st.dataframe(dobles_df[['Name', 'Doble_Start', 'Favorabilidad', 'ERA', 'xERA', 'Breakout_Score', 'Oponentes']], hide_index=True, height=400)
+                st.dataframe(dobles_df[['Name', 'Doble_Start', 'Favorabilidad', 'ERA', 'xERA', 'Breakout_Score', 'Oponentes']],
+                             hide_index=True, height=400)
+
         with tab_simple:
-            st.dataframe(sched_waivers[sched_waivers['Starts'] == 1].head(20)[['Name', 'Favorabilidad', 'ERA', 'xERA', 'Breakout_Score', 'Oponentes']], hide_index=True, height=400)
+            st.dataframe(
+                sched_waivers[sched_waivers['Starts'] == 1].head(20)[
+                    ['Name', 'Favorabilidad', 'ERA', 'xERA', 'Breakout_Score', 'Oponentes']
+                ], hide_index=True, height=400
+            )
+
         with tab_ml:
-            st.caption("Favorabilidad basada en historial Statcast 2022-2025 + modelo ML (96.6% accuracy)")
+            st.caption("xwOBA predicho por modelo ML — menor es mejor para el pitcher")
             if fav_modelo is not None and len(fav_modelo) > 0:
-                st.dataframe(fav_modelo[['Name', 'Oponente', 'xwOBA_pred', 'Prob_favorable', 'Clasificacion', 'PA_hist', 'xwOBA_hist', 'Fuente_pred']].rename(columns={
-                    'xwOBA_pred': 'xwOBA Pred', 'Prob_favorable': 'Prob%',
-                    'PA_hist': 'PA Hist', 'xwOBA_hist': 'xwOBA Hist', 'Fuente_pred': 'Fuente'
-                }), hide_index=True, height=500)
+                df_ml = fav_modelo[['Name', 'Oponente', 'xwOBA_pred', 'Clasificacion', 'PA_hist', 'xwOBA_hist', 'Fuente_pred']].copy()
+                df_ml = df_ml.rename(columns={
+                    'xwOBA_pred': 'xwOBA Pred',
+                    'PA_hist': 'PA Hist',
+                    'xwOBA_hist': 'xwOBA Hist',
+                    'Fuente_pred': 'Fuente',
+                    'Clasificacion': 'Resultado'
+                })
+                st.dataframe(df_ml, hide_index=True, height=500)
             else:
                 st.info("Corre primero: python src/modelo_favorabilidad.py")
-with tab_universo:
+
+        with tab_universo:
             st.caption("Todos los pitchers probables esta semana — Mi Roster, Rivales y Waivers")
             universo = load_schedule_universo()
             if universo is None:
@@ -683,8 +714,11 @@ with tab_universo:
                 with col3:
                     st.metric("🔓 Waivers", len(universo[universo['Ubicacion'] == '🔓 Waiver']))
                 st.divider()
-                filtro_ub = st.radio("Filtrar:", ["Todos", "🏟️ Mi Roster", "⚔️ Rival", "🔓 Waiver"], horizontal=True)
-                filtro_st = st.radio("Starts:", ["Todos", "⭐ Doble", "➡️ Simple"], horizontal=True, key="univ_starts")
+                col1, col2 = st.columns(2)
+                with col1:
+                    filtro_ub = st.radio("Filtrar:", ["Todos", "🏟️ Mi Roster", "⚔️ Rival", "🔓 Waiver"], horizontal=True)
+                with col2:
+                    filtro_st = st.radio("Starts:", ["Todos", "⭐ Doble", "➡️ Simple"], horizontal=True, key="univ_starts")
                 df_univ = universo.copy()
                 if filtro_ub != "Todos":
                     df_univ = df_univ[df_univ['Ubicacion'] == filtro_ub]
@@ -698,7 +732,7 @@ with tab_universo:
                     }),
                     hide_index=True, height=600
                 )
-                
+
 # TAB 12 - ALERTAS EXPLOSION
 with tab12:
     st.subheader("💥 Jugadores a Punto de Explotar")
