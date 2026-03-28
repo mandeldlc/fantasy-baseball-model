@@ -1,139 +1,32 @@
-Name,Starts,Doble_Start,Favorabilidad,Oponentes,ERA,xERA,Breakout_Score
-Jack Kochanowicz,1,➡️ Simple,98.3,2026-03-29 vs Houston Astros (🟢 Fácil) wOBA:0.229,6.81,5.88,12.550000000000008
-Yusei Kikuchi,1,➡️ Simple,98.3,2026-03-27 vs Houston Astros (🟢 Fácil) wOBA:0.229,3.99,4.48,2.649999999999997
-Taj Bradley,1,➡️ Simple,86.8,2026-03-28 vs Baltimore Orioles (🟢 Fácil) wOBA:0.251,5.05,4.1,26.8
-Bailey Ober,1,➡️ Simple,86.8,2026-03-29 vs Baltimore Orioles (🟢 Fácil) wOBA:0.251,5.1,4.36,21.6
-Michael McGreevy,1,➡️ Simple,74.6,2026-03-28 vs Tampa Bay Rays (🟢 Fácil) wOBA:0.481,4.42,4.67,0.8499999999999996
-Matthew Liberatore,1,➡️ Simple,74.6,2026-03-26 vs Tampa Bay Rays (🟢 Fácil) wOBA:0.481,4.15,4.871,-3.77899999999999
-Randy Vásquez,1,➡️ Simple,68.2,2026-03-28 vs Detroit Tigers (🟢 Fácil) wOBA:0.428,3.84,5.37,-16.64999999999999
-Joe Boyle,1,➡️ Simple,50.5,2026-03-28 vs St. Louis Cardinals (🟡 Normal) wOBA:0.493,4.67,4.04,14.950000000000012
-Jeffrey Springs,1,➡️ Simple,50.0,2026-03-28 vs Toronto Blue Jays (🟡 Normal) wOBA:0.310,4.11,4.3,11.350000000000014
-Michael Lorenzen,1,➡️ Simple,50.0,2026-03-28 vs Miami Marlins (🟡 Normal) wOBA:0.310,4.64,4.61,11.099999999999994
-Kyle Freeland,1,➡️ Simple,50.0,2026-03-27 vs Miami Marlins (🟡 Normal) wOBA:0.310,4.98,4.96,6.1000000000000165
-Max Meyer,1,➡️ Simple,50.0,2026-03-29 vs Colorado Rockies (🟡 Normal) wOBA:0.310,4.73,4.8,0.8499999999999965
-Grant Holmes,1,➡️ Simple,50.0,2026-03-29 vs Kansas City Royals (🟡 Normal) wOBA:0.310,3.99,4.55,0.6500000000000163
-Eric Lauer,1,➡️ Simple,50.0,2026-03-29 vs Athletics (🟡 Normal) wOBA:0.310,3.18,3.88,-1.1999999999999824
-Seth Lugo,1,➡️ Simple,50.0,2026-03-29 vs Atlanta Braves (🟡 Normal) wOBA:0.310,4.15,5.2,-9.799999999999995
-Jose Quintana,1,➡️ Simple,50.0,2026-03-29 vs Miami Marlins (🟡 Normal) wOBA:0.310,3.96,5.2,-10.450000000000006
-Tyler Mahle,1,➡️ Simple,48.6,2026-03-28 vs New York Yankees (🟡 Normal) wOBA:0.364,2.18,4.24,-20.5
-Jake Irvin,1,➡️ Simple,47.2,2026-03-29 vs Chicago Cubs (🟡 Normal) wOBA:0.350,5.7,5.59,7.049999999999995
-Miles Mikolas,1,➡️ Simple,47.2,2026-03-28 vs Chicago Cubs (🟡 Normal) wOBA:0.350,4.84,5.27,0.8500000000000121
-Mitch Keller,1,➡️ Simple,43.9,2026-03-28 vs New York Mets (🟡 Normal) wOBA:0.539,4.19,4.45,6.800000000000014
-Carmen Mlodzinski,1,➡️ Simple,43.9,2026-03-29 vs New York Mets (🟡 Normal) wOBA:0.539,3.55,4.07,0.9499999999999876
-Shane Smith,1,➡️ Simple,36.4,2026-03-26 vs Milwaukee Brewers (🟡 Normal) wOBA:0.571,3.884,3.999,10.05899999999999
-Sean Burke,1,➡️ Simple,36.4,2026-03-28 vs Milwaukee Brewers (🟡 Normal) wOBA:0.571,4.22,4.96,-1.8499999999999923
-Emerson Hancock,1,➡️ Simple,22.2,2026-03-29 vs Cleveland Guardians (🔴 Difícil) wOBA:0.502,4.9,5.51,-3.749999999999989
-Chad Patrick,1,➡️ Simple,13.5,2026-03-28 vs Chicago White Sox (🔴 Difícil) wOBA:0.320,3.53,3.88,7.699999999999989
-Eduardo Rodriguez,1,➡️ Simple,12.0,2026-03-28 vs Los Angeles Dodgers (🔴 Difícil) wOBA:0.498,5.02,4.51,21.59999999999999
-Slade Cecconi,1,➡️ Simple,0.0,2026-03-29 vs Seattle Mariners (🔴 Difícil) wOBA:0.469,4.3,4.99,-6.600000000000013
-Yu Darvish,0,❌ Sin start,50.0,Sin start asignado,5.38,3.64,41.2
-Brandon Young,0,❌ Sin start,50.0,Sin start asignado,6.24,4.27,37.1
-Jake Bird,0,❌ Sin start,50.0,Sin start asignado,5.53,3.85,37.0
-Jorge Alcala,0,❌ Sin start,50.0,Sin start asignado,6.22,4.48,34.849999999999994
-J.T. Ginn,0,❌ Sin start,50.0,Sin start asignado,5.08,3.74,34.14999999999999
-Sean Manaea,0,❌ Sin start,50.0,Sin start asignado,5.64,4.02,33.35000000000001
-Kyle Hendricks,0,❌ Sin start,50.0,Sin start asignado,4.76,3.93,31.15000000000001
-Trevor Williams,0,❌ Sin start,50.0,Sin start asignado,6.21,4.58,30.7
-Chase Dollander,0,❌ Sin start,50.0,Sin start asignado,6.52,5.13,28.849999999999994
-Graham Ashcraft,0,❌ Sin start,50.0,Sin start asignado,3.99,3.46,28.55000000000001
-Zach Eflin,0,❌ Sin start,50.0,Sin start asignado,5.93,4.48,28.35
-Michael Soroka,0,❌ Sin start,50.0,Sin start asignado,4.52,3.53,27.89999999999999
-Angel Chivilli,0,❌ Sin start,50.0,Sin start asignado,7.06,5.48,26.34999999999998
-Rafael Montero,0,❌ Sin start,50.0,Sin start asignado,4.48,3.58,26.30000000000001
-Andre Pallante,0,❌ Sin start,50.0,Sin start asignado,5.31,4.3,26.199999999999992
-Austin Gomber,0,❌ Sin start,50.0,Sin start asignado,7.49,6.04,26.05000000000001
-Charlie Morton,0,❌ Sin start,50.0,Sin start asignado,5.83,4.67,25.149999999999995
-Matt Festa,0,❌ Sin start,50.0,Sin start asignado,4.12,3.46,24.899999999999995
-Jacob Lopez,0,❌ Sin start,50.0,Sin start asignado,4.08,3.64,24.749999999999996
-JP Sears,0,❌ Sin start,50.0,Sin start asignado,5.04,4.24,23.54999999999999
-Ryan Gusto,0,❌ Sin start,50.0,Sin start asignado,5.67,4.61,22.450000000000006
-Joey Wentz,0,❌ Sin start,50.0,Sin start asignado,5.6,4.55,22.45
-Dean Kremer,0,❌ Sin start,50.0,Sin start asignado,4.19,3.82,22.050000000000026
-Zebby Matthews,0,❌ Sin start,50.0,Sin start asignado,5.56,4.67,22.04999999999999
-Brent Suter,0,❌ Sin start,50.0,Sin start asignado,4.52,4.1,21.950000000000003
-Caleb Ferguson,0,❌ Sin start,50.0,Sin start asignado,3.58,3.48,21.35000000000001
-Clarke Schmidt,0,❌ Sin start,50.0,Sin start asignado,3.32,3.02,20.750000000000007
-Lance McCullers Jr.,0,❌ Sin start,50.0,Sin start asignado,6.51,5.34,20.3
-Nick Martinez,0,❌ Sin start,50.0,Sin start asignado,4.45,4.04,20.15000000000001
-Bradley Blalock,0,❌ Sin start,50.0,Sin start asignado,9.36,7.62,19.749999999999982
-Brandon Walter,0,❌ Sin start,50.0,Sin start asignado,3.35,3.26,19.35
-Jackson Rutledge,0,❌ Sin start,50.0,Sin start asignado,5.77,4.73,19.349999999999987
-Max Scherzer,0,❌ Sin start,50.0,Sin start asignado,5.19,4.64,18.55000000000001
-Gabe Speier,0,❌ Sin start,50.0,Sin start asignado,2.687,2.546,18.057
-Bryce Elder,0,❌ Sin start,50.0,Sin start asignado,5.3,4.73,17.599999999999987
-Casey Mize,0,❌ Sin start,50.0,Sin start asignado,3.87,3.66,16.3
-Enyel De Los Santos,0,❌ Sin start,50.0,Sin start asignado,4.36,4.16,15.300000000000011
-Chris Bassitt,0,❌ Sin start,50.0,Sin start asignado,3.96,4.16,14.299999999999994
-Simeon Woods Richardson,0,❌ Sin start,50.0,Sin start asignado,4.04,3.82,13.849999999999998
-Germán Márquez,0,❌ Sin start,50.0,Sin start asignado,6.7,5.81,13.500000000000004
-David Festa,0,❌ Sin start,50.0,Sin start asignado,5.4,4.86,12.049999999999988
-Hoby Milner,0,❌ Sin start,50.0,Sin start asignado,3.821,3.81,11.957000000000011
-Tyler Holton,0,❌ Sin start,50.0,Sin start asignado,3.66,3.79,11.549999999999995
-Hunter Dobbins,0,❌ Sin start,50.0,Sin start asignado,4.13,3.96,11.300000000000006
-Angel Zerpa,0,❌ Sin start,50.0,Sin start asignado,4.18,4.02,11.200000000000005
-Jonathan Cannon,0,❌ Sin start,50.0,Sin start asignado,5.82,5.37,11.050000000000011
-Tyler Rogers,0,❌ Sin start,50.0,Sin start asignado,1.98,2.67,10.850000000000009
-Tylor Megill,0,❌ Sin start,50.0,Sin start asignado,3.95,3.88,10.300000000000011
-Hunter Greene,0,❌ Sin start,50.0,Sin start asignado,2.76,3.05,10.149999999999988
-Quinn Priester,0,❌ Sin start,50.0,Sin start asignado,3.32,3.66,9.699999999999998
-Logan Allen,0,❌ Sin start,50.0,Sin start asignado,4.25,4.45,9.300000000000008
-Justin Sterner,0,❌ Sin start,50.0,Sin start asignado,3.18,3.33,9.15000000000001
-Tanner Gordon,0,❌ Sin start,50.0,Sin start asignado,6.33,5.88,8.850000000000016
-Justin Verlander,0,❌ Sin start,50.0,Sin start asignado,3.85,4.24,7.90000000000001
-Hayden Birdsong,0,❌ Sin start,50.0,Sin start asignado,4.8,4.7,7.899999999999999
-Spencer Schwellenbach,0,❌ Sin start,50.0,Sin start asignado,3.09,3.56,7.350000000000006
-Ian Seymour,0,❌ Sin start,50.0,Sin start asignado,3.63,3.93,6.499999999999992
-Cal Quantrill,0,❌ Sin start,50.0,Sin start asignado,6.04,5.81,6.299999999999996
-Bryce Miller,0,❌ Sin start,50.0,Sin start asignado,5.68,5.27,5.949999999999994
-Brandon Pfaadt,0,❌ Sin start,50.0,Sin start asignado,5.25,5.3,5.800000000000011
-Landen Roupp,0,❌ Sin start,50.0,Sin start asignado,3.8,4.24,5.799999999999984
-Erick Fedde,0,❌ Sin start,50.0,Sin start asignado,5.49,5.41,5.449999999999998
-Patrick Corbin,0,❌ Sin start,50.0,Sin start asignado,4.4,4.77,5.000000000000005
-Braydon Fisher,0,❌ Sin start,50.0,Sin start asignado,2.7,3.33,4.950000000000015
-Grant Anderson,0,❌ Sin start,50.0,Sin start asignado,3.23,3.71,4.900000000000008
-Brad Lord,0,❌ Sin start,50.0,Sin start asignado,4.335,4.762,4.281000000000001
-Tim Hill,0,❌ Sin start,50.0,Sin start asignado,3.09,3.41,4.249999999999998
-Clayton Kershaw,0,❌ Sin start,50.0,Sin start asignado,3.36,3.79,4.049999999999993
-Brock Burke,0,❌ Sin start,50.0,Sin start asignado,3.36,3.79,3.8499999999999983
-Keider Montero,0,❌ Sin start,50.0,Sin start asignado,4.37,4.67,3.6000000000000125
-Jason Adam,0,❌ Sin start,50.0,Sin start asignado,1.93,2.76,3.450000000000008
-Anthony Banda,0,❌ Sin start,50.0,Sin start asignado,3.18,3.61,3.4000000000000123
-Tyler Anderson,0,❌ Sin start,50.0,Sin start asignado,4.56,5.06,3.200000000000004
-Merrill Kelly,0,❌ Sin start,50.0,Sin start asignado,3.52,4.16,2.749999999999993
-Eduard Bazardo,0,❌ Sin start,50.0,Sin start asignado,2.52,3.33,2.450000000000004
-Kolby Allard,0,❌ Sin start,50.0,Sin start asignado,2.63,3.36,2.149999999999998
-Walker Buehler,0,❌ Sin start,50.0,Sin start asignado,4.93,5.41,2.0999999999999863
-Jimmy Herget,0,❌ Sin start,50.0,Sin start asignado,2.48,3.31,1.7999999999999965
-Andrew Heaney,0,❌ Sin start,50.0,Sin start asignado,5.52,5.66,1.5999999999999872
-Zack Littell,0,❌ Sin start,50.0,Sin start asignado,3.81,4.36,1.54999999999999
-Aaron Bummer,0,❌ Sin start,50.0,Sin start asignado,3.81,4.22,1.1999999999999995
-Cade Povich,0,❌ Sin start,50.0,Sin start asignado,5.21,5.44,0.4499999999999904
-Kumar Rocker,0,❌ Sin start,50.0,Sin start asignado,5.74,5.73,0.1499999999999928
-Wandy Peralta,0,❌ Sin start,50.0,Sin start asignado,3.124,4.008,-0.3140000000000054
-José Berríos,0,❌ Sin start,50.0,Sin start asignado,4.17,4.8,-0.8499999999999943
-Bailey Falter,0,❌ Sin start,50.0,Sin start asignado,4.45,4.9,-1.7000000000000035
-Adrian Houser,0,❌ Sin start,50.0,Sin start asignado,3.31,4.04,-1.950000000000004
-Bowden Francis,0,❌ Sin start,50.0,Sin start asignado,6.05,6.08,-2.249999999999991
-Luis Ortiz,0,❌ Sin start,50.0,Sin start asignado,4.36,4.77,-2.549999999999984
-Ryan Bergert,0,❌ Sin start,50.0,Sin start asignado,3.66,4.33,-2.6
-Matt Svanson,0,❌ Sin start,50.0,Sin start asignado,1.94,3.09,-3.54999999999999
-Jakob Junis,0,❌ Sin start,50.0,Sin start asignado,2.97,4.04,-3.699999999999985
-Valente Bellozo,0,❌ Sin start,50.0,Sin start asignado,4.65,5.23,-4.400000000000005
-Taylor Rogers,0,❌ Sin start,50.0,Sin start asignado,3.363,4.156,-5.106999999999996
-Cade Gibson,0,❌ Sin start,50.0,Sin start asignado,2.63,3.82,-5.900000000000008
-Stephen Kolek,0,❌ Sin start,50.0,Sin start asignado,3.51,4.3,-6.29999999999999
-Antonio Senzatela,0,❌ Sin start,50.0,Sin start asignado,6.65,6.98,-6.600000000000014
-Pablo López,0,❌ Sin start,50.0,Sin start asignado,2.74,3.96,-6.950000000000001
-Tobias Myers,0,❌ Sin start,50.0,Sin start asignado,3.542,4.342,-6.9620000000000015
-Hurston Waldrep,0,❌ Sin start,50.0,Sin start asignado,2.88,3.99,-7.099999999999994
-Louis Varland,0,❌ Sin start,50.0,Sin start asignado,2.97,4.02,-7.4999999999999964
-Corbin Burnes,0,❌ Sin start,50.0,Sin start asignado,2.66,3.88,-8.749999999999995
-Reese Olson,0,❌ Sin start,50.0,Sin start asignado,3.15,4.07,-8.850000000000005
-Logan Evans,0,❌ Sin start,50.0,Sin start asignado,4.32,5.23,-9.50000000000001
-Griffin Canning,0,❌ Sin start,50.0,Sin start asignado,3.77,4.7,-10.25000000000001
-Davis Martin,0,❌ Sin start,50.0,Sin start asignado,4.1,5.13,-10.350000000000003
-Brenan Hanifee,0,❌ Sin start,50.0,Sin start asignado,3.0,4.13,-11.45
-Joe Ross,0,❌ Sin start,50.0,Sin start asignado,5.12,6.08,-12.34999999999999
-Tomoyuki Sugano,0,❌ Sin start,50.0,Sin start asignado,4.64,5.81,-12.849999999999994
-Lucas Giolito,0,❌ Sin start,50.0,Sin start asignado,3.41,5.06,-17.799999999999983
-Martín Pérez,0,❌ Sin start,50.0,Sin start asignado,3.54,5.37,-21.050000000000008
+Name,Ubicacion,Starts,Doble_Start,Favorabilidad,ERA,xERA,Ks,xwOBA,Oponentes,Breakout_Score
+Rhett Lowder,🔓 Waiver,1,➡️ Simple,72.4,0.0,0.0,0,0.0,2026-03-29 vs Boston Red Sox (🟢 Fácil) wOBA:0.393,72.4
+Yusei Kikuchi,🔓 Waiver,1,➡️ Simple,61.1,3.99,4.48,174,0.327,2026-03-27 vs Houston Astros (🟢 Fácil) wOBA:0.229,61.1
+Jack Kochanowicz,🔓 Waiver,1,➡️ Simple,59.0,6.81,5.88,72,0.368,2026-03-29 vs Houston Astros (🟢 Fácil) wOBA:0.229,59.0
+Taj Bradley,🔓 Waiver,1,➡️ Simple,55.7,5.05,4.1,127,0.314,2026-03-28 vs Baltimore Orioles (🟢 Fácil) wOBA:0.251,55.7
+Bailey Ober,🔓 Waiver,1,➡️ Simple,54.6,5.1,4.36,120,0.323,2026-03-29 vs Baltimore Orioles (🟢 Fácil) wOBA:0.251,54.6
+Matthew Liberatore,🔓 Waiver,1,➡️ Simple,49.8,1.8,3.75,2,0.289,2026-03-26 vs Tampa Bay Rays (🟢 Fácil) wOBA:0.481,49.8
+Michael McGreevy,🔓 Waiver,1,➡️ Simple,46.1,4.42,4.67,58,0.333,2026-03-28 vs Tampa Bay Rays (🟢 Fácil) wOBA:0.481,46.1
+Randy Vásquez,🔓 Waiver,1,➡️ Simple,40.9,3.84,5.37,78,0.354,2026-03-28 vs Detroit Tigers (🟢 Fácil) wOBA:0.428,40.9
+Steven Matz,🔓 Waiver,1,➡️ Simple,36.8,3.05,3.38,59,0.287,2026-03-29 vs St. Louis Cardinals (🟡 Normal) wOBA:0.493,36.8
+Anthony Kay,🔓 Waiver,1,➡️ Simple,36.4,0.0,0.0,0,0.0,2026-03-29 vs Milwaukee Brewers (🟡 Normal) wOBA:0.571,36.4
+Eric Lauer,🔓 Waiver,1,➡️ Simple,34.5,3.18,3.88,102,0.306,2026-03-29 vs Athletics (🟡 Normal) wOBA:0.310,34.5
+Joe Boyle,🔓 Waiver,1,➡️ Simple,34.1,4.67,4.04,58,0.312,2026-03-28 vs St. Louis Cardinals (🟡 Normal) wOBA:0.493,34.1
+Jeffrey Springs,🔓 Waiver,1,➡️ Simple,32.8,4.11,4.3,138,0.321,2026-03-28 vs Toronto Blue Jays (🟡 Normal) wOBA:0.310,32.8
+Luis Morales,🔓 Waiver,1,➡️ Simple,32.3,3.14,4.42,43,0.325,2026-03-29 vs Toronto Blue Jays (🟡 Normal) wOBA:0.310,32.3
+Tyler Mahle,🔓 Waiver,1,➡️ Simple,32.2,2.18,4.24,66,0.319,2026-03-28 vs New York Yankees (🟡 Normal) wOBA:0.364,32.2
+Grant Holmes,🔓 Waiver,1,➡️ Simple,31.8,3.99,4.55,123,0.329,2026-03-29 vs Kansas City Royals (🟡 Normal) wOBA:0.310,31.8
+Michael Lorenzen,🔓 Waiver,1,➡️ Simple,31.6,4.64,4.61,127,0.331,2026-03-28 vs Miami Marlins (🟡 Normal) wOBA:0.310,31.6
+Max Meyer,🔓 Waiver,1,➡️ Simple,30.8,4.73,4.8,68,0.337,2026-03-29 vs Colorado Rockies (🟡 Normal) wOBA:0.310,30.8
+Kyle Freeland,🔓 Waiver,1,➡️ Simple,30.2,4.98,4.96,124,0.342,2026-03-27 vs Miami Marlins (🟡 Normal) wOBA:0.310,30.2
+Carmen Mlodzinski,🔓 Waiver,1,➡️ Simple,30.1,3.55,4.07,89,0.313,2026-03-29 vs New York Mets (🟡 Normal) wOBA:0.539,30.1
+Seth Lugo,🔓 Waiver,1,➡️ Simple,30.0,4.15,5.2,125,0.349,2026-03-29 vs Atlanta Braves (🟡 Normal) wOBA:0.310,30.0
+Jose Quintana,🔓 Waiver,1,➡️ Simple,30.0,3.96,5.2,89,0.349,2026-03-29 vs Miami Marlins (🟡 Normal) wOBA:0.310,30.0
+Mitch Keller,🔓 Waiver,1,➡️ Simple,28.5,4.19,4.45,150,0.326,2026-03-28 vs New York Mets (🟡 Normal) wOBA:0.539,28.5
+Miles Mikolas,🔓 Waiver,1,➡️ Simple,28.3,4.84,5.27,100,0.351,2026-03-28 vs Chicago Cubs (🟡 Normal) wOBA:0.350,28.3
+Jake Irvin,🔓 Waiver,1,➡️ Simple,28.3,5.7,5.59,124,0.36,2026-03-29 vs Chicago Cubs (🟡 Normal) wOBA:0.350,28.3
+Sean Burke,🔓 Waiver,1,➡️ Simple,22.0,4.22,4.96,133,0.342,2026-03-28 vs Milwaukee Brewers (🟡 Normal) wOBA:0.571,22.0
+Shane Smith,🔓 Waiver,1,➡️ Simple,21.8,16.2,5.49,2,0.344,2026-03-26 vs Milwaukee Brewers (🟡 Normal) wOBA:0.571,21.8
+Emerson Hancock,🔓 Waiver,1,➡️ Simple,13.3,4.9,5.51,64,0.358,2026-03-29 vs Cleveland Guardians (🔴 Difícil) wOBA:0.502,13.3
+Chad Patrick,🔓 Waiver,1,➡️ Simple,12.6,3.53,3.88,127,0.306,2026-03-28 vs Chicago White Sox (🔴 Difícil) wOBA:0.320,12.6
+Eduardo Rodriguez,🔓 Waiver,1,➡️ Simple,9.2,5.02,4.51,143,0.328,2026-03-28 vs Los Angeles Dodgers (🔴 Difícil) wOBA:0.498,9.2
+Slade Cecconi,🔓 Waiver,1,➡️ Simple,0.0,4.3,4.99,109,0.343,2026-03-29 vs Seattle Mariners (🔴 Difícil) wOBA:0.469,0.0
