@@ -182,6 +182,8 @@ print("=" * 65)
 
 roster = pd.read_csv('data/roster.csv')
 mis_jugadores = roster['Name'].tolist()
+mis_bateadores = roster[~roster['Pos'].isin(['SP', 'RP', 'P'])]['Name'].tolist()
+mis_pitchers_list = roster[roster['Pos'].isin(['SP', 'RP', 'P', 'IL', 'BN'])]['Name'].tolist()
 
 from datetime import date
 import sys, os
@@ -226,7 +228,7 @@ pit_2025 = blend_df(pit_curr, pit_prev, pit_stat_cols)
 print(f"  Data blend {SEASON_PREV}/{SEASON}: {len(bat_2025)} bateadores, {len(pit_2025)} pitchers")
 
 # Bateadores
-mis_bat = bat_2025[bat_2025['Name'].isin(mis_jugadores)].copy()
+mis_bat = bat_2025[bat_2025['Name'].isin(mis_bateadores)].copy()
 if len(mis_bat) > 0:
     X_mis = mis_bat[features_bat].fillna(0)
     X_mis_s = scaler_bat.transform(X_mis)
@@ -244,7 +246,7 @@ if len(mis_bat) > 0:
         print(f"{r['Name']:<22} {r['fantasy_score_actual']:>13.1f} {r['fantasy_score_proyectado']:>14.1f} {r['tendencia']:>10}")
 
 # Pitchers
-mis_pit = pit_2025[pit_2025['Name'].isin(mis_jugadores)].copy()
+mis_pit = pit_2025[pit_2025['Name'].isin(mis_pitchers_list)].copy()
 if len(mis_pit) > 0:
     X_mis_p = mis_pit[features_pit].fillna(0)
     X_mis_ps = scaler_pit.transform(X_mis_p)

@@ -36,7 +36,12 @@ pit_faltantes = pit_prev[~pit_prev['Name'].isin(set(pit_curr['Name']))]
 pitcheo = pd.concat([pit_curr, pit_faltantes], ignore_index=True)
 
 # Filtrar solo mis jugadores
-bateo = bateo[bateo['Name'].isin(mis_jugadores)].copy()
+# Separar bateadores y pitchers del roster
+mis_bateadores = roster[~roster['Pos'].isin(['SP', 'RP', 'P', 'IL'])]['Name'].tolist()
+mis_pitchers = roster[roster['Pos'].isin(['SP', 'RP', 'P', 'IL', 'BN'])]['Name'].tolist()
+
+# Filtrar
+bateo = bateo[bateo['Name'].isin(mis_bateadores)].copy()
 pitcheo = pitcheo[pitcheo['Name'].isin(mis_jugadores)].copy()
 
 print(f"Roster: {len(mis_jugadores)} jugadores")
