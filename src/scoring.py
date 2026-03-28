@@ -1,55 +1,90 @@
 import pandas as pd
 import numpy as np
+import os
+import sys
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from src.blend_utils import get_season, get_curr_data
+
+SEASON = get_season()
 
 # ================================
-# SISTEMA DE PUNTUACIÓN SEMANAL
+# CARGAR ROSTER ACTUAL
 # ================================
+roster = pd.read_csv('data/roster.csv')
+mis_jugadores = roster['Name'].tolist()
 
-bateo = pd.read_csv('data/mis_bateadores_2025.csv')
-pitcheo = pd.read_csv('data/mis_pitchers_2025.csv')
+# ================================
+# CARGAR HISTÓRICO CON BLEND
+# ================================
+bateo_hist = pd.read_csv('data/bateo_historico.csv')
+bateo_hist[['last_name', 'first_name']] = bateo_hist['last_name, first_name'].str.split(', ', expand=True)
+bateo_hist['Name'] = bateo_hist['first_name'] + ' ' + bateo_hist['last_name']
+
+pitcheo_hist = pd.read_csv('data/pitcheo_historico.csv')
+pitcheo_hist[['last_name', 'first_name']] = pitcheo_hist['last_name, first_name'].str.split(', ', expand=True)
+pitcheo_hist['Name'] = pitcheo_hist['first_name'] + ' ' + pitcheo_hist['last_name']
+
+# Temporada actual + fallback al año anterior
+bat_curr = bateo_hist[bateo_hist['year'] == SEASON].copy()
+bat_prev = bateo_hist[bateo_hist['year'] == SEASON - 1].copy()
+bat_faltantes = bat_prev[~bat_prev['Name'].isin(set(bat_curr['Name']))]
+bateo = pd.concat([bat_curr, bat_faltantes], ignore_index=True)
+
+pit_curr = pitcheo_hist[pitcheo_hist['year'] == SEASON].copy()
+pit_prev = pitcheo_hist[pitcheo_hist['year'] == SEASON - 1].copy()
+pit_faltantes = pit_prev[~pit_prev['Name'].isin(set(pit_curr['Name']))]
+pitcheo = pd.concat([pit_curr, pit_faltantes], ignore_index=True)
+
+# Filtrar solo mis jugadores
+bateo = bateo[bateo['Name'].isin(mis_jugadores)].copy()
+pitcheo = pitcheo[pitcheo['Name'].isin(mis_jugadores)].copy()
+
+print(f"Roster: {len(mis_jugadores)} jugadores")
+print(f"Bateadores con data: {len(bateo)}")
+print(f"Pitchers con data: {len(pitcheo)}")
 
 # ================================
 # SCORE BATEADORES
-# Basado en las categorías de tu Yahoo:
-# R, HR, RBI, SB, OBP, SLG
-# Usamos los equivalentes que tenemos:
-# HR, OPS, woba, xwoba, barrel_rate
 # ================================
-
 def score_bateador(row):
     score = 0
-    score += row['home_run'] * 0.30          # HR es la categoría más importante
-    score += row['on_base_plus_slg'] * 20    # OPS cubre OBP + SLG
-    score += row['woba'] * 15                # woba = valor ofensivo total
-    score += row['xwoba'] * 10              # xwoba = predicción futura
-    score += row['barrel_batted_rate'] * 0.5 # contacto de calidad
-    score += row['exit_velocity_avg'] * 0.1  # velocidad de contacto
+    score += row['home_run'] * 0.30
+    score += row['on_base_plus_slg'] * 20
+    score += row['woba'] * 15
+    score += row['xwoba'] * 10
+    score += row['barrel_batted_rate'] * 0.5
+    score += row['exit_velocity_avg'] * 0.1
     return round(score, 2)
 
 def score_pitcher(row):
     score = 0
-    score += (5 - row['p_era']) * 5         # ERA bajo = mejor
-    score += (5 - row['xera']) * 3          # xera = predicción futura
-    score += row['p_strikeout'] * 0.1       # Ks
-    score += row['p_win'] * 2               # Wins
-    score += row['p_save'] * 3              # Saves (NSV)
-    score += (0.4 - row['xwoba']) * 20      # xwoba bajo = mejor pitcher
-    score -= row['exit_velocity_avg'] * 0.1 # exit velo alto = malo para pitcher
+    score += (5 - row['p_era']) * 5
+    score += (5 - row['xera']) * 3
+    score += row['p_strikeout'] * 0.1
+    score += row['p_win'] * 2
+    score += row['p_save'] * 3
+    score += (0.4 - row['xwoba']) * 20
+    score -= row['exit_velocity_avg'] * 0.1
     return round(score, 2)
 
-bateo['score'] = bateo.apply(score_bateador, axis=1)
-pitcheo['score'] = pitcheo.apply(score_pitcher, axis=1)
+if len(bateo) > 0:
+    bateo['score'] = bateo.apply(score_bateador, axis=1)
+    if bateo['score'].max() > bateo['score'].min():
+        bateo['score'] = ((bateo['score'] - bateo['score'].min()) /
+                          (bateo['score'].max() - bateo['score'].min()) * 100).round(1)
+    bateo = bateo.sort_values('score', ascending=False)
 
-# Normalizar scores 0-100
-bateo['score'] = ((bateo['score'] - bateo['score'].min()) / 
-                  (bateo['score'].max() - bateo['score'].min()) * 100).round(1)
-pitcheo['score'] = ((pitcheo['score'] - pitcheo['score'].min()) / 
-                    (pitcheo['score'].max() - pitcheo['score'].min()) * 100).round(1)
+if len(pitcheo) > 0:
+    pitcheo['score'] = pitcheo.apply(score_pitcher, axis=1)
+    if pitcheo['score'].max() > pitcheo['score'].min():
+        pitcheo['score'] = ((pitcheo['score'] - pitcheo['score'].min()) /
+                            (pitcheo['score'].max() - pitcheo['score'].min()) * 100).round(1)
+    pitcheo = pitcheo.sort_values('score', ascending=False)
 
-bateo = bateo.sort_values('score', ascending=False)
-pitcheo = pitcheo.sort_values('score', ascending=False)
-
-print("=" * 65)
+# ================================
+# MOSTRAR
+# ================================
+print("\n" + "=" * 65)
 print("RECOMENDACIONES SEMANALES - BATEADORES")
 print("=" * 65)
 print(f"{'Jugador':<22} {'HR':>4} {'OPS':>6} {'wOBA':>6} {'xwOBA':>6} {'Score':>6}")
@@ -71,7 +106,6 @@ print("\n" + "=" * 65)
 print("ALERTAS DE LA SEMANA")
 print("=" * 65)
 
-# Jugadores con xwoba mucho mayor que woba = van a mejorar
 mejorando = bateo[bateo['xwoba'] - bateo['woba'] > 0.020]
 if len(mejorando) > 0:
     print("\n📈 COMPRAR - Jugadores que mejorarán (xwOBA > wOBA):")
@@ -79,7 +113,6 @@ if len(mejorando) > 0:
         diff = r['xwoba'] - r['woba']
         print(f"   {r['Name']}: xwOBA {r['xwoba']:.3f} vs wOBA {r['woba']:.3f} (+{diff:.3f})")
 
-# Jugadores con woba mucho mayor que xwoba = van a bajar
 bajando = bateo[bateo['woba'] - bateo['xwoba'] > 0.020]
 if len(bajando) > 0:
     print("\n📉 VENDER - Jugadores que bajarán (wOBA > xwOBA):")
@@ -87,7 +120,6 @@ if len(bajando) > 0:
         diff = r['woba'] - r['xwoba']
         print(f"   {r['Name']}: wOBA {r['woba']:.3f} vs xwOBA {r['xwoba']:.3f} (-{diff:.3f})")
 
-# Pitchers con xera mucho mayor que era = van a empeorar
 riesgo_pit = pitcheo[pitcheo['xera'] - pitcheo['p_era'] > 0.50]
 if len(riesgo_pit) > 0:
     print("\n⚠️  RIESGO - Pitchers con suerte (xERA >> ERA):")
@@ -95,7 +127,9 @@ if len(riesgo_pit) > 0:
         diff = r['xera'] - r['p_era']
         print(f"   {r['Name']}: ERA {r['p_era']:.2f} vs xERA {r['xera']:.2f} (+{diff:.2f})")
 
-# Guardar
+# ================================
+# GUARDAR
+# ================================
 bateo.to_csv('data/scoring_bateadores.csv', index=False)
 pitcheo.to_csv('data/scoring_pitchers.csv', index=False)
 print("\n✅ Scoring guardado en data/")

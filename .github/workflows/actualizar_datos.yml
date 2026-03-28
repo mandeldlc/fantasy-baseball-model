@@ -41,6 +41,9 @@ jobs:
       - name: Actualizar roster
         run: python src/yahoo_api.py
 
+      - name: Scoring semanal
+        run: python src/scoring.py
+
       - name: Actualizar odds liga
         run: python src/liga_odds.py
 
