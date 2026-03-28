@@ -1,22 +1,4 @@
 Name,Oponente,xwOBA_pred,Prob_favorable,Clasificacion,Fuente_pred,xwOBA_hist,PA_hist,xERA_2025
-Logan Gilbert,Cleveland Guardians,0.293,80.5,🟢 Favorable,Hist+ML,0.292,2879,3.09
-Andrew Abbott,Boston Red Sox,0.301,90.9,🟡 Normal,ML,,0,3.56
-Bailey Ober,Baltimore Orioles,0.303,61.8,🟡 Normal,Hist+ML,0.303,2142,4.36
-Tyler Mahle,New York Yankees,0.307,53.4,🟡 Normal,Hist+ML,0.305,1009,4.24
-Joe Boyle,St. Louis Cardinals,0.308,73.8,🟡 Normal,Hist+ML,0.308,512,4.04
-Carmen Mlodzinski,New York Mets,0.309,29.9,🟡 Normal,Hist+ML,0.305,783,4.07
-Chad Patrick,Chicago White Sox,0.309,29.0,🟡 Normal,Hist+ML,0.306,505,3.88
-Brady Singer,Boston Red Sox,0.31,22.0,🟡 Normal,ML,,0,4.27
-Shane Smith,Milwaukee Brewers,0.311,28.7,🟡 Normal,Hist+ML,0.31,616,3.99
-Yusei Kikuchi,Houston Astros,0.313,19.8,🟡 Normal,ML,,0,4.48
-Taj Bradley,Baltimore Orioles,0.318,22.7,🟡 Normal,Hist+ML,0.318,1643,4.1
-Ryne Nelson,Los Angeles Dodgers,0.32,20.2,🟡 Normal,Hist+ML,0.321,1937,3.93
-Mitch Keller,New York Mets,0.32,18.9,🟡 Normal,ML,,0,4.45
-Eduardo Rodriguez,Los Angeles Dodgers,0.324,12.5,🟡 Normal,Hist+ML,0.324,1932,4.51
-Will Warren,San Francisco Giants,0.325,21.9,🟡 Normal,Hist+ML,0.33,824,4.58
-Michael McGreevy,Tampa Bay Rays,0.331,16.9,🔴 Difícil,Hist+ML,0.326,486,4.67
-Dustin May,Tampa Bay Rays,0.335,8.4,🔴 Difícil,Hist+ML,0.329,898,5.2
-Sean Burke,Milwaukee Brewers,0.337,19.5,🔴 Difícil,Hist+ML,0.339,674,4.96
-Miles Mikolas,Chicago Cubs,0.344,26.7,🔴 Difícil,ML,,0,5.27
-Jake Irvin,Chicago Cubs,0.344,11.7,🔴 Difícil,Hist+ML,0.342,2087,5.59
-Randy Vásquez,Detroit Tigers,0.358,14.5,🔴 Difícil,Hist+ML,0.36,1170,5.37
+Logan Gilbert,Cleveland Guardians,0.292,98.2,🟢 Favorable,Hist+ML,0.292,2879,2.04
+Andrew Abbott,Boston Red Sox,0.303,99.8,🟡 Normal,ML,,0,3.13
+Shane Smith,Milwaukee Brewers,0.307,79.8,🟡 Normal,Hist+ML,0.31,616,5.49
