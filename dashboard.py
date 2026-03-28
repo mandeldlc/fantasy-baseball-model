@@ -553,29 +553,29 @@ with tab9:
     if streaks_bat is None:
         st.warning("Corre primero: python src/streaks.py")
     else:
-        filtro = st.radio("Mostrar:", ["Todo", "Mi Roster", "Waiver"], horizontal=True)
-        if filtro != "Todo":
-            streaks_bat = streaks_bat[streaks_bat['Fuente'] == filtro]
-            streaks_pit = streaks_pit[streaks_pit['Fuente'] == filtro]
-            tab_bat, tab_pit = st.tabs(["🏏 Bateadores", "⚾ Pitchers"])
+        tab_bat, tab_pit = st.tabs(["🏏 Bateadores", "⚾ Pitchers"])
         with tab_bat:
+            filtro = st.radio("Mostrar:", ["Todo", "Mi Roster", "Waiver"], horizontal=True, key="filtro_bat")
+            df_bat = streaks_bat[streaks_bat['Fuente'] == filtro] if filtro != "Todo" else streaks_bat
             col1, col2, col3 = st.columns(3)
-            with col1: st.metric("🔥 HOT", len(streaks_bat[streaks_bat['Streak'] == '🔥 HOT']))
-            with col2: st.metric("🥶 COLD", len(streaks_bat[streaks_bat['Streak'] == '🥶 COLD']))
-            with col3: st.metric("➡️ Neutral", len(streaks_bat[streaks_bat['Streak'] == '➡️ NEUTRAL']))
+            with col1: st.metric("🔥 HOT", len(df_bat[df_bat['Streak'] == '🔥 HOT']))
+            with col2: st.metric("🥶 COLD", len(df_bat[df_bat['Streak'] == '🥶 COLD']))
+            with col3: st.metric("➡️ Neutral", len(df_bat[df_bat['Streak'] == '➡️ NEUTRAL']))
             st.divider()
             streak_filter = st.selectbox("Filtrar:", ["Todos", "🔥 HOT", "🥶 COLD", "➡️ NEUTRAL"], key="bat_streak")
-            mostrar_bat = streaks_bat[streaks_bat['Streak'] == streak_filter] if streak_filter != "Todos" else streaks_bat
+            mostrar_bat = df_bat[df_bat['Streak'] == streak_filter] if streak_filter != "Todos" else df_bat
             cols_bat = [c for c in mostrar_bat.columns if c in ['Name', 'Fuente', 'Diff', 'Streak', 'EV', 'Barrel%'] or 'wOBA' in c or 'xwOBA' in c]
             st.dataframe(mostrar_bat[cols_bat], hide_index=True, height=500)
         with tab_pit:
+            filtro_p = st.radio("Mostrar:", ["Todo", "Mi Roster", "Waiver"], horizontal=True, key="filtro_pit")
+            df_pit = streaks_pit[streaks_pit['Fuente'] == filtro_p] if filtro_p != "Todo" else streaks_pit
             col1, col2, col3 = st.columns(3)
-            with col1: st.metric("🔥 HOT", len(streaks_pit[streaks_pit['Streak'] == '🔥 HOT']))
-            with col2: st.metric("🥶 COLD", len(streaks_pit[streaks_pit['Streak'] == '🥶 COLD']))
-            with col3: st.metric("➡️ Neutral", len(streaks_pit[streaks_pit['Streak'] == '➡️ NEUTRAL']))
+            with col1: st.metric("🔥 HOT", len(df_pit[df_pit['Streak'] == '🔥 HOT']))
+            with col2: st.metric("🥶 COLD", len(df_pit[df_pit['Streak'] == '🥶 COLD']))
+            with col3: st.metric("➡️ Neutral", len(df_pit[df_pit['Streak'] == '➡️ NEUTRAL']))
             st.divider()
             streak_filter_p = st.selectbox("Filtrar:", ["Todos", "🔥 HOT", "🥶 COLD", "➡️ NEUTRAL"], key="pit_streak")
-            mostrar_pit = streaks_pit[streaks_pit['Streak'] == streak_filter_p] if streak_filter_p != "Todos" else streaks_pit
+            mostrar_pit = df_pit[df_pit['Streak'] == streak_filter_p] if streak_filter_p != "Todos" else df_pit
             cols_pit = [c for c in mostrar_pit.columns if c in ['Name', 'Fuente', 'Ks', 'Diff ERA', 'Streak'] or 'ERA' in c or 'xERA' in c]
             st.dataframe(mostrar_pit[cols_pit], hide_index=True, height=500)
 
