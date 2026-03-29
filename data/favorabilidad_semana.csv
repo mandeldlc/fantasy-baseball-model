@@ -1,4 +1,8 @@
 Name,Oponente,xwOBA_pred,Prob_favorable,Clasificacion,Fuente_pred,xwOBA_hist,PA_hist,xERA_2025
-Logan Gilbert,Cleveland Guardians,0.292,98.2,🟢 Favorable,Hist+ML,0.292,2879,2.04
-Andrew Abbott,Boston Red Sox,0.303,99.8,🟡 Normal,ML,,0,3.13
-Shane Smith,Milwaukee Brewers,0.307,79.8,🟡 Normal,Hist+ML,0.31,616,5.49
+Logan Gilbert,Cleveland Guardians,0.292,97.4,🟢 Favorable,Hist+ML,0.292,2879,1.77
+Yusei Kikuchi,Houston Astros,0.303,52.1,🟡 Normal,ML,,0,5.35
+Andrew Abbott,Boston Red Sox,0.303,96.6,🟡 Normal,ML,,0,2.66
+Shane Smith,Milwaukee Brewers,0.309,62.1,🟡 Normal,Hist+ML,0.31,616,4.35
+Luis Severino,Toronto Blue Jays,0.32,5.8,🟡 Normal,Hist+ML,0.32,2292,3.58
+Ryne Nelson,Los Angeles Dodgers,0.321,8.6,🟡 Normal,Hist+ML,0.321,1937,9.04
+Kyle Freeland,Miami Marlins,0.34,63.9,🔴 Difícil,Hist+ML,0.351,2647,4.94
