@@ -41,6 +41,9 @@ jobs:
       - name: Actualizar roster
         run: python src/yahoo_api.py
 
+      - name: Descargar jugadores libres Yahoo Fantasy
+        run: python src/yahoo_players.py
+
       - name: Scoring semanal
         run: python src/scoring.py
 
