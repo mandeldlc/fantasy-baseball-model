@@ -67,3 +67,22 @@ def blend_stat(val_hist, val_curr, pa_curr, pa_threshold=50):
         return round(w_hist_adj * val_hist + w_curr_adj * val_curr, 3)
     else:
         return val_hist
+    
+def normalizar_nombre(nombre):
+    """
+    Normaliza nombres de jugadores para matching entre Yahoo y Baseball Savant.
+    Maneja acentos, apóstrofes, puntos y variantes de escritura.
+    """
+    import unicodedata, re
+    if not isinstance(nombre, str):
+        return ""
+    nombre = re.sub(r'\(.*?\)', '', nombre).strip()
+    nombre = unicodedata.normalize('NFD', nombre)
+    nombre = ''.join(c for c in nombre if unicodedata.category(c) != 'Mn')
+    nombre = nombre.lower().strip()
+    nombre = nombre.replace('.', '')
+    nombre = nombre.replace('-', ' ')
+    nombre = re.sub(r"[''`´'ʼ]", '', nombre)
+    nombre = re.sub(r'\s+', ' ', nombre).strip()
+    nombre = nombre.replace(' ', '')
+    return nombre

@@ -1,7 +1,6 @@
 import requests
 import pandas as pd
 from io import StringIO
-from yfpy.query import YahooFantasySportsQuery
 from dotenv import load_dotenv
 from pathlib import Path
 from datetime import date
@@ -9,7 +8,7 @@ import sys
 import os
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from src.blend_utils import get_blend_weights, get_season, get_min_pa, get_min_ip
+from src.blend_utils import get_blend_weights, get_season, get_min_pa, get_min_ip, normalizar_nombre
 
 load_dotenv()
 
@@ -20,35 +19,6 @@ MIN_PA = get_min_pa()
 MIN_IP = get_min_ip()
 
 print(f"Temporada {SEASON} — Blend {int(W_HIST*100)}% hist / {int(W_CURR*100)}% {SEASON}")
-
-def get_jugadores_tomados():
-    print("Conectando a Yahoo para ver jugadores tomados...")
-    query = YahooFantasySportsQuery(
-        league_id="31891", game_code="mlb", game_id=469,
-        yahoo_consumer_key=os.getenv('YAHOO_CLIENT_ID'),
-        yahoo_consumer_secret=os.getenv('YAHOO_CLIENT_SECRET'),
-        yahoo_access_token_json=None,
-        env_file_location=Path("."), save_token_data_to_env_file=True
-    )
-    tomados = []
-    for team_id in range(1, 13):
-        try:
-            roster = query.get_team_roster_by_week(team_id=team_id, chosen_week=1)
-            for player in roster.players:
-                tomados.append(player.name.full)
-        except Exception as e:
-            print(f"  Error equipo {team_id}: {e}")
-    print(f"✅ Jugadores tomados en la liga: {len(tomados)}")
-    return tomados
-
-def normalizar_nombre(nombre):
-    if not isinstance(nombre, str):
-        return ""
-    import unicodedata, re
-    nombre = re.sub(r'\(.*?\)', '', nombre).strip()
-    nombre = unicodedata.normalize('NFD', nombre)
-    nombre = ''.join(c for c in nombre if unicodedata.category(c) != 'Mn')
-    return nombre.lower().strip().replace('.', '').replace('-', ' ').replace("'", '')
 
 def split_nombre(df):
     if len(df) == 0:
@@ -111,7 +81,6 @@ def blend_bateo(curr, prev):
         if r['Name_norm'] in curr_names:
             r_curr = curr[curr['Name_norm'] == r['Name_norm']].iloc[0]
             pa_curr = r_curr.get('pa', 0)
-            # Con al menos 1 PA ya aplicamos blend proporcional
             w = min(W_CURR * (pa_curr / 50), W_CURR) if pa_curr < 50 else W_CURR
             w_h = 1 - w
             blended = r.copy()
@@ -131,7 +100,6 @@ def blend_pitcheo(curr, prev):
         if r['Name_norm'] in curr_names:
             r_curr = curr[curr['Name_norm'] == r['Name_norm']].iloc[0]
             ip_curr = r_curr.get('p_formatted_ip', 0)
-            # Con al menos 1 IP ya aplicamos blend proporcional
             w = min(W_CURR * (ip_curr / 20), W_CURR) if ip_curr < 20 else W_CURR
             w_h = 1 - w
             blended = r.copy()
@@ -151,14 +119,36 @@ print(f"  ✅ Bateadores blend: {len(todos_bateo)}")
 print(f"  ✅ Pitchers blend: {len(todos_pitcheo)}")
 
 # ================================
-# FILTRAR JUGADORES TOMADOS
+# FILTRAR USANDO LISTA OFICIAL DE YAHOO
 # ================================
-jugadores_tomados = get_jugadores_tomados()
-tomados_norm = [normalizar_nombre(n) for n in jugadores_tomados]
-pd.DataFrame({'yahoo_name': jugadores_tomados, 'yahoo_norm': tomados_norm}).to_csv('data/jugadores_tomados.csv', index=False)
-
-libres_bateo = todos_bateo[~todos_bateo['Name_norm'].isin(tomados_norm)].copy()
-libres_pitcheo = todos_pitcheo[~todos_pitcheo['Name_norm'].isin(tomados_norm)].copy()
+try:
+    yahoo_libres = pd.read_csv('data/yahoo_players.csv')
+    yahoo_libres['yahoo_norm'] = yahoo_libres['yahoo_name'].apply(normalizar_nombre)
+    yahoo_libres_norm = set(yahoo_libres['yahoo_norm'].tolist())
+    print(f"\n✅ Usando lista oficial Yahoo: {len(yahoo_libres)} jugadores libres")
+    libres_bateo = todos_bateo[todos_bateo['Name_norm'].isin(yahoo_libres_norm)].copy()
+    libres_pitcheo = todos_pitcheo[todos_pitcheo['Name_norm'].isin(yahoo_libres_norm)].copy()
+except Exception as e:
+    print(f"\n⚠️ No hay yahoo_players.csv ({e}) — usando método anterior")
+    from yfpy.query import YahooFantasySportsQuery
+    query = YahooFantasySportsQuery(
+        league_id="31891", game_code="mlb", game_id=469,
+        yahoo_consumer_key=os.getenv('YAHOO_CLIENT_ID'),
+        yahoo_consumer_secret=os.getenv('YAHOO_CLIENT_SECRET'),
+        yahoo_access_token_json=None,
+        env_file_location=Path("."), save_token_data_to_env_file=True
+    )
+    tomados = []
+    for team_id in range(1, 13):
+        try:
+            roster = query.get_team_roster_by_week(team_id=team_id, chosen_week=1)
+            for player in roster.players:
+                tomados.append(player.name.full)
+        except:
+            pass
+    tomados_norm = [normalizar_nombre(n) for n in tomados]
+    libres_bateo = todos_bateo[~todos_bateo['Name_norm'].isin(tomados_norm)].copy()
+    libres_pitcheo = todos_pitcheo[~todos_pitcheo['Name_norm'].isin(tomados_norm)].copy()
 
 print(f"\nJugadores libres en la liga:")
 print(f"  Bateadores: {len(libres_bateo)}")
@@ -243,7 +233,7 @@ for _, r in sp_libres.head(20).iterrows():
     print(f"{arrow} {r['Name']:<20} ERA:{r['p_era']:>5.2f} xERA:{r['xera']:>6.2f} Ks:{r['p_strikeout']:>4.0f} Score:{r['breakout_score']:>7.1f}")
 
 print("\n" + "=" * 70)
-print(f"RP — {SEASON} (blend {int(W_CURR*100)}/{int(W_CURR*100)})")
+print(f"RP — {SEASON} (blend {int(W_HIST*100)}/{int(W_CURR*100)})")
 print("=" * 70)
 for _, r in rp_libres.head(20).iterrows():
     arrow = "📈" if r['diff_xera'] > 0.30 else "➡️ "
