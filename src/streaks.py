@@ -6,7 +6,7 @@ import os
 import pandas as pd
 import sys
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from src.blend_utils import get_season, get_blend_weights
+from src.blend_utils import get_season, get_blend_weights, normalizar_nombre
 
 load_dotenv()
 
@@ -15,14 +15,6 @@ SEASON_PREV = SEASON - 1
 SEASON_PREV2 = SEASON - 2
 W_HIST, W_CURR = get_blend_weights()
 
-query = YahooFantasySportsQuery(
-    league_id="31891", game_code="mlb", game_id=469,
-    yahoo_consumer_key=os.getenv('YAHOO_CLIENT_ID'),
-    yahoo_consumer_secret=os.getenv('YAHOO_CLIENT_SECRET'),
-    yahoo_access_token_json=None,
-    env_file_location=Path("."), save_token_data_to_env_file=True
-)
-
 print("Calculando hot/cold streaks...")
 
 bateo = pd.read_csv('data/bateo_historico.csv')
@@ -30,8 +22,10 @@ pitcheo = pd.read_csv('data/pitcheo_historico.csv')
 
 bateo[['last_name', 'first_name']] = bateo['last_name, first_name'].str.split(', ', expand=True)
 bateo['Name'] = bateo['first_name'] + ' ' + bateo['last_name']
+bateo['Name_norm'] = bateo['Name'].apply(normalizar_nombre)
 pitcheo[['last_name', 'first_name']] = pitcheo['last_name, first_name'].str.split(', ', expand=True)
 pitcheo['Name'] = pitcheo['first_name'] + ' ' + pitcheo['last_name']
+pitcheo['Name_norm'] = pitcheo['Name'].apply(normalizar_nombre)
 
 bateo_curr  = bateo[bateo['year'] == SEASON].copy()
 bateo_prev  = bateo[bateo['year'] == SEASON_PREV].copy()
@@ -44,25 +38,46 @@ print(f"  Data {SEASON}: {len(bateo_curr)} bateadores, {len(pitcheo_curr)} pitch
 print(f"  Data {SEASON_PREV}: {len(bateo_prev)} bateadores, {len(pitcheo_prev)} pitchers")
 print(f"  Blend: {int(W_HIST*100)}% hist / {int(W_CURR*100)}% actual")
 
+# ================================
+# CARGAR ROSTER
+# ================================
 mi_roster = pd.read_csv('data/roster.csv')
 mis_jugadores = mi_roster['Name'].tolist()
 
-waivers_bat = pd.read_csv('data/waivers_bateadores.csv')
-waivers_sp  = pd.read_csv('data/waivers_sp.csv')
-waivers_rp  = pd.read_csv('data/waivers_rp.csv')
-jugadores_waivers_bat = waivers_bat['Name'].tolist()
-jugadores_waivers_pit = pd.concat([waivers_sp, waivers_rp])['Name'].tolist()
+# ================================
+# USAR LISTA OFICIAL DE YAHOO
+# ================================
+try:
+    yahoo_players = pd.read_csv('data/yahoo_players.csv')
+    yahoo_libres = yahoo_players[yahoo_players['ownership'] == 'freeagent'].copy()
+    yahoo_libres['yahoo_norm'] = yahoo_libres['yahoo_name'].apply(normalizar_nombre)
 
+    pos_pitchers = ['SP', 'RP', 'SP,RP', 'P', 'SP,RP,P']
+    yahoo_bat = yahoo_libres[~yahoo_libres['position'].isin(pos_pitchers)]
+    yahoo_pit = yahoo_libres[yahoo_libres['position'].isin(pos_pitchers)]
+
+    jugadores_waivers_bat = yahoo_bat['yahoo_name'].tolist()
+    jugadores_waivers_pit = yahoo_pit['yahoo_name'].tolist()
+    print(f"  Yahoo waivers: {len(jugadores_waivers_bat)} bateadores, {len(jugadores_waivers_pit)} pitchers")
+except Exception as e:
+    print(f"  Fallback a CSVs: {e}")
+    waivers_bat = pd.read_csv('data/waivers_bateadores.csv')
+    waivers_sp  = pd.read_csv('data/waivers_sp.csv')
+    waivers_rp  = pd.read_csv('data/waivers_rp.csv')
+    jugadores_waivers_bat = waivers_bat['Name'].tolist()
+    jugadores_waivers_pit = pd.concat([waivers_sp, waivers_rp])['Name'].tolist()
+
+# ================================
+# FUNCIONES BLEND
+# ================================
 def blend_woba(woba_prev, woba_curr, pa_curr):
-    """Blend inteligente — más peso a 2026 cuando hay más PA"""
     if pa_curr <= 0 or woba_curr > 0.600 or woba_curr <= 0:
-        return woba_prev  # datos inválidos → usar solo historial
+        return woba_prev
     w = min(W_CURR * (pa_curr / 50), W_CURR) if pa_curr < 50 else W_CURR
     w_h = 1 - w
     return round(w_h * woba_prev + w * woba_curr, 3)
 
 def blend_era(era_prev, era_curr, ip_curr):
-    """Blend ERA — más peso a 2026 cuando hay más IP"""
     if ip_curr <= 0 or era_curr > 15 or era_curr <= 0:
         return era_prev
     w = min(W_CURR * (ip_curr / 20), W_CURR) if ip_curr < 20 else W_CURR
@@ -70,44 +85,44 @@ def blend_era(era_prev, era_curr, ip_curr):
     return round(w_h * era_prev + w * era_curr, 2)
 
 def get_bat_stats(nombre):
-    """Stats blended: si hay 2026 hacer blend con 2025, sino comparar 2025 vs 2024"""
-    curr = bateo_curr[bateo_curr['Name'] == nombre]
-    prev = bateo_prev[bateo_prev['Name'] == nombre]
-    prev2 = bateo_prev2[bateo_prev2['Name'] == nombre]
+    """Buscar por nombre normalizado para mejor match"""
+    norm = normalizar_nombre(nombre)
+    curr  = bateo_curr[bateo_curr['Name_norm'] == norm]
+    prev  = bateo_prev[bateo_prev['Name_norm'] == norm]
+    prev2 = bateo_prev2[bateo_prev2['Name_norm'] == norm]
 
     if len(prev) > 0:
         s_prev = prev.iloc[0]
         if len(curr) > 0:
             s_curr = curr.iloc[0]
             pa_curr = float(s_curr.get('pa', 0))
-            # Blend wOBA y xwOBA
-            woba_blended  = blend_woba(float(s_prev['woba']),  float(s_curr['woba']),  pa_curr)
-            xwoba_blended = blend_woba(float(s_prev['xwoba']), float(s_curr['xwoba']), pa_curr)
-            ev_blended    = blend_woba(float(s_prev.get('exit_velocity_avg', 88)),
-                                       float(s_curr.get('exit_velocity_avg', 88)), pa_curr)
+            woba_blended   = blend_woba(float(s_prev['woba']),  float(s_curr['woba']),  pa_curr)
+            xwoba_blended  = blend_woba(float(s_prev['xwoba']), float(s_curr['xwoba']), pa_curr)
+            ev_blended     = blend_woba(float(s_prev.get('exit_velocity_avg', 88)),
+                                        float(s_curr.get('exit_velocity_avg', 88)), pa_curr)
             barrel_blended = blend_woba(float(s_prev.get('barrel_batted_rate', 8)),
                                         float(s_curr.get('barrel_batted_rate', 8)), pa_curr)
-            # Crear fila blended
             blended = s_prev.copy()
-            blended['woba']  = woba_blended
-            blended['xwoba'] = xwoba_blended
-            blended['exit_velocity_avg']   = ev_blended
-            blended['barrel_batted_rate']  = barrel_blended
+            blended['woba']               = woba_blended
+            blended['xwoba']              = xwoba_blended
+            blended['exit_velocity_avg']  = ev_blended
+            blended['barrel_batted_rate'] = barrel_blended
             return blended, s_prev, SEASON, SEASON_PREV
         elif len(prev2) > 0:
             return s_prev, prev2.iloc[0], SEASON_PREV, SEASON_PREV2
     return None, None, None, None
 
 def get_pit_stats(nombre):
-    curr  = pitcheo_curr[pitcheo_curr['Name'] == nombre]
-    prev  = pitcheo_prev[pitcheo_prev['Name'] == nombre]
-    prev2 = pitcheo_prev2[pitcheo_prev2['Name'] == nombre]
+    norm = normalizar_nombre(nombre)
+    curr  = pitcheo_curr[pitcheo_curr['Name_norm'] == norm]
+    prev  = pitcheo_prev[pitcheo_prev['Name_norm'] == norm]
+    prev2 = pitcheo_prev2[pitcheo_prev2['Name_norm'] == norm]
 
     if len(prev) > 0:
         s_prev = prev.iloc[0]
         if len(curr) > 0:
             s_curr = curr.iloc[0]
-            ip_curr = float(s_curr.get('p_formatted_ip', 0))
+            ip_curr      = float(s_curr.get('p_formatted_ip', 0))
             era_blended  = blend_era(float(s_prev['p_era']), float(s_curr['p_era']), ip_curr)
             xera_blended = blend_era(float(s_prev['xera']), float(s_curr['xera']), ip_curr)
             blended = s_prev.copy()
@@ -124,13 +139,12 @@ def calc_streak_bat(nombres, fuente):
         s_curr, s_prev, yr_curr, yr_prev = get_bat_stats(nombre)
         if s_curr is None or s_prev is None:
             continue
-        woba_curr  = float(s_curr['woba'])
-        woba_prev  = float(s_prev['woba'])
-        xwoba_curr = float(s_curr['xwoba'])
-        ev_curr    = float(s_curr.get('exit_velocity_avg', 0))
+        woba_curr   = float(s_curr['woba'])
+        woba_prev   = float(s_prev['woba'])
+        xwoba_curr  = float(s_curr['xwoba'])
+        ev_curr     = float(s_curr.get('exit_velocity_avg', 0))
         barrel_curr = float(s_curr.get('barrel_batted_rate', 0))
 
-        # Validar valores
         if woba_curr > 0.600 or woba_prev > 0.600:
             continue
 
