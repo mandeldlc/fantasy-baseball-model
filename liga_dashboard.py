@@ -81,7 +81,7 @@ else:
     with col5:
         st.markdown("**Cambio**")
     with col6:
-        st.markdown("**W-L**")
+        st.markdown("**W-L-T**")
     with col7:
         st.markdown("**Tendencia**")
 
@@ -109,7 +109,7 @@ else:
             signo = "+" if diff > 0 else ""
             st.markdown(f":{color}[{signo}{diff:.1f}%]")
         with col6:
-            st.markdown(f"{wins}-{losses}")
+            st.markdown(f"{wins}-{losses}-{int(r.get('ties', 0))}")
         with col7:
             st.markdown(f"**{tendencia}**")
 
