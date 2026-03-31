@@ -8,42 +8,42 @@
     "equipo": "Dando Tabla",
     "jugadores": 14,
     "HR_avg": 0.3,
-    "OPS": 0.683,
-    "wOBA": 0.317,
-    "xwOBA": 0.289,
-    "EV": 89.1,
-    "Barrel%": 4.8
+    "OPS": 0.658,
+    "wOBA": 0.303,
+    "xwOBA": 0.281,
+    "EV": 88.4,
+    "Barrel%": 4.3
   },
   "opp_bat": {
     "equipo": "A.Rod Gangs",
-    "jugadores": 13,
-    "HR_avg": 4.7,
-    "OPS": 0.816,
-    "wOBA": 0.365,
-    "xwOBA": 0.355,
-    "EV": 89.1,
-    "Barrel%": 12.1
+    "jugadores": 14,
+    "HR_avg": 4.4,
+    "OPS": 0.709,
+    "wOBA": 0.319,
+    "xwOBA": 0.333,
+    "EV": 90.1,
+    "Barrel%": 11.6
   },
   "mis_pit": {
     "equipo": "Dando Tabla",
     "jugadores": 10,
-    "ERA": 3.1,
-    "xERA": 3.94,
-    "Ks": 41.7,
-    "xwOBA": 0.3,
-    "EV_against": 88.5
+    "ERA": 4.72,
+    "xERA": 4.92,
+    "Ks": 40.5,
+    "xwOBA": 0.319,
+    "EV_against": 88.7
   },
   "opp_pit": {
     "equipo": "A.Rod Gangs",
-    "jugadores": 10,
-    "ERA": 5.53,
-    "xERA": 7.32,
-    "Ks": 49.3,
-    "xwOBA": 0.369,
-    "EV_against": 91.4
+    "jugadores": 11,
+    "ERA": 6.3,
+    "xERA": 7.03,
+    "Ks": 35.6,
+    "xwOBA": 0.36,
+    "EV_against": 90.4
   },
-  "prob_ganar": 59.7,
-  "prob_perder": 40.3,
-  "odds_ganar": "-148",
-  "odds_perder": "+148"
+  "prob_ganar": 57.0,
+  "prob_perder": 43.0,
+  "odds_ganar": "-133",
+  "odds_perder": "+133"
 }
