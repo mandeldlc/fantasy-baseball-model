@@ -6,44 +6,44 @@
   "week_end": "2026-04-05",
   "mis_bat": {
     "equipo": "Dando Tabla",
-    "jugadores": 14,
-    "HR_avg": 0.4,
-    "OPS": 0.701,
-    "wOBA": 0.314,
-    "xwOBA": 0.272,
-    "EV": 89.3,
-    "Barrel%": 4.5
+    "jugadores": 13,
+    "HR_avg": 0.5,
+    "OPS": 0.723,
+    "wOBA": 0.323,
+    "xwOBA": 0.288,
+    "EV": 89.5,
+    "Barrel%": 5.8
   },
   "opp_bat": {
     "equipo": "A.Rod Gangs",
     "jugadores": 15,
     "HR_avg": 4.3,
-    "OPS": 0.694,
-    "wOBA": 0.313,
-    "xwOBA": 0.33,
-    "EV": 90.6,
+    "OPS": 0.676,
+    "wOBA": 0.306,
+    "xwOBA": 0.323,
+    "EV": 90.3,
     "Barrel%": 10.2
   },
   "mis_pit": {
     "equipo": "Dando Tabla",
-    "jugadores": 12,
-    "ERA": 3.78,
-    "xERA": 4.79,
-    "Ks": 22.4,
-    "xwOBA": 0.316,
-    "EV_against": 87.4
+    "jugadores": 13,
+    "ERA": 3.85,
+    "xERA": 4.6,
+    "Ks": 21.7,
+    "xwOBA": 0.308,
+    "EV_against": 87.0
   },
   "opp_pit": {
     "equipo": "A.Rod Gangs",
     "jugadores": 13,
-    "ERA": 6.24,
-    "xERA": 6.54,
-    "Ks": 5.2,
-    "xwOBA": 0.345,
-    "EV_against": 91.9
+    "ERA": 6.11,
+    "xERA": 6.14,
+    "Ks": 5.9,
+    "xwOBA": 0.337,
+    "EV_against": 91.6
   },
-  "prob_ganar": 59.9,
-  "prob_perder": 40.1,
-  "odds_ganar": "-149",
-  "odds_perder": "+149"
+  "prob_ganar": 59.3,
+  "prob_perder": 40.7,
+  "odds_ganar": "-146",
+  "odds_perder": "+146"
 }

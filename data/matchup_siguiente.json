@@ -6,13 +6,13 @@
   "week_end": "2026-04-12",
   "mis_bat": {
     "equipo": "Dando Tabla",
-    "jugadores": 14,
-    "HR_avg": 0.4,
-    "OPS": 0.701,
-    "wOBA": 0.314,
-    "xwOBA": 0.272,
-    "EV": 89.3,
-    "Barrel%": 4.5
+    "jugadores": 13,
+    "HR_avg": 0.5,
+    "OPS": 0.723,
+    "wOBA": 0.323,
+    "xwOBA": 0.288,
+    "EV": 89.5,
+    "Barrel%": 5.8
   },
   "opp_bat": {
     "equipo": "B-Strong",
@@ -26,24 +26,24 @@
   },
   "mis_pit": {
     "equipo": "Dando Tabla",
-    "jugadores": 12,
-    "ERA": 3.78,
-    "xERA": 4.79,
-    "Ks": 22.4,
-    "xwOBA": 0.316,
-    "EV_against": 87.4
+    "jugadores": 13,
+    "ERA": 3.85,
+    "xERA": 4.6,
+    "Ks": 21.7,
+    "xwOBA": 0.308,
+    "EV_against": 87.0
   },
   "opp_pit": {
     "equipo": "B-Strong",
     "jugadores": 11,
-    "ERA": 2.36,
-    "xERA": 3.53,
-    "Ks": 6.4,
+    "ERA": 3.16,
+    "xERA": 3.49,
+    "Ks": 7.8,
     "xwOBA": 0.287,
     "EV_against": 90.7
   },
-  "prob_ganar": 43.3,
-  "prob_perder": 56.7,
-  "odds_ganar": "+131",
-  "odds_perder": "-131"
+  "prob_ganar": 45.8,
+  "prob_perder": 54.2,
+  "odds_ganar": "+118",
+  "odds_perder": "-118"
 }
