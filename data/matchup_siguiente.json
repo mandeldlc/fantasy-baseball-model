@@ -27,9 +27,9 @@
   "mis_pit": {
     "equipo": "Dando Tabla",
     "jugadores": 13,
-    "ERA": 3.85,
+    "ERA": 3.71,
     "xERA": 4.6,
-    "Ks": 21.7,
+    "Ks": 21.9,
     "xwOBA": 0.308,
     "EV_against": 87.0
   },
@@ -42,8 +42,8 @@
     "xwOBA": 0.287,
     "EV_against": 90.7
   },
-  "prob_ganar": 45.8,
-  "prob_perder": 54.2,
-  "odds_ganar": "+118",
-  "odds_perder": "-118"
+  "prob_ganar": 46.2,
+  "prob_perder": 53.8,
+  "odds_ganar": "+116",
+  "odds_perder": "-116"
 }

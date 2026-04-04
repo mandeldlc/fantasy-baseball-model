@@ -1,97 +1,88 @@
 oponente,pedir,categoria_pedir,valor_pedir,mi_debilidad,mis_fortalezas,tipo
-B-Strong,Tatsuya Imai,ERA,13.5,3.982,NSV,Pitcher
-Los Calvoneros unidos,Paul Skenes,ERA,9.53,3.982,NSV,Pitcher
-Los Inmensos Amos BT,Yordan Alvarez,R,8.0,3.364,SB,Bateador
-B-Strong,Shea Langeliers,RBI,8.0,2.273,"R, SB",Bateador
-THE PUNISHER X,Corbin Carroll,RBI,8.0,2.273,"R, SB",Bateador
-Los Inmensos Amos BT,Yandy Díaz,RBI,8.0,2.273,SB,Bateador
-THE PUNISHER X,Logan Webb,ERA,7.36,3.982,N/A,Pitcher
-A.Rod Gangs,Christian Walker,RBI,7.0,2.273,"R, SB",Bateador
-A.Rod Gangs,Drake Baldwin,RBI,7.0,2.273,"R, SB",Bateador
-EVERYONE'S TERROR,Carlos Correa,RBI,7.0,2.273,"R, SB",Bateador
-Los Calvoneros unidos,Matthew Boyd,ERA,6.75,3.982,NSV,Pitcher
-THE PUNISHER X,Brady Singer,ERA,6.75,3.982,N/A,Pitcher
-Los Inmensos Amos BT,Wilyer Abreu,RBI,6.0,2.273,SB,Bateador
-Los Inmensos Amos BT,Ben Rice,R,6.0,3.364,SB,Bateador
-LOS GORDITOS DAD & JR 2026 MLB,CJ Abrams,RBI,6.0,2.273,"R, SB",Bateador
-B-Strong,Ryan O'Hearn,RBI,6.0,2.273,"R, SB",Bateador
-EVERYONE'S TERROR,Eugenio Suárez,RBI,6.0,2.273,"R, SB",Bateador
-Los Inmensos Amos BT,Yordan Alvarez,RBI,6.0,2.273,SB,Bateador
-Los Inmensos Amos BT,Xavier Edwards,R,6.0,3.364,SB,Bateador
-A.Rod Gangs,Luke Raley,RBI,6.0,2.273,"R, SB",Bateador
-LOS GORDITOS DAD & JR 2026 MLB,Jake Burger,RBI,6.0,2.273,"R, SB",Bateador
-B-Strong,Bubba Chandler,K,6.0,5.727,NSV,Pitcher
-THE PUNISHER X,Mike Burrows,ERA,5.91,3.982,N/A,Pitcher
-EVERYONE'S TERROR,Grant Holmes,ERA,5.4,3.982,N/A,Pitcher
-EVERYONE'S TERROR,Aaron Nola,ERA,5.4,3.982,N/A,Pitcher
-THE PUNISHER X,Alec Burleson,RBI,5.0,2.273,"R, SB",Bateador
-San Safari Baseball,Chase DeLauter,RBI,5.0,2.273,SB,Bateador
-De espalda al aro mmg,Kevin McGonigle,RBI,5.0,2.273,"R, SB",Bateador
-San Safari Baseball,Mookie Betts,RBI,5.0,2.273,SB,Bateador
-San Safari Baseball,Corey Seager,RBI,5.0,2.273,SB,Bateador
-Team Frank Yankee,Will Smith,RBI,5.0,2.273,SB,Bateador
-Team Frank Yankee,Ian Happ,RBI,5.0,2.273,SB,Bateador
-De espalda al aro mmg,Juan Soto,RBI,5.0,2.273,"R, SB",Bateador
-De espalda al aro mmg,Ezequiel Tovar,RBI,5.0,2.273,"R, SB",Bateador
-THE PUNISHER X,José Ramírez,RBI,5.0,2.273,"R, SB",Bateador
+B-Strong,Tatsuya Imai,ERA,13.5,3.807,NSV,Pitcher
+Los Calvoneros unidos,Paul Skenes,ERA,9.53,3.807,NSV,Pitcher
+A.Rod Gangs,Drake Baldwin,RBI,8.0,2.545,SB,Bateador
+B-Strong,Shea Langeliers,RBI,8.0,2.545,"R, SB",Bateador
+THE PUNISHER X,Corbin Carroll,RBI,8.0,2.545,"R, SB",Bateador
+San Safari Baseball,Jose Altuve,R,8.0,3.455,SB,Bateador
+Los Inmensos Amos BT,Yordan Alvarez,R,8.0,3.455,SB,Bateador
+Los Inmensos Amos BT,Yandy Díaz,RBI,8.0,2.545,SB,Bateador
+THE PUNISHER X,Logan Webb,ERA,7.36,3.807,N/A,Pitcher
+A.Rod Gangs,Christian Walker,RBI,7.0,2.545,SB,Bateador
+THE PUNISHER X,Brady Singer,ERA,6.75,3.807,N/A,Pitcher
+Los Calvoneros unidos,Matthew Boyd,ERA,6.75,3.807,NSV,Pitcher
+B-Strong,Bubba Chandler,K,6.0,6.0,NSV,Pitcher
+San Safari Baseball,Brandon Nimmo,R,6.0,3.455,SB,Bateador
+Los Inmensos Amos BT,Yordan Alvarez,RBI,6.0,2.545,SB,Bateador
+Los Inmensos Amos BT,Wilyer Abreu,RBI,6.0,2.545,SB,Bateador
+Los Inmensos Amos BT,Ben Rice,R,6.0,3.455,SB,Bateador
+Los Inmensos Amos BT,Xavier Edwards,R,6.0,3.455,SB,Bateador
+San Safari Baseball,Corey Seager,R,6.0,3.455,SB,Bateador
+LOS GORDITOS DAD & JR 2026 MLB,CJ Abrams,RBI,6.0,2.545,"R, SB",Bateador
+A.Rod Gangs,Luke Raley,RBI,6.0,2.545,SB,Bateador
+B-Strong,Ryan O'Hearn,RBI,6.0,2.545,"R, SB",Bateador
+LOS GORDITOS DAD & JR 2026 MLB,Jake Burger,RBI,6.0,2.545,"R, SB",Bateador
+THE PUNISHER X,Mike Burrows,ERA,5.91,3.807,N/A,Pitcher
+EVERYONE'S TERROR,Aaron Nola,ERA,5.4,3.807,N/A,Pitcher
+EVERYONE'S TERROR,Grant Holmes,ERA,5.4,3.807,N/A,Pitcher
+San Safari Baseball,Mookie Betts,RBI,5.0,2.545,SB,Bateador
 B-Strong,Shea Langeliers,HR,5.0,0.545,"R, SB",Bateador
-Team Frank Yankee,Brice Turang,RBI,5.0,2.273,SB,Bateador
-B-Strong,Joe Ryan,ERA,4.82,3.982,NSV,Pitcher
-Los Calvoneros unidos,Trevor Megill,ERA,4.5,3.982,NSV,Pitcher
-Los Calvoneros unidos,Kris Bubic,K,4.0,5.727,NSV,Pitcher
-B-Strong,Tatsuya Imai,K,4.0,5.727,NSV,Pitcher
-B-Strong,Jake Bauers,RBI,4.0,2.273,"R, SB",Bateador
-EVERYONE'S TERROR,Brendan Donovan,RBI,4.0,2.273,"R, SB",Bateador
-De espalda al aro mmg,Kenley Jansen,K,4.0,5.727,NSV,Pitcher
-THE PUNISHER X,Garrett Whitlock,K,4.0,5.727,N/A,Pitcher
+THE PUNISHER X,José Ramírez,RBI,5.0,2.545,"R, SB",Bateador
+San Safari Baseball,Corey Seager,RBI,5.0,2.545,SB,Bateador
+THE PUNISHER X,Alec Burleson,RBI,5.0,2.545,"R, SB",Bateador
+San Safari Baseball,Chase DeLauter,RBI,5.0,2.545,SB,Bateador
+B-Strong,Joe Ryan,ERA,4.82,3.807,NSV,Pitcher
+Los Calvoneros unidos,Trevor Megill,ERA,4.5,3.807,NSV,Pitcher
+THE PUNISHER X,Garrett Whitlock,K,4.0,6.0,N/A,Pitcher
 San Safari Baseball,Chase DeLauter,HR,4.0,0.545,SB,Bateador
-LOS GORDITOS DAD & JR 2026 MLB,Cal Raleigh,RBI,4.0,2.273,"R, SB",Bateador
-Los Inmensos Amos BT,Eury Pérez,ERA,3.86,3.982,"W, NSV",Pitcher
-Los Inmensos Amos BT,Kyle Bradish,ERA,3.86,3.982,"W, NSV",Pitcher
-EVERYONE'S TERROR,Zac Gallen,ERA,3.6,3.982,N/A,Pitcher
-B-Strong,Garrett Crochet,ERA,3.27,3.982,NSV,Pitcher
-A.Rod Gangs,Luke Raley,HR,3.0,0.545,"R, SB",Bateador
-A.Rod Gangs,Drake Baldwin,HR,3.0,0.545,"R, SB",Bateador
-Team Frank Yankee,Dustin May,K,3.0,5.727,"ERA, WHIP",Pitcher
-Los Calvoneros unidos,Trevor Megill,K,3.0,5.727,NSV,Pitcher
-Los Calvoneros unidos,Seth Lugo,K,3.0,5.727,NSV,Pitcher
+De espalda al aro mmg,Kenley Jansen,K,4.0,6.0,NSV,Pitcher
+De espalda al aro mmg,Ryan Walker,K,4.0,6.0,NSV,Pitcher
+B-Strong,Tatsuya Imai,K,4.0,6.0,NSV,Pitcher
+B-Strong,Jake Bauers,RBI,4.0,2.545,"R, SB",Bateador
+Los Calvoneros unidos,Kris Bubic,K,4.0,6.0,NSV,Pitcher
+LOS GORDITOS DAD & JR 2026 MLB,Cal Raleigh,RBI,4.0,2.545,"R, SB",Bateador
+Los Inmensos Amos BT,Kyle Bradish,ERA,3.86,3.807,"W, K, NSV",Pitcher
+Los Inmensos Amos BT,Eury Pérez,ERA,3.86,3.807,"W, K, NSV",Pitcher
+EVERYONE'S TERROR,Zac Gallen,ERA,3.6,3.807,N/A,Pitcher
+B-Strong,Garrett Crochet,ERA,3.27,3.807,NSV,Pitcher
+A.Rod Gangs,Drake Baldwin,HR,3.0,0.545,SB,Bateador
 LOS GORDITOS DAD & JR 2026 MLB,Munetaka Murakami,HR,3.0,0.545,"R, SB",Bateador
-Team Frank Yankee,Ian Happ,HR,3.0,0.545,SB,Bateador
-San Safari Baseball,Corey Seager,HR,3.0,0.545,SB,Bateador
-THE PUNISHER X,Jameson Taillon,K,3.0,5.727,N/A,Pitcher
 Los Inmensos Amos BT,Yordan Alvarez,HR,3.0,0.545,SB,Bateador
 Los Inmensos Amos BT,Wilyer Abreu,HR,3.0,0.545,SB,Bateador
 De espalda al aro mmg,Brandon Lowe,HR,3.0,0.545,"R, SB",Bateador
-THE PUNISHER X,Cody Ponce,K,3.0,5.727,N/A,Pitcher
-De espalda al aro mmg,Ryan Walker,K,3.0,5.727,NSV,Pitcher
+A.Rod Gangs,Luke Raley,HR,3.0,0.545,SB,Bateador
+Team Frank Yankee,Ian Happ,HR,3.0,0.545,SB,Bateador
+Los Calvoneros unidos,Seth Lugo,K,3.0,6.0,NSV,Pitcher
+THE PUNISHER X,Jameson Taillon,K,3.0,6.0,N/A,Pitcher
+THE PUNISHER X,Cody Ponce,K,3.0,6.0,N/A,Pitcher
+San Safari Baseball,Corey Seager,HR,3.0,0.545,SB,Bateador
+Los Calvoneros unidos,Trevor Megill,K,3.0,6.0,NSV,Pitcher
+Team Frank Yankee,Aaron Judge,HR,2.0,0.545,SB,Bateador
 Los Inmensos Amos BT,Sal Stewart,HR,2.0,0.545,SB,Bateador
-EVERYONE'S TERROR,Brendan Donovan,HR,2.0,0.545,"R, SB",Bateador
-De espalda al aro mmg,Daniel Palencia,K,2.0,5.727,NSV,Pitcher
-De espalda al aro mmg,Dominic Canzone,HR,2.0,0.545,"R, SB",Bateador
 Los Calvoneros unidos,Ramón Laureano,HR,2.0,0.545,"R, SB",Bateador
-B-Strong,Jake Bauers,HR,2.0,0.545,"R, SB",Bateador
-B-Strong,Kazuma Okamoto,HR,2.0,0.545,"R, SB",Bateador
 San Safari Baseball,Bryan Reynolds,HR,2.0,0.545,SB,Bateador
 Los Calvoneros unidos,Jonathan Aranda,HR,2.0,0.545,"R, SB",Bateador
-Team Frank Yankee,David Bednar,K,2.0,5.727,"ERA, WHIP",Pitcher
+LOS GORDITOS DAD & JR 2026 MLB,Kyle Schwarber,HR,2.0,0.545,"R, SB",Bateador
+B-Strong,Kazuma Okamoto,HR,2.0,0.545,"R, SB",Bateador
+LOS GORDITOS DAD & JR 2026 MLB,Jake Burger,HR,2.0,0.545,"R, SB",Bateador
+EVERYONE'S TERROR,Brendan Donovan,HR,2.0,0.545,"R, SB",Bateador
+Team Frank Yankee,Will Smith,HR,2.0,0.545,SB,Bateador
 EVERYONE'S TERROR,Eugenio Suárez,HR,2.0,0.545,"R, SB",Bateador
 EVERYONE'S TERROR,Elly De La Cruz,HR,2.0,0.545,"R, SB",Bateador
-LOS GORDITOS DAD & JR 2026 MLB,Jake Burger,HR,2.0,0.545,"R, SB",Bateador
-LOS GORDITOS DAD & JR 2026 MLB,Kyle Schwarber,HR,2.0,0.545,"R, SB",Bateador
-Team Frank Yankee,Will Smith,HR,2.0,0.545,SB,Bateador
-Team Frank Yankee,Aaron Judge,HR,2.0,0.545,SB,Bateador
-Team Frank Yankee,Brayan Bello,K,2.0,5.727,"ERA, WHIP",Pitcher
-Los Inmensos Amos BT,Drew Rasmussen,ERA,1.8,3.982,"W, NSV",Pitcher
-EVERYONE'S TERROR,Reynaldo López,WHIP,1.5,1.303,N/A,Pitcher
-EVERYONE'S TERROR,Aaron Nola,WHIP,1.4,1.303,N/A,Pitcher
-EVERYONE'S TERROR,Grant Holmes,WHIP,1.4,1.303,N/A,Pitcher
-Los Inmensos Amos BT,Robert Garcia,WHIP,1.364,1.303,"W, NSV",Pitcher
-Los Inmensos Amos BT,Robert Suarez,WHIP,1.333,1.303,"W, NSV",Pitcher
-Los Inmensos Amos BT,Framber Valdez,WHIP,1.333,1.303,"W, NSV",Pitcher
-B-Strong,Aroldis Chapman,K,1.0,5.727,NSV,Pitcher
+De espalda al aro mmg,Daniel Palencia,K,2.0,6.0,NSV,Pitcher
+B-Strong,Jake Bauers,HR,2.0,0.545,"R, SB",Bateador
+De espalda al aro mmg,Dominic Canzone,HR,2.0,0.545,"R, SB",Bateador
+Los Inmensos Amos BT,Drew Rasmussen,ERA,1.8,3.807,"W, K, NSV",Pitcher
+EVERYONE'S TERROR,Aaron Nola,WHIP,1.4,1.24,N/A,Pitcher
+EVERYONE'S TERROR,Grant Holmes,WHIP,1.4,1.24,N/A,Pitcher
+Los Inmensos Amos BT,Robert Garcia,WHIP,1.364,1.24,"W, K, NSV",Pitcher
+Los Inmensos Amos BT,Framber Valdez,WHIP,1.333,1.24,"W, K, NSV",Pitcher
+Los Inmensos Amos BT,Robert Suarez,WHIP,1.333,1.24,"W, K, NSV",Pitcher
+EVERYONE'S TERROR,Zac Gallen,WHIP,1.1,1.24,N/A,Pitcher
+A.Rod Gangs,Ceddanne Rafaela,HR,1.0,0.545,SB,Bateador
 De espalda al aro mmg,Samuel Basallo,HR,1.0,0.545,"R, SB",Bateador
 Los Calvoneros unidos,Matt Chapman,HR,1.0,0.545,"R, SB",Bateador
-A.Rod Gangs,Ceddanne Rafaela,HR,1.0,0.545,"R, SB",Bateador
+B-Strong,Aroldis Chapman,K,1.0,6.0,NSV,Pitcher
 Los Inmensos Amos BT,Sal Stewart,SLG,0.947,0.356,SB,Bateador
 Los Inmensos Amos BT,Wilyer Abreu,SLG,0.917,0.356,SB,Bateador
 Los Inmensos Amos BT,Yordan Alvarez,SLG,0.917,0.356,SB,Bateador
@@ -100,10 +91,10 @@ San Safari Baseball,Chase DeLauter,SLG,0.818,0.356,SB,Bateador
 De espalda al aro mmg,Dominic Canzone,SLG,0.8,0.356,"R, SB",Bateador
 Team Frank Yankee,Giancarlo Stanton,SLG,0.75,0.356,SB,Bateador
 EVERYONE'S TERROR,Brendan Donovan,SLG,0.75,0.356,"R, SB",Bateador
-San Safari Baseball,Corey Seager,SLG,0.727,0.356,SB,Bateador
 Team Frank Yankee,Brice Turang,SLG,0.727,0.356,SB,Bateador
-EVERYONE'S TERROR,Paul Goldschmidt,SLG,0.667,0.356,"R, SB",Bateador
+San Safari Baseball,Corey Seager,SLG,0.727,0.356,SB,Bateador
 LOS GORDITOS DAD & JR 2026 MLB,Munetaka Murakami,SLG,0.667,0.356,"R, SB",Bateador
+EVERYONE'S TERROR,Paul Goldschmidt,SLG,0.667,0.356,"R, SB",Bateador
 San Safari Baseball,Jose Altuve,SLG,0.652,0.356,SB,Bateador
 Team Frank Yankee,Ian Happ,SLG,0.625,0.356,SB,Bateador
 Los Inmensos Amos BT,Sal Stewart,OBP,0.615,0.316,SB,Bateador
@@ -115,18 +106,18 @@ Los Inmensos Amos BT,Ben Rice,OBP,0.524,0.316,SB,Bateador
 EVERYONE'S TERROR,Eugenio Suárez,SLG,0.478,0.356,"R, SB",Bateador
 A.Rod Gangs,Paul Sewald,W,0.0,0.273,"ERA, WHIP, NSV",Pitcher
 B-Strong,Cade Cavalli,W,0.0,0.273,NSV,Pitcher
-B-Strong,Bubba Chandler,W,0.0,0.273,NSV,Pitcher
-LOS GORDITOS DAD & JR 2026 MLB,Edwin Díaz,W,0.0,0.273,N/A,Pitcher
 B-Strong,Kodai Senga,W,0.0,0.273,NSV,Pitcher
+B-Strong,Bubba Chandler,W,0.0,0.273,NSV,Pitcher
 LOS GORDITOS DAD & JR 2026 MLB,Tyler Glasnow,W,0.0,0.273,N/A,Pitcher
 LOS GORDITOS DAD & JR 2026 MLB,Jack Flaherty,W,0.0,0.273,N/A,Pitcher
+LOS GORDITOS DAD & JR 2026 MLB,Edwin Díaz,W,0.0,0.273,N/A,Pitcher
 A.Rod Gangs,Will Warren,W,0.0,0.273,"ERA, WHIP, NSV",Pitcher
-Team Frank Yankee,Andrés Muñoz,W,0.0,0.273,"ERA, WHIP",Pitcher
 Team Frank Yankee,David Bednar,W,0.0,0.273,"ERA, WHIP",Pitcher
-Team Frank Yankee,Dustin May,W,0.0,0.273,"ERA, WHIP",Pitcher
 Team Frank Yankee,Jack Leiter,NSV,0.0,0.364,"ERA, WHIP",Pitcher
-Team Frank Yankee,Freddy Peralta,NSV,0.0,0.364,"ERA, WHIP",Pitcher
 Team Frank Yankee,Andrés Muñoz,NSV,0.0,0.364,"ERA, WHIP",Pitcher
+Team Frank Yankee,Freddy Peralta,NSV,0.0,0.364,"ERA, WHIP",Pitcher
+Team Frank Yankee,Dustin May,W,0.0,0.273,"ERA, WHIP",Pitcher
+Team Frank Yankee,Andrés Muñoz,W,0.0,0.273,"ERA, WHIP",Pitcher
 A.Rod Gangs,Sonny Gray,W,0.0,0.273,"ERA, WHIP, NSV",Pitcher
 EVERYONE'S TERROR,Raisel Iglesias,W,0.0,0.273,N/A,Pitcher
 + Fe que talento,Cristian Javier,W,0.0,0.273,"ERA, WHIP, NSV",Pitcher
@@ -139,8 +130,8 @@ EVERYONE'S TERROR,Aaron Nola,W,0.0,0.273,N/A,Pitcher
 + Fe que talento,Mick Abel,W,0.0,0.273,"ERA, WHIP, NSV",Pitcher
 San Safari Baseball,Griffin Jax,NSV,0.0,0.364,"K, ERA, WHIP",Pitcher
 THE PUNISHER X,Rhett Lowder,W,0.0,0.273,N/A,Pitcher
-THE PUNISHER X,Joey Cantillo,W,0.0,0.273,N/A,Pitcher
 THE PUNISHER X,Jameson Taillon,W,0.0,0.273,N/A,Pitcher
+THE PUNISHER X,Joey Cantillo,W,0.0,0.273,N/A,Pitcher
 San Safari Baseball,Andrew Painter,NSV,0.0,0.364,"K, ERA, WHIP",Pitcher
 San Safari Baseball,Ryan Weathers,NSV,0.0,0.364,"K, ERA, WHIP",Pitcher
 De espalda al aro mmg,Nolan McLean,W,0.0,0.273,NSV,Pitcher

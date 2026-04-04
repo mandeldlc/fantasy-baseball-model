@@ -28,25 +28,25 @@
     "mis_pit": {
       "equipo": "Dando Tabla",
       "jugadores": 13,
-      "ERA": 3.85,
+      "ERA": 3.71,
       "xERA": 4.6,
-      "Ks": 21.7,
+      "Ks": 21.9,
       "xwOBA": 0.308,
       "EV_against": 87.0
     },
     "opp_pit": {
       "equipo": "EVERYONE'S TERROR",
       "jugadores": 9,
-      "ERA": 2.14,
+      "ERA": 2.16,
       "xERA": 3.17,
-      "Ks": 5.4,
+      "Ks": 5.8,
       "xwOBA": 0.257,
       "EV_against": 86.9
     },
-    "prob_ganar": 42.9,
-    "prob_perder": 57.1,
-    "odds_ganar": "+133",
-    "odds_perder": "-133"
+    "prob_ganar": 43.4,
+    "prob_perder": 56.6,
+    "odds_ganar": "+130",
+    "odds_perder": "-130"
   },
   {
     "semana": 2,
@@ -77,25 +77,25 @@
     "mis_pit": {
       "equipo": "Dando Tabla",
       "jugadores": 13,
-      "ERA": 3.85,
+      "ERA": 3.71,
       "xERA": 4.6,
-      "Ks": 21.7,
+      "Ks": 21.9,
       "xwOBA": 0.308,
       "EV_against": 87.0
     },
     "opp_pit": {
       "equipo": "A.Rod Gangs",
       "jugadores": 13,
-      "ERA": 6.11,
+      "ERA": 5.7,
       "xERA": 6.14,
-      "Ks": 5.9,
+      "Ks": 6.5,
       "xwOBA": 0.337,
       "EV_against": 91.6
     },
-    "prob_ganar": 59.3,
-    "prob_perder": 40.7,
-    "odds_ganar": "-146",
-    "odds_perder": "+146"
+    "prob_ganar": 58.1,
+    "prob_perder": 41.9,
+    "odds_ganar": "-139",
+    "odds_perder": "+139"
   },
   {
     "semana": 3,
@@ -126,9 +126,9 @@
     "mis_pit": {
       "equipo": "Dando Tabla",
       "jugadores": 13,
-      "ERA": 3.85,
+      "ERA": 3.71,
       "xERA": 4.6,
-      "Ks": 21.7,
+      "Ks": 21.9,
       "xwOBA": 0.308,
       "EV_against": 87.0
     },
@@ -141,10 +141,10 @@
       "xwOBA": 0.287,
       "EV_against": 90.7
     },
-    "prob_ganar": 45.8,
-    "prob_perder": 54.2,
-    "odds_ganar": "+118",
-    "odds_perder": "-118"
+    "prob_ganar": 46.2,
+    "prob_perder": 53.8,
+    "odds_ganar": "+116",
+    "odds_perder": "-116"
   },
   {
     "semana": 4,
@@ -175,9 +175,9 @@
     "mis_pit": {
       "equipo": "Dando Tabla",
       "jugadores": 13,
-      "ERA": 3.85,
+      "ERA": 3.71,
       "xERA": 4.6,
-      "Ks": 21.7,
+      "Ks": 21.9,
       "xwOBA": 0.308,
       "EV_against": 87.0
     },
@@ -190,10 +190,10 @@
       "xwOBA": 0.284,
       "EV_against": 89.0
     },
-    "prob_ganar": 42.9,
-    "prob_perder": 57.1,
-    "odds_ganar": "+133",
-    "odds_perder": "-133"
+    "prob_ganar": 43.3,
+    "prob_perder": 56.7,
+    "odds_ganar": "+131",
+    "odds_perder": "-131"
   },
   {
     "semana": 5,
@@ -224,18 +224,18 @@
     "mis_pit": {
       "equipo": "Dando Tabla",
       "jugadores": 13,
-      "ERA": 3.85,
+      "ERA": 3.71,
       "xERA": 4.6,
-      "Ks": 21.7,
+      "Ks": 21.9,
       "xwOBA": 0.308,
       "EV_against": 87.0
     },
     "opp_pit": {
       "equipo": "De espalda al aro mmg",
       "jugadores": 10,
-      "ERA": 3.92,
+      "ERA": 3.75,
       "xERA": 4.07,
-      "Ks": 8.7,
+      "Ks": 8.8,
       "xwOBA": 0.305,
       "EV_against": 89.7
     },
@@ -273,25 +273,25 @@
     "mis_pit": {
       "equipo": "Dando Tabla",
       "jugadores": 13,
-      "ERA": 3.85,
+      "ERA": 3.71,
       "xERA": 4.6,
-      "Ks": 21.7,
+      "Ks": 21.9,
       "xwOBA": 0.308,
       "EV_against": 87.0
     },
     "opp_pit": {
       "equipo": "THE PUNISHER X",
       "jugadores": 12,
-      "ERA": 2.95,
-      "xERA": 3.34,
-      "Ks": 19.9,
-      "xwOBA": 0.273,
+      "ERA": 2.79,
+      "xERA": 3.44,
+      "Ks": 20.4,
+      "xwOBA": 0.277,
       "EV_against": 88.8
     },
-    "prob_ganar": 44.2,
-    "prob_perder": 55.8,
-    "odds_ganar": "+126",
-    "odds_perder": "-126"
+    "prob_ganar": 44.4,
+    "prob_perder": 55.6,
+    "odds_ganar": "+125",
+    "odds_perder": "-125"
   },
   {
     "semana": 7,
@@ -322,9 +322,9 @@
     "mis_pit": {
       "equipo": "Dando Tabla",
       "jugadores": 13,
-      "ERA": 3.85,
+      "ERA": 3.71,
       "xERA": 4.6,
-      "Ks": 21.7,
+      "Ks": 21.9,
       "xwOBA": 0.308,
       "EV_against": 87.0
     },
@@ -337,10 +337,10 @@
       "xwOBA": 0.302,
       "EV_against": 89.8
     },
-    "prob_ganar": 51.2,
-    "prob_perder": 48.8,
-    "odds_ganar": "-105",
-    "odds_perder": "+105"
+    "prob_ganar": 51.6,
+    "prob_perder": 48.4,
+    "odds_ganar": "-107",
+    "odds_perder": "+107"
   },
   {
     "semana": 8,
@@ -371,25 +371,25 @@
     "mis_pit": {
       "equipo": "Dando Tabla",
       "jugadores": 13,
-      "ERA": 3.85,
+      "ERA": 3.71,
       "xERA": 4.6,
-      "Ks": 21.7,
+      "Ks": 21.9,
       "xwOBA": 0.308,
       "EV_against": 87.0
     },
     "opp_pit": {
       "equipo": "Los Inmensos Amos BT",
       "jugadores": 11,
-      "ERA": 1.97,
-      "xERA": 3.78,
-      "Ks": 21.0,
-      "xwOBA": 0.297,
-      "EV_against": 87.8
+      "ERA": 2.49,
+      "xERA": 3.76,
+      "Ks": 25.9,
+      "xwOBA": 0.296,
+      "EV_against": 88.1
     },
-    "prob_ganar": 40.4,
-    "prob_perder": 59.6,
-    "odds_ganar": "+148",
-    "odds_perder": "-148"
+    "prob_ganar": 41.7,
+    "prob_perder": 58.3,
+    "odds_ganar": "+140",
+    "odds_perder": "-140"
   },
   {
     "semana": 9,
@@ -420,25 +420,25 @@
     "mis_pit": {
       "equipo": "Dando Tabla",
       "jugadores": 13,
-      "ERA": 3.85,
+      "ERA": 3.71,
       "xERA": 4.6,
-      "Ks": 21.7,
+      "Ks": 21.9,
       "xwOBA": 0.308,
       "EV_against": 87.0
     },
     "opp_pit": {
       "equipo": "+ Fe que talento",
-      "jugadores": 10,
-      "ERA": 1.7,
-      "xERA": 3.25,
-      "Ks": 43.3,
-      "xwOBA": 0.273,
-      "EV_against": 89.3
+      "jugadores": 11,
+      "ERA": 2.16,
+      "xERA": 3.27,
+      "Ks": 39.7,
+      "xwOBA": 0.275,
+      "EV_against": 89.2
     },
-    "prob_ganar": 41.2,
-    "prob_perder": 58.8,
-    "odds_ganar": "+143",
-    "odds_perder": "-143"
+    "prob_ganar": 42.7,
+    "prob_perder": 57.3,
+    "odds_ganar": "+134",
+    "odds_perder": "-134"
   },
   {
     "semana": 10,
@@ -469,9 +469,9 @@
     "mis_pit": {
       "equipo": "Dando Tabla",
       "jugadores": 13,
-      "ERA": 3.85,
+      "ERA": 3.71,
       "xERA": 4.6,
-      "Ks": 21.7,
+      "Ks": 21.9,
       "xwOBA": 0.308,
       "EV_against": 87.0
     },
@@ -484,10 +484,10 @@
       "xwOBA": 0.303,
       "EV_against": 89.6
     },
-    "prob_ganar": 46.7,
-    "prob_perder": 53.3,
-    "odds_ganar": "+114",
-    "odds_perder": "-114"
+    "prob_ganar": 47.1,
+    "prob_perder": 52.9,
+    "odds_ganar": "+112",
+    "odds_perder": "-112"
   },
   {
     "semana": 11,
@@ -507,20 +507,20 @@
     },
     "opp_bat": {
       "equipo": "Los Calvoneros unidos",
-      "jugadores": 13,
-      "HR_avg": 0.8,
-      "OPS": 0.681,
-      "wOBA": 0.306,
-      "xwOBA": 0.323,
-      "EV": 89.0,
-      "Barrel%": 8.2
+      "jugadores": 14,
+      "HR_avg": 0.7,
+      "OPS": 0.701,
+      "wOBA": 0.315,
+      "xwOBA": 0.329,
+      "EV": 89.2,
+      "Barrel%": 8.5
     },
     "mis_pit": {
       "equipo": "Dando Tabla",
       "jugadores": 13,
-      "ERA": 3.85,
+      "ERA": 3.71,
       "xERA": 4.6,
-      "Ks": 21.7,
+      "Ks": 21.9,
       "xwOBA": 0.308,
       "EV_against": 87.0
     },
@@ -533,10 +533,10 @@
       "xwOBA": 0.293,
       "EV_against": 89.6
     },
-    "prob_ganar": 46.7,
-    "prob_perder": 53.3,
-    "odds_ganar": "+114",
-    "odds_perder": "-114"
+    "prob_ganar": 46.9,
+    "prob_perder": 53.1,
+    "odds_ganar": "+113",
+    "odds_perder": "-113"
   },
   {
     "semana": 12,
@@ -567,25 +567,25 @@
     "mis_pit": {
       "equipo": "Dando Tabla",
       "jugadores": 13,
-      "ERA": 3.85,
+      "ERA": 3.71,
       "xERA": 4.6,
-      "Ks": 21.7,
+      "Ks": 21.9,
       "xwOBA": 0.308,
       "EV_against": 87.0
     },
     "opp_pit": {
       "equipo": "EVERYONE'S TERROR",
       "jugadores": 10,
-      "ERA": 1.6,
+      "ERA": 1.49,
       "xERA": 3.09,
-      "Ks": 5.6,
+      "Ks": 6.2,
       "xwOBA": 0.252,
       "EV_against": 88.1
     },
-    "prob_ganar": 41.5,
-    "prob_perder": 58.5,
-    "odds_ganar": "+141",
-    "odds_perder": "-141"
+    "prob_ganar": 41.7,
+    "prob_perder": 58.3,
+    "odds_ganar": "+140",
+    "odds_perder": "-140"
   },
   {
     "semana": 13,
@@ -616,25 +616,25 @@
     "mis_pit": {
       "equipo": "Dando Tabla",
       "jugadores": 13,
-      "ERA": 3.85,
+      "ERA": 3.71,
       "xERA": 4.6,
-      "Ks": 21.7,
+      "Ks": 21.9,
       "xwOBA": 0.308,
       "EV_against": 87.0
     },
     "opp_pit": {
       "equipo": "A.Rod Gangs",
       "jugadores": 10,
-      "ERA": 5.46,
+      "ERA": 4.92,
       "xERA": 6.01,
-      "Ks": 6.7,
+      "Ks": 7.5,
       "xwOBA": 0.326,
       "EV_against": 91.0
     },
-    "prob_ganar": 55.1,
-    "prob_perder": 44.9,
-    "odds_ganar": "-123",
-    "odds_perder": "+123"
+    "prob_ganar": 53.7,
+    "prob_perder": 46.3,
+    "odds_ganar": "-116",
+    "odds_perder": "+116"
   },
   {
     "semana": 14,
@@ -665,9 +665,9 @@
     "mis_pit": {
       "equipo": "Dando Tabla",
       "jugadores": 13,
-      "ERA": 3.85,
+      "ERA": 3.71,
       "xERA": 4.6,
-      "Ks": 21.7,
+      "Ks": 21.9,
       "xwOBA": 0.308,
       "EV_against": 87.0
     },
@@ -680,10 +680,10 @@
       "xwOBA": 0.287,
       "EV_against": 90.7
     },
-    "prob_ganar": 45.8,
-    "prob_perder": 54.2,
-    "odds_ganar": "+118",
-    "odds_perder": "-118"
+    "prob_ganar": 46.2,
+    "prob_perder": 53.8,
+    "odds_ganar": "+116",
+    "odds_perder": "-116"
   },
   {
     "semana": 15,
@@ -714,9 +714,9 @@
     "mis_pit": {
       "equipo": "Dando Tabla",
       "jugadores": 13,
-      "ERA": 3.85,
+      "ERA": 3.71,
       "xERA": 4.6,
-      "Ks": 21.7,
+      "Ks": 21.9,
       "xwOBA": 0.308,
       "EV_against": 87.0
     },
@@ -729,10 +729,10 @@
       "xwOBA": 0.284,
       "EV_against": 89.0
     },
-    "prob_ganar": 42.9,
-    "prob_perder": 57.1,
-    "odds_ganar": "+133",
-    "odds_perder": "-133"
+    "prob_ganar": 43.3,
+    "prob_perder": 56.7,
+    "odds_ganar": "+131",
+    "odds_perder": "-131"
   },
   {
     "semana": 16,
@@ -763,18 +763,18 @@
     "mis_pit": {
       "equipo": "Dando Tabla",
       "jugadores": 13,
-      "ERA": 3.85,
+      "ERA": 3.71,
       "xERA": 4.6,
-      "Ks": 21.7,
+      "Ks": 21.9,
       "xwOBA": 0.308,
       "EV_against": 87.0
     },
     "opp_pit": {
       "equipo": "De espalda al aro mmg",
       "jugadores": 10,
-      "ERA": 3.92,
+      "ERA": 3.75,
       "xERA": 4.07,
-      "Ks": 8.7,
+      "Ks": 8.8,
       "xwOBA": 0.305,
       "EV_against": 89.7
     },
@@ -812,25 +812,25 @@
     "mis_pit": {
       "equipo": "Dando Tabla",
       "jugadores": 13,
-      "ERA": 3.85,
+      "ERA": 3.71,
       "xERA": 4.6,
-      "Ks": 21.7,
+      "Ks": 21.9,
       "xwOBA": 0.308,
       "EV_against": 87.0
     },
     "opp_pit": {
       "equipo": "THE PUNISHER X",
       "jugadores": 12,
-      "ERA": 2.95,
-      "xERA": 3.34,
-      "Ks": 19.9,
-      "xwOBA": 0.273,
+      "ERA": 2.79,
+      "xERA": 3.44,
+      "Ks": 20.4,
+      "xwOBA": 0.277,
       "EV_against": 88.8
     },
-    "prob_ganar": 44.2,
-    "prob_perder": 55.8,
-    "odds_ganar": "+126",
-    "odds_perder": "-126"
+    "prob_ganar": 44.4,
+    "prob_perder": 55.6,
+    "odds_ganar": "+125",
+    "odds_perder": "-125"
   },
   {
     "semana": 18,
@@ -861,9 +861,9 @@
     "mis_pit": {
       "equipo": "Dando Tabla",
       "jugadores": 13,
-      "ERA": 3.85,
+      "ERA": 3.71,
       "xERA": 4.6,
-      "Ks": 21.7,
+      "Ks": 21.9,
       "xwOBA": 0.308,
       "EV_against": 87.0
     },
@@ -876,10 +876,10 @@
       "xwOBA": 0.302,
       "EV_against": 89.8
     },
-    "prob_ganar": 51.2,
-    "prob_perder": 48.8,
-    "odds_ganar": "-105",
-    "odds_perder": "+105"
+    "prob_ganar": 51.6,
+    "prob_perder": 48.4,
+    "odds_ganar": "-107",
+    "odds_perder": "+107"
   },
   {
     "semana": 19,
@@ -910,24 +910,24 @@
     "mis_pit": {
       "equipo": "Dando Tabla",
       "jugadores": 13,
-      "ERA": 3.85,
+      "ERA": 3.71,
       "xERA": 4.6,
-      "Ks": 21.7,
+      "Ks": 21.9,
       "xwOBA": 0.308,
       "EV_against": 87.0
     },
     "opp_pit": {
       "equipo": "Los Inmensos Amos BT",
       "jugadores": 11,
-      "ERA": 1.97,
-      "xERA": 3.78,
-      "Ks": 21.0,
-      "xwOBA": 0.297,
-      "EV_against": 87.8
+      "ERA": 2.49,
+      "xERA": 3.76,
+      "Ks": 25.9,
+      "xwOBA": 0.296,
+      "EV_against": 88.1
     },
-    "prob_ganar": 40.4,
-    "prob_perder": 59.6,
-    "odds_ganar": "+148",
-    "odds_perder": "-148"
+    "prob_ganar": 41.7,
+    "prob_perder": 58.3,
+    "odds_ganar": "+140",
+    "odds_perder": "-140"
   }
 ]
