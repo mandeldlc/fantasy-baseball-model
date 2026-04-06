@@ -1,9 +1,9 @@
 {
-  "semana": 2,
-  "oponente": "A.Rod Gangs",
-  "oponente_id": 3,
-  "week_start": "2026-03-30",
-  "week_end": "2026-04-05",
+  "semana": 3,
+  "oponente": "B-Strong",
+  "oponente_id": 5,
+  "week_start": "2026-04-06",
+  "week_end": "2026-04-12",
   "mis_bat": {
     "equipo": "Dando Tabla",
     "jugadores": 13,
@@ -15,35 +15,35 @@
     "Barrel%": 7.0
   },
   "opp_bat": {
-    "equipo": "A.Rod Gangs",
-    "jugadores": 16,
-    "HR_avg": 4.2,
-    "OPS": 0.673,
-    "wOBA": 0.303,
-    "xwOBA": 0.316,
-    "EV": 89.3,
+    "equipo": "B-Strong",
+    "jugadores": 14,
+    "HR_avg": 1.2,
+    "OPS": 0.688,
+    "wOBA": 0.307,
+    "xwOBA": 0.307,
+    "EV": 90.7,
     "Barrel%": 10.9
   },
   "mis_pit": {
     "equipo": "Dando Tabla",
-    "jugadores": 13,
-    "ERA": 3.72,
-    "xERA": 4.25,
-    "Ks": 22.7,
-    "xwOBA": 0.301,
-    "EV_against": 87.8
+    "jugadores": 11,
+    "ERA": 2.53,
+    "xERA": 4.0,
+    "Ks": 26.4,
+    "xwOBA": 0.295,
+    "EV_against": 88.0
   },
   "opp_pit": {
-    "equipo": "A.Rod Gangs",
-    "jugadores": 13,
-    "ERA": 5.27,
-    "xERA": 4.7,
-    "Ks": 7.8,
-    "xwOBA": 0.327,
-    "EV_against": 91.4
+    "equipo": "B-Strong",
+    "jugadores": 10,
+    "ERA": 2.42,
+    "xERA": 3.25,
+    "Ks": 9.8,
+    "xwOBA": 0.278,
+    "EV_against": 90.1
   },
-  "prob_ganar": 55.1,
-  "prob_perder": 44.9,
-  "odds_ganar": "-123",
-  "odds_perder": "+123"
+  "prob_ganar": 48.8,
+  "prob_perder": 51.2,
+  "odds_ganar": "+105",
+  "odds_perder": "-105"
 }
