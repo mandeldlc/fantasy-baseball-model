@@ -27,23 +27,23 @@
   "mis_pit": {
     "equipo": "Dando Tabla",
     "jugadores": 11,
-    "ERA": 3.23,
+    "ERA": 2.99,
     "xERA": 4.32,
-    "Ks": 26.8,
+    "Ks": 27.5,
     "xwOBA": 0.313,
     "EV_against": 88.8
   },
   "opp_pit": {
     "equipo": "B-Strong",
     "jugadores": 10,
-    "ERA": 2.5,
+    "ERA": 2.78,
     "xERA": 3.5,
-    "Ks": 11.1,
+    "Ks": 12.2,
     "xwOBA": 0.289,
     "EV_against": 90.1
   },
-  "prob_ganar": 46.8,
-  "prob_perder": 53.2,
-  "odds_ganar": "+114",
-  "odds_perder": "-114"
+  "prob_ganar": 48.1,
+  "prob_perder": 51.9,
+  "odds_ganar": "+108",
+  "odds_perder": "-108"
 }
