@@ -1,12 +1,13 @@
 "last_name, first_name",player_id,year,p_game,p_formatted_ip,p_win,p_loss,p_strikeout,p_walk,hit,p_era,p_save,xera,xba,xslg,xwoba,exit_velocity_avg,barrel_batted_rate,p_whip,last_name,first_name,Name,xera_pred_2026
-"Abbott, Andrew",671096,2026,2,11.2,0,1,9,4,12,3.09,0,4.54,0.265,0.425,0.334,88.8,8.6,1.429,Abbott,Andrew,Andrew Abbott,5.0
-"Boyle, Joe",671212,2026,2,11.1,0,0,13,3,7,3.18,0,3.29,0.24,0.349,0.288,87.3,3.3,0.901,Boyle,Joe,Joe Boyle,4.18
-"Erceg, Lucas",668674,2026,5,4.2,0,0,3,2,5,3.86,3,4.21,0.262,0.371,0.323,86.1,7.7,1.667,Erceg,Lucas,Lucas Erceg,5.83
-"Castillo, Luis",622491,2026,2,9.2,0,0,11,3,9,2.79,0,2.83,0.21,0.294,0.268,91.9,11.5,1.304,Castillo,Luis,Luis Castillo,4.23
-"Santana, Dennis",642701,2026,6,6.0,2,0,4,2,1,0.0,0,3.17,0.242,0.293,0.283,81.7,0.0,0.5,Santana,Dennis,Dennis Santana,5.17
-"Alexander, Tyler",641302,2026,6,5.2,0,0,5,2,5,1.59,2,2.44,0.195,0.239,0.249,83.4,0.0,1.346,Alexander,Tyler,Tyler Alexander,3.8
-"Soroka, Michael",647336,2026,2,10.0,2,0,13,4,8,0.9,0,5.9,0.253,0.524,0.374,90.5,20.8,1.2,Soroka,Michael,Michael Soroka,5.2
-"Nelson, Ryne",669194,2026,2,9.1,0,1,7,6,5,5.79,0,11.33,0.308,0.745,0.48,92.3,22.2,1.209,Nelson,Ryne,Ryne Nelson,5.81
-"Gilbert, Logan",669302,2026,3,16.2,0,2,18,3,18,5.4,0,2.38,0.209,0.312,0.246,91.7,6.5,1.296,Gilbert,Logan,Logan Gilbert,4.71
-"Rodón, Carlos",607074,2025,33,195.1,18,9,203,73,132,3.09,0,3.36,0.206,0.351,0.286,88.6,7.5,1.051,Rodón,Carlos,Carlos Rodón,3.54
-"Yesavage, Trey",702056,2025,3,14.0,1,0,16,7,13,3.21,0,4.1,0.251,0.369,0.314,94.0,7.7,1.429,Yesavage,Trey,Trey Yesavage,7.12
+"Castillo, Luis",622491,2026,2,9.2,0,0,11,3,9,2.79,0,2.82,0.21,0.294,0.268,91.9,11.5,1.304,Castillo,Luis,Luis Castillo,4.27
+"Santana, Dennis",642701,2026,6,6.0,2,0,4,2,1,0.0,0,3.15,0.242,0.293,0.283,81.7,0.0,0.5,Santana,Dennis,Dennis Santana,5.45
+"Gilbert, Logan",669302,2026,3,16.2,0,2,18,3,18,5.4,0,2.37,0.209,0.312,0.246,91.7,6.5,1.296,Gilbert,Logan,Logan Gilbert,7.16
+"Soroka, Michael",647336,2026,2,10.0,2,0,13,4,8,0.9,0,5.87,0.253,0.524,0.374,90.5,20.8,1.2,Soroka,Michael,Michael Soroka,5.37
+"Boyle, Joe",671212,2026,3,15.2,0,1,16,6,11,5.17,0,4.36,0.261,0.412,0.329,87.3,4.5,1.118,Boyle,Joe,Joe Boyle,4.7
+"Meyer, Max",676974,2026,2,9.2,0,0,11,5,8,4.66,0,5.72,0.277,0.486,0.37,91.3,14.3,1.413,Meyer,Max,Max Meyer,5.64
+"Abbott, Andrew",671096,2026,3,17.0,0,1,11,6,18,3.18,0,4.16,0.258,0.403,0.322,88.2,9.1,1.412,Abbott,Andrew,Andrew Abbott,5.02
+"Erceg, Lucas",668674,2026,5,4.2,0,0,3,2,5,3.86,3,4.19,0.262,0.371,0.323,86.1,7.7,1.667,Erceg,Lucas,Lucas Erceg,5.9
+"Alexander, Tyler",641302,2026,6,5.2,0,0,5,2,5,1.59,2,2.43,0.195,0.239,0.249,83.4,0.0,1.346,Alexander,Tyler,Tyler Alexander,4.03
+"Nelson, Ryne",669194,2026,3,15.0,1,1,12,6,10,4.2,0,5.72,0.261,0.534,0.37,91.8,13.0,1.067,Nelson,Ryne,Ryne Nelson,4.88
+"Yesavage, Trey",702056,2025,3,14.0,1,0,16,7,13,3.21,0,4.1,0.251,0.369,0.314,94.0,7.7,1.429,Yesavage,Trey,Trey Yesavage,4.73
+"Rodón, Carlos",607074,2025,33,195.1,18,9,203,73,132,3.09,0,3.36,0.206,0.351,0.286,88.6,7.5,1.051,Rodón,Carlos,Carlos Rodón,3.51

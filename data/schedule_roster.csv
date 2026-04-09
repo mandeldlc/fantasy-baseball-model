@@ -1,6 +1,6 @@
 Name,Pos,Starts,Doble_Start,Favorabilidad,Oponentes
 Salvador Perez,C,0,❌ Sin start,50.0,Sin start / No pitcher
-Josh Naylor,1B,0,❌ Sin start,50.0,Sin start / No pitcher
+Mark Vientos,1B,0,❌ Sin start,50.0,Sin start / No pitcher
 Nico Hoerner,2B,0,❌ Sin start,50.0,Sin start / No pitcher
 Junior Caminero,3B,0,❌ Sin start,50.0,Sin start / No pitcher
 Zach Neto,SS,0,❌ Sin start,50.0,Sin start / No pitcher
@@ -9,15 +9,16 @@ Michael Harris II,OF,0,❌ Sin start,50.0,Sin start / No pitcher
 Kyle Tucker,OF,0,❌ Sin start,50.0,Sin start / No pitcher
 Riley Greene,Util,0,❌ Sin start,50.0,Sin start / No pitcher
 Bo Bichette,Util,0,❌ Sin start,50.0,Sin start / No pitcher
-Mark Vientos,BN,0,❌ Sin start,50.0,Sin start / No pitcher
-Luis Castillo,SP,0,❌ Sin start,50.0,Sin start / No pitcher
-Logan Gilbert,SP,1,➡️ Simple,50.2,2026-04-06 vs Texas Rangers (🟡 Normal) wOBA:0.307
-Dennis Santana,RP,0,❌ Sin start,50.0,Sin start / No pitcher
-Joe Boyle,RP,1,➡️ Simple,47.6,2026-04-08 vs Chicago Cubs (🟡 Normal) wOBA:0.290
-Andrew Abbott,P,1,➡️ Simple,55.3,2026-04-07 vs Miami Marlins (🟡 Normal) wOBA:0.336
+Josh Naylor,BN,0,❌ Sin start,50.0,Sin start / No pitcher
+Luis Castillo,SP,1,➡️ Simple,41.7,2026-04-11 vs Houston Astros (🟡 Normal) wOBA:0.368
+Logan Gilbert,SP,2,⭐ DOBLE,45.6,2026-04-06 vs Texas Rangers (🟡 Normal) wOBA:0.300 | 2026-04-12 vs Houston Astros (🟡 Normal) wOBA:0.368
+Joe Boyle,RP,1,➡️ Simple,40.1,2026-04-08 vs Chicago Cubs (🟡 Normal) wOBA:0.311
+Michael Soroka,RP,0,❌ Sin start,50.0,Sin start / No pitcher
+Andrew Abbott,P,2,⭐ DOBLE,63.0,2026-04-07 vs Miami Marlins (🟡 Normal) wOBA:0.339 | 2026-04-12 vs Los Angeles Angels (🟢 Fácil) wOBA:0.296
 Lucas Erceg,P,0,❌ Sin start,50.0,Sin start / No pitcher
-Tyler Alexander,P,0,❌ Sin start,50.0,Sin start / No pitcher
-Ryne Nelson,P,1,➡️ Simple,61.0,2026-04-08 vs New York Mets (🟡 Normal) wOBA:0.327
-Michael Soroka,BN,0,❌ Sin start,50.0,Sin start / No pitcher
+Ryne Nelson,P,1,➡️ Simple,68.7,2026-04-08 vs New York Mets (🟢 Fácil) wOBA:0.315
+Max Meyer,P,1,➡️ Simple,66.3,2026-04-09 vs Cincinnati Reds (🟢 Fácil) wOBA:0.285
+Dennis Santana,BN,0,❌ Sin start,50.0,Sin start / No pitcher
+Tyler Alexander,BN,0,❌ Sin start,50.0,Sin start / No pitcher
 Carlos Rodón,IL,0,❌ Sin start,50.0,Sin start / No pitcher
 Trey Yesavage,IL,0,❌ Sin start,50.0,Sin start / No pitcher
