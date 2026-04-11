@@ -18,11 +18,11 @@
     "equipo": "LOS GORDITOS DAD & JR 2026 MLB",
     "jugadores": 12,
     "HR_avg": 3.2,
-    "OPS": 0.787,
-    "wOBA": 0.352,
-    "xwOBA": 0.329,
-    "EV": 88.8,
-    "Barrel%": 10.1
+    "OPS": 0.786,
+    "wOBA": 0.353,
+    "xwOBA": 0.327,
+    "EV": 88.3,
+    "Barrel%": 10.0
   },
   "mis_pit": {
     "equipo": "Dando Tabla",
@@ -36,14 +36,14 @@
   "opp_pit": {
     "equipo": "LOS GORDITOS DAD & JR 2026 MLB",
     "jugadores": 11,
-    "ERA": 2.3,
-    "xERA": 2.77,
-    "Ks": 12.5,
-    "xwOBA": 0.266,
-    "EV_against": 87.9
+    "ERA": 2.79,
+    "xERA": 3.27,
+    "Ks": 11.8,
+    "xwOBA": 0.284,
+    "EV_against": 88.2
   },
-  "prob_ganar": 45.8,
-  "prob_perder": 54.2,
-  "odds_ganar": "+118",
-  "odds_perder": "-118"
+  "prob_ganar": 47.7,
+  "prob_perder": 52.3,
+  "odds_ganar": "+110",
+  "odds_perder": "-110"
 }

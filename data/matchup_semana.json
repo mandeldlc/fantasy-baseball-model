@@ -16,13 +16,13 @@
   },
   "opp_bat": {
     "equipo": "B-Strong",
-    "jugadores": 16,
-    "HR_avg": 1.4,
-    "OPS": 0.675,
-    "wOBA": 0.305,
-    "xwOBA": 0.303,
+    "jugadores": 17,
+    "HR_avg": 1.5,
+    "OPS": 0.698,
+    "wOBA": 0.315,
+    "xwOBA": 0.308,
     "EV": 89.9,
-    "Barrel%": 8.7
+    "Barrel%": 8.8
   },
   "mis_pit": {
     "equipo": "Dando Tabla",
@@ -35,15 +35,15 @@
   },
   "opp_pit": {
     "equipo": "B-Strong",
-    "jugadores": 12,
-    "ERA": 2.83,
-    "xERA": 3.28,
-    "Ks": 14.2,
-    "xwOBA": 0.286,
-    "EV_against": 89.8
+    "jugadores": 11,
+    "ERA": 2.64,
+    "xERA": 3.31,
+    "Ks": 14.7,
+    "xwOBA": 0.287,
+    "EV_against": 89.6
   },
-  "prob_ganar": 49.0,
-  "prob_perder": 51.0,
-  "odds_ganar": "+104",
-  "odds_perder": "-104"
+  "prob_ganar": 48.4,
+  "prob_perder": 51.6,
+  "odds_ganar": "+107",
+  "odds_perder": "-107"
 }

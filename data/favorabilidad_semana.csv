@@ -3,7 +3,7 @@ Logan Gilbert,Cleveland Guardians,0.291,68.0,🟢 Favorable,Hist+ML,0.292,2879,2
 Jeffrey Springs,Toronto Blue Jays,0.301,77.8,🟡 Normal,Hist+ML,0.301,1461,2.19
 Bailey Ober,Baltimore Orioles,0.303,74.5,🟡 Normal,Hist+ML,0.303,2142,4.15
 Andrew Abbott,Boston Red Sox,0.305,60.5,🟡 Normal,ML,,0,4.07
-Tyler Mahle,New York Yankees,0.306,61.3,🟡 Normal,Hist+ML,0.305,1009,5.59
+Tyler Mahle,New York Yankees,0.306,61.5,🟡 Normal,Hist+ML,0.305,1009,5.59
 Chad Patrick,Chicago White Sox,0.307,62.8,🟡 Normal,Hist+ML,0.306,505,3.27
 Joe Boyle,St. Louis Cardinals,0.308,86.9,🟡 Normal,Hist+ML,0.308,512,4.27
 Shane Smith,Milwaukee Brewers,0.31,43.9,🟡 Normal,Hist+ML,0.31,616,4.44
@@ -23,6 +23,6 @@ Max Meyer,Colorado Rockies,0.326,53.3,🟡 Normal,Hist+ML,0.337,560,5.35
 Michael McGreevy,Tampa Bay Rays,0.326,7.6,🟡 Normal,Hist+ML,0.326,486,5.63
 Sean Burke,Milwaukee Brewers,0.335,37.0,🔴 Difícil,Hist+ML,0.339,674,3.17
 Miles Mikolas,Chicago Cubs,0.336,6.1,🔴 Difícil,ML,,0,6.68
-Jake Irvin,Chicago Cubs,0.344,12.6,🔴 Difícil,Hist+ML,0.342,2087,5.11
+Jake Irvin,Chicago Cubs,0.344,12.7,🔴 Difícil,Hist+ML,0.342,2087,5.11
 Kyle Freeland,Miami Marlins,0.348,22.0,🔴 Difícil,Hist+ML,0.351,2647,3.85
 Randy Vásquez,Detroit Tigers,0.351,6.4,🔴 Difícil,Hist+ML,0.36,1170,4.18
