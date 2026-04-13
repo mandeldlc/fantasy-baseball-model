@@ -1,49 +1,49 @@
 {
-  "semana": 4,
-  "oponente": "LOS GORDITOS DAD & JR 2026 MLB",
-  "oponente_id": 4,
-  "week_start": "2026-04-13",
-  "week_end": "2026-04-19",
+  "semana": 5,
+  "oponente": "De espalda al aro mmg",
+  "oponente_id": 12,
+  "week_start": "2026-04-20",
+  "week_end": "2026-04-26",
   "mis_bat": {
     "equipo": "Dando Tabla",
     "jugadores": 12,
     "HR_avg": 1.3,
-    "OPS": 0.769,
-    "wOBA": 0.349,
-    "xwOBA": 0.312,
-    "EV": 89.0,
-    "Barrel%": 7.7
+    "OPS": 0.767,
+    "wOBA": 0.348,
+    "xwOBA": 0.309,
+    "EV": 89.1,
+    "Barrel%": 7.6
   },
   "opp_bat": {
-    "equipo": "LOS GORDITOS DAD & JR 2026 MLB",
-    "jugadores": 12,
-    "HR_avg": 3.5,
-    "OPS": 0.755,
-    "wOBA": 0.34,
-    "xwOBA": 0.327,
-    "EV": 88.6,
-    "Barrel%": 10.6
+    "equipo": "De espalda al aro mmg",
+    "jugadores": 13,
+    "HR_avg": 4.0,
+    "OPS": 0.838,
+    "wOBA": 0.374,
+    "xwOBA": 0.366,
+    "EV": 89.8,
+    "Barrel%": 11.7
   },
   "mis_pit": {
     "equipo": "Dando Tabla",
     "jugadores": 12,
-    "ERA": 3.9,
-    "xERA": 5.01,
-    "Ks": 28.3,
-    "xwOBA": 0.336,
+    "ERA": 4.02,
+    "xERA": 5.11,
+    "Ks": 29.0,
+    "xwOBA": 0.338,
     "EV_against": 89.5
   },
   "opp_pit": {
-    "equipo": "LOS GORDITOS DAD & JR 2026 MLB",
-    "jugadores": 11,
+    "equipo": "De espalda al aro mmg",
+    "jugadores": 10,
     "ERA": 3.11,
-    "xERA": 3.09,
-    "Ks": 14.5,
-    "xwOBA": 0.283,
-    "EV_against": 87.9
+    "xERA": 2.92,
+    "Ks": 14.9,
+    "xwOBA": 0.271,
+    "EV_against": 87.6
   },
-  "prob_ganar": 44.0,
-  "prob_perder": 56.0,
-  "odds_ganar": "+127",
-  "odds_perder": "-127"
+  "prob_ganar": 42.0,
+  "prob_perder": 58.0,
+  "odds_ganar": "+138",
+  "odds_perder": "-138"
 }
