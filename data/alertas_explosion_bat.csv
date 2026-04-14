@@ -1,81 +1,80 @@
 Name,Señales,Score_Explosion,Detalle,wOBA,xwOBA,BABIP,EV,Barrel%,diff_xwoba
-Dominic Canzone,5,14,xwOBA supera wOBA en +0.058 | BABIP muy bajo 0.200 — hits no caen | EV élite 95.2 mph | Barrel rate élite 14.8% | xBA 0.286 supera BA 0.206,0.339,0.397,0.2,95.2,14.8,0.058
-Andruw Monasterio,5,14,xwOBA supera wOBA en +0.043 | BABIP muy bajo 0.125 — hits no caen | EV élite 92.5 mph | Barrel rate élite 12.5% | xBA 0.157 supera BA 0.100,0.264,0.307,0.125,92.5,12.5,0.043
-Ryan McMahon,5,13,xwOBA supera wOBA en +0.058 | BABIP muy bajo 0.200 — hits no caen | EV élite 93.0 mph | Barrel rate alto 10.0% | xBA 0.166 supera BA 0.114,0.205,0.263,0.2,93.0,10.0,0.058
-Richie Palacios,5,13,xwOBA supera wOBA en +0.050 | BABIP muy bajo 0.200 — hits no caen | EV alto 91.5 mph | Barrel rate élite 12.5% | xBA 0.261 supera BA 0.211,0.368,0.418,0.2,91.5,12.5,0.05
-Austin Wells,5,13,xwOBA supera wOBA en +0.079 | BABIP muy bajo 0.192 — hits no caen | EV élite 93.2 mph | Barrel rate alto 11.1% | xBA 0.235 supera BA 0.154,0.231,0.31,0.192,93.2,11.1,0.079
-Dansby Swanson,5,13,xwOBA supera wOBA en +0.050 | BABIP muy bajo 0.194 — hits no caen | EV alto 90.5 mph | Barrel rate élite 15.2% | xBA 0.218 supera BA 0.163,0.294,0.344,0.194,90.5,15.2,0.05
-Dillon Dingler,5,13,xwOBA supera wOBA en +0.060 | BABIP bajo 0.258 | EV élite 93.1 mph | Barrel rate élite 17.6% | xBA 0.305 supera BA 0.250,0.377,0.437,0.258,93.1,17.6,0.06
+Dominic Canzone,5,14,xwOBA supera wOBA en +0.060 | BABIP muy bajo 0.200 — hits no caen | EV élite 95.2 mph | Barrel rate élite 14.8% | xBA 0.286 supera BA 0.206,0.338,0.398,0.2,95.2,14.8,0.06
+Trent Grisham,5,13,xwOBA supera wOBA en +0.065 | BABIP muy bajo 0.167 — hits no caen | EV alto 91.8 mph | Barrel rate élite 13.2% | xBA 0.251 supera BA 0.167,0.329,0.394,0.167,91.8,13.2,0.065
+Richie Palacios,5,13,xwOBA supera wOBA en +0.051 | BABIP muy bajo 0.200 — hits no caen | EV alto 91.5 mph | Barrel rate élite 12.5% | xBA 0.261 supera BA 0.211,0.367,0.418,0.2,91.5,12.5,0.051
 Tyler Stephenson,5,13,xwOBA supera wOBA en +0.046 | BABIP muy bajo 0.174 — hits no caen | EV élite 94.9 mph | Barrel rate alto 12.0% | xBA 0.228 supera BA 0.171,0.297,0.343,0.174,94.9,12.0,0.046
+Samuel Basallo,5,13,xwOBA supera wOBA en +0.036 | BABIP muy bajo 0.148 — hits no caen | EV élite 92.2 mph | Barrel rate alto 10.3% | xBA 0.174 supera BA 0.136,0.234,0.27,0.148,92.2,10.3,0.036
+Ryan McMahon,5,13,xwOBA supera wOBA en +0.068 | BABIP muy bajo 0.182 — hits no caen | EV élite 92.3 mph | Barrel rate alto 9.1% | xBA 0.174 supera BA 0.108,0.207,0.275,0.182,92.3,9.1,0.068
+Austin Wells,5,13,xwOBA supera wOBA en +0.059 | BABIP muy bajo 0.207 — hits no caen | EV élite 93.0 mph | Barrel rate alto 10.0% | xBA 0.227 supera BA 0.167,0.255,0.314,0.207,93.0,10.0,0.059
+Dillon Dingler,5,13,xwOBA supera wOBA en +0.061 | BABIP bajo 0.258 | EV élite 93.1 mph | Barrel rate élite 17.6% | xBA 0.305 supera BA 0.250,0.376,0.437,0.258,93.1,17.6,0.061
 Bo Naylor,5,12,xwOBA supera wOBA en +0.131 | BABIP muy bajo 0.160 — hits no caen | EV alto 90.1 mph | Barrel rate alto 12.0% | xBA 0.217 supera BA 0.121,0.175,0.306,0.16,90.1,12.0,0.131
 Wenceel Pérez,4,12,xwOBA supera wOBA en +0.363 | BABIP muy bajo 0.000 — hits no caen | EV élite 94.6 mph | Barrel rate élite 14.3%,0.0,0.363,0.0,94.6,14.3,0.363
-Trent Grisham,5,12,xwOBA supera wOBA en +0.104 | BABIP muy bajo 0.171 — hits no caen | EV alto 91.5 mph | Barrel rate alto 11.4% | xBA 0.236 supera BA 0.133,0.273,0.377,0.171,91.5,11.4,0.104
 Kyle Manzardo,5,12,xwOBA supera wOBA en +0.106 | BABIP muy bajo 0.154 — hits no caen | EV alto 90.8 mph | Barrel rate alto 11.1% | xBA 0.221 supera BA 0.116,0.206,0.312,0.154,90.8,11.1,0.106
-Jake Bauers,4,11,BABIP muy bajo 0.219 — hits no caen | EV élite 94.2 mph | Barrel rate élite 13.9% | xBA 0.273 supera BA 0.239,0.364,0.369,0.219,94.2,13.9,0.005
-Kody Clemens,4,11,xwOBA supera wOBA en +0.041 | BABIP muy bajo 0.143 — hits no caen | Barrel rate élite 25.0% | xBA 0.183 supera BA 0.143,0.293,0.334,0.143,89.3,25.0,0.041
+Kody Clemens,4,11,xwOBA supera wOBA en +0.042 | BABIP muy bajo 0.143 — hits no caen | Barrel rate élite 25.0% | xBA 0.183 supera BA 0.143,0.292,0.334,0.143,89.3,25.0,0.042
+Jake Bauers,4,11,BABIP muy bajo 0.219 — hits no caen | EV élite 94.2 mph | Barrel rate élite 13.9% | xBA 0.273 supera BA 0.239,0.363,0.369,0.219,94.2,13.9,0.006
+Ryan Kreidler,4,11,xwOBA supera wOBA en +0.148 | BABIP muy bajo 0.000 — hits no caen | Barrel rate élite 14.3% | xBA 0.298 supera BA 0.125,0.267,0.415,0.0,84.3,14.3,0.148
+Ty France,4,11,xwOBA supera wOBA en +0.121 | EV élite 93.1 mph | Barrel rate élite 25.0% | xBA 0.371 supera BA 0.286,0.419,0.54,0.273,93.1,25.0,0.121
+Santiago Espinal,4,11,xwOBA supera wOBA en +0.098 | BABIP muy bajo 0.182 — hits no caen | EV élite 92.5 mph | xBA 0.264 supera BA 0.154,0.17,0.268,0.182,92.5,0.0,0.098
 Travis d'Arnaud,4,11,xwOBA supera wOBA en +0.113 | BABIP muy bajo 0.167 — hits no caen | Barrel rate élite 33.3% | xBA 0.143 supera BA 0.100,0.13,0.243,0.167,85.2,33.3,0.113
-Ty France,4,11,xwOBA supera wOBA en +0.120 | EV élite 93.1 mph | Barrel rate élite 25.0% | xBA 0.371 supera BA 0.286,0.42,0.54,0.273,93.1,25.0,0.12
+Alek Thomas,4,11,xwOBA supera wOBA en +0.081 | BABIP muy bajo 0.176 — hits no caen | EV élite 92.2 mph | xBA 0.191 supera BA 0.122,0.177,0.258,0.176,92.2,5.7,0.081
 Austin Wynns,4,11,xwOBA supera wOBA en +0.323 | BABIP muy bajo 0.125 — hits no caen | Barrel rate élite 22.2% | xBA 0.291 supera BA 0.111,0.101,0.424,0.125,84.5,22.2,0.323
-Alek Thomas,4,10,xwOBA supera wOBA en +0.081 | BABIP muy bajo 0.182 — hits no caen | EV alto 92.0 mph | xBA 0.201 supera BA 0.133,0.192,0.273,0.182,92.0,5.9,0.081
-Edmundo Sosa,4,10,xwOBA supera wOBA en +0.104 | BABIP muy bajo 0.200 — hits no caen | EV alto 91.2 mph | xBA 0.306 supera BA 0.167,0.259,0.363,0.2,91.2,0.0,0.104
-Luke Raley,4,10,xwOBA supera wOBA en +0.020 | EV élite 92.8 mph | Barrel rate élite 18.5% | xBA 0.287 supera BA 0.255,0.375,0.395,0.375,92.8,18.5,0.02
+Dansby Swanson,4,10,BABIP muy bajo 0.188 — hits no caen | EV alto 90.7 mph | Barrel rate élite 14.3% | xBA 0.211 supera BA 0.173,0.32,0.339,0.188,90.7,14.3,0.019
+Ke'Bryan Hayes,4,10,xwOBA supera wOBA en +0.184 | BABIP muy bajo 0.086 — hits no caen | EV alto 91.8 mph | xBA 0.236 supera BA 0.079,0.119,0.303,0.086,91.8,5.7,0.184
 Griffin Conine,4,10,xwOBA supera wOBA en +0.094 | EV alto 90.1 mph | Barrel rate élite 25.0% | xBA 0.376 supera BA 0.273,0.419,0.513,0.286,90.1,25.0,0.094
 Addison Barger,4,10,xwOBA supera wOBA en +0.082 | BABIP muy bajo 0.071 — hits no caen | EV alto 90.7 mph | xBA 0.124 supera BA 0.053,0.149,0.231,0.071,90.7,0.0,0.082
-Carson Benge,4,10,xwOBA supera wOBA en +0.048 | BABIP muy bajo 0.161 — hits no caen | EV alto 90.5 mph | xBA 0.186 supera BA 0.130,0.211,0.259,0.161,90.5,3.1,0.048
-Heriberto Hernández,4,10,xwOBA supera wOBA en +0.064 | BABIP muy bajo 0.172 — hits no caen | EV alto 90.2 mph | xBA 0.202 supera BA 0.132,0.228,0.292,0.172,90.2,6.9,0.064
-Ke'Bryan Hayes,4,10,xwOBA supera wOBA en +0.184 | BABIP muy bajo 0.086 — hits no caen | EV alto 91.8 mph | xBA 0.236 supera BA 0.079,0.119,0.303,0.086,91.8,5.7,0.184
+Bryson Stott,4,10,xwOBA supera wOBA en +0.086 | BABIP muy bajo 0.244 — hits no caen | EV alto 90.1 mph | xBA 0.273 supera BA 0.200,0.238,0.324,0.244,90.1,7.3,0.086
 Edgar Quero,4,10,xwOBA supera wOBA en +0.059 | BABIP muy bajo 0.214 — hits no caen | EV alto 90.9 mph | xBA 0.217 supera BA 0.162,0.202,0.261,0.214,90.9,0.0,0.059
-Mitch Garver,4,10,xwOBA supera wOBA en +0.055 | BABIP bajo 0.250 | EV élite 96.7 mph | xBA 0.193 supera BA 0.125,0.276,0.331,0.25,96.7,0.0,0.055
+Carson Benge,4,10,xwOBA supera wOBA en +0.050 | BABIP muy bajo 0.161 — hits no caen | EV alto 90.5 mph | xBA 0.186 supera BA 0.130,0.21,0.26,0.161,90.5,3.1,0.05
+Heriberto Hernández,4,10,xwOBA supera wOBA en +0.052 | BABIP muy bajo 0.212 — hits no caen | EV alto 90.4 mph | xBA 0.216 supera BA 0.163,0.242,0.294,0.212,90.4,6.1,0.052
 Jake Rogers,4,10,xwOBA supera wOBA en +0.021 | BABIP muy bajo 0.143 — hits no caen | EV alto 91.3 mph | Barrel rate élite 14.3%,0.157,0.178,0.143,91.3,14.3,0.021
-Bryson Stott,4,10,xwOBA supera wOBA en +0.080 | BABIP muy bajo 0.243 — hits no caen | EV alto 91.6 mph | xBA 0.259 supera BA 0.196,0.229,0.309,0.243,91.6,8.1,0.08
-Curtis Mead,4,9,xwOBA supera wOBA en +0.028 | EV élite 92.9 mph | Barrel rate alto 9.5% | xBA 0.331 supera BA 0.280,0.387,0.415,0.3,92.9,9.5,0.028
-Tyler Tolbert,3,9,xwOBA supera wOBA en +0.196 | BABIP muy bajo 0.000 — hits no caen | EV élite 102.8 mph,0.0,0.196,0.0,102.8,0.0,0.196
-Randal Grichuk,3,9,xwOBA supera wOBA en +0.205 | BABIP muy bajo 0.000 — hits no caen | Barrel rate élite 33.3%,0.0,0.205,0.0,86.0,33.3,0.205
-CJ Kayfus,3,9,BABIP muy bajo 0.231 — hits no caen | EV élite 92.8 mph | Barrel rate élite 21.4%,0.297,0.306,0.231,92.8,21.4,0.009
-Spencer Steer,3,9,xwOBA supera wOBA en +0.035 | BABIP muy bajo 0.206 — hits no caen | Barrel rate élite 16.7%,0.254,0.289,0.206,87.2,16.7,0.035
+Randal Grichuk,3,9,xwOBA supera wOBA en +0.312 | BABIP muy bajo 0.000 — hits no caen | Barrel rate élite 42.9%,0.051,0.363,0.0,89.0,42.9,0.312
+Tommy Pham,3,9,xwOBA supera wOBA en +0.313 | BABIP muy bajo 0.000 — hits no caen | EV élite 104.8 mph,0.0,0.313,0.0,104.8,0.0,0.313
 Connor Joe,3,9,xwOBA supera wOBA en +0.175 | BABIP muy bajo 0.000 — hits no caen | EV élite 99.4 mph,0.0,0.175,0.0,99.4,0.0,0.175
+Tyler Tolbert,3,9,xwOBA supera wOBA en +0.196 | BABIP muy bajo 0.000 — hits no caen | EV élite 102.8 mph,0.0,0.196,0.0,102.8,0.0,0.196
+Spencer Steer,3,9,xwOBA supera wOBA en +0.036 | BABIP muy bajo 0.206 — hits no caen | Barrel rate élite 16.7%,0.253,0.289,0.206,87.2,16.7,0.036
 Michael Massey,4,9,xwOBA supera wOBA en +0.036 | BABIP bajo 0.250 | EV alto 90.7 mph | xBA 0.234 supera BA 0.182,0.201,0.237,0.25,90.7,0.0,0.036
-Santiago Espinal,4,9,xwOBA supera wOBA en +0.051 | BABIP bajo 0.250 | EV alto 91.0 mph | xBA 0.282 supera BA 0.222,0.246,0.297,0.25,91.0,0.0,0.051
-Marcell Ozuna,3,8,xwOBA supera wOBA en +0.092 | BABIP muy bajo 0.097 — hits no caen | xBA 0.152 supera BA 0.070,0.131,0.223,0.097,87.0,3.2,0.092
-Samuel Basallo,3,8,BABIP muy bajo 0.167 — hits no caen | EV élite 93.4 mph | Barrel rate alto 11.5%,0.255,0.269,0.167,93.4,11.5,0.014
-Alejandro Kirk,3,8,xwOBA supera wOBA en +0.036 | BABIP muy bajo 0.118 — hits no caen | xBA 0.254 supera BA 0.150,0.263,0.299,0.118,85.5,5.6,0.036
+Alejandro Kirk,3,8,xwOBA supera wOBA en +0.037 | BABIP muy bajo 0.118 — hits no caen | xBA 0.254 supera BA 0.150,0.262,0.299,0.118,85.5,5.6,0.037
 Vaughn Grissom,3,8,xwOBA supera wOBA en +0.077 | BABIP muy bajo 0.143 — hits no caen | xBA 0.225 supera BA 0.143,0.202,0.279,0.143,88.5,0.0,0.077
-Xander Bogaerts,3,8,xwOBA supera wOBA en +0.051 | BABIP muy bajo 0.235 — hits no caen | xBA 0.295 supera BA 0.237,0.312,0.363,0.235,89.6,7.5,0.051
-Carson Kelly,3,8,xwOBA supera wOBA en +0.026 | EV élite 94.4 mph | Barrel rate élite 12.9%,0.378,0.404,0.387,94.4,12.9,0.026
-Carlos Narváez,3,8,xwOBA supera wOBA en +0.076 | EV élite 93.4 mph | xBA 0.285 supera BA 0.242,0.235,0.311,0.308,93.4,7.4,0.076
-Gabriel Arias,3,8,BABIP bajo 0.250 | EV élite 94.6 mph | Barrel rate élite 16.7%,0.305,0.293,0.25,94.6,16.7,-0.012
-Lenyn Sosa,4,8,xwOBA supera wOBA en +0.028 | BABIP bajo 0.269 | EV alto 90.7 mph | xBA 0.253 supera BA 0.212,0.229,0.257,0.269,90.7,0.0,0.028
-Ramón Urías,3,8,BABIP bajo 0.250 | EV élite 92.9 mph | Barrel rate élite 18.2%,0.379,0.366,0.25,92.9,18.2,-0.013
+Alec Bohm,3,8,xwOBA supera wOBA en +0.063 | BABIP muy bajo 0.170 — hits no caen | xBA 0.226 supera BA 0.155,0.217,0.28,0.17,88.5,0.0,0.063
+Ramón Urías,3,8,BABIP bajo 0.250 | EV élite 92.9 mph | Barrel rate élite 18.2%,0.378,0.366,0.25,92.9,18.2,-0.012
+Xander Bogaerts,3,8,xwOBA supera wOBA en +0.052 | BABIP muy bajo 0.235 — hits no caen | xBA 0.295 supera BA 0.237,0.311,0.363,0.235,89.6,7.5,0.052
+Jake Cronenworth,3,8,xwOBA supera wOBA en +0.088 | BABIP muy bajo 0.179 — hits no caen | xBA 0.255 supera BA 0.154,0.235,0.323,0.179,89.5,5.0,0.088
+Andy Ibáñez,3,8,xwOBA supera wOBA en +0.047 | BABIP muy bajo 0.182 — hits no caen | xBA 0.191 supera BA 0.154,0.181,0.228,0.182,88.7,0.0,0.047
+Nick Castellanos,3,8,xwOBA supera wOBA en +0.124 | BABIP muy bajo 0.241 — hits no caen | xBA 0.329 supera BA 0.200,0.242,0.366,0.241,89.4,6.9,0.124
+Lawrence Butler,3,8,xwOBA supera wOBA en +0.056 | BABIP muy bajo 0.206 — hits no caen | xBA 0.262 supera BA 0.180,0.265,0.321,0.206,87.9,5.6,0.056
+Gabriel Arias,3,8,BABIP bajo 0.250 | EV élite 94.6 mph | Barrel rate élite 16.7%,0.304,0.293,0.25,94.6,16.7,-0.011
+Marcell Ozuna,3,8,xwOBA supera wOBA en +0.092 | BABIP muy bajo 0.097 — hits no caen | xBA 0.152 supera BA 0.070,0.131,0.223,0.097,87.0,3.2,0.092
+Carlos Narváez,3,8,xwOBA supera wOBA en +0.069 | EV élite 93.2 mph | xBA 0.255 supera BA 0.216,0.21,0.279,0.296,93.2,7.1,0.069
 Tim Tawa,3,8,xwOBA supera wOBA en +0.103 | BABIP muy bajo 0.125 — hits no caen | xBA 0.230 supera BA 0.107,0.181,0.284,0.125,86.8,4.0,0.103
-Caleb Durbin,3,8,xwOBA supera wOBA en +0.074 | BABIP muy bajo 0.128 — hits no caen | xBA 0.197 supera BA 0.106,0.175,0.249,0.128,85.2,0.0,0.074
-Josh Smith,3,8,xwOBA supera wOBA en +0.075 | BABIP muy bajo 0.211 — hits no caen | xBA 0.227 supera BA 0.174,0.212,0.287,0.211,87.4,5.3,0.075
+Drew Millas,3,8,xwOBA supera wOBA en +0.048 | BABIP muy bajo 0.200 — hits no caen | xBA 0.196 supera BA 0.136,0.214,0.262,0.2,73.3,0.0,0.048
+Caleb Durbin,3,8,xwOBA supera wOBA en +0.055 | BABIP muy bajo 0.163 — hits no caen | xBA 0.207 supera BA 0.135,0.198,0.253,0.163,85.4,0.0,0.055
+Andruw Monasterio,3,8,BABIP muy bajo 0.222 — hits no caen | EV élite 93.1 mph | Barrel rate alto 11.1%,0.289,0.3,0.222,93.1,11.1,0.011
+Masyn Winn,3,8,xwOBA supera wOBA en +0.036 | BABIP muy bajo 0.219 — hits no caen | xBA 0.226 supera BA 0.175,0.302,0.338,0.219,87.3,3.1,0.036
+Jordan Beck,3,8,xwOBA supera wOBA en +0.108 | BABIP muy bajo 0.130 — hits no caen | xBA 0.207 supera BA 0.100,0.159,0.267,0.13,87.4,4.3,0.108
+Harrison Bader,3,8,xwOBA supera wOBA en +0.107 | BABIP muy bajo 0.143 — hits no caen | xBA 0.196 supera BA 0.115,0.154,0.261,0.143,87.1,8.3,0.107
+Patrick Bailey,3,8,xwOBA supera wOBA en +0.133 | BABIP muy bajo 0.171 — hits no caen | xBA 0.259 supera BA 0.146,0.173,0.306,0.171,89.3,5.7,0.133
+Luis Rengifo,3,8,xwOBA supera wOBA en +0.074 | BABIP muy bajo 0.167 — hits no caen | xBA 0.231 supera BA 0.136,0.184,0.258,0.167,85.6,8.3,0.074
+Josh Smith,3,8,xwOBA supera wOBA en +0.074 | BABIP muy bajo 0.220 — hits no caen | xBA 0.232 supera BA 0.180,0.213,0.287,0.22,86.8,4.9,0.074
+Nathan Lukes,3,8,xwOBA supera wOBA en +0.114 | BABIP muy bajo 0.091 — hits no caen | xBA 0.197 supera BA 0.077,0.113,0.227,0.091,84.3,0.0,0.114
 Jose Trevino,3,8,xwOBA supera wOBA en +0.095 | BABIP muy bajo 0.125 — hits no caen | xBA 0.202 supera BA 0.091,0.135,0.23,0.125,76.9,0.0,0.095
 Jake McCarthy,3,8,xwOBA supera wOBA en +0.086 | BABIP muy bajo 0.182 — hits no caen | xBA 0.231 supera BA 0.138,0.221,0.307,0.182,86.8,4.0,0.086
-Alec Bohm,3,8,xwOBA supera wOBA en +0.050 | BABIP muy bajo 0.163 — hits no caen | xBA 0.217 supera BA 0.148,0.22,0.27,0.163,87.2,0.0,0.05
-Nick Castellanos,3,8,xwOBA supera wOBA en +0.124 | BABIP muy bajo 0.241 — hits no caen | xBA 0.329 supera BA 0.200,0.242,0.366,0.241,89.4,6.9,0.124
-Jordan Beck,3,8,xwOBA supera wOBA en +0.108 | BABIP muy bajo 0.130 — hits no caen | xBA 0.207 supera BA 0.100,0.159,0.267,0.13,87.4,4.3,0.108
-Andy Ibáñez,3,8,xwOBA supera wOBA en +0.047 | BABIP muy bajo 0.182 — hits no caen | xBA 0.191 supera BA 0.154,0.181,0.228,0.182,88.7,0.0,0.047
-Lawrence Butler,3,8,xwOBA supera wOBA en +0.053 | BABIP muy bajo 0.226 — hits no caen | xBA 0.243 supera BA 0.174,0.244,0.297,0.226,88.3,3.1,0.053
-Carlos Santana,3,8,xwOBA supera wOBA en +0.048 | BABIP muy bajo 0.125 — hits no caen | xBA 0.142 supera BA 0.083,0.14,0.188,0.125,87.8,0.0,0.048
-Matt Shaw,3,8,xwOBA supera wOBA en +0.044 | BABIP muy bajo 0.226 — hits no caen | xBA 0.296 supera BA 0.220,0.284,0.328,0.226,88.5,8.8,0.044
-Patrick Bailey,3,8,xwOBA supera wOBA en +0.133 | BABIP muy bajo 0.171 — hits no caen | xBA 0.259 supera BA 0.146,0.173,0.306,0.171,89.3,5.7,0.133
+Brayan Rocchio,3,8,xwOBA supera wOBA en +0.033 | BABIP muy bajo 0.190 — hits no caen | xBA 0.256 supera BA 0.200,0.325,0.358,0.19,87.9,4.4,0.033
+Carlos Santana,3,8,xwOBA supera wOBA en +0.048 | BABIP muy bajo 0.125 — hits no caen | xBA 0.141 supera BA 0.083,0.14,0.188,0.125,87.8,0.0,0.048
+Matt Shaw,3,8,xwOBA supera wOBA en +0.048 | BABIP muy bajo 0.212 — hits no caen | xBA 0.284 supera BA 0.205,0.274,0.322,0.212,87.7,8.3,0.048
 Lane Thomas,3,8,xwOBA supera wOBA en +0.037 | BABIP muy bajo 0.188 — hits no caen | xBA 0.177 supera BA 0.130,0.238,0.275,0.188,87.4,0.0,0.037
-Luis Rengifo,3,8,xwOBA supera wOBA en +0.074 | BABIP muy bajo 0.167 — hits no caen | xBA 0.231 supera BA 0.136,0.184,0.258,0.167,85.6,8.3,0.074
-Harrison Bader,3,8,xwOBA supera wOBA en +0.106 | BABIP muy bajo 0.143 — hits no caen | xBA 0.196 supera BA 0.115,0.155,0.261,0.143,87.1,8.3,0.106
-Jake Cronenworth,3,8,xwOBA supera wOBA en +0.088 | BABIP muy bajo 0.179 — hits no caen | xBA 0.255 supera BA 0.154,0.235,0.323,0.179,89.5,5.0,0.088
-Drew Millas,3,8,xwOBA supera wOBA en +0.048 | BABIP muy bajo 0.200 — hits no caen | xBA 0.196 supera BA 0.136,0.214,0.262,0.2,73.3,0.0,0.048
-Jung Hoo Lee,3,8,xwOBA supera wOBA en +0.039 | BABIP muy bajo 0.200 — hits no caen | xBA 0.249 supera BA 0.185,0.253,0.292,0.2,88.3,2.2,0.039
-Masyn Winn,3,8,xwOBA supera wOBA en +0.048 | BABIP muy bajo 0.194 — hits no caen | xBA 0.209 supera BA 0.154,0.255,0.303,0.194,86.6,3.2,0.048
 Yohel Pozo,3,8,xwOBA supera wOBA en +0.119 | BABIP muy bajo 0.091 — hits no caen | xBA 0.215 supera BA 0.091,0.083,0.202,0.091,87.3,0.0,0.119
-Nathan Lukes,3,8,xwOBA supera wOBA en +0.114 | BABIP muy bajo 0.091 — hits no caen | xBA 0.197 supera BA 0.077,0.113,0.227,0.091,84.3,0.0,0.114
+Jung Hoo Lee,3,8,xwOBA supera wOBA en +0.039 | BABIP muy bajo 0.200 — hits no caen | xBA 0.249 supera BA 0.185,0.253,0.292,0.2,88.3,2.2,0.039
 Ryan Vilade,3,8,xwOBA supera wOBA en +0.045 | BABIP muy bajo 0.222 — hits no caen | xBA 0.179 supera BA 0.143,0.169,0.214,0.222,89.6,0.0,0.045
-J.P. Crawford,3,8,xwOBA supera wOBA en +0.042 | Barrel rate élite 12.5% | xBA 0.243 supera BA 0.208,0.364,0.406,0.313,88.5,12.5,0.042
-Brayan Rocchio,3,8,xwOBA supera wOBA en +0.043 | BABIP muy bajo 0.175 — hits no caen | xBA 0.239 supera BA 0.170,0.282,0.325,0.175,88.6,2.4,0.043
-Coby Mayo,3,7,xwOBA supera wOBA en +0.029 | BABIP muy bajo 0.240 — hits no caen | xBA 0.198 supera BA 0.158,0.23,0.259,0.24,82.4,0.0,0.029
-Marcelo Mayer,3,7,BABIP bajo 0.250 | EV alto 91.3 mph | Barrel rate élite 13.8%,0.279,0.269,0.25,91.3,13.8,-0.01
-Luis García Jr.,3,7,xwOBA supera wOBA en +0.032 | EV alto 91.0 mph | Barrel rate alto 9.3%,0.321,0.353,0.286,91.0,9.3,0.032
-Blaze Alexander,3,7,xwOBA supera wOBA en +0.124 | EV alto 92.0 mph | xBA 0.377 supera BA 0.242,0.261,0.385,0.348,92.0,4.3,0.124
-Denzel Clarke,3,7,xwOBA supera wOBA en +0.028 | BABIP bajo 0.261 | EV élite 92.7 mph,0.185,0.213,0.261,92.7,4.2,0.028
+Tyrone Taylor,3,8,xwOBA supera wOBA en +0.037 | BABIP muy bajo 0.158 — hits no caen | xBA 0.239 supera BA 0.182,0.259,0.296,0.158,85.3,5.0,0.037
+Coby Mayo,3,7,xwOBA supera wOBA en +0.030 | BABIP muy bajo 0.240 — hits no caen | xBA 0.198 supera BA 0.158,0.23,0.26,0.24,82.4,0.0,0.03
+Jorge Polanco,3,7,xwOBA supera wOBA en +0.021 | BABIP muy bajo 0.214 — hits no caen | xBA 0.232 supera BA 0.192,0.264,0.285,0.214,87.3,4.7,0.021
+Blaze Alexander,3,7,xwOBA supera wOBA en +0.115 | EV alto 92.0 mph | xBA 0.355 supera BA 0.229,0.259,0.374,0.348,92.0,4.3,0.115
+Mitch Garver,3,7,xwOBA supera wOBA en +0.037 | EV alto 90.1 mph | xBA 0.202 supera BA 0.167,0.263,0.3,0.286,90.1,0.0,0.037
+J.P. Crawford,3,7,xwOBA supera wOBA en +0.057 | Barrel rate alto 10.0% | xBA 0.253 supera BA 0.214,0.35,0.407,0.3,89.3,10.0,0.057
+Curtis Mead,3,7,xwOBA supera wOBA en +0.030 | EV alto 91.2 mph | xBA 0.311 supera BA 0.259,0.362,0.392,0.273,91.2,8.7,0.03
+Denzel Clarke,3,7,xwOBA supera wOBA en +0.026 | BABIP bajo 0.261 | EV élite 92.7 mph,0.177,0.203,0.261,92.7,4.2,0.026
 Freddy Fermin,3,7,xwOBA supera wOBA en +0.025 | BABIP muy bajo 0.208 — hits no caen | xBA 0.193 supera BA 0.161,0.241,0.266,0.208,88.0,0.0,0.025
+Edmundo Sosa,3,7,xwOBA supera wOBA en +0.047 | EV alto 90.9 mph | xBA 0.296 supera BA 0.231,0.303,0.35,0.273,90.9,0.0,0.047
 Kyle Karros,3,7,xwOBA supera wOBA en +0.071 | BABIP bajo 0.258 | xBA 0.242 supera BA 0.182,0.248,0.319,0.258,89.3,6.5,0.071
+Jake Mangum,3,7,xwOBA supera wOBA en +0.039 | BABIP bajo 0.269 | xBA 0.257 supera BA 0.212,0.247,0.286,0.269,82.5,0.0,0.039
 P.J. Higgins,3,7,xwOBA supera wOBA en +0.097 | BABIP bajo 0.250 | xBA 0.268 supera BA 0.167,0.152,0.249,0.25,80.1,0.0,0.097
