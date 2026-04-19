@@ -1,13 +1,13 @@
 "last_name, first_name",player_id,year,p_game,p_formatted_ip,p_win,p_loss,p_strikeout,p_walk,hit,p_era,p_save,xera,xba,xslg,xwoba,exit_velocity_avg,barrel_batted_rate,p_whip,last_name,first_name,Name,xera_pred_2026
-"Gilbert, Logan",669302,2026,4,23.2,1,2,25,4,22,4.18,0,2.47,0.215,0.326,0.253,91.5,8.1,1.121,Gilbert,Logan,Logan Gilbert,6.05
-"Springs, Jeffrey",605488,2026,4,24.2,3,0,20,8,11,1.46,0,2.47,0.186,0.281,0.253,84.4,4.8,0.785,Springs,Jeffrey,Jeffrey Springs,5.98
-"Abbott, Andrew",671096,2026,4,20.0,0,2,12,8,26,5.85,0,4.7,0.285,0.432,0.342,88.6,8.6,1.7,Abbott,Andrew,Andrew Abbott,4.73
-"Montero, Keider",672456,2026,3,16.1,1,1,15,2,12,3.31,0,1.89,0.194,0.256,0.221,89.9,2.2,0.87,Montero,Keider,Keider Montero,4.25
-"Meyer, Max",676974,2026,4,19.2,1,0,20,9,17,4.12,0,5.32,0.29,0.459,0.361,89.4,10.2,1.354,Meyer,Max,Max Meyer,5.19
-"Castillo, Luis",622491,2026,4,18.1,0,1,17,7,26,5.4,0,5.64,0.309,0.471,0.37,92.5,11.1,1.823,Castillo,Luis,Luis Castillo,5.14
-"Soroka, Michael",647336,2026,3,15.2,3,0,23,6,13,2.87,0,5.79,0.248,0.509,0.374,91.9,22.9,1.25,Soroka,Michael,Michael Soroka,4.93
-"Santana, Dennis",642701,2026,10,10.0,2,1,6,4,3,0.9,2,4.13,0.257,0.349,0.323,84.7,3.8,0.7,Santana,Dennis,Dennis Santana,5.4
-"Erceg, Lucas",668674,2026,8,7.1,0,1,5,3,8,6.14,5,4.76,0.29,0.409,0.344,91.4,9.1,1.549,Erceg,Lucas,Lucas Erceg,4.29
-"Nelson, Ryne",669194,2026,4,20.1,1,1,19,8,13,3.54,0,4.45,0.238,0.459,0.334,91.0,10.3,1.045,Nelson,Ryne,Ryne Nelson,5.22
-"Rodón, Carlos",607074,2025,33,195.1,18,9,203,73,132,3.09,0,3.36,0.206,0.351,0.286,88.6,7.5,1.051,Rodón,Carlos,Carlos Rodón,3.78
-"Yesavage, Trey",702056,2025,3,14.0,1,0,16,7,13,3.21,0,4.1,0.251,0.369,0.314,94.0,7.7,1.429,Yesavage,Trey,Trey Yesavage,4.96
+"Soroka, Michael",647336,2026,4,22.2,4,0,28,6,18,2.78,0,4.92,0.259,0.469,0.35,91.7,16.1,1.081,Soroka,Michael,Michael Soroka,6.96
+"Nelson, Ryne",669194,2026,4,20.1,1,1,19,8,13,3.54,0,4.42,0.238,0.459,0.334,91.0,10.3,1.045,Nelson,Ryne,Ryne Nelson,5.15
+"Santana, Dennis",642701,2026,11,11.0,2,1,7,5,4,0.82,2,4.1,0.254,0.343,0.323,84.5,3.4,0.818,Santana,Dennis,Dennis Santana,6.5
+"Gilbert, Logan",669302,2026,5,29.0,1,3,32,5,29,4.03,0,3.06,0.234,0.369,0.282,91.1,9.1,1.172,Gilbert,Logan,Logan Gilbert,6.59
+"Abbott, Andrew",671096,2026,5,24.2,0,2,15,11,32,5.84,0,4.85,0.294,0.426,0.348,88.3,6.8,1.777,Abbott,Andrew,Andrew Abbott,7.07
+"Castillo, Luis",622491,2026,4,18.1,0,1,17,7,26,5.4,0,5.6,0.309,0.471,0.37,92.5,11.1,1.823,Castillo,Luis,Luis Castillo,4.61
+"Meyer, Max",676974,2026,4,19.2,1,0,20,9,17,4.12,0,5.25,0.29,0.458,0.36,89.4,10.2,1.354,Meyer,Max,Max Meyer,5.26
+"Erceg, Lucas",668674,2026,8,7.1,0,1,5,3,8,6.14,5,4.73,0.29,0.409,0.344,91.4,9.1,1.549,Erceg,Lucas,Lucas Erceg,4.1
+"Montero, Keider",672456,2026,3,16.1,1,1,15,2,12,3.31,0,1.88,0.194,0.256,0.221,89.9,2.2,0.87,Montero,Keider,Keider Montero,4.11
+"Springs, Jeffrey",605488,2026,4,24.2,3,0,20,8,11,1.46,0,2.45,0.186,0.281,0.253,84.4,4.8,0.785,Springs,Jeffrey,Jeffrey Springs,5.76
+"Rodón, Carlos",607074,2025,33,195.1,18,9,203,73,132,3.09,0,3.36,0.206,0.351,0.286,88.6,7.5,1.051,Rodón,Carlos,Carlos Rodón,3.49
+"Yesavage, Trey",702056,2025,3,14.0,1,0,16,7,13,3.21,0,4.1,0.251,0.369,0.314,94.0,7.7,1.429,Yesavage,Trey,Trey Yesavage,4.69
