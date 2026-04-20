@@ -1,49 +1,49 @@
 {
-  "semana": 5,
-  "oponente": "De espalda al aro mmg",
-  "oponente_id": 12,
-  "week_start": "2026-04-20",
-  "week_end": "2026-04-26",
+  "semana": 6,
+  "oponente": "THE PUNISHER X",
+  "oponente_id": 11,
+  "week_start": "2026-04-27",
+  "week_end": "2026-05-03",
   "mis_bat": {
     "equipo": "Dando Tabla",
     "jugadores": 12,
-    "HR_avg": 2.6,
-    "OPS": 0.806,
-    "wOBA": 0.361,
-    "xwOBA": 0.31,
+    "HR_avg": 2.8,
+    "OPS": 0.809,
+    "wOBA": 0.362,
+    "xwOBA": 0.313,
     "EV": 89.2,
-    "Barrel%": 8.9
+    "Barrel%": 8.8
   },
   "opp_bat": {
-    "equipo": "De espalda al aro mmg",
-    "jugadores": 13,
-    "HR_avg": 4.9,
-    "OPS": 0.86,
-    "wOBA": 0.38,
-    "xwOBA": 0.366,
-    "EV": 90.2,
-    "Barrel%": 13.0
+    "equipo": "THE PUNISHER X",
+    "jugadores": 10,
+    "HR_avg": 3.9,
+    "OPS": 0.872,
+    "wOBA": 0.384,
+    "xwOBA": 0.38,
+    "EV": 91.7,
+    "Barrel%": 12.8
   },
   "mis_pit": {
     "equipo": "Dando Tabla",
-    "jugadores": 12,
-    "ERA": 3.64,
-    "xERA": 4.06,
-    "Ks": 33.1,
-    "xwOBA": 0.315,
+    "jugadores": 13,
+    "ERA": 3.77,
+    "xERA": 3.97,
+    "Ks": 32.4,
+    "xwOBA": 0.311,
     "EV_against": 89.7
   },
   "opp_pit": {
-    "equipo": "De espalda al aro mmg",
-    "jugadores": 11,
-    "ERA": 2.89,
-    "xERA": 3.04,
-    "Ks": 18.7,
-    "xwOBA": 0.275,
-    "EV_against": 87.6
+    "equipo": "THE PUNISHER X",
+    "jugadores": 13,
+    "ERA": 3.76,
+    "xERA": 3.58,
+    "Ks": 31.8,
+    "xwOBA": 0.298,
+    "EV_against": 89.0
   },
-  "prob_ganar": 45.0,
-  "prob_perder": 55.0,
-  "odds_ganar": "+122",
-  "odds_perder": "-122"
+  "prob_ganar": 47.3,
+  "prob_perder": 52.7,
+  "odds_ganar": "+111",
+  "odds_perder": "-111"
 }
