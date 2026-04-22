@@ -27,23 +27,23 @@
   "mis_pit": {
     "equipo": "Dando Tabla",
     "jugadores": 13,
-    "ERA": 3.79,
-    "xERA": 3.98,
-    "Ks": 33.2,
-    "xwOBA": 0.311,
-    "EV_against": 89.7
+    "ERA": 3.89,
+    "xERA": 3.72,
+    "Ks": 34.5,
+    "xwOBA": 0.301,
+    "EV_against": 89.8
   },
   "opp_pit": {
     "equipo": "THE PUNISHER X",
     "jugadores": 13,
-    "ERA": 3.81,
+    "ERA": 3.93,
     "xERA": 3.66,
-    "Ks": 32.0,
+    "Ks": 33.2,
     "xwOBA": 0.302,
     "EV_against": 89.0
   },
-  "prob_ganar": 47.7,
-  "prob_perder": 52.3,
-  "odds_ganar": "+110",
-  "odds_perder": "-110"
+  "prob_ganar": 48.2,
+  "prob_perder": 51.8,
+  "odds_ganar": "+107",
+  "odds_perder": "-107"
 }
