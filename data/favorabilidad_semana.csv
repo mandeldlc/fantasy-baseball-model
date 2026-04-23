@@ -1,28 +1,28 @@
 Name,Oponente,xwOBA_pred,Prob_favorable,Clasificacion,Fuente_pred,xwOBA_hist,PA_hist,xERA_2025
-Logan Gilbert,Cleveland Guardians,0.293,73.2,🟢 Favorable,Hist+ML,0.292,2879,3.06
-Jeffrey Springs,Toronto Blue Jays,0.303,63.8,🟡 Normal,Hist+ML,0.301,1461,3.04
-Andrew Abbott,Boston Red Sox,0.304,67.1,🟡 Normal,ML,,0,4.85
-Bailey Ober,Baltimore Orioles,0.305,62.7,🟡 Normal,Hist+ML,0.303,2142,3.88
-Tyler Mahle,New York Yankees,0.306,70.6,🟡 Normal,Hist+ML,0.305,1009,7.08
-Chad Patrick,Chicago White Sox,0.307,56.0,🟡 Normal,Hist+ML,0.306,505,3.04
-Joe Boyle,St. Louis Cardinals,0.309,83.7,🟡 Normal,Hist+ML,0.308,512,4.27
-Carmen Mlodzinski,New York Mets,0.31,12.2,🟡 Normal,Hist+ML,0.305,783,3.11
-Shane Smith,Milwaukee Brewers,0.31,36.4,🟡 Normal,Hist+ML,0.31,616,4.45
-Yusei Kikuchi,Houston Astros,0.314,25.3,🟡 Normal,ML,,0,5.02
-Brady Singer,Boston Red Sox,0.314,30.7,🟡 Normal,ML,,0,5.15
-Taj Bradley,Baltimore Orioles,0.318,18.7,🟡 Normal,Hist+ML,0.318,1643,3.25
-Mitch Keller,New York Mets,0.32,26.4,🟡 Normal,ML,,0,3.49
-Ryne Nelson,Los Angeles Dodgers,0.32,11.7,🟡 Normal,Hist+ML,0.321,1937,5.08
-Luis Severino,Toronto Blue Jays,0.32,7.7,🟡 Normal,Hist+ML,0.32,2292,5.82
-Eric Lauer,Athletics,0.322,49.9,🟡 Normal,Hist+ML,0.328,1300,4.48
-Eduardo Rodriguez,Los Angeles Dodgers,0.324,19.3,🟡 Normal,Hist+ML,0.324,1932,4.13
-Dustin May,Tampa Bay Rays,0.325,28.4,🟡 Normal,Hist+ML,0.329,898,4.27
-Michael McGreevy,Tampa Bay Rays,0.327,13.9,🟡 Normal,Hist+ML,0.326,486,6.57
-Will Warren,San Francisco Giants,0.328,27.4,🟡 Normal,Hist+ML,0.33,824,3.65
-Miles Mikolas,Chicago Cubs,0.328,17.8,🟡 Normal,ML,,0,5.39
-Seth Lugo,Atlanta Braves,0.329,16.4,🟡 Normal,ML,,0,3.91
-Max Meyer,Colorado Rockies,0.333,31.7,🔴 Difícil,Hist+ML,0.337,560,4.33
-Sean Burke,Milwaukee Brewers,0.336,30.9,🔴 Difícil,Hist+ML,0.339,674,4.63
-Jake Irvin,Chicago Cubs,0.342,10.2,🔴 Difícil,Hist+ML,0.342,2087,5.57
-Kyle Freeland,Miami Marlins,0.347,36.1,🔴 Difícil,Hist+ML,0.351,2647,3.86
-Randy Vásquez,Detroit Tigers,0.36,5.3,🔴 Difícil,Hist+ML,0.36,1170,5.39
+Logan Gilbert,Cleveland Guardians,0.293,70.4,🟢 Favorable,Hist+ML,0.292,2879,3.7
+Jeffrey Springs,Toronto Blue Jays,0.303,58.7,🟡 Normal,Hist+ML,0.301,1461,3.05
+Bailey Ober,Baltimore Orioles,0.304,66.8,🟡 Normal,Hist+ML,0.303,2142,3.89
+Andrew Abbott,Boston Red Sox,0.304,65.1,🟡 Normal,ML,,0,4.86
+Tyler Mahle,New York Yankees,0.307,62.1,🟡 Normal,Hist+ML,0.305,1009,5.65
+Carmen Mlodzinski,New York Mets,0.308,15.0,🟡 Normal,Hist+ML,0.305,783,3.63
+Chad Patrick,Chicago White Sox,0.308,56.1,🟡 Normal,Hist+ML,0.306,505,3.97
+Joe Boyle,St. Louis Cardinals,0.309,81.5,🟡 Normal,Hist+ML,0.308,512,4.28
+Shane Smith,Milwaukee Brewers,0.31,39.0,🟡 Normal,Hist+ML,0.31,616,4.46
+Brady Singer,Boston Red Sox,0.316,32.9,🟡 Normal,ML,,0,5.16
+Yusei Kikuchi,Houston Astros,0.318,26.4,🟡 Normal,ML,,0,5.03
+Mitch Keller,New York Mets,0.318,22.7,🟡 Normal,ML,,0,3.5
+Taj Bradley,Baltimore Orioles,0.319,24.4,🟡 Normal,Hist+ML,0.318,1643,3.26
+Ryne Nelson,Los Angeles Dodgers,0.32,11.8,🟡 Normal,Hist+ML,0.321,1937,5.09
+Luis Severino,Toronto Blue Jays,0.32,7.7,🟡 Normal,Hist+ML,0.32,2292,5.83
+Eric Lauer,Athletics,0.321,55.3,🟡 Normal,Hist+ML,0.328,1300,4.52
+Eduardo Rodriguez,Los Angeles Dodgers,0.323,19.3,🟡 Normal,Hist+ML,0.324,1932,4.89
+Seth Lugo,Atlanta Braves,0.324,21.8,🟡 Normal,ML,,0,3.92
+Dustin May,Tampa Bay Rays,0.325,20.9,🟡 Normal,Hist+ML,0.329,898,4.31
+Will Warren,San Francisco Giants,0.327,37.1,🟡 Normal,Hist+ML,0.33,824,3.65
+Michael McGreevy,Tampa Bay Rays,0.327,12.5,🟡 Normal,Hist+ML,0.326,486,6.58
+Miles Mikolas,Chicago Cubs,0.328,14.8,🟡 Normal,ML,,0,5.4
+Max Meyer,Colorado Rockies,0.333,28.6,🔴 Difícil,Hist+ML,0.337,560,4.37
+Sean Burke,Milwaukee Brewers,0.335,34.0,🔴 Difícil,Hist+ML,0.339,674,4.58
+Jake Irvin,Chicago Cubs,0.34,9.6,🔴 Difícil,Hist+ML,0.342,2087,5.58
+Kyle Freeland,Miami Marlins,0.347,36.0,🔴 Difícil,Hist+ML,0.351,2647,3.86
+Randy Vásquez,Detroit Tigers,0.359,6.4,🔴 Difícil,Hist+ML,0.36,1170,4.28
