@@ -26,12 +26,12 @@
   },
   "mis_pit": {
     "equipo": "Dando Tabla",
-    "jugadores": 13,
-    "ERA": 4.03,
-    "xERA": 4.0,
-    "Ks": 37.0,
-    "xwOBA": 0.311,
-    "EV_against": 89.9
+    "jugadores": 12,
+    "ERA": 3.9,
+    "xERA": 3.91,
+    "Ks": 37.8,
+    "xwOBA": 0.307,
+    "EV_against": 89.8
   },
   "opp_pit": {
     "equipo": "De espalda al aro mmg",
@@ -42,8 +42,8 @@
     "xwOBA": 0.275,
     "EV_against": 87.3
   },
-  "prob_ganar": 45.3,
-  "prob_perder": 54.7,
-  "odds_ganar": "+121",
-  "odds_perder": "-121"
+  "prob_ganar": 45.8,
+  "prob_perder": 54.2,
+  "odds_ganar": "+118",
+  "odds_perder": "-118"
 }
