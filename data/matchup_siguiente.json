@@ -7,43 +7,43 @@
   "mis_bat": {
     "equipo": "Dando Tabla",
     "jugadores": 12,
-    "HR_avg": 3.2,
-    "OPS": 0.834,
-    "wOBA": 0.372,
-    "xwOBA": 0.318,
-    "EV": 89.4,
-    "Barrel%": 8.9
+    "HR_avg": 3.6,
+    "OPS": 0.84,
+    "wOBA": 0.373,
+    "xwOBA": 0.32,
+    "EV": 89.5,
+    "Barrel%": 8.8
   },
   "opp_bat": {
     "equipo": "THE PUNISHER X",
     "jugadores": 11,
-    "HR_avg": 4.3,
-    "OPS": 0.837,
-    "wOBA": 0.37,
-    "xwOBA": 0.377,
-    "EV": 91.0,
-    "Barrel%": 12.4
+    "HR_avg": 4.5,
+    "OPS": 0.836,
+    "wOBA": 0.369,
+    "xwOBA": 0.375,
+    "EV": 90.9,
+    "Barrel%": 11.9
   },
   "mis_pit": {
     "equipo": "Dando Tabla",
     "jugadores": 12,
     "ERA": 3.9,
-    "xERA": 3.91,
-    "Ks": 37.8,
-    "xwOBA": 0.307,
-    "EV_against": 89.8
+    "xERA": 3.85,
+    "Ks": 38.8,
+    "xwOBA": 0.306,
+    "EV_against": 90.1
   },
   "opp_pit": {
     "equipo": "THE PUNISHER X",
     "jugadores": 12,
-    "ERA": 3.56,
-    "xERA": 3.46,
-    "Ks": 33.8,
-    "xwOBA": 0.292,
-    "EV_against": 88.8
+    "ERA": 3.73,
+    "xERA": 3.59,
+    "Ks": 35.3,
+    "xwOBA": 0.299,
+    "EV_against": 89.0
   },
-  "prob_ganar": 47.1,
-  "prob_perder": 52.9,
-  "odds_ganar": "+112",
-  "odds_perder": "-112"
+  "prob_ganar": 48.0,
+  "prob_perder": 52.0,
+  "odds_ganar": "+108",
+  "odds_perder": "-108"
 }
