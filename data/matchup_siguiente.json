@@ -8,42 +8,42 @@
     "equipo": "Dando Tabla",
     "jugadores": 11,
     "HR_avg": 3.9,
-    "OPS": 0.726,
-    "wOBA": 0.323,
+    "OPS": 0.717,
+    "wOBA": 0.319,
     "xwOBA": 0.336,
-    "EV": 89.5,
+    "EV": 89.6,
     "Barrel%": 9.4
   },
   "opp_bat": {
     "equipo": "San Safari Baseball",
     "jugadores": 13,
-    "HR_avg": 4.0,
-    "OPS": 0.769,
-    "wOBA": 0.339,
-    "xwOBA": 0.343,
-    "EV": 89.6,
-    "Barrel%": 9.8
+    "HR_avg": 3.2,
+    "OPS": 0.751,
+    "wOBA": 0.331,
+    "xwOBA": 0.339,
+    "EV": 88.1,
+    "Barrel%": 9.1
   },
   "mis_pit": {
     "equipo": "Dando Tabla",
-    "jugadores": 11,
-    "ERA": 3.55,
-    "xERA": 3.73,
-    "Ks": 41.2,
-    "xwOBA": 0.301,
+    "jugadores": 12,
+    "ERA": 4.14,
+    "xERA": 3.91,
+    "Ks": 40.8,
+    "xwOBA": 0.309,
     "EV_against": 89.9
   },
   "opp_pit": {
     "equipo": "San Safari Baseball",
     "jugadores": 10,
-    "ERA": 3.46,
-    "xERA": 3.66,
-    "Ks": 27.0,
+    "ERA": 3.41,
+    "xERA": 3.65,
+    "Ks": 27.5,
     "xwOBA": 0.3,
     "EV_against": 87.9
   },
-  "prob_ganar": 49.6,
-  "prob_perder": 50.4,
-  "odds_ganar": "+102",
-  "odds_perder": "-102"
+  "prob_ganar": 48.2,
+  "prob_perder": 51.8,
+  "odds_ganar": "+107",
+  "odds_perder": "-107"
 }
