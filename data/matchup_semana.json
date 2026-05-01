@@ -7,10 +7,10 @@
   "mis_bat": {
     "equipo": "Dando Tabla",
     "jugadores": 11,
-    "HR_avg": 4.3,
-    "OPS": 0.716,
-    "wOBA": 0.318,
-    "xwOBA": 0.337,
+    "HR_avg": 4.1,
+    "OPS": 0.719,
+    "wOBA": 0.32,
+    "xwOBA": 0.341,
     "EV": 89.6,
     "Barrel%": 9.7
   },
@@ -35,15 +35,15 @@
   },
   "opp_pit": {
     "equipo": "THE PUNISHER X",
-    "jugadores": 13,
-    "ERA": 3.69,
-    "xERA": 3.66,
-    "Ks": 36.4,
-    "xwOBA": 0.301,
-    "EV_against": 88.9
+    "jugadores": 14,
+    "ERA": 3.77,
+    "xERA": 3.72,
+    "Ks": 36.2,
+    "xwOBA": 0.304,
+    "EV_against": 89.0
   },
-  "prob_ganar": 48.0,
-  "prob_perder": 52.0,
-  "odds_ganar": "+108",
-  "odds_perder": "-108"
+  "prob_ganar": 48.3,
+  "prob_perder": 51.7,
+  "odds_ganar": "+107",
+  "odds_perder": "-107"
 }

@@ -1,10 +1,10 @@
 oponente,pedir,categoria_pedir,valor_pedir,mi_debilidad,mis_fortalezas,tipo
-Los Inmensos Amos BT,Ben Rice,R,26.0,14.727,N/A,Bateador
-Los Inmensos Amos BT,Max Muncy,R,23.0,14.727,N/A,Bateador
-THE PUNISHER X,Dansby Swanson,R,23.0,14.727,N/A,Bateador
-THE PUNISHER X,Hunter Goodman,R,23.0,14.727,N/A,Bateador
-Los Inmensos Amos BT,Xavier Edwards,R,22.0,14.727,N/A,Bateador
-THE PUNISHER X,José Ramírez,R,19.0,14.727,N/A,Bateador
+Los Inmensos Amos BT,Ben Rice,R,26.0,15.727,SB,Bateador
+Los Inmensos Amos BT,Max Muncy,R,23.0,15.727,SB,Bateador
+THE PUNISHER X,Dansby Swanson,R,23.0,15.727,N/A,Bateador
+THE PUNISHER X,Hunter Goodman,R,23.0,15.727,N/A,Bateador
+Los Inmensos Amos BT,Xavier Edwards,R,22.0,15.727,SB,Bateador
+THE PUNISHER X,José Ramírez,R,19.0,15.727,N/A,Bateador
 THE PUNISHER X,Brady Singer,K,19.0,25.455,N/A,Pitcher
 Los Calvoneros unidos,Ryne Stanek,K,17.0,25.455,"ERA, NSV",Pitcher
 LOS GORDITOS DAD & JR 2026 MLB,Cade Smith,K,17.0,25.455,"ERA, WHIP",Pitcher
@@ -13,24 +13,24 @@ Los Calvoneros unidos,Anthony Kay,K,15.0,25.455,"ERA, NSV",Pitcher
 THE PUNISHER X,Garrett Whitlock,K,13.0,25.455,N/A,Pitcher
 A.Rod Gangs,Sonny Gray,K,13.0,25.455,N/A,Pitcher
 A.Rod Gangs,Paul Sewald,K,13.0,25.455,N/A,Pitcher
-THE PUNISHER X,José Ramírez,SB,12.0,2.636,N/A,Bateador
-+ Fe que talento,José Caballero,SB,12.0,2.636,"R, HR, RBI",Bateador
-LOS GORDITOS DAD & JR 2026 MLB,Munetaka Murakami,HR,12.0,4.273,SB,Bateador
+THE PUNISHER X,José Ramírez,SB,12.0,2.727,N/A,Bateador
++ Fe que talento,José Caballero,SB,12.0,2.727,"R, HR, RBI",Bateador
+LOS GORDITOS DAD & JR 2026 MLB,Munetaka Murakami,HR,12.0,4.091,SB,Bateador
 Los Calvoneros unidos,Trevor Megill,K,12.0,25.455,"ERA, NSV",Pitcher
-Los Inmensos Amos BT,Yordan Alvarez,HR,11.0,4.273,N/A,Bateador
-+ Fe que talento,Oneil Cruz,SB,10.0,2.636,"R, HR, RBI",Bateador
+Los Inmensos Amos BT,Yordan Alvarez,HR,11.0,4.091,SB,Bateador
++ Fe que talento,Oneil Cruz,SB,10.0,2.727,"R, HR, RBI",Bateador
 A.Rod Gangs,Emilio Pagán,K,10.0,25.455,N/A,Pitcher
-Los Inmensos Amos BT,Ben Rice,HR,10.0,4.273,N/A,Bateador
-THE PUNISHER X,Jakob Marsee,SB,10.0,2.636,N/A,Bateador
+Los Inmensos Amos BT,Ben Rice,HR,10.0,4.091,SB,Bateador
+THE PUNISHER X,Jakob Marsee,SB,10.0,2.727,N/A,Bateador
 LOS GORDITOS DAD & JR 2026 MLB,Edwin Díaz,K,10.0,25.455,"ERA, WHIP",Pitcher
-LOS GORDITOS DAD & JR 2026 MLB,Kyle Schwarber,HR,9.0,4.273,SB,Bateador
-Los Inmensos Amos BT,Gunnar Henderson,HR,9.0,4.273,N/A,Bateador
-LOS GORDITOS DAD & JR 2026 MLB,Ozzie Albies,HR,7.0,4.273,SB,Bateador
+LOS GORDITOS DAD & JR 2026 MLB,Kyle Schwarber,HR,9.0,4.091,SB,Bateador
+Los Inmensos Amos BT,Gunnar Henderson,HR,9.0,4.091,SB,Bateador
+LOS GORDITOS DAD & JR 2026 MLB,Ozzie Albies,HR,7.0,4.091,SB,Bateador
 De espalda al aro mmg,Kenley Jansen,ERA,6.14,4.055,N/A,Pitcher
 EVERYONE'S TERROR,Aaron Nola,ERA,6.03,4.055,"K, NSV",Pitcher
-+ Fe que talento,Geraldo Perdomo,SB,6.0,2.636,"R, HR, RBI",Bateador
++ Fe que talento,Geraldo Perdomo,SB,6.0,2.727,"R, HR, RBI",Bateador
 EVERYONE'S TERROR,Eric Lauer,ERA,6.0,4.055,"K, NSV",Pitcher
-THE PUNISHER X,Brenton Doyle,SB,6.0,2.636,N/A,Bateador
+THE PUNISHER X,Brenton Doyle,SB,6.0,2.727,N/A,Bateador
 A.Rod Gangs,Cole Ragans,ERA,5.0,4.055,N/A,Pitcher
 De espalda al aro mmg,Nathan Eovaldi,ERA,4.76,4.055,N/A,Pitcher
 A.Rod Gangs,Nick Pivetta,ERA,4.5,4.055,N/A,Pitcher
@@ -51,12 +51,12 @@ Team Frank Yankee,Freddy Peralta,W,1.0,1.364,N/A,Pitcher
 A.Rod Gangs,Max Meyer,W,1.0,1.364,N/A,Pitcher
 LOS GORDITOS DAD & JR 2026 MLB,Edwin Díaz,W,1.0,1.364,"ERA, WHIP",Pitcher
 A.Rod Gangs,Nick Pivetta,W,1.0,1.364,N/A,Pitcher
-Los Inmensos Amos BT,Yordan Alvarez,SLG,0.736,0.405,N/A,Bateador
-Los Inmensos Amos BT,Ben Rice,SLG,0.714,0.405,N/A,Bateador
-Los Inmensos Amos BT,Max Muncy,SLG,0.594,0.405,N/A,Bateador
-Los Inmensos Amos BT,Yordan Alvarez,OBP,0.463,0.312,N/A,Bateador
-Los Inmensos Amos BT,Ben Rice,OBP,0.443,0.312,N/A,Bateador
-Los Inmensos Amos BT,Xavier Edwards,OBP,0.432,0.312,N/A,Bateador
+Los Inmensos Amos BT,Yordan Alvarez,SLG,0.736,0.401,SB,Bateador
+Los Inmensos Amos BT,Ben Rice,SLG,0.714,0.401,SB,Bateador
+Los Inmensos Amos BT,Max Muncy,SLG,0.594,0.401,SB,Bateador
+Los Inmensos Amos BT,Yordan Alvarez,OBP,0.463,0.317,SB,Bateador
+Los Inmensos Amos BT,Ben Rice,OBP,0.443,0.317,SB,Bateador
+Los Inmensos Amos BT,Xavier Edwards,OBP,0.432,0.317,SB,Bateador
 Los Inmensos Amos BT,Robert Garcia,W,0.0,1.364,NSV,Pitcher
 Los Inmensos Amos BT,Jordan Romano,W,0.0,1.364,NSV,Pitcher
 Team Frank Yankee,Ranger Suarez,NSV,0.0,1.0,N/A,Pitcher
