@@ -1,49 +1,49 @@
 {
-  "semana": 6,
-  "oponente": "THE PUNISHER X",
-  "oponente_id": 11,
-  "week_start": "2026-04-27",
-  "week_end": "2026-05-03",
+  "semana": 7,
+  "oponente": "San Safari Baseball",
+  "oponente_id": 10,
+  "week_start": "2026-05-04",
+  "week_end": "2026-05-10",
   "mis_bat": {
     "equipo": "Dando Tabla",
     "jugadores": 11,
-    "HR_avg": 4.4,
-    "OPS": 0.72,
-    "wOBA": 0.321,
-    "xwOBA": 0.34,
-    "EV": 89.6,
-    "Barrel%": 9.6
+    "HR_avg": 4.5,
+    "OPS": 0.722,
+    "wOBA": 0.322,
+    "xwOBA": 0.339,
+    "EV": 89.7,
+    "Barrel%": 9.4
   },
   "opp_bat": {
-    "equipo": "THE PUNISHER X",
-    "jugadores": 12,
-    "HR_avg": 5.2,
-    "OPS": 0.813,
-    "wOBA": 0.359,
-    "xwOBA": 0.361,
-    "EV": 91.0,
-    "Barrel%": 11.7
+    "equipo": "San Safari Baseball",
+    "jugadores": 13,
+    "HR_avg": 3.7,
+    "OPS": 0.723,
+    "wOBA": 0.319,
+    "xwOBA": 0.319,
+    "EV": 90.1,
+    "Barrel%": 10.0
   },
   "mis_pit": {
     "equipo": "Dando Tabla",
     "jugadores": 13,
-    "ERA": 4.0,
-    "xERA": 3.64,
-    "Ks": 40.7,
-    "xwOBA": 0.295,
+    "ERA": 4.07,
+    "xERA": 3.68,
+    "Ks": 41.5,
+    "xwOBA": 0.298,
     "EV_against": 89.5
   },
   "opp_pit": {
-    "equipo": "THE PUNISHER X",
-    "jugadores": 14,
-    "ERA": 4.21,
-    "xERA": 3.91,
-    "Ks": 39.6,
-    "xwOBA": 0.31,
-    "EV_against": 88.9
+    "equipo": "San Safari Baseball",
+    "jugadores": 11,
+    "ERA": 3.76,
+    "xERA": 3.88,
+    "Ks": 31.4,
+    "xwOBA": 0.307,
+    "EV_against": 88.7
   },
-  "prob_ganar": 49.7,
-  "prob_perder": 50.3,
-  "odds_ganar": "+101",
-  "odds_perder": "-101"
+  "prob_ganar": 50.2,
+  "prob_perder": 49.8,
+  "odds_ganar": "-101",
+  "odds_perder": "+101"
 }

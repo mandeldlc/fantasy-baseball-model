@@ -1,70 +1,73 @@
 oponente,pedir,categoria_pedir,valor_pedir,mi_debilidad,mis_fortalezas,tipo
-THE PUNISHER X,Hunter Goodman,R,24.0,17.091,N/A,Bateador
-THE PUNISHER X,Dansby Swanson,R,24.0,17.091,N/A,Bateador
-THE PUNISHER X,Corbin Carroll,R,20.0,17.091,N/A,Bateador
-THE PUNISHER X,Brady Singer,K,20.0,27.167,N/A,Pitcher
-Los Calvoneros unidos,Ryne Stanek,K,19.0,27.167,"ERA, NSV",Pitcher
-LOS GORDITOS DAD & JR 2026 MLB,Cade Smith,K,18.0,27.167,N/A,Pitcher
-LOS GORDITOS DAD & JR 2026 MLB,Devin Williams,K,17.0,27.167,N/A,Pitcher
-Los Calvoneros unidos,Anthony Kay,K,15.0,27.167,"ERA, NSV",Pitcher
-THE PUNISHER X,Garrett Whitlock,K,13.0,27.167,N/A,Pitcher
-LOS GORDITOS DAD & JR 2026 MLB,Munetaka Murakami,HR,13.0,4.364,SB,Bateador
-Los Calvoneros unidos,Trevor Megill,K,13.0,27.167,"ERA, NSV",Pitcher
-A.Rod Gangs,Paul Sewald,K,13.0,27.167,N/A,Pitcher
-A.Rod Gangs,Sonny Gray,K,13.0,27.167,N/A,Pitcher
+Los Calvoneros unidos,Anthony Kay,K,20.0,28.083,NSV,Pitcher
+THE PUNISHER X,Brady Singer,K,20.0,28.083,N/A,Pitcher
+Los Calvoneros unidos,Ryne Stanek,K,19.0,28.083,NSV,Pitcher
+LOS GORDITOS DAD & JR 2026 MLB,Cade Smith,K,18.0,28.083,N/A,Pitcher
+LOS GORDITOS DAD & JR 2026 MLB,Devin Williams,K,17.0,28.083,N/A,Pitcher
+THE PUNISHER X,Garrett Whitlock,K,15.0,28.083,N/A,Pitcher
+A.Rod Gangs,Paul Sewald,K,15.0,28.083,N/A,Pitcher
+A.Rod Gangs,Sonny Gray,K,13.0,28.083,N/A,Pitcher
+LOS GORDITOS DAD & JR 2026 MLB,Munetaka Murakami,HR,13.0,4.455,SB,Bateador
++ Fe que talento,José Caballero,SB,13.0,2.909,"R, HR, RBI",Bateador
+Los Calvoneros unidos,Trevor Megill,K,13.0,28.083,NSV,Pitcher
 THE PUNISHER X,José Ramírez,SB,13.0,2.909,N/A,Bateador
-Los Inmensos Amos BT,Yordan Alvarez,HR,12.0,4.364,SB,Bateador
-+ Fe que talento,José Caballero,SB,12.0,2.909,"R, HR, RBI",Bateador
-Los Inmensos Amos BT,Ben Rice,HR,11.0,4.364,SB,Bateador
-LOS GORDITOS DAD & JR 2026 MLB,Kyle Schwarber,HR,11.0,4.364,SB,Bateador
+Los Inmensos Amos BT,Yordan Alvarez,HR,12.0,4.455,SB,Bateador
+Los Inmensos Amos BT,Ben Rice,HR,12.0,4.455,SB,Bateador
++ Fe que talento,Oneil Cruz,SB,11.0,2.909,"R, HR, RBI",Bateador
+LOS GORDITOS DAD & JR 2026 MLB,Kyle Schwarber,HR,11.0,4.455,SB,Bateador
 THE PUNISHER X,Jakob Marsee,SB,10.0,2.909,N/A,Bateador
-A.Rod Gangs,Emilio Pagán,K,10.0,27.167,N/A,Pitcher
-+ Fe que talento,Oneil Cruz,SB,10.0,2.909,"R, HR, RBI",Bateador
-LOS GORDITOS DAD & JR 2026 MLB,Edwin Díaz,K,10.0,27.167,N/A,Pitcher
-Los Inmensos Amos BT,Max Muncy,HR,9.0,4.364,SB,Bateador
-LOS GORDITOS DAD & JR 2026 MLB,CJ Abrams,HR,8.0,4.364,SB,Bateador
+LOS GORDITOS DAD & JR 2026 MLB,Edwin Díaz,K,10.0,28.083,N/A,Pitcher
+A.Rod Gangs,Emilio Pagán,K,10.0,28.083,N/A,Pitcher
+Los Inmensos Amos BT,Sal Stewart,HR,9.0,4.455,SB,Bateador
+LOS GORDITOS DAD & JR 2026 MLB,CJ Abrams,HR,8.0,4.455,SB,Bateador
 THE PUNISHER X,Brenton Doyle,SB,7.0,2.909,N/A,Bateador
-De espalda al aro mmg,Kenley Jansen,ERA,6.14,4.072,N/A,Pitcher
-+ Fe que talento,Geraldo Perdomo,SB,6.0,2.909,"R, HR, RBI",Bateador
-A.Rod Gangs,Emilio Pagán,ERA,5.4,4.072,N/A,Pitcher
-A.Rod Gangs,Cole Ragans,ERA,5.29,4.072,N/A,Pitcher
-De espalda al aro mmg,Nathan Eovaldi,ERA,4.76,4.072,N/A,Pitcher
-A.Rod Gangs,MacKenzie Gore,ERA,4.67,4.072,N/A,Pitcher
-De espalda al aro mmg,Ryan Walker,ERA,4.26,4.072,N/A,Pitcher
-THE PUNISHER X,Cody Ponce,K,3.0,27.167,N/A,Pitcher
-Team Frank Yankee,Brayan Bello,W,1.0,1.583,N/A,Pitcher
-Team Frank Yankee,Jhoan Duran,W,1.0,1.583,N/A,Pitcher
-A.Rod Gangs,Cole Ragans,W,1.0,1.583,N/A,Pitcher
-Team Frank Yankee,Jack Leiter,W,1.0,1.583,N/A,Pitcher
-De espalda al aro mmg,Daniel Palencia,W,1.0,1.583,N/A,Pitcher
-A.Rod Gangs,Nick Pivetta,W,1.0,1.583,N/A,Pitcher
-THE PUNISHER X,Joey Cantillo,W,1.0,1.583,N/A,Pitcher
+De espalda al aro mmg,Kenley Jansen,ERA,6.14,4.147,N/A,Pitcher
++ Fe que talento,Bryson Stott,SB,6.0,2.909,"R, HR, RBI",Bateador
+A.Rod Gangs,Emilio Pagán,ERA,5.4,4.147,N/A,Pitcher
+A.Rod Gangs,Cole Ragans,ERA,5.29,4.147,N/A,Pitcher
+De espalda al aro mmg,Nathan Eovaldi,ERA,4.76,4.147,N/A,Pitcher
+A.Rod Gangs,MacKenzie Gore,ERA,4.67,4.147,N/A,Pitcher
+De espalda al aro mmg,Ryan Walker,ERA,4.61,4.147,N/A,Pitcher
+THE PUNISHER X,Cody Ponce,K,3.0,28.083,N/A,Pitcher
+De espalda al aro mmg,Kenley Jansen,WHIP,1.69,1.3,N/A,Pitcher
+De espalda al aro mmg,Ryan Walker,WHIP,1.591,1.3,N/A,Pitcher
+A.Rod Gangs,Cole Ragans,WHIP,1.464,1.3,N/A,Pitcher
+A.Rod Gangs,MacKenzie Gore,WHIP,1.374,1.3,N/A,Pitcher
+A.Rod Gangs,Emilio Pagán,WHIP,1.374,1.3,N/A,Pitcher
+De espalda al aro mmg,Nathan Eovaldi,WHIP,1.352,1.3,N/A,Pitcher
+De espalda al aro mmg,Nolan McLean,W,1.0,1.583,N/A,Pitcher
+Team Frank Yankee,David Bednar,W,1.0,1.583,N/A,Pitcher
 THE PUNISHER X,Reid Detmers,W,1.0,1.583,N/A,Pitcher
-LOS GORDITOS DAD & JR 2026 MLB,Devin Williams,W,1.0,1.583,N/A,Pitcher
-Los Inmensos Amos BT,Ben Rice,SLG,0.717,0.402,SB,Bateador
-Los Inmensos Amos BT,Yordan Alvarez,SLG,0.685,0.402,SB,Bateador
-Los Inmensos Amos BT,Max Muncy,SLG,0.598,0.402,SB,Bateador
-Los Inmensos Amos BT,Ben Rice,OBP,0.447,0.318,SB,Bateador
-Los Inmensos Amos BT,Yordan Alvarez,OBP,0.438,0.318,SB,Bateador
-Los Inmensos Amos BT,Xavier Edwards,OBP,0.426,0.318,SB,Bateador
+THE PUNISHER X,Mike Burrows,W,1.0,1.583,N/A,Pitcher
+A.Rod Gangs,Nick Pivetta,W,1.0,1.583,N/A,Pitcher
+Team Frank Yankee,Jhoan Duran,W,1.0,1.583,N/A,Pitcher
+LOS GORDITOS DAD & JR 2026 MLB,Edwin Díaz,W,1.0,1.583,N/A,Pitcher
+A.Rod Gangs,Cole Ragans,W,1.0,1.583,N/A,Pitcher
+Los Calvoneros unidos,Seth Lugo,W,1.0,1.583,NSV,Pitcher
+Los Calvoneros unidos,Ryne Stanek,W,1.0,1.583,NSV,Pitcher
+Team Frank Yankee,Jack Leiter,W,1.0,1.583,N/A,Pitcher
+Los Inmensos Amos BT,Ben Rice,SLG,0.759,0.402,SB,Bateador
+Los Inmensos Amos BT,Yordan Alvarez,SLG,0.667,0.402,SB,Bateador
+Los Inmensos Amos BT,Max Muncy,SLG,0.591,0.402,SB,Bateador
+Los Inmensos Amos BT,Ben Rice,OBP,0.455,0.319,SB,Bateador
+Los Inmensos Amos BT,Yordan Alvarez,OBP,0.43,0.319,SB,Bateador
+Los Inmensos Amos BT,Xavier Edwards,OBP,0.424,0.319,SB,Bateador
+Team Frank Yankee,Shota Imanaga,NSV,0.0,1.0,N/A,Pitcher
 A.Rod Gangs,Paul Sewald,W,0.0,1.583,N/A,Pitcher
-Team Frank Yankee,Brayan Bello,NSV,0.0,1.0,N/A,Pitcher
-A.Rod Gangs,Cole Ragans,NSV,0.0,1.0,N/A,Pitcher
 Team Frank Yankee,Ranger Suarez,NSV,0.0,1.0,N/A,Pitcher
-Team Frank Yankee,Jack Leiter,NSV,0.0,1.0,N/A,Pitcher
-LOS GORDITOS DAD & JR 2026 MLB,Clay Holmes,NSV,0.0,1.0,N/A,Pitcher
+LOS GORDITOS DAD & JR 2026 MLB,Parker Messick,NSV,0.0,1.0,N/A,Pitcher
 LOS GORDITOS DAD & JR 2026 MLB,Jack Flaherty,W,0.0,1.583,N/A,Pitcher
 LOS GORDITOS DAD & JR 2026 MLB,Tanner Bibee,W,0.0,1.583,N/A,Pitcher
-A.Rod Gangs,Sonny Gray,NSV,0.0,1.0,N/A,Pitcher
 A.Rod Gangs,Nick Pivetta,NSV,0.0,1.0,N/A,Pitcher
-+ Fe que talento,Roki Sasaki,NSV,0.0,1.0,N/A,Pitcher
-+ Fe que talento,Cristian Javier,NSV,0.0,1.0,N/A,Pitcher
-+ Fe que talento,Tarik Skubal,NSV,0.0,1.0,N/A,Pitcher
-San Safari Baseball,David Peterson,NSV,0.0,1.0,"W, K, ERA, WHIP",Pitcher
-San Safari Baseball,Griffin Jax,NSV,0.0,1.0,"W, K, ERA, WHIP",Pitcher
+A.Rod Gangs,Will Warren,NSV,0.0,1.0,N/A,Pitcher
+A.Rod Gangs,MacKenzie Gore,NSV,0.0,1.0,N/A,Pitcher
+Team Frank Yankee,Cristopher Sánchez,NSV,0.0,1.0,N/A,Pitcher
+LOS GORDITOS DAD & JR 2026 MLB,Clay Holmes,NSV,0.0,1.0,N/A,Pitcher
 San Safari Baseball,Emmet Sheehan,NSV,0.0,1.0,"W, K, ERA, WHIP",Pitcher
+San Safari Baseball,Ryan Weathers,NSV,0.0,1.0,"W, K, ERA, WHIP",Pitcher
+San Safari Baseball,Andrew Painter,NSV,0.0,1.0,"W, K, ERA, WHIP",Pitcher
+Los Calvoneros unidos,Trevor Megill,W,0.0,1.583,NSV,Pitcher
 LOS GORDITOS DAD & JR 2026 MLB,Shane Baz,NSV,0.0,1.0,N/A,Pitcher
-LOS GORDITOS DAD & JR 2026 MLB,Tyler Glasnow,NSV,0.0,1.0,N/A,Pitcher
 THE PUNISHER X,Cody Ponce,W,0.0,1.583,N/A,Pitcher
-De espalda al aro mmg,Kenley Jansen,W,0.0,1.583,N/A,Pitcher
 De espalda al aro mmg,Ryan Walker,W,0.0,1.583,N/A,Pitcher
+De espalda al aro mmg,Kenley Jansen,W,0.0,1.583,N/A,Pitcher
