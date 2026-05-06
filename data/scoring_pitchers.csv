@@ -1,14 +1,13 @@
 "last_name, first_name",player_id,year,p_game,p_formatted_ip,p_win,p_loss,p_strikeout,p_walk,hit,p_era,p_save,xera,xba,xslg,xwoba,exit_velocity_avg,barrel_batted_rate,p_whip,last_name,first_name,Name,score
-"Fairbanks, Pete",664126,2025,61,60.1,4,5,52.79,18,45,3.798,27,3.141,0.219,0.339,0.278,90.659,6.609,1.048,Fairbanks,Pete,Pete Fairbanks,100.0
+"Fairbanks, Pete",664126,2025,61,60.1,4,5,52.79,18,45,3.798,27,3.143,0.219,0.339,0.278,90.659,6.609,1.048,Fairbanks,Pete,Pete Fairbanks,100.0
 "Rodón, Carlos",607074,2025,33,195.1,18,9,203.0,73,132,3.09,0,3.33,0.206,0.351,0.285,88.6,7.6,1.051,Rodón,Carlos,Carlos Rodón,60.8
-"Springs, Jeffrey",605488,2025,32,171.0,11,11,107.1,54,153,4.065,0,3.964,0.249,0.431,0.31,88.06,8.16,1.211,Springs,Jeffrey,Jeffrey Springs,26.3
-"Abbott, Andrew",671096,2025,29,166.1,10,7,111.5,43,148,3.8,0,4.052,0.233,0.385,0.313,88.22,8.06,1.15,Abbott,Andrew,Andrew Abbott,25.6
-"Castillo, Luis",622491,2025,32,180.2,11,8,122.7,46,168,4.365,0,4.58,0.245,0.418,0.331,90.87,11.0,1.188,Castillo,Luis,Luis Castillo,23.5
-"Gilbert, Logan",669302,2025,25,131.0,6,6,134.0,31,104,3.698,0,3.594,0.206,0.367,0.295,91.04,9.05,1.031,Gilbert,Logan,Logan Gilbert,21.4
-"Varland, Louis",686973,2025,74,72.2,4,3,63.015,22,65,2.348,0,3.388,0.25,0.395,0.282,89.384,6.854,1.205,Varland,Louis,Louis Varland,17.7
-"Severino, Luis",622663,2025,29,162.2,8,11,98.8,50,162,4.516,0,4.511,0.266,0.416,0.33,88.6,6.99,1.307,Severino,Luis,Luis Severino,13.7
+"Springs, Jeffrey",605488,2025,32,171.0,11,11,107.1,54,153,4.065,0,3.967,0.249,0.431,0.31,88.06,8.16,1.211,Springs,Jeffrey,Jeffrey Springs,26.2
+"Castillo, Luis",622491,2025,32,180.2,11,8,122.7,46,168,4.365,0,4.583,0.245,0.418,0.331,90.87,11.0,1.188,Castillo,Luis,Luis Castillo,23.5
+"Gilbert, Logan",669302,2025,25,131.0,6,6,134.0,31,104,3.698,0,3.597,0.206,0.367,0.295,91.04,9.05,1.031,Gilbert,Logan,Logan Gilbert,21.4
+"Varland, Louis",686973,2025,74,72.2,4,3,63.132,22,65,2.335,0,3.375,0.25,0.395,0.281,89.271,6.826,1.205,Varland,Louis,Louis Varland,17.8
+"Severino, Luis",622663,2025,29,162.2,8,11,99.7,50,162,4.423,0,4.568,0.266,0.416,0.332,88.51,7.05,1.307,Severino,Luis,Luis Severino,14.1
 "Perkins, Jack",678022,2025,12,38.2,3,2,33.07,18,27,3.897,3,3.593,0.214,0.351,0.296,86.309,8.952,1.178,Perkins,Jack,Jack Perkins,12.8
-"Montero, Keider",672456,2025,20,90.2,5,3,57.9,31,95,4.103,0,4.202,0.26,0.446,0.318,89.67,8.14,1.397,Montero,Keider,Keider Montero,5.9
-"Soroka, Michael",647336,2025,22,89.2,3,8,77.3,29,72,4.574,0,3.998,0.209,0.351,0.311,89.59,8.11,1.132,Soroka,Michael,Michael Soroka,1.8
-"Yesavage, Trey",702056,2025,3,14.0,1,0,15.045,7,13,2.903,0,3.757,0.251,0.369,0.299,92.853,7.14,1.429,Yesavage,Trey,Trey Yesavage,0.4
+"Montero, Keider",672456,2025,20,90.2,5,3,57.9,31,95,4.103,0,4.205,0.26,0.446,0.318,89.67,8.14,1.397,Montero,Keider,Keider Montero,5.9
+"Soroka, Michael",647336,2025,22,89.2,3,8,77.3,29,72,4.574,0,4.001,0.209,0.351,0.311,89.59,8.11,1.132,Soroka,Michael,Michael Soroka,1.8
+"Yesavage, Trey",702056,2025,3,14.0,1,0,15.045,7,13,2.903,0,3.759,0.251,0.369,0.299,92.853,7.14,1.429,Yesavage,Trey,Trey Yesavage,0.4
 "Meyer, Max",676974,2025,12,64.2,3,5,59.6,20,72,4.115,0,4.527,0.263,0.453,0.33,91.21,9.23,1.433,Meyer,Max,Max Meyer,0.0
