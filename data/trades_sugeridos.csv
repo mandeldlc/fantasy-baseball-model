@@ -1,31 +1,28 @@
 oponente,pedir,categoria_pedir,valor_pedir,mi_debilidad,mis_fortalezas,tipo
-Team Frank Yankee,Brayan Bello,K,24.0,29.182,N/A,Pitcher
-Los Calvoneros unidos,Ryne Stanek,K,20.0,29.182,"ERA, NSV",Pitcher
-Los Calvoneros unidos,Anthony Kay,K,20.0,29.182,"ERA, NSV",Pitcher
-THE PUNISHER X,Brady Singer,K,20.0,29.182,N/A,Pitcher
-LOS GORDITOS DAD & JR 2026 MLB,Devin Williams,K,18.0,29.182,ERA,Pitcher
-Team Frank Yankee,David Bednar,K,18.0,29.182,N/A,Pitcher
-LOS GORDITOS DAD & JR 2026 MLB,Cade Smith,K,18.0,29.182,ERA,Pitcher
-THE PUNISHER X,Garrett Whitlock,K,17.0,29.182,N/A,Pitcher
+THE PUNISHER X,Rhett Lowder,K,26.0,30.273,N/A,Pitcher
+LOS GORDITOS DAD & JR 2026 MLB,Cade Smith,K,21.0,30.273,ERA,Pitcher
+LOS GORDITOS DAD & JR 2026 MLB,Devin Williams,K,20.0,30.273,ERA,Pitcher
+Los Calvoneros unidos,Anthony Kay,K,20.0,30.273,NSV,Pitcher
+Los Calvoneros unidos,Ryne Stanek,K,20.0,30.273,NSV,Pitcher
+THE PUNISHER X,Garrett Whitlock,K,17.0,30.273,N/A,Pitcher
+Los Calvoneros unidos,Trevor Megill,K,15.0,30.273,NSV,Pitcher
+THE PUNISHER X,José Ramírez,SB,14.0,3.364,N/A,Bateador
 LOS GORDITOS DAD & JR 2026 MLB,Munetaka Murakami,HR,14.0,4.727,SB,Bateador
-+ Fe que talento,José Caballero,SB,13.0,3.182,"R, HR, RBI",Bateador
-Los Calvoneros unidos,Trevor Megill,K,13.0,29.182,"ERA, NSV",Pitcher
-THE PUNISHER X,José Ramírez,SB,13.0,3.182,RBI,Bateador
++ Fe que talento,José Caballero,SB,13.0,3.364,"R, HR, RBI",Bateador
 Los Inmensos Amos BT,Yordan Alvarez,HR,12.0,4.727,"RBI, SB",Bateador
 Los Inmensos Amos BT,Ben Rice,HR,12.0,4.727,"RBI, SB",Bateador
-+ Fe que talento,Oneil Cruz,SB,11.0,3.182,"R, HR, RBI",Bateador
++ Fe que talento,Oneil Cruz,SB,12.0,3.364,"R, HR, RBI",Bateador
 LOS GORDITOS DAD & JR 2026 MLB,Kyle Schwarber,HR,11.0,4.727,SB,Bateador
-THE PUNISHER X,Jakob Marsee,SB,10.0,3.182,RBI,Bateador
-Team Frank Yankee,Jhoan Duran,K,10.0,29.182,N/A,Pitcher
-LOS GORDITOS DAD & JR 2026 MLB,Edwin Díaz,K,10.0,29.182,ERA,Pitcher
+THE PUNISHER X,Jakob Marsee,SB,10.0,3.364,N/A,Bateador
+LOS GORDITOS DAD & JR 2026 MLB,Edwin Díaz,K,10.0,30.273,ERA,Pitcher
 Los Inmensos Amos BT,Bryce Harper,HR,9.0,4.727,"RBI, SB",Bateador
 LOS GORDITOS DAD & JR 2026 MLB,CJ Abrams,HR,8.0,4.727,SB,Bateador
-THE PUNISHER X,Brenton Doyle,SB,7.0,3.182,RBI,Bateador
-+ Fe que talento,Bryson Stott,SB,6.0,3.182,"R, HR, RBI",Bateador
-De espalda al aro mmg,Kenley Jansen,ERA,5.4,3.975,N/A,Pitcher
-De espalda al aro mmg,Nathan Eovaldi,ERA,4.76,3.975,N/A,Pitcher
-De espalda al aro mmg,Ryan Walker,ERA,4.61,3.975,N/A,Pitcher
-THE PUNISHER X,Cody Ponce,K,3.0,29.182,N/A,Pitcher
+THE PUNISHER X,Brenton Doyle,SB,7.0,3.364,N/A,Bateador
++ Fe que talento,Bryson Stott,SB,6.0,3.364,"R, HR, RBI",Bateador
+De espalda al aro mmg,Ryan Walker,ERA,5.52,4.005,N/A,Pitcher
+De espalda al aro mmg,Kenley Jansen,ERA,5.4,4.005,N/A,Pitcher
+De espalda al aro mmg,Nathan Eovaldi,ERA,4.15,4.005,N/A,Pitcher
+THE PUNISHER X,Cody Ponce,K,3.0,30.273,N/A,Pitcher
 A.Rod Gangs,Jackson Chourio,SLG,1.5,0.403,"R, RBI, SB",Bateador
 Team Frank Yankee,Jack Leiter,W,1.0,1.727,N/A,Pitcher
 Team Frank Yankee,David Bednar,W,1.0,1.727,N/A,Pitcher
@@ -36,7 +33,7 @@ A.Rod Gangs,Nick Pivetta,W,1.0,1.727,N/A,Pitcher
 A.Rod Gangs,Jackson Chourio,OBP,1.0,0.319,"R, RBI, SB",Bateador
 THE PUNISHER X,Mike Burrows,W,1.0,1.727,N/A,Pitcher
 LOS GORDITOS DAD & JR 2026 MLB,Devin Williams,W,1.0,1.727,ERA,Pitcher
-THE PUNISHER X,Joey Cantillo,W,1.0,1.727,N/A,Pitcher
+THE PUNISHER X,Reid Detmers,W,1.0,1.727,N/A,Pitcher
 Los Inmensos Amos BT,Ben Rice,SLG,0.759,0.403,"RBI, SB",Bateador
 Los Inmensos Amos BT,Yordan Alvarez,SLG,0.647,0.403,"RBI, SB",Bateador
 A.Rod Gangs,Christian Walker,SLG,0.579,0.403,"R, RBI, SB",Bateador
