@@ -1,80 +1,39 @@
 Name,Ubicacion,Starts,Doble_Start,Favorabilidad,ERA,xERA,Ks,xwOBA,Oponentes,Breakout_Score
-Payton Tolle,🔓 Waiver,3,⭐ DOBLE,59.5,2.04,2.03,23,0.228,2026-05-04 vs Detroit Tigers (🟡 Normal) wOBA:0.323 | 2026-05-09 vs Tampa Bay Rays (🟢 Fácil) wOBA:0.315 | 2026-05-10 vs Tampa Bay Rays (🟢 Fácil) wOBA:0.315,59.5
-Nick Martinez,🔓 Waiver,3,⭐ DOBLE,45.1,1.71,3.9,28,0.313,2026-05-04 vs Toronto Blue Jays (🟢 Fácil) wOBA:0.306 | 2026-05-09 vs Boston Red Sox (🟡 Normal) wOBA:0.303 | 2026-05-10 vs Boston Red Sox (🟡 Normal) wOBA:0.303,45.1
-Huascar Brazobán,🔓 Waiver,2,⭐ DOBLE,49.0,1.53,2.94,14,0.274,2026-05-04 vs Colorado Rockies (🟢 Fácil) wOBA:0.327 | 2026-05-10 vs Arizona Diamondbacks (🟢 Fácil) wOBA:0.311,49.0
-Andre Pallante,🔓 Waiver,2,⭐ DOBLE,45.1,4.34,4.47,29,0.333,2026-05-05 vs Milwaukee Brewers (🟢 Fácil) wOBA:0.315 | 2026-05-06 vs Milwaukee Brewers (🟢 Fácil) wOBA:0.315,45.1
-Randy Vásquez,🔓 Waiver,2,⭐ DOBLE,41.7,3.05,4.62,42,0.338,2026-05-04 vs San Francisco Giants (🟢 Fácil) wOBA:0.286 | 2026-05-09 vs St. Louis Cardinals (🟡 Normal) wOBA:0.322,41.7
-Walker Buehler,🔓 Waiver,2,⭐ DOBLE,41.3,5.64,4.72,29,0.341,2026-05-05 vs San Francisco Giants (🟢 Fácil) wOBA:0.286 | 2026-05-10 vs St. Louis Cardinals (🟡 Normal) wOBA:0.322,41.3
-Janson Junk,🔓 Waiver,2,⭐ DOBLE,39.0,3.25,3.84,33,0.311,2026-05-04 vs Philadelphia Phillies (🟡 Normal) wOBA:0.306 | 2026-05-09 vs Washington Nationals (🟡 Normal) wOBA:0.321,39.0
-Kyle Leahy,🔓 Waiver,2,⭐ DOBLE,37.1,4.93,5.96,27,0.377,2026-05-04 vs Milwaukee Brewers (🟢 Fácil) wOBA:0.315 | 2026-05-10 vs San Diego Padres (🟡 Normal) wOBA:0.301,37.1
-Tomoyuki Sugano,🔓 Waiver,2,⭐ DOBLE,36.0,3.41,6.2,22,0.383,2026-05-04 vs New York Mets (🟡 Normal) wOBA:0.287 | 2026-05-10 vs Philadelphia Phillies (🟡 Normal) wOBA:0.306,36.0
-Michael Lorenzen,🔓 Waiver,2,⭐ DOBLE,35.8,6.92,5.81,26,0.373,2026-05-05 vs New York Mets (🟡 Normal) wOBA:0.287 | 2026-05-06 vs New York Mets (🟡 Normal) wOBA:0.287,35.8
-Chris Bassitt,🔓 Waiver,2,⭐ DOBLE,34.1,5.91,5.52,20,0.365,2026-05-05 vs Miami Marlins (🟢 Fácil) wOBA:0.314 | 2026-05-10 vs Athletics (🟡 Normal) wOBA:0.325,34.1
-Eduardo Rodriguez,🔓 Waiver,2,⭐ DOBLE,33.8,2.5,4.72,29,0.341,2026-05-05 vs Pittsburgh Pirates (🟡 Normal) wOBA:0.323 | 2026-05-10 vs New York Mets (🟡 Normal) wOBA:0.287,33.8
-Davis Martin,🔓 Waiver,2,⭐ DOBLE,31.1,1.64,4.2,43,0.324,2026-05-04 vs Los Angeles Angels (🟡 Normal) wOBA:0.318 | 2026-05-10 vs Seattle Mariners (🟡 Normal) wOBA:0.319,31.1
-Bryce Elder,🔓 Waiver,2,⭐ DOBLE,28.4,2.02,2.83,45,0.269,2026-05-05 vs Seattle Mariners (🟡 Normal) wOBA:0.319 | 2026-05-10 vs Los Angeles Dodgers (🔴 Difícil) wOBA:0.350,28.4
-Bradgley Rodriguez,🔓 Waiver,1,➡️ Simple,63.8,1.93,2.03,14,0.228,2026-05-06 vs San Francisco Giants (🟢 Fácil) wOBA:0.286,63.8
-Patrick Corbin,🔓 Waiver,1,➡️ Simple,60.0,3.6,6.24,21,0.384,2026-05-06 vs Tampa Bay Rays (🟢 Fácil) wOBA:0.315,60.0
-Jake Bennett,🔓 Waiver,1,➡️ Simple,60.0,4.35,5.56,4,0.366,2026-05-07 vs Tampa Bay Rays (🟢 Fácil) wOBA:0.315,60.0
-Carmen Mlodzinski,🔓 Waiver,1,➡️ Simple,53.0,4.5,4.72,41,0.341,2026-05-08 vs San Francisco Giants (🟢 Fácil) wOBA:0.286,53.0
-Andrew Morris,🔓 Waiver,1,➡️ Simple,51.3,4.96,3.33,15,0.291,2026-05-10 vs Cleveland Guardians (🟢 Fácil) wOBA:0.314,51.3
-Connor Prielipp,🔓 Waiver,1,➡️ Simple,51.2,3.32,3.36,21,0.292,2026-05-08 vs Cleveland Guardians (🟢 Fácil) wOBA:0.314,51.2
-Stephen Kolek,🔓 Waiver,1,➡️ Simple,50.5,4.5,3.53,3,0.299,2026-05-05 vs Cleveland Guardians (🟢 Fácil) wOBA:0.314,50.5
-Richard Lovelady,🔓 Waiver,1,➡️ Simple,47.5,2.12,3.95,17,0.315,2026-05-09 vs Miami Marlins (🟢 Fácil) wOBA:0.314,47.5
-Foster Griffin,🔓 Waiver,1,➡️ Simple,47.1,2.12,4.06,42,0.319,2026-05-08 vs Miami Marlins (🟢 Fácil) wOBA:0.314,47.1
-Mitch Keller,🔓 Waiver,1,➡️ Simple,46.8,2.87,3.9,35,0.313,2026-05-07 vs Arizona Diamondbacks (🟢 Fácil) wOBA:0.311,46.8
-Christian Scott,🔓 Waiver,1,➡️ Simple,45.8,3.27,3.33,15,0.291,2026-05-07 vs Colorado Rockies (🟢 Fácil) wOBA:0.327,45.8
-Brandon Young,🔓 Waiver,1,➡️ Simple,44.2,4.35,4.78,14,0.343,2026-05-06 vs Miami Marlins (🟢 Fácil) wOBA:0.314,44.2
-Jack Kochanowicz,🔓 Waiver,1,➡️ Simple,44.2,3.97,5.01,30,0.35,2026-05-09 vs Toronto Blue Jays (🟢 Fácil) wOBA:0.306,44.2
-Cade Povich,🔓 Waiver,1,➡️ Simple,43.3,5.12,5.11,12,0.353,2026-05-07 vs Miami Marlins (🟢 Fácil) wOBA:0.314,43.3
-Chase Dollander,🔓 Waiver,1,➡️ Simple,42.6,3.35,3.43,47,0.295,2026-05-08 vs Philadelphia Phillies (🟡 Normal) wOBA:0.306,42.6
-Jeffrey Springs,🔓 Waiver,1,➡️ Simple,42.3,3.89,3.5,39,0.298,2026-05-06 vs Philadelphia Phillies (🟡 Normal) wOBA:0.306,42.3
-Jesse Scholtens,🔓 Waiver,1,➡️ Simple,42.0,3.29,4.26,21,0.326,2026-05-08 vs Boston Red Sox (🟡 Normal) wOBA:0.303,42.0
-J.T. Ginn,🔓 Waiver,1,➡️ Simple,41.6,3.62,3.68,31,0.305,2026-05-07 vs Philadelphia Phillies (🟡 Normal) wOBA:0.306,41.6
-Ben Brown,🔓 Waiver,1,➡️ Simple,40.6,1.82,2.58,27,0.257,2026-05-08 vs Texas Rangers (🟡 Normal) wOBA:0.307,40.6
-Brenan Hanifee,🔓 Waiver,1,➡️ Simple,40.4,0.0,2.6,4,0.258,2026-05-10 vs Kansas City Royals (🟡 Normal) wOBA:0.318,40.4
-Trevor McDonald,🔓 Waiver,1,➡️ Simple,39.8,1.29,2.83,8,0.269,2026-05-04 vs San Diego Padres (🟡 Normal) wOBA:0.301,39.8
-Landen Roupp,🔓 Waiver,1,➡️ Simple,39.5,3.09,2.54,51,0.255,2026-05-09 vs Pittsburgh Pirates (🟡 Normal) wOBA:0.323,39.5
-Tyler Holton,🔓 Waiver,1,➡️ Simple,39.1,4.15,4.97,12,0.349,2026-05-04 vs Boston Red Sox (🟡 Normal) wOBA:0.303,39.1
-Jose Quintana,🔓 Waiver,1,➡️ Simple,37.8,3.9,4.5,14,0.334,2026-05-07 vs New York Mets (🟡 Normal) wOBA:0.287,37.8
-Bailey Ober,🔓 Waiver,1,➡️ Simple,37.0,4.19,3.84,32,0.311,2026-05-06 vs Washington Nationals (🟡 Normal) wOBA:0.321,37.0
-Taj Bradley,🔓 Waiver,1,➡️ Simple,36.9,2.87,3.87,52,0.312,2026-05-05 vs Washington Nationals (🟡 Normal) wOBA:0.321,36.9
-Kyle Freeland,🔓 Waiver,1,➡️ Simple,36.3,6.0,5.21,28,0.356,2026-05-09 vs Philadelphia Phillies (🟡 Normal) wOBA:0.306,36.3
-Jacob Lopez,🔓 Waiver,1,➡️ Simple,36.2,6.11,3.38,28,0.293,2026-05-08 vs Baltimore Orioles (🟡 Normal) wOBA:0.317,36.2
-Merrill Kelly,🔓 Waiver,1,➡️ Simple,35.8,7.62,9.96,20,0.46,2026-05-09 vs New York Mets (🟡 Normal) wOBA:0.287,35.8
-Griffin Canning,🔓 Waiver,1,➡️ Simple,34.9,6.75,3.38,12,0.293,2026-05-08 vs St. Louis Cardinals (🟡 Normal) wOBA:0.322,34.9
-Shohei Ohtani,🔓 Waiver,1,➡️ Simple,34.0,0.97,2.18,42,0.236,2026-05-05 vs Houston Astros (🟡 Normal) wOBA:0.344,34.0
-Spencer Miles,🔓 Waiver,1,➡️ Simple,33.8,3.5,3.58,16,0.301,2026-05-10 vs Los Angeles Angels (🟡 Normal) wOBA:0.318,33.8
-Paul Blackburn,🔓 Waiver,1,➡️ Simple,33.6,3.0,4.32,9,0.328,2026-05-07 vs Texas Rangers (🟡 Normal) wOBA:0.307,33.6
-Aaron Civale,🔓 Waiver,1,➡️ Simple,33.0,2.59,4.18,33,0.323,2026-05-09 vs Baltimore Orioles (🟡 Normal) wOBA:0.317,33.0
-Walbert Ureña,🔓 Waiver,1,➡️ Simple,32.6,3.22,3.28,22,0.289,2026-05-06 vs Chicago White Sox (🟡 Normal) wOBA:0.317,32.6
-Sean Burke,🔓 Waiver,1,➡️ Simple,32.5,3.68,3.79,36,0.309,2026-05-08 vs Seattle Mariners (🟡 Normal) wOBA:0.319,32.5
-Simeon Woods Richardson,🔓 Waiver,1,➡️ Simple,32.3,6.92,5.78,19,0.372,2026-05-07 vs Washington Nationals (🟡 Normal) wOBA:0.321,32.3
-Robby Snelling,🔓 Waiver,1,➡️ Simple,32.3,5.4,5.81,2,0.373,2026-05-08 vs Washington Nationals (🟡 Normal) wOBA:0.321,32.3
-Erick Fedde,🔓 Waiver,1,➡️ Simple,31.9,3.79,4.06,24,0.319,2026-05-05 vs Los Angeles Angels (🟡 Normal) wOBA:0.318,31.9
-Chad Patrick,🔓 Waiver,1,➡️ Simple,31.3,3.15,4.26,25,0.326,2026-05-04 vs St. Louis Cardinals (🟡 Normal) wOBA:0.322,31.3
-Burch Smith,🔓 Waiver,1,➡️ Simple,31.3,3.09,3.24,16,0.287,2026-05-09 vs Kansas City Royals (🟡 Normal) wOBA:0.318,31.3
-Adrian Houser,🔓 Waiver,1,➡️ Simple,31.1,6.19,5.56,19,0.366,2026-05-06 vs San Diego Padres (🟡 Normal) wOBA:0.301,31.1
-Noah Schultz,🔓 Waiver,1,➡️ Simple,31.1,4.68,4.26,23,0.326,2026-05-06 vs Los Angeles Angels (🟡 Normal) wOBA:0.318,31.1
-Matthew Liberatore,🔓 Waiver,1,➡️ Simple,31.1,4.07,5.52,29,0.365,2026-05-07 vs San Diego Padres (🟡 Normal) wOBA:0.301,31.1
-Michael McGreevy,🔓 Waiver,1,➡️ Simple,31.1,2.18,5.07,33,0.352,2026-05-08 vs San Diego Padres (🟡 Normal) wOBA:0.301,31.1
-Tyler Mahle,🔓 Waiver,1,➡️ Simple,31.0,5.0,4.68,34,0.34,2026-05-10 vs Pittsburgh Pirates (🟡 Normal) wOBA:0.323,31.0
-Elmer Rodríguez,🔓 Waiver,1,➡️ Simple,30.9,5.19,7.52,5,0.414,2026-05-05 vs Texas Rangers (🟡 Normal) wOBA:0.307,30.9
-Miles Mikolas,🔓 Waiver,1,➡️ Simple,30.6,7.44,4.81,22,0.344,2026-05-06 vs Minnesota Twins (🟡 Normal) wOBA:0.321,30.6
-Martín Pérez,🔓 Waiver,1,➡️ Simple,29.9,2.38,4.44,24,0.332,2026-05-06 vs Seattle Mariners (🟡 Normal) wOBA:0.319,29.9
-Jake Irvin,🔓 Waiver,1,➡️ Simple,29.8,5.22,5.07,41,0.352,2026-05-07 vs Minnesota Twins (🟡 Normal) wOBA:0.321,29.8
-Jovani Morán,🔓 Waiver,1,➡️ Simple,28.8,3.1,3.48,20,0.297,2026-05-05 vs Detroit Tigers (🟡 Normal) wOBA:0.323,28.8
-JR Ritchie,🔓 Waiver,1,➡️ Simple,27.7,3.63,5.14,13,0.354,2026-05-04 vs Seattle Mariners (🟡 Normal) wOBA:0.319,27.7
-Sam Aldegheri,🔓 Waiver,1,➡️ Simple,25.7,4.76,7.95,2,0.423,2026-05-05 vs Chicago White Sox (🟡 Normal) wOBA:0.317,25.7
-Slade Cecconi,🔓 Waiver,1,➡️ Simple,24.2,6.15,5.63,31,0.368,2026-05-07 vs Kansas City Royals (🟡 Normal) wOBA:0.318,24.2
-Kai-Wei Teng,🔓 Waiver,1,➡️ Simple,23.8,2.35,3.28,22,0.289,2026-05-10 vs Cincinnati Reds (🔴 Difícil) wOBA:0.308,23.8
-Noah Cameron,🔓 Waiver,1,➡️ Simple,22.7,5.4,6.32,28,0.386,2026-05-10 vs Detroit Tigers (🟡 Normal) wOBA:0.323,22.7
-Chase Petty,🔓 Waiver,1,➡️ Simple,21.1,4.76,6.28,1,0.385,2026-05-04 vs Chicago Cubs (🟡 Normal) wOBA:0.348,21.1
-Kumar Rocker,🔓 Waiver,1,➡️ Simple,21.1,5.01,5.21,27,0.356,2026-05-08 vs Chicago Cubs (🟡 Normal) wOBA:0.348,21.1
-Colin Rea,🔓 Waiver,1,➡️ Simple,18.9,4.03,4.5,35,0.334,2026-05-06 vs Cincinnati Reds (🔴 Difícil) wOBA:0.308,18.9
-Peter Lambert,🔓 Waiver,1,➡️ Simple,18.4,2.42,3.33,23,0.291,2026-05-05 vs Los Angeles Dodgers (🔴 Difícil) wOBA:0.350,18.4
-Spencer Arrighetti,🔓 Waiver,1,➡️ Simple,16.9,1.88,5.42,30,0.362,2026-05-09 vs Cincinnati Reds (🔴 Difícil) wOBA:0.308,16.9
-Justin Wrobleski,🔓 Waiver,1,➡️ Simple,16.5,1.25,4.23,15,0.325,2026-05-10 vs Atlanta Braves (🔴 Difícil) wOBA:0.346,16.5
-Logan Henderson,🔓 Waiver,1,➡️ Simple,14.2,4.5,1.45,11,0.191,2026-05-10 vs New York Yankees (🔴 Difícil) wOBA:0.344,14.2
-Steven Okert,🔓 Waiver,1,➡️ Simple,13.1,4.32,4.65,11,0.339,2026-05-04 vs Los Angeles Dodgers (🔴 Difícil) wOBA:0.350,13.1
-Kyle Harrison,🔓 Waiver,1,➡️ Simple,5.8,2.41,3.55,41,0.3,2026-05-09 vs New York Yankees (🔴 Difícil) wOBA:0.344,5.8
+Janson Junk,🔓 Waiver,1,➡️ Simple,64.8,3.25,3.81,33,0.311,2026-05-15 vs Tampa Bay Rays (🟢 Fácil) wOBA:0.315,64.8
+Shohei Ohtani,🔓 Waiver,1,➡️ Simple,64.0,0.97,2.16,42,0.236,2026-05-13 vs San Francisco Giants (🟢 Fácil) wOBA:0.289,64.0
+Patrick Corbin,🔓 Waiver,1,➡️ Simple,60.0,3.6,6.19,21,0.384,2026-05-12 vs Tampa Bay Rays (🟢 Fácil) wOBA:0.315,60.0
+Walbert Ureña,🔓 Waiver,1,➡️ Simple,52.5,3.22,3.26,22,0.289,2026-05-12 vs Cleveland Guardians (🟢 Fácil) wOBA:0.311,52.5
+Griffin Canning,🔓 Waiver,1,➡️ Simple,50.8,6.75,3.36,12,0.293,2026-05-14 vs Milwaukee Brewers (🟢 Fácil) wOBA:0.311,50.8
+Matt Waldron,🔓 Waiver,1,➡️ Simple,50.2,7.71,3.53,15,0.3,2026-05-12 vs Milwaukee Brewers (🟢 Fácil) wOBA:0.311,50.2
+Bailey Ober,🔓 Waiver,1,➡️ Simple,45.9,4.19,3.81,32,0.311,2026-05-12 vs Miami Marlins (🟢 Fácil) wOBA:0.318,45.9
+Mitch Keller,🔓 Waiver,1,➡️ Simple,45.7,2.87,3.87,35,0.313,2026-05-13 vs Colorado Rockies (🟢 Fácil) wOBA:0.322,45.7
+Kumar Rocker,🔓 Waiver,1,➡️ Simple,42.5,5.01,5.17,27,0.356,2026-05-13 vs Arizona Diamondbacks (🟢 Fácil) wOBA:0.308,42.5
+Carmen Mlodzinski,🔓 Waiver,1,➡️ Simple,42.4,4.5,4.68,41,0.341,2026-05-14 vs Colorado Rockies (🟢 Fácil) wOBA:0.322,42.4
+Simeon Woods Richardson,🔓 Waiver,1,➡️ Simple,41.2,6.92,5.74,19,0.372,2026-05-13 vs Miami Marlins (🟢 Fácil) wOBA:0.318,41.2
+Peter Lambert,🔓 Waiver,1,➡️ Simple,37.4,2.42,3.31,23,0.291,2026-05-11 vs Seattle Mariners (🟡 Normal) wOBA:0.315,37.4
+Chase Dollander,🔓 Waiver,1,➡️ Simple,37.1,3.35,3.41,47,0.295,2026-05-14 vs Pittsburgh Pirates (🟡 Normal) wOBA:0.327,37.1
+Jacob Lopez,🔓 Waiver,1,➡️ Simple,36.0,6.11,3.33,28,0.292,2026-05-14 vs St. Louis Cardinals (🟡 Normal) wOBA:0.316,36.0
+Jeffrey Springs,🔓 Waiver,1,➡️ Simple,35.4,3.89,3.48,39,0.298,2026-05-12 vs St. Louis Cardinals (🟡 Normal) wOBA:0.316,35.4
+J.T. Ginn,🔓 Waiver,1,➡️ Simple,34.7,3.62,3.66,31,0.305,2026-05-13 vs St. Louis Cardinals (🟡 Normal) wOBA:0.316,34.7
+Kyle Harrison,🔓 Waiver,1,➡️ Simple,34.3,2.41,3.53,41,0.3,2026-05-14 vs San Diego Padres (🟡 Normal) wOBA:0.298,34.3
+Jose Quintana,🔓 Waiver,1,➡️ Simple,32.9,3.9,4.47,14,0.334,2026-05-13 vs Pittsburgh Pirates (🟡 Normal) wOBA:0.327,32.9
+Michael Lorenzen,🔓 Waiver,1,➡️ Simple,30.8,6.92,5.77,26,0.373,2026-05-12 vs Pittsburgh Pirates (🟡 Normal) wOBA:0.327,30.8
+Robby Snelling,🔓 Waiver,1,➡️ Simple,30.4,5.4,5.77,2,0.373,2026-05-14 vs Minnesota Twins (🟡 Normal) wOBA:0.319,30.4
+Andre Pallante,🔓 Waiver,1,➡️ Simple,29.5,4.34,4.44,29,0.333,2026-05-12 vs Athletics (🟡 Normal) wOBA:0.323,29.5
+Stephen Kolek,🔓 Waiver,1,➡️ Simple,29.1,4.5,3.48,3,0.298,2026-05-12 vs Chicago White Sox (🟡 Normal) wOBA:0.319,29.1
+Slade Cecconi,🔓 Waiver,1,➡️ Simple,28.4,6.15,5.59,31,0.368,2026-05-12 vs Los Angeles Angels (🟡 Normal) wOBA:0.319,28.4
+Erick Fedde,🔓 Waiver,1,➡️ Simple,28.4,3.79,4.03,24,0.319,2026-05-12 vs Kansas City Royals (🟡 Normal) wOBA:0.317,28.4
+Noah Schultz,🔓 Waiver,1,➡️ Simple,27.6,4.68,4.23,23,0.326,2026-05-13 vs Kansas City Royals (🟡 Normal) wOBA:0.317,27.6
+Matthew Liberatore,🔓 Waiver,1,➡️ Simple,27.2,4.07,5.45,29,0.364,2026-05-13 vs Athletics (🟡 Normal) wOBA:0.323,27.2
+Michael McGreevy,🔓 Waiver,1,➡️ Simple,27.2,2.18,5.04,33,0.352,2026-05-14 vs Athletics (🟡 Normal) wOBA:0.323,27.2
+Ben Brown,🔓 Waiver,1,➡️ Simple,25.2,1.82,2.56,27,0.257,2026-05-14 vs Atlanta Braves (🔴 Difícil) wOBA:0.346,25.2
+Bryce Miller,🔓 Waiver,1,➡️ Simple,24.4,5.68,5.27,74,0.351,2026-05-13 vs Houston Astros (🟡 Normal) wOBA:0.337,24.4
+JR Ritchie,🔓 Waiver,1,➡️ Simple,24.3,3.63,5.1,13,0.354,2026-05-13 vs Chicago Cubs (🟡 Normal) wOBA:0.341,24.3
+Landen Roupp,🔓 Waiver,1,➡️ Simple,22.6,3.09,2.52,51,0.255,2026-05-14 vs Los Angeles Dodgers (🔴 Difícil) wOBA:0.345,22.6
+Trevor McDonald,🔓 Waiver,1,➡️ Simple,21.5,1.29,2.81,8,0.269,2026-05-11 vs Los Angeles Dodgers (🔴 Difícil) wOBA:0.345,21.5
+Foster Griffin,🔓 Waiver,1,➡️ Simple,21.4,2.12,4.03,42,0.319,2026-05-14 vs Cincinnati Reds (🔴 Difícil) wOBA:0.308,21.4
+Miles Mikolas,🔓 Waiver,1,➡️ Simple,18.4,7.44,4.78,22,0.344,2026-05-12 vs Cincinnati Reds (🔴 Difícil) wOBA:0.308,18.4
+Colin Rea,🔓 Waiver,1,➡️ Simple,17.6,4.03,4.47,35,0.334,2026-05-12 vs Atlanta Braves (🔴 Difícil) wOBA:0.346,17.6
+Jake Irvin,🔓 Waiver,1,➡️ Simple,17.5,5.22,5.04,41,0.352,2026-05-13 vs Cincinnati Reds (🔴 Difícil) wOBA:0.308,17.5
+Adrian Houser,🔓 Waiver,1,➡️ Simple,12.7,6.19,5.52,19,0.366,2026-05-12 vs Los Angeles Dodgers (🔴 Difícil) wOBA:0.345,12.7
+Brandon Young,🔓 Waiver,1,➡️ Simple,1.0,4.35,4.75,14,0.343,2026-05-11 vs New York Yankees (🔴 Difícil) wOBA:0.342,1.0
