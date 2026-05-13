@@ -7,43 +7,43 @@
   "mis_bat": {
     "equipo": "Dando Tabla",
     "jugadores": 11,
-    "HR_avg": 4.9,
-    "OPS": 0.728,
-    "wOBA": 0.324,
+    "HR_avg": 5.1,
+    "OPS": 0.73,
+    "wOBA": 0.325,
     "xwOBA": 0.336,
     "EV": 90.0,
-    "Barrel%": 8.9
+    "Barrel%": 8.8
   },
   "opp_bat": {
     "equipo": "+ Fe que talento",
     "jugadores": 14,
     "HR_avg": 4.9,
-    "OPS": 0.783,
-    "wOBA": 0.348,
-    "xwOBA": 0.338,
-    "EV": 90.4,
+    "OPS": 0.771,
+    "wOBA": 0.343,
+    "xwOBA": 0.336,
+    "EV": 90.3,
     "Barrel%": 9.6
   },
   "mis_pit": {
     "equipo": "Dando Tabla",
     "jugadores": 12,
-    "ERA": 3.72,
-    "xERA": 3.59,
-    "Ks": 32.1,
-    "xwOBA": 0.295,
-    "EV_against": 89.7
+    "ERA": 3.75,
+    "xERA": 3.6,
+    "Ks": 32.2,
+    "xwOBA": 0.296,
+    "EV_against": 89.8
   },
   "opp_pit": {
     "equipo": "+ Fe que talento",
     "jugadores": 11,
-    "ERA": 3.02,
-    "xERA": 3.47,
-    "Ks": 33.6,
-    "xwOBA": 0.294,
-    "EV_against": 89.2
+    "ERA": 2.99,
+    "xERA": 3.57,
+    "Ks": 34.8,
+    "xwOBA": 0.299,
+    "EV_against": 89.3
   },
-  "prob_ganar": 47.7,
-  "prob_perder": 52.3,
-  "odds_ganar": "+110",
-  "odds_perder": "-110"
+  "prob_ganar": 47.8,
+  "prob_perder": 52.2,
+  "odds_ganar": "+109",
+  "odds_perder": "-109"
 }
