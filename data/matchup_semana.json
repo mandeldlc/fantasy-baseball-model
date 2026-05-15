@@ -27,11 +27,11 @@
   "mis_pit": {
     "equipo": "Dando Tabla",
     "jugadores": 11,
-    "ERA": 3.75,
-    "xERA": 3.53,
-    "Ks": 32.0,
-    "xwOBA": 0.293,
-    "EV_against": 89.8
+    "ERA": 4.08,
+    "xERA": 3.83,
+    "Ks": 30.8,
+    "xwOBA": 0.305,
+    "EV_against": 89.5
   },
   "opp_pit": {
     "equipo": "Los Inmensos Amos BT",
@@ -42,8 +42,8 @@
     "xwOBA": 0.305,
     "EV_against": 89.0
   },
-  "prob_ganar": 47.2,
-  "prob_perder": 52.8,
-  "odds_ganar": "+112",
-  "odds_perder": "-112"
+  "prob_ganar": 45.9,
+  "prob_perder": 54.1,
+  "odds_ganar": "+118",
+  "odds_perder": "-118"
 }

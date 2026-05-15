@@ -27,11 +27,11 @@
   "mis_pit": {
     "equipo": "Dando Tabla",
     "jugadores": 11,
-    "ERA": 3.75,
-    "xERA": 3.53,
-    "Ks": 32.0,
-    "xwOBA": 0.293,
-    "EV_against": 89.8
+    "ERA": 4.08,
+    "xERA": 3.83,
+    "Ks": 30.8,
+    "xwOBA": 0.305,
+    "EV_against": 89.5
   },
   "opp_pit": {
     "equipo": "+ Fe que talento",
@@ -42,8 +42,8 @@
     "xwOBA": 0.294,
     "EV_against": 89.2
   },
-  "prob_ganar": 47.3,
-  "prob_perder": 52.7,
-  "odds_ganar": "+111",
-  "odds_perder": "-111"
+  "prob_ganar": 45.9,
+  "prob_perder": 54.1,
+  "odds_ganar": "+118",
+  "odds_perder": "-118"
 }
