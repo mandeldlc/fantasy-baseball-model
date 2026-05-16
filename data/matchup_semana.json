@@ -7,43 +7,43 @@
   "mis_bat": {
     "equipo": "Dando Tabla",
     "jugadores": 11,
-    "HR_avg": 5.2,
-    "OPS": 0.73,
-    "wOBA": 0.325,
-    "xwOBA": 0.335,
+    "HR_avg": 5.3,
+    "OPS": 0.719,
+    "wOBA": 0.321,
+    "xwOBA": 0.334,
     "EV": 89.9,
-    "Barrel%": 8.8
+    "Barrel%": 8.7
   },
   "opp_bat": {
     "equipo": "Los Inmensos Amos BT",
-    "jugadores": 13,
-    "HR_avg": 6.4,
-    "OPS": 0.881,
-    "wOBA": 0.385,
-    "xwOBA": 0.382,
-    "EV": 91.3,
-    "Barrel%": 14.4
+    "jugadores": 14,
+    "HR_avg": 6.6,
+    "OPS": 0.862,
+    "wOBA": 0.377,
+    "xwOBA": 0.379,
+    "EV": 90.8,
+    "Barrel%": 12.7
   },
   "mis_pit": {
     "equipo": "Dando Tabla",
     "jugadores": 11,
-    "ERA": 4.08,
-    "xERA": 3.83,
-    "Ks": 30.8,
+    "ERA": 4.15,
+    "xERA": 3.81,
+    "Ks": 32.6,
     "xwOBA": 0.305,
-    "EV_against": 89.5
+    "EV_against": 89.6
   },
   "opp_pit": {
     "equipo": "Los Inmensos Amos BT",
     "jugadores": 11,
-    "ERA": 3.63,
+    "ERA": 3.64,
     "xERA": 3.73,
-    "Ks": 53.2,
+    "Ks": 53.4,
     "xwOBA": 0.305,
     "EV_against": 89.0
   },
-  "prob_ganar": 45.9,
-  "prob_perder": 54.1,
-  "odds_ganar": "+118",
-  "odds_perder": "-118"
+  "prob_ganar": 46.1,
+  "prob_perder": 53.9,
+  "odds_ganar": "+117",
+  "odds_perder": "-117"
 }
