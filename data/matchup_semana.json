@@ -1,49 +1,49 @@
 {
-  "semana": 8,
-  "oponente": "Los Inmensos Amos BT",
-  "oponente_id": 1,
-  "week_start": "2026-05-11",
-  "week_end": "2026-05-17",
+  "semana": 9,
+  "oponente": "+ Fe que talento",
+  "oponente_id": 8,
+  "week_start": "2026-05-18",
+  "week_end": "2026-05-24",
   "mis_bat": {
     "equipo": "Dando Tabla",
-    "jugadores": 11,
-    "HR_avg": 5.7,
-    "OPS": 0.715,
-    "wOBA": 0.319,
-    "xwOBA": 0.34,
+    "jugadores": 12,
+    "HR_avg": 5.9,
+    "OPS": 0.709,
+    "wOBA": 0.317,
+    "xwOBA": 0.337,
     "EV": 89.8,
-    "Barrel%": 9.3
+    "Barrel%": 8.9
   },
   "opp_bat": {
-    "equipo": "Los Inmensos Amos BT",
+    "equipo": "+ Fe que talento",
     "jugadores": 14,
-    "HR_avg": 6.9,
-    "OPS": 0.852,
-    "wOBA": 0.374,
-    "xwOBA": 0.372,
-    "EV": 90.2,
-    "Barrel%": 12.1
+    "HR_avg": 5.4,
+    "OPS": 0.782,
+    "wOBA": 0.346,
+    "xwOBA": 0.335,
+    "EV": 89.8,
+    "Barrel%": 10.1
   },
   "mis_pit": {
     "equipo": "Dando Tabla",
-    "jugadores": 11,
-    "ERA": 4.06,
-    "xERA": 3.73,
-    "Ks": 34.0,
-    "xwOBA": 0.302,
-    "EV_against": 89.2
+    "jugadores": 10,
+    "ERA": 4.16,
+    "xERA": 3.75,
+    "Ks": 35.7,
+    "xwOBA": 0.301,
+    "EV_against": 89.5
   },
   "opp_pit": {
-    "equipo": "Los Inmensos Amos BT",
-    "jugadores": 11,
-    "ERA": 3.59,
-    "xERA": 3.74,
-    "Ks": 54.0,
-    "xwOBA": 0.306,
+    "equipo": "+ Fe que talento",
+    "jugadores": 10,
+    "ERA": 2.66,
+    "xERA": 3.22,
+    "Ks": 40.9,
+    "xwOBA": 0.286,
     "EV_against": 88.9
   },
-  "prob_ganar": 46.7,
-  "prob_perder": 53.3,
-  "odds_ganar": "+114",
-  "odds_perder": "-114"
+  "prob_ganar": 45.2,
+  "prob_perder": 54.8,
+  "odds_ganar": "+121",
+  "odds_perder": "-121"
 }

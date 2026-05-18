@@ -1,12 +1,11 @@
 "last_name, first_name",player_id,year,p_game,p_formatted_ip,p_win,p_loss,p_strikeout,p_walk,hit,p_era,p_save,xera,xba,xslg,xwoba,exit_velocity_avg,barrel_batted_rate,p_whip,last_name,first_name,Name,xera_pred_2026
-"Rodón, Carlos",607074,2026,2,8.0,0,1,10,8,5,5.63,0,4.12,0.178,0.268,0.322,91.2,10.5,1.625,Rodón,Carlos,Carlos Rodón,4.66
-"Soto, Gregory",642397,2026,22,22.1,3,0,26,9,10,2.42,4,2.35,0.175,0.253,0.246,84.6,4.0,0.86,Soto,Gregory,Gregory Soto,4.31
-"Yesavage, Trey",702056,2026,4,19.1,1,1,21,8,17,1.4,0,2.04,0.162,0.232,0.229,86.3,3.9,1.309,Yesavage,Trey,Trey Yesavage,4.11
-"Baz, Shane",669358,2026,9,51.1,1,5,42,22,56,5.26,0,4.91,0.277,0.447,0.348,89.5,9.4,1.526,Baz,Shane,Shane Baz,5.09
-"Varland, Louis",686973,2026,22,23.2,2,1,34,9,19,0.38,5,1.87,0.185,0.213,0.219,86.6,0.0,1.207,Varland,Louis,Louis Varland,4.68
-"Soroka, Michael",647336,2026,8,43.1,5,2,47,12,45,3.53,0,4.75,0.272,0.456,0.343,90.2,10.6,1.323,Soroka,Michael,Michael Soroka,4.82
-"Scholtens, Jesse",669947,2026,7,32.1,4,2,25,10,27,3.06,0,3.66,0.24,0.38,0.305,86.8,8.2,1.153,Scholtens,Jesse,Jesse Scholtens,4.98
-"Gilbert, Logan",669302,2026,10,56.2,2,4,57,12,53,4.45,0,4.15,0.256,0.441,0.323,90.6,11.3,1.157,Gilbert,Logan,Logan Gilbert,4.78
-"Meyer, Max",676974,2026,9,47.2,3,0,54,17,38,3.21,0,4.27,0.251,0.42,0.327,89.7,10.9,1.165,Meyer,Max,Max Meyer,6.09
-"Fairbanks, Pete",664126,2026,11,10.0,1,2,15,5,10,9.0,5,3.15,0.176,0.369,0.284,93.5,16.7,1.5,Fairbanks,Pete,Pete Fairbanks,4.41
-"Castillo, Luis",622491,2026,9,44.0,1,4,43,16,53,6.34,0,5.78,0.293,0.498,0.373,92.7,12.2,1.568,Castillo,Luis,Luis Castillo,4.51
+"Gilbert, Logan",669302,2026,10,56.2,2,4,57,12,53,4.45,0,4.16,0.256,0.441,0.323,90.6,11.3,1.157,Gilbert,Logan,Logan Gilbert,4.69
+"Soto, Gregory",642397,2026,22,22.1,3,0,26,9,10,2.42,4,2.35,0.175,0.253,0.246,84.6,4.0,0.86,Soto,Gregory,Gregory Soto,3.75
+"Baz, Shane",669358,2026,9,51.1,1,5,42,22,56,5.26,0,4.92,0.277,0.447,0.348,89.5,9.4,1.526,Baz,Shane,Shane Baz,4.8
+"Soroka, Michael",647336,2026,9,49.0,6,2,55,14,51,3.49,0,4.76,0.273,0.454,0.343,90.0,10.1,1.327,Soroka,Michael,Michael Soroka,4.89
+"Yesavage, Trey",702056,2026,4,19.1,1,1,21,8,17,1.4,0,2.04,0.162,0.232,0.229,86.3,3.9,1.309,Yesavage,Trey,Trey Yesavage,3.87
+"Rodón, Carlos",607074,2026,2,8.0,0,1,10,8,5,5.63,0,4.13,0.179,0.268,0.322,91.2,10.5,1.625,Rodón,Carlos,Carlos Rodón,4.89
+"Varland, Louis",686973,2026,22,23.2,2,1,34,9,19,0.38,5,1.88,0.185,0.213,0.219,86.6,0.0,1.207,Varland,Louis,Louis Varland,4.79
+"Fairbanks, Pete",664126,2026,11,10.0,1,2,15,5,10,9.0,5,3.16,0.176,0.369,0.284,93.5,16.7,1.5,Fairbanks,Pete,Pete Fairbanks,3.44
+"Castillo, Luis",622491,2026,9,44.0,1,4,43,16,53,6.34,0,5.8,0.293,0.498,0.373,92.7,12.2,1.568,Castillo,Luis,Luis Castillo,4.6
+"Meyer, Max",676974,2026,9,47.2,3,0,54,17,38,3.21,0,4.28,0.251,0.42,0.327,89.7,10.9,1.165,Meyer,Max,Max Meyer,4.85
