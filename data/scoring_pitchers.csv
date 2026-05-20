@@ -1,11 +1,11 @@
 "last_name, first_name",player_id,year,p_game,p_formatted_ip,p_win,p_loss,p_strikeout,p_walk,hit,p_era,p_save,xera,xba,xslg,xwoba,exit_velocity_avg,barrel_batted_rate,p_whip,last_name,first_name,Name,score
 "Fairbanks, Pete",664126,2025,61,60.1,4,5,52.4,18,45,3.755,27,3.102,0.219,0.338,0.276,90.695,6.585,1.048,Fairbanks,Pete,Pete Fairbanks,100.0
 "Rodón, Carlos",607074,2025,33,195.1,18,9,179.84,73,132,3.395,0,3.432,0.206,0.351,0.29,88.912,7.948,1.051,Rodón,Carlos,Carlos Rodón,55.8
-"Castillo, Luis",622491,2025,32,180.2,11,8,126.3,46,168,4.38,0,4.574,0.245,0.418,0.33,91.02,10.94,1.188,Castillo,Luis,Luis Castillo,23.6
+"Kelly, Merrill",518876,2025,32,184.0,12,9,123.8,48,157,4.237,0,5.285,0.25,0.431,0.348,90.44,11.76,1.114,Kelly,Merrill,Merrill Kelly,23.7
+"Castillo, Luis",622491,2025,32,180.2,11,8,127.5,46,168,4.401,0,4.574,0.245,0.418,0.33,91.02,10.94,1.188,Castillo,Luis,Luis Castillo,23.6
 "Gilbert, Logan",669302,2025,25,131.0,6,6,138.2,31,104,3.743,0,3.417,0.206,0.367,0.289,90.74,9.41,1.031,Gilbert,Logan,Logan Gilbert,22.2
-"Baz, Shane",669358,2025,31,166.1,10,12,135.8,64,158,4.987,0,4.189,0.23,0.386,0.318,89.18,9.44,1.337,Baz,Shane,Shane Baz,20.8
-"Varland, Louis",686973,2025,74,72.2,4,3,62.7,22,65,2.193,0,3.378,0.25,0.395,0.283,89.12,6.44,1.205,Varland,Louis,Louis Varland,18.4
-"Soto, Gregory",642397,2025,70,60.1,1,5,56.8,24,62,3.652,1,3.403,0.238,0.343,0.287,87.61,4.0,1.431,Soto,Gregory,Gregory Soto,6.2
+"Varland, Louis",686973,2025,74,72.2,4,3,63.0,22,65,2.187,0,3.378,0.25,0.395,0.283,89.12,6.44,1.205,Varland,Louis,Louis Varland,18.4
+"Soto, Gregory",642397,2025,70,60.1,1,5,57.7,24,62,3.619,1,3.403,0.238,0.343,0.287,87.61,4.0,1.431,Soto,Gregory,Gregory Soto,6.5
 "Soroka, Michael",647336,2025,22,89.2,3,8,83.0,29,72,4.211,0,3.905,0.209,0.351,0.308,89.44,7.72,1.132,Soroka,Michael,Michael Soroka,4.7
 "Yesavage, Trey",702056,2025,3,14.0,1,0,17.433,7,13,2.691,0,3.513,0.251,0.369,0.29,91.794,6.611,1.429,Yesavage,Trey,Trey Yesavage,2.9
 "Meyer, Max",676974,2025,12,64.2,3,5,65.6,20,72,4.166,0,4.587,0.263,0.453,0.332,91.36,9.41,1.433,Meyer,Max,Max Meyer,0.0
