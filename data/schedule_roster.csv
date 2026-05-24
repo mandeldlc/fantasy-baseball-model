@@ -1,23 +1,23 @@
 Name,Pos,Starts,Doble_Start,Favorabilidad,Oponentes
 Salvador Perez,C,0,❌ Sin start,50.0,Sin start / No pitcher
 Josh Naylor,1B,0,❌ Sin start,50.0,Sin start / No pitcher
-Angel Martínez,2B,0,❌ Sin start,50.0,Sin start / No pitcher
-Junior Caminero,3B,0,❌ Sin start,50.0,Sin start / No pitcher
-Bo Bichette,SS,0,❌ Sin start,50.0,Sin start / No pitcher
+Nico Hoerner,2B,0,❌ Sin start,50.0,Sin start / No pitcher
+Manny Machado,3B,0,❌ Sin start,50.0,Sin start / No pitcher
+Zach Neto,SS,0,❌ Sin start,50.0,Sin start / No pitcher
 Jarren Duran,OF,0,❌ Sin start,50.0,Sin start / No pitcher
 Kyle Tucker,OF,0,❌ Sin start,50.0,Sin start / No pitcher
 Riley Greene,OF,0,❌ Sin start,50.0,Sin start / No pitcher
-Zach Neto,Util,0,❌ Sin start,50.0,Sin start / No pitcher
-Manny Machado,Util,0,❌ Sin start,50.0,Sin start / No pitcher
-Michael Harris II,BN,0,❌ Sin start,50.0,Sin start / No pitcher
-Nico Hoerner,BN,0,❌ Sin start,50.0,Sin start / No pitcher
-Carlos Rodón,SP,1,➡️ Simple,88.2,2026-05-21 vs Toronto Blue Jays (🟢 Fácil) wOBA:0.302
-Max Meyer,SP,2,⭐ DOBLE,34.3,2026-05-18 vs Atlanta Braves (🔴 Difícil) wOBA:0.341 | 2026-05-23 vs New York Mets (🟡 Normal) wOBA:0.294
+Michael Harris II,Util,0,❌ Sin start,50.0,Sin start / No pitcher
+Junior Caminero,Util,0,❌ Sin start,50.0,Sin start / No pitcher
+Bo Bichette,BN,0,❌ Sin start,50.0,Sin start / No pitcher
+Angel Martínez,BN,0,❌ Sin start,50.0,Sin start / No pitcher
+Merrill Kelly,SP,1,➡️ Simple,87.8,2026-05-20 vs San Francisco Giants (🟢 Fácil) wOBA:0.295
+Carlos Rodón,SP,1,➡️ Simple,85.8,2026-05-21 vs Toronto Blue Jays (🟢 Fácil) wOBA:0.302
 Louis Varland,RP,0,❌ Sin start,50.0,Sin start / No pitcher
-Michael Soroka,RP,1,➡️ Simple,83.5,2026-05-22 vs Colorado Rockies (🟢 Fácil) wOBA:0.311
-Gregory Soto,P,0,❌ Sin start,50.0,Sin start / No pitcher
+Gregory Soto,RP,0,❌ Sin start,50.0,Sin start / No pitcher
 Pete Fairbanks,P,0,❌ Sin start,50.0,Sin start / No pitcher
-Trey Yesavage,P,1,➡️ Simple,0.0,2026-05-20 vs New York Yankees (🔴 Difícil) wOBA:0.333
+Trey Yesavage,P,1,➡️ Simple,0.0,2026-05-20 vs New York Yankees (🔴 Difícil) wOBA:0.334
 Luis Castillo,P,0,❌ Sin start,50.0,Sin start / No pitcher
-Logan Gilbert,BN,1,➡️ Simple,46.3,2026-05-22 vs Kansas City Royals (🟡 Normal) wOBA:0.311
-Merrill Kelly,BN,1,➡️ Simple,88.1,2026-05-20 vs San Francisco Giants (🟢 Fácil) wOBA:0.296
+Logan Gilbert,P,1,➡️ Simple,47.0,2026-05-22 vs Kansas City Royals (🟡 Normal) wOBA:0.309
+Max Meyer,BN,2,⭐ DOBLE,33.8,2026-05-18 vs Atlanta Braves (🔴 Difícil) wOBA:0.340 | 2026-05-23 vs New York Mets (🟡 Normal) wOBA:0.292
+Michael Soroka,BN,1,➡️ Simple,84.7,2026-05-22 vs Colorado Rockies (🟢 Fácil) wOBA:0.310
