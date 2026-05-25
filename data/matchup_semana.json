@@ -1,49 +1,49 @@
 {
-  "semana": 9,
-  "oponente": "+ Fe que talento",
-  "oponente_id": 8,
-  "week_start": "2026-05-18",
-  "week_end": "2026-05-24",
+  "semana": 10,
+  "oponente": "Team Frank Yankee",
+  "oponente_id": 2,
+  "week_start": "2026-05-25",
+  "week_end": "2026-05-31",
   "mis_bat": {
     "equipo": "Dando Tabla",
     "jugadores": 12,
     "HR_avg": 7.2,
-    "OPS": 0.724,
-    "wOBA": 0.322,
-    "xwOBA": 0.336,
+    "OPS": 0.721,
+    "wOBA": 0.321,
+    "xwOBA": 0.335,
     "EV": 89.7,
-    "Barrel%": 9.4
+    "Barrel%": 9.3
   },
   "opp_bat": {
-    "equipo": "+ Fe que talento",
-    "jugadores": 17,
-    "HR_avg": 5.4,
-    "OPS": 0.766,
-    "wOBA": 0.339,
-    "xwOBA": 0.331,
-    "EV": 90.1,
-    "Barrel%": 10.3
+    "equipo": "Team Frank Yankee",
+    "jugadores": 12,
+    "HR_avg": 7.4,
+    "OPS": 0.77,
+    "wOBA": 0.342,
+    "xwOBA": 0.348,
+    "EV": 90.0,
+    "Barrel%": 10.8
   },
   "mis_pit": {
     "equipo": "Dando Tabla",
     "jugadores": 10,
-    "ERA": 3.87,
-    "xERA": 3.8,
-    "Ks": 38.8,
-    "xwOBA": 0.298,
+    "ERA": 3.84,
+    "xERA": 3.75,
+    "Ks": 39.6,
+    "xwOBA": 0.297,
     "EV_against": 89.2
   },
   "opp_pit": {
-    "equipo": "+ Fe que talento",
-    "jugadores": 11,
-    "ERA": 2.78,
-    "xERA": 3.23,
-    "Ks": 46.4,
-    "xwOBA": 0.286,
-    "EV_against": 88.9
+    "equipo": "Team Frank Yankee",
+    "jugadores": 12,
+    "ERA": 2.75,
+    "xERA": 3.91,
+    "Ks": 40.5,
+    "xwOBA": 0.311,
+    "EV_against": 88.0
   },
-  "prob_ganar": 46.6,
-  "prob_perder": 53.4,
-  "odds_ganar": "+115",
-  "odds_perder": "-115"
+  "prob_ganar": 47.2,
+  "prob_perder": 52.8,
+  "odds_ganar": "+112",
+  "odds_perder": "-112"
 }
