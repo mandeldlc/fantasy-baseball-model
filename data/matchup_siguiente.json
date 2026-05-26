@@ -7,40 +7,40 @@
   "mis_bat": {
     "equipo": "Dando Tabla",
     "jugadores": 12,
-    "HR_avg": 7.2,
-    "OPS": 0.721,
-    "wOBA": 0.321,
-    "xwOBA": 0.335,
+    "HR_avg": 7.3,
+    "OPS": 0.717,
+    "wOBA": 0.32,
+    "xwOBA": 0.332,
     "EV": 89.7,
-    "Barrel%": 9.3
+    "Barrel%": 9.1
   },
   "opp_bat": {
     "equipo": "Los Calvoneros unidos",
     "jugadores": 11,
-    "HR_avg": 7.3,
-    "OPS": 0.813,
-    "wOBA": 0.359,
-    "xwOBA": 0.35,
-    "EV": 90.5,
-    "Barrel%": 10.3
+    "HR_avg": 7.8,
+    "OPS": 0.772,
+    "wOBA": 0.343,
+    "xwOBA": 0.356,
+    "EV": 90.8,
+    "Barrel%": 11.3
   },
   "mis_pit": {
     "equipo": "Dando Tabla",
     "jugadores": 10,
-    "ERA": 3.84,
-    "xERA": 3.75,
-    "Ks": 39.6,
-    "xwOBA": 0.297,
-    "EV_against": 89.2
+    "ERA": 3.78,
+    "xERA": 3.67,
+    "Ks": 41.5,
+    "xwOBA": 0.296,
+    "EV_against": 89.1
   },
   "opp_pit": {
     "equipo": "Los Calvoneros unidos",
     "jugadores": 12,
-    "ERA": 3.49,
-    "xERA": 3.54,
-    "Ks": 50.9,
+    "ERA": 3.47,
+    "xERA": 3.53,
+    "Ks": 52.8,
     "xwOBA": 0.296,
-    "EV_against": 88.9
+    "EV_against": 88.8
   },
   "prob_ganar": 47.8,
   "prob_perder": 52.2,
