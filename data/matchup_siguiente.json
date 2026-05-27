@@ -27,7 +27,7 @@
   "mis_pit": {
     "equipo": "Dando Tabla",
     "jugadores": 10,
-    "ERA": 3.78,
+    "ERA": 3.75,
     "xERA": 3.67,
     "Ks": 41.5,
     "xwOBA": 0.296,
@@ -36,14 +36,14 @@
   "opp_pit": {
     "equipo": "Los Calvoneros unidos",
     "jugadores": 12,
-    "ERA": 3.47,
-    "xERA": 3.53,
+    "ERA": 3.21,
+    "xERA": 3.61,
     "Ks": 52.8,
-    "xwOBA": 0.296,
-    "EV_against": 88.8
+    "xwOBA": 0.299,
+    "EV_against": 88.7
   },
-  "prob_ganar": 47.8,
-  "prob_perder": 52.2,
-  "odds_ganar": "+109",
-  "odds_perder": "-109"
+  "prob_ganar": 47.5,
+  "prob_perder": 52.5,
+  "odds_ganar": "+111",
+  "odds_perder": "-111"
 }

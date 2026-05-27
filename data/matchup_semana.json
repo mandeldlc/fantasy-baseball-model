@@ -27,7 +27,7 @@
   "mis_pit": {
     "equipo": "Dando Tabla",
     "jugadores": 10,
-    "ERA": 3.78,
+    "ERA": 3.75,
     "xERA": 3.67,
     "Ks": 41.5,
     "xwOBA": 0.296,
@@ -36,14 +36,14 @@
   "opp_pit": {
     "equipo": "Team Frank Yankee",
     "jugadores": 12,
-    "ERA": 2.89,
+    "ERA": 2.92,
     "xERA": 3.94,
-    "Ks": 42.4,
+    "Ks": 43.0,
     "xwOBA": 0.312,
     "EV_against": 88.0
   },
-  "prob_ganar": 47.7,
-  "prob_perder": 52.3,
-  "odds_ganar": "+110",
-  "odds_perder": "-110"
+  "prob_ganar": 47.8,
+  "prob_perder": 52.2,
+  "odds_ganar": "+109",
+  "odds_perder": "-109"
 }
