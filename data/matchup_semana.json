@@ -7,43 +7,43 @@
   "mis_bat": {
     "equipo": "Dando Tabla",
     "jugadores": 12,
-    "HR_avg": 7.3,
-    "OPS": 0.717,
-    "wOBA": 0.32,
+    "HR_avg": 7.6,
+    "OPS": 0.722,
+    "wOBA": 0.321,
     "xwOBA": 0.332,
     "EV": 89.7,
-    "Barrel%": 9.1
+    "Barrel%": 9.2
   },
   "opp_bat": {
     "equipo": "Team Frank Yankee",
     "jugadores": 13,
-    "HR_avg": 7.3,
-    "OPS": 0.777,
-    "wOBA": 0.345,
-    "xwOBA": 0.352,
-    "EV": 90.2,
+    "HR_avg": 7.4,
+    "OPS": 0.776,
+    "wOBA": 0.343,
+    "xwOBA": 0.351,
+    "EV": 90.1,
     "Barrel%": 10.9
   },
   "mis_pit": {
     "equipo": "Dando Tabla",
     "jugadores": 10,
     "ERA": 3.75,
-    "xERA": 3.67,
+    "xERA": 3.69,
     "Ks": 41.5,
     "xwOBA": 0.296,
     "EV_against": 89.1
   },
   "opp_pit": {
     "equipo": "Team Frank Yankee",
-    "jugadores": 12,
-    "ERA": 2.92,
-    "xERA": 3.94,
-    "Ks": 43.0,
-    "xwOBA": 0.312,
-    "EV_against": 88.0
+    "jugadores": 13,
+    "ERA": 3.25,
+    "xERA": 3.92,
+    "Ks": 40.1,
+    "xwOBA": 0.311,
+    "EV_against": 88.3
   },
-  "prob_ganar": 47.8,
-  "prob_perder": 52.2,
-  "odds_ganar": "+109",
-  "odds_perder": "-109"
+  "prob_ganar": 48.6,
+  "prob_perder": 51.4,
+  "odds_ganar": "+106",
+  "odds_perder": "-106"
 }
