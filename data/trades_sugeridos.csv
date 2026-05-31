@@ -1,37 +1,37 @@
 oponente,pedir,categoria_pedir,valor_pedir,mi_debilidad,mis_fortalezas,tipo
-LOS GORDITOS DAD & JR 2026 MLB,Cade Smith,K,39.0,42.6,"ERA, WHIP",Pitcher
-Los Calvoneros unidos,Matthew Boyd,K,31.0,42.6,"ERA, NSV",Pitcher
-LOS GORDITOS DAD & JR 2026 MLB,Devin Williams,K,28.0,42.6,"ERA, WHIP",Pitcher
-Team Frank Yankee,David Bednar,K,28.0,42.6,W,Pitcher
-Los Calvoneros unidos,Ryne Stanek,K,28.0,42.6,"ERA, NSV",Pitcher
-Team Frank Yankee,Jhoan Duran,K,26.0,42.6,W,Pitcher
-THE PUNISHER X,Garrett Whitlock,K,25.0,42.6,ERA,Pitcher
-Los Calvoneros unidos,Trevor Megill,K,23.0,42.6,"ERA, NSV",Pitcher
-LOS GORDITOS DAD & JR 2026 MLB,Kyle Schwarber,HR,21.0,7.417,SB,Bateador
+LOS GORDITOS DAD & JR 2026 MLB,Cade Smith,K,42.0,44.1,ERA,Pitcher
+Los Calvoneros unidos,Matthew Boyd,K,31.0,44.1,"W, ERA, NSV",Pitcher
+Los Calvoneros unidos,Ryne Stanek,K,29.0,44.1,"W, ERA, NSV",Pitcher
+LOS GORDITOS DAD & JR 2026 MLB,Devin Williams,K,29.0,44.1,ERA,Pitcher
+Team Frank Yankee,David Bednar,K,28.0,44.1,W,Pitcher
+Team Frank Yankee,Jhoan Duran,K,26.0,44.1,W,Pitcher
+Los Calvoneros unidos,Trevor Megill,K,25.0,44.1,"W, ERA, NSV",Pitcher
+THE PUNISHER X,Garrett Whitlock,K,25.0,44.1,ERA,Pitcher
+LOS GORDITOS DAD & JR 2026 MLB,Kyle Schwarber,HR,22.0,7.417,SB,Bateador
 LOS GORDITOS DAD & JR 2026 MLB,Munetaka Murakami,HR,20.0,7.417,SB,Bateador
-THE PUNISHER X,José Ramírez,SB,20.0,4.167,N/A,Bateador
+THE PUNISHER X,José Ramírez,SB,20.0,4.333,N/A,Bateador
 Los Inmensos Amos BT,Yordan Alvarez,HR,20.0,7.417,RBI,Bateador
-THE PUNISHER X,Nick Lodolo,K,18.0,42.6,ERA,Pitcher
-+ Fe que talento,Oneil Cruz,SB,17.0,4.167,"R, HR, RBI",Bateador
-Los Inmensos Amos BT,Ben Rice,HR,16.0,7.417,RBI,Bateador
-THE PUNISHER X,Jakob Marsee,SB,14.0,4.167,N/A,Bateador
-+ Fe que talento,José Caballero,SB,13.0,4.167,"R, HR, RBI",Bateador
-Los Inmensos Amos BT,Gunnar Henderson,HR,13.0,7.417,RBI,Bateador
-Team Frank Yankee,Gerrit Cole,K,12.0,42.6,W,Pitcher
++ Fe que talento,Oneil Cruz,SB,19.0,4.333,"R, HR, RBI",Bateador
+THE PUNISHER X,Nick Lodolo,K,18.0,44.1,ERA,Pitcher
+Los Inmensos Amos BT,Ben Rice,HR,17.0,7.417,RBI,Bateador
+THE PUNISHER X,Jakob Marsee,SB,14.0,4.333,N/A,Bateador
++ Fe que talento,José Caballero,SB,13.0,4.333,"R, HR, RBI",Bateador
+Los Inmensos Amos BT,Max Muncy,HR,13.0,7.417,RBI,Bateador
+Team Frank Yankee,Gerrit Cole,K,12.0,44.1,W,Pitcher
 LOS GORDITOS DAD & JR 2026 MLB,CJ Abrams,HR,12.0,7.417,SB,Bateador
-THE PUNISHER X,Trea Turner,SB,11.0,4.167,N/A,Bateador
-LOS GORDITOS DAD & JR 2026 MLB,Edwin Díaz,K,10.0,42.6,"ERA, WHIP",Pitcher
-+ Fe que talento,Bryson Stott,SB,10.0,4.167,"R, HR, RBI",Bateador
-THE PUNISHER X,Cody Ponce,K,3.0,42.6,ERA,Pitcher
-Los Inmensos Amos BT,Yordan Alvarez,SLG,0.654,0.4,RBI,Bateador
-Los Inmensos Amos BT,Ben Rice,SLG,0.623,0.4,RBI,Bateador
-Los Inmensos Amos BT,Bryce Harper,SLG,0.523,0.4,RBI,Bateador
-Team Frank Yankee,Ranger Suarez,NSV,0.0,2.0,W,Pitcher
-A.Rod Gangs,Will Warren,NSV,0.0,2.0,N/A,Pitcher
-A.Rod Gangs,Cole Ragans,NSV,0.0,2.0,N/A,Pitcher
-A.Rod Gangs,Nick Pivetta,NSV,0.0,2.0,N/A,Pitcher
-Team Frank Yankee,Cristopher Sánchez,NSV,0.0,2.0,W,Pitcher
-Team Frank Yankee,Dustin May,NSV,0.0,2.0,W,Pitcher
-LOS GORDITOS DAD & JR 2026 MLB,Parker Messick,NSV,0.0,2.0,"ERA, WHIP",Pitcher
-LOS GORDITOS DAD & JR 2026 MLB,Tyler Glasnow,NSV,0.0,2.0,"ERA, WHIP",Pitcher
-LOS GORDITOS DAD & JR 2026 MLB,Chris Sale,NSV,0.0,2.0,"ERA, WHIP",Pitcher
+THE PUNISHER X,Trea Turner,SB,11.0,4.333,N/A,Bateador
+LOS GORDITOS DAD & JR 2026 MLB,Edwin Díaz,K,10.0,44.1,ERA,Pitcher
++ Fe que talento,Bryson Stott,SB,10.0,4.333,"R, HR, RBI",Bateador
+THE PUNISHER X,Cody Ponce,K,3.0,44.1,ERA,Pitcher
+Los Inmensos Amos BT,Ben Rice,SLG,0.654,0.4,RBI,Bateador
+Los Inmensos Amos BT,Yordan Alvarez,SLG,0.641,0.4,RBI,Bateador
+Los Inmensos Amos BT,Yandy Díaz,SLG,0.523,0.4,RBI,Bateador
+Team Frank Yankee,Freddy Peralta,NSV,0.0,2.1,W,Pitcher
+A.Rod Gangs,Nick Pivetta,NSV,0.0,2.1,N/A,Pitcher
+A.Rod Gangs,Cole Ragans,NSV,0.0,2.1,N/A,Pitcher
+A.Rod Gangs,Jacob deGrom,NSV,0.0,2.1,N/A,Pitcher
+Team Frank Yankee,Ranger Suarez,NSV,0.0,2.1,W,Pitcher
+Team Frank Yankee,Jack Leiter,NSV,0.0,2.1,W,Pitcher
+LOS GORDITOS DAD & JR 2026 MLB,Parker Messick,NSV,0.0,2.1,ERA,Pitcher
+LOS GORDITOS DAD & JR 2026 MLB,Clay Holmes,NSV,0.0,2.1,ERA,Pitcher
+LOS GORDITOS DAD & JR 2026 MLB,Jesús Luzardo,NSV,0.0,2.1,ERA,Pitcher
