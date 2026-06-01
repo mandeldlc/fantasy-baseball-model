@@ -1,11 +1,11 @@
 "last_name, first_name",player_id,year,p_game,p_formatted_ip,p_win,p_loss,p_strikeout,p_walk,hit,p_era,p_save,xera,xba,xslg,xwoba,exit_velocity_avg,barrel_batted_rate,p_whip,last_name,first_name,Name,xera_pred_2026
-"Fairbanks, Pete",664126,2026,16,14.1,2,3,21,7,13,7.53,6,3.29,0.182,0.376,0.289,93.7,15.2,1.418,Fairbanks,Pete,Pete Fairbanks,3.27
-"Yesavage, Trey",702056,2026,7,37.0,2,2,39,17,24,2.19,0,2.0,0.168,0.254,0.226,87.4,3.7,1.108,Yesavage,Trey,Trey Yesavage,3.82
-"Kelly, Merrill",518876,2026,8,48.0,5,3,31,20,48,5.25,0,7.22,0.31,0.59,0.407,91.0,17.3,1.417,Kelly,Merrill,Merrill Kelly,5.15
-"Gilbert, Logan",669302,2026,12,68.1,3,4,69,16,60,3.69,0,3.96,0.252,0.422,0.315,90.7,10.6,1.116,Gilbert,Logan,Logan Gilbert,4.52
-"Rodón, Carlos",607074,2026,4,19.0,1,2,20,13,12,3.32,0,3.15,0.174,0.27,0.283,89.6,6.4,1.316,Rodón,Carlos,Carlos Rodón,6.76
-"Soto, Gregory",642397,2026,27,27.2,4,0,32,11,10,1.95,7,2.09,0.158,0.225,0.231,84.3,3.6,0.772,Soto,Gregory,Gregory Soto,4.08
-"Varland, Louis",686973,2026,28,31.0,2,1,42,9,23,0.29,8,1.71,0.183,0.211,0.208,86.2,0.0,1.032,Varland,Louis,Louis Varland,6.1
-"Castillo, Luis",622491,2026,11,50.1,1,5,53,20,56,5.9,0,5.22,0.274,0.462,0.356,91.9,11.2,1.517,Castillo,Luis,Luis Castillo,4.75
-"Meyer, Max",676974,2026,12,66.2,5,0,74,25,48,2.97,0,3.88,0.233,0.39,0.312,90.0,9.3,1.103,Meyer,Max,Max Meyer,4.49
-"Soroka, Michael",647336,2026,11,61.0,7,2,60,14,59,3.25,0,4.07,0.256,0.417,0.319,87.9,8.5,1.197,Soroka,Michael,Michael Soroka,4.79
+"Meyer, Max",676974,2026,12,66.2,5,0,74,25,48,2.97,0,3.88,0.234,0.39,0.312,90.0,9.3,1.103,Meyer,Max,Max Meyer,4.66
+"Fairbanks, Pete",664126,2026,16,14.1,2,3,21,7,13,7.53,6,3.29,0.182,0.376,0.289,93.7,15.2,1.418,Fairbanks,Pete,Pete Fairbanks,3.61
+"Gilbert, Logan",669302,2026,12,68.1,3,4,69,16,60,3.69,0,3.96,0.252,0.422,0.315,90.7,10.6,1.116,Gilbert,Logan,Logan Gilbert,4.62
+"Castillo, Luis",622491,2026,12,55.1,2,5,56,22,58,5.53,0,5.05,0.273,0.452,0.351,91.5,10.8,1.452,Castillo,Luis,Luis Castillo,4.59
+"Soto, Gregory",642397,2026,27,27.2,4,0,32,11,10,1.95,7,2.38,0.169,0.253,0.247,85.2,5.0,0.772,Soto,Gregory,Gregory Soto,3.92
+"Yesavage, Trey",702056,2026,7,37.0,2,2,39,17,26,2.19,0,2.48,0.177,0.263,0.252,87.6,3.3,1.162,Yesavage,Trey,Trey Yesavage,4.94
+"Soroka, Michael",647336,2026,11,61.0,7,2,60,14,59,3.25,0,4.07,0.256,0.417,0.319,87.9,8.5,1.197,Soroka,Michael,Michael Soroka,4.76
+"Rodón, Carlos",607074,2026,4,19.0,1,2,20,13,12,3.32,0,3.15,0.174,0.271,0.283,89.6,6.4,1.316,Rodón,Carlos,Carlos Rodón,3.77
+"Varland, Louis",686973,2026,28,31.0,2,1,42,9,23,0.29,8,1.8,0.187,0.224,0.214,86.7,1.4,1.032,Varland,Louis,Louis Varland,5.22
+"Kelly, Merrill",518876,2026,9,53.1,5,3,33,22,56,5.06,0,7.26,0.31,0.588,0.408,90.5,16.4,1.469,Kelly,Merrill,Merrill Kelly,5.21
