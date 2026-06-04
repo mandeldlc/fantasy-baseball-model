@@ -7,31 +7,31 @@
   "mis_bat": {
     "equipo": "Dando Tabla",
     "jugadores": 12,
-    "HR_avg": 8.0,
+    "HR_avg": 8.1,
     "OPS": 0.725,
     "wOBA": 0.322,
     "xwOBA": 0.332,
     "EV": 89.7,
-    "Barrel%": 8.8
+    "Barrel%": 8.7
   },
   "opp_bat": {
     "equipo": "Los Calvoneros unidos",
     "jugadores": 12,
-    "HR_avg": 8.6,
-    "OPS": 0.773,
+    "HR_avg": 8.8,
+    "OPS": 0.774,
     "wOBA": 0.341,
     "xwOBA": 0.356,
-    "EV": 90.3,
-    "Barrel%": 10.9
+    "EV": 90.2,
+    "Barrel%": 11.0
   },
   "mis_pit": {
     "equipo": "Dando Tabla",
     "jugadores": 10,
     "ERA": 3.56,
-    "xERA": 3.72,
+    "xERA": 3.73,
     "Ks": 46.3,
     "xwOBA": 0.298,
-    "EV_against": 89.3
+    "EV_against": 89.2
   },
   "opp_pit": {
     "equipo": "Los Calvoneros unidos",
@@ -42,8 +42,8 @@
     "xwOBA": 0.299,
     "EV_against": 88.9
   },
-  "prob_ganar": 49.9,
-  "prob_perder": 50.1,
-  "odds_ganar": "+100",
-  "odds_perder": "-100"
+  "prob_ganar": 49.8,
+  "prob_perder": 50.2,
+  "odds_ganar": "+101",
+  "odds_perder": "-101"
 }
