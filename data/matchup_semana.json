@@ -6,13 +6,13 @@
   "week_end": "2026-06-07",
   "mis_bat": {
     "equipo": "Dando Tabla",
-    "jugadores": 12,
-    "HR_avg": 8.1,
-    "OPS": 0.725,
-    "wOBA": 0.322,
-    "xwOBA": 0.332,
-    "EV": 89.7,
-    "Barrel%": 8.7
+    "jugadores": 11,
+    "HR_avg": 8.5,
+    "OPS": 0.723,
+    "wOBA": 0.321,
+    "xwOBA": 0.335,
+    "EV": 89.9,
+    "Barrel%": 8.9
   },
   "opp_bat": {
     "equipo": "Los Calvoneros unidos",
@@ -21,29 +21,29 @@
     "OPS": 0.774,
     "wOBA": 0.341,
     "xwOBA": 0.356,
-    "EV": 90.2,
-    "Barrel%": 11.0
+    "EV": 90.3,
+    "Barrel%": 10.9
   },
   "mis_pit": {
     "equipo": "Dando Tabla",
-    "jugadores": 10,
-    "ERA": 3.56,
-    "xERA": 3.73,
-    "Ks": 46.3,
-    "xwOBA": 0.298,
-    "EV_against": 89.2
+    "jugadores": 11,
+    "ERA": 3.73,
+    "xERA": 3.86,
+    "Ks": 46.1,
+    "xwOBA": 0.303,
+    "EV_against": 89.4
   },
   "opp_pit": {
     "equipo": "Los Calvoneros unidos",
     "jugadores": 12,
-    "ERA": 4.03,
-    "xERA": 3.7,
-    "Ks": 54.9,
-    "xwOBA": 0.299,
-    "EV_against": 88.9
+    "ERA": 3.38,
+    "xERA": 3.61,
+    "Ks": 49.7,
+    "xwOBA": 0.296,
+    "EV_against": 86.9
   },
-  "prob_ganar": 49.8,
-  "prob_perder": 50.2,
-  "odds_ganar": "+101",
-  "odds_perder": "-101"
+  "prob_ganar": 47.9,
+  "prob_perder": 52.1,
+  "odds_ganar": "+109",
+  "odds_perder": "-109"
 }
