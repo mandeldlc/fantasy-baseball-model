@@ -8,42 +8,42 @@
     "equipo": "Dando Tabla",
     "jugadores": 11,
     "HR_avg": 8.5,
-    "OPS": 0.723,
-    "wOBA": 0.321,
-    "xwOBA": 0.335,
+    "OPS": 0.726,
+    "wOBA": 0.322,
+    "xwOBA": 0.336,
     "EV": 89.9,
     "Barrel%": 8.9
   },
   "opp_bat": {
     "equipo": "Everyone's terror",
     "jugadores": 13,
-    "HR_avg": 6.9,
-    "OPS": 0.713,
-    "wOBA": 0.314,
-    "xwOBA": 0.32,
-    "EV": 89.8,
-    "Barrel%": 10.6
+    "HR_avg": 6.6,
+    "OPS": 0.725,
+    "wOBA": 0.32,
+    "xwOBA": 0.325,
+    "EV": 89.4,
+    "Barrel%": 10.3
   },
   "mis_pit": {
     "equipo": "Dando Tabla",
     "jugadores": 11,
-    "ERA": 3.73,
-    "xERA": 3.86,
-    "Ks": 46.1,
-    "xwOBA": 0.303,
-    "EV_against": 89.4
+    "ERA": 3.88,
+    "xERA": 3.93,
+    "Ks": 46.9,
+    "xwOBA": 0.305,
+    "EV_against": 89.5
   },
   "opp_pit": {
     "equipo": "Everyone's terror",
     "jugadores": 10,
-    "ERA": 3.62,
-    "xERA": 3.96,
-    "Ks": 49.3,
-    "xwOBA": 0.311,
+    "ERA": 3.65,
+    "xERA": 4.0,
+    "Ks": 51.0,
+    "xwOBA": 0.312,
     "EV_against": 89.2
   },
-  "prob_ganar": 50.3,
-  "prob_perder": 49.7,
-  "odds_ganar": "-101",
-  "odds_perder": "+101"
+  "prob_ganar": 50.0,
+  "prob_perder": 50.0,
+  "odds_ganar": "-100",
+  "odds_perder": "-100"
 }
