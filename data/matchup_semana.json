@@ -1,49 +1,49 @@
 {
-  "semana": 11,
-  "oponente": "Los Calvoneros unidos",
-  "oponente_id": 9,
-  "week_start": "2026-06-01",
-  "week_end": "2026-06-07",
+  "semana": 12,
+  "oponente": "Everyone's terror",
+  "oponente_id": 7,
+  "week_start": "2026-06-08",
+  "week_end": "2026-06-14",
   "mis_bat": {
     "equipo": "Dando Tabla",
     "jugadores": 11,
-    "HR_avg": 8.5,
-    "OPS": 0.722,
-    "wOBA": 0.32,
-    "xwOBA": 0.334,
+    "HR_avg": 8.6,
+    "OPS": 0.719,
+    "wOBA": 0.319,
+    "xwOBA": 0.333,
     "EV": 89.9,
-    "Barrel%": 8.9
+    "Barrel%": 9.0
   },
   "opp_bat": {
-    "equipo": "Los Calvoneros unidos",
-    "jugadores": 12,
-    "HR_avg": 9.2,
-    "OPS": 0.773,
-    "wOBA": 0.34,
-    "xwOBA": 0.356,
-    "EV": 90.3,
-    "Barrel%": 11.0
+    "equipo": "Everyone's terror",
+    "jugadores": 13,
+    "HR_avg": 6.8,
+    "OPS": 0.717,
+    "wOBA": 0.316,
+    "xwOBA": 0.321,
+    "EV": 89.6,
+    "Barrel%": 10.2
   },
   "mis_pit": {
     "equipo": "Dando Tabla",
     "jugadores": 11,
-    "ERA": 3.88,
-    "xERA": 3.93,
-    "Ks": 46.9,
-    "xwOBA": 0.305,
-    "EV_against": 89.5
+    "ERA": 3.87,
+    "xERA": 3.88,
+    "Ks": 48.8,
+    "xwOBA": 0.303,
+    "EV_against": 89.4
   },
   "opp_pit": {
-    "equipo": "Los Calvoneros unidos",
-    "jugadores": 12,
-    "ERA": 3.43,
-    "xERA": 3.54,
-    "Ks": 50.0,
-    "xwOBA": 0.289,
-    "EV_against": 86.9
+    "equipo": "Everyone's terror",
+    "jugadores": 10,
+    "ERA": 3.64,
+    "xERA": 3.99,
+    "Ks": 52.7,
+    "xwOBA": 0.312,
+    "EV_against": 89.2
   },
-  "prob_ganar": 47.3,
-  "prob_perder": 52.7,
-  "odds_ganar": "+111",
-  "odds_perder": "-111"
+  "prob_ganar": 50.0,
+  "prob_perder": 50.0,
+  "odds_ganar": "-100",
+  "odds_perder": "-100"
 }
