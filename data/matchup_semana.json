@@ -7,7 +7,7 @@
   "mis_bat": {
     "equipo": "Dando Tabla",
     "jugadores": 11,
-    "HR_avg": 8.8,
+    "HR_avg": 8.9,
     "OPS": 0.72,
     "wOBA": 0.319,
     "xwOBA": 0.332,
@@ -17,10 +17,10 @@
   "opp_bat": {
     "equipo": "Everyone's terror",
     "jugadores": 14,
-    "HR_avg": 6.8,
-    "OPS": 0.715,
-    "wOBA": 0.315,
-    "xwOBA": 0.321,
+    "HR_avg": 6.9,
+    "OPS": 0.719,
+    "wOBA": 0.316,
+    "xwOBA": 0.322,
     "EV": 89.8,
     "Barrel%": 10.0
   },
@@ -28,22 +28,22 @@
     "equipo": "Dando Tabla",
     "jugadores": 11,
     "ERA": 3.87,
-    "xERA": 3.88,
+    "xERA": 3.89,
     "Ks": 48.8,
-    "xwOBA": 0.303,
-    "EV_against": 89.4
+    "xwOBA": 0.304,
+    "EV_against": 89.3
   },
   "opp_pit": {
     "equipo": "Everyone's terror",
     "jugadores": 11,
     "ERA": 3.79,
-    "xERA": 4.13,
+    "xERA": 4.17,
     "Ks": 51.8,
-    "xwOBA": 0.316,
-    "EV_against": 89.3
+    "xwOBA": 0.318,
+    "EV_against": 89.4
   },
-  "prob_ganar": 50.7,
-  "prob_perder": 49.3,
+  "prob_ganar": 50.8,
+  "prob_perder": 49.2,
   "odds_ganar": "-103",
   "odds_perder": "+103"
 }

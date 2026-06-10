@@ -7,7 +7,7 @@
   "mis_bat": {
     "equipo": "Dando Tabla",
     "jugadores": 11,
-    "HR_avg": 8.8,
+    "HR_avg": 8.9,
     "OPS": 0.72,
     "wOBA": 0.319,
     "xwOBA": 0.332,
@@ -17,30 +17,30 @@
   "opp_bat": {
     "equipo": "A.Rod Gangs",
     "jugadores": 11,
-    "HR_avg": 9.8,
-    "OPS": 0.797,
-    "wOBA": 0.348,
+    "HR_avg": 10.0,
+    "OPS": 0.794,
+    "wOBA": 0.347,
     "xwOBA": 0.34,
     "EV": 89.7,
-    "Barrel%": 11.2
+    "Barrel%": 11.1
   },
   "mis_pit": {
     "equipo": "Dando Tabla",
     "jugadores": 11,
     "ERA": 3.87,
-    "xERA": 3.88,
+    "xERA": 3.89,
     "Ks": 48.8,
-    "xwOBA": 0.303,
-    "EV_against": 89.4
+    "xwOBA": 0.304,
+    "EV_against": 89.3
   },
   "opp_pit": {
     "equipo": "A.Rod Gangs",
     "jugadores": 12,
     "ERA": 3.28,
-    "xERA": 3.47,
+    "xERA": 3.48,
     "Ks": 47.8,
-    "xwOBA": 0.289,
-    "EV_against": 88.9
+    "xwOBA": 0.29,
+    "EV_against": 88.8
   },
   "prob_ganar": 47.1,
   "prob_perder": 52.9,
