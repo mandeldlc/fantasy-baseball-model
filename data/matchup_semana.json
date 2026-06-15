@@ -1,49 +1,49 @@
 {
-  "semana": 12,
-  "oponente": "Everyone's terror",
-  "oponente_id": 7,
-  "week_start": "2026-06-08",
-  "week_end": "2026-06-14",
+  "semana": 13,
+  "oponente": "A.Rod Gangs",
+  "oponente_id": 3,
+  "week_start": "2026-06-15",
+  "week_end": "2026-06-21",
   "mis_bat": {
     "equipo": "Dando Tabla",
     "jugadores": 11,
-    "HR_avg": 8.5,
+    "HR_avg": 8.8,
     "OPS": 0.728,
     "wOBA": 0.322,
-    "xwOBA": 0.334,
-    "EV": 90.2,
-    "Barrel%": 8.9
+    "xwOBA": 0.332,
+    "EV": 90.1,
+    "Barrel%": 8.8
   },
   "opp_bat": {
-    "equipo": "Everyone's terror",
-    "jugadores": 14,
-    "HR_avg": 7.1,
-    "OPS": 0.717,
-    "wOBA": 0.315,
-    "xwOBA": 0.319,
-    "EV": 89.8,
-    "Barrel%": 9.6
+    "equipo": "A.Rod Gangs",
+    "jugadores": 11,
+    "HR_avg": 11.0,
+    "OPS": 0.798,
+    "wOBA": 0.347,
+    "xwOBA": 0.338,
+    "EV": 89.7,
+    "Barrel%": 11.4
   },
   "mis_pit": {
     "equipo": "Dando Tabla",
     "jugadores": 11,
-    "ERA": 3.76,
+    "ERA": 3.78,
     "xERA": 3.94,
-    "Ks": 50.9,
+    "Ks": 54.0,
     "xwOBA": 0.306,
-    "EV_against": 89.0
+    "EV_against": 88.9
   },
   "opp_pit": {
-    "equipo": "Everyone's terror",
+    "equipo": "A.Rod Gangs",
     "jugadores": 12,
-    "ERA": 3.96,
-    "xERA": 4.21,
-    "Ks": 53.9,
-    "xwOBA": 0.318,
-    "EV_against": 89.4
+    "ERA": 3.25,
+    "xERA": 3.47,
+    "Ks": 51.2,
+    "xwOBA": 0.289,
+    "EV_against": 88.7
   },
-  "prob_ganar": 51.4,
-  "prob_perder": 48.6,
-  "odds_ganar": "-106",
-  "odds_perder": "+106"
+  "prob_ganar": 47.0,
+  "prob_perder": 53.0,
+  "odds_ganar": "+113",
+  "odds_perder": "-113"
 }
