@@ -1,5 +1,5 @@
 Name,Pos,Starts,Doble_Start,Favorabilidad,Oponentes
-Salvador Perez,C,0,❌ Sin start,50.0,Sin start / No pitcher
+Gabriel Moreno,C,0,❌ Sin start,50.0,Sin start / No pitcher
 Josh Naylor,1B,0,❌ Sin start,50.0,Sin start / No pitcher
 Nico Hoerner,2B,0,❌ Sin start,50.0,Sin start / No pitcher
 Junior Caminero,3B,0,❌ Sin start,50.0,Sin start / No pitcher
@@ -11,13 +11,13 @@ Michael Harris II,Util,0,❌ Sin start,50.0,Sin start / No pitcher
 Bo Bichette,Util,0,❌ Sin start,50.0,Sin start / No pitcher
 Blaze Alexander,BN,0,❌ Sin start,50.0,Sin start / No pitcher
 Trey Yesavage,SP,0,❌ Sin start,50.0,Sin start / No pitcher
-Max Meyer,SP,0,❌ Sin start,50.0,Sin start / No pitcher
+Merrill Kelly,SP,1,➡️ Simple,40.3,2026-06-16 vs Los Angeles Angels (🟡 Normal) wOBA:0.315
 Gregory Soto,RP,0,❌ Sin start,50.0,Sin start / No pitcher
 Pete Fairbanks,RP,0,❌ Sin start,50.0,Sin start / No pitcher
 Louis Varland,P,0,❌ Sin start,50.0,Sin start / No pitcher
-Carlos Rodón,P,1,➡️ Simple,26.1,2026-06-17 vs Chicago White Sox (🔴 Difícil) wOBA:0.326
+Carlos Rodón,P,1,➡️ Simple,26.2,2026-06-17 vs Chicago White Sox (🔴 Difícil) wOBA:0.326
 Griffin Jax,P,0,❌ Sin start,50.0,Sin start / No pitcher
-Michael Soroka,P,0,❌ Sin start,50.0,Sin start / No pitcher
+Logan Gilbert,P,1,➡️ Simple,27.1,2026-06-16 vs Baltimore Orioles (🔴 Difícil) wOBA:0.323
+Max Meyer,BN,0,❌ Sin start,50.0,Sin start / No pitcher
+Michael Soroka,BN,0,❌ Sin start,50.0,Sin start / No pitcher
 Luis Castillo,BN,0,❌ Sin start,50.0,Sin start / No pitcher
-Logan Gilbert,BN,1,➡️ Simple,27.0,2026-06-16 vs Baltimore Orioles (🔴 Difícil) wOBA:0.323
-Merrill Kelly,BN,1,➡️ Simple,41.1,2026-06-16 vs Los Angeles Angels (🟡 Normal) wOBA:0.315

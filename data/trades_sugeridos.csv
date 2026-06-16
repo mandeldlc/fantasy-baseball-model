@@ -1,49 +1,46 @@
 oponente,pedir,categoria_pedir,valor_pedir,mi_debilidad,mis_fortalezas,tipo
 LOS GORDITOS DAD & JR 2026 MLB,Clay Holmes,K,45.0,54.0,N/A,Pitcher
-THE PUNISHER X,Hunter Goodman,R,44.0,33.545,N/A,Bateador
-THE PUNISHER X,Corbin Carroll,R,43.0,33.545,N/A,Bateador
-THE PUNISHER X,Andy Pages,R,42.0,33.545,N/A,Bateador
+THE PUNISHER X,Hunter Goodman,R,45.0,33.636,N/A,Bateador
+THE PUNISHER X,Corbin Carroll,R,44.0,33.636,N/A,Bateador
+THE PUNISHER X,Andy Pages,R,42.0,33.636,N/A,Bateador
 LOS GORDITOS DAD & JR 2026 MLB,Devin Williams,K,37.0,54.0,N/A,Pitcher
 Team Frank Yankee,David Bednar,K,36.0,54.0,W,Pitcher
 Team Frank Yankee,Jhoan Duran,K,35.0,54.0,W,Pitcher
-THE PUNISHER X,Nick Lodolo,K,30.0,54.0,ERA,Pitcher
-THE PUNISHER X,Garrett Whitlock,K,27.0,54.0,ERA,Pitcher
-LOS GORDITOS DAD & JR 2026 MLB,Kyle Schwarber,HR,24.0,8.818,SB,Bateador
-Inmesitas Monas,Yordan Alvarez,HR,24.0,8.818,SB,Bateador
-THE PUNISHER X,José Ramírez,SB,24.0,5.909,N/A,Bateador
-A.Rod Gangs,Byron Buxton,HR,22.0,8.818,SB,Bateador
-+ MONA QUE FE,Oneil Cruz,SB,21.0,5.909,"R, HR, RBI",Bateador
-LOS GORDITOS DAD & JR 2026 MLB,Munetaka Murakami,HR,20.0,8.818,SB,Bateador
-Inmesitas Monas,Ben Rice,HR,19.0,8.818,SB,Bateador
+THE PUNISHER X,Nick Lodolo,K,30.0,54.0,N/A,Pitcher
+THE PUNISHER X,Garrett Whitlock,K,27.0,54.0,N/A,Pitcher
+LOS GORDITOS DAD & JR 2026 MLB,Kyle Schwarber,HR,24.0,8.636,SB,Bateador
+Inmesitas Monas,Yordan Alvarez,HR,24.0,8.636,SB,Bateador
+THE PUNISHER X,José Ramírez,SB,24.0,6.273,N/A,Bateador
+A.Rod Gangs,Byron Buxton,HR,23.0,8.636,SB,Bateador
++ MONA QUE FE,Oneil Cruz,SB,21.0,6.273,"R, HR, RBI",Bateador
+LOS GORDITOS DAD & JR 2026 MLB,Munetaka Murakami,HR,20.0,8.636,SB,Bateador
+Inmesitas Monas,Ben Rice,HR,19.0,8.636,SB,Bateador
+B-Strong,Shea Langeliers,HR,18.0,8.636,SB,Bateador
+A.Rod Gangs,Christian Walker,HR,18.0,8.636,SB,Bateador
+B-Strong,Nick Kurtz,HR,18.0,8.636,SB,Bateador
 Team Frank Yankee,Gerrit Cole,K,18.0,54.0,W,Pitcher
-A.Rod Gangs,Christian Walker,HR,18.0,8.818,SB,Bateador
-THE PUNISHER X,Jakob Marsee,SB,17.0,5.909,N/A,Bateador
-Inmesitas Monas,Max Muncy,HR,16.0,8.818,SB,Bateador
-LOS GORDITOS DAD & JR 2026 MLB,Pete Alonso,HR,16.0,8.818,SB,Bateador
-+ MONA QUE FE,José Caballero,SB,15.0,5.909,"R, HR, RBI",Bateador
-THE PUNISHER X,Trea Turner,SB,14.0,5.909,N/A,Bateador
-A.Rod Gangs,Luke Raley,HR,14.0,8.818,SB,Bateador
-+ MONA QUE FE,Bryson Stott,SB,12.0,5.909,"R, HR, RBI",Bateador
+THE PUNISHER X,Jakob Marsee,SB,17.0,6.273,N/A,Bateador
+Inmesitas Monas,Max Muncy,HR,16.0,8.636,SB,Bateador
+LOS GORDITOS DAD & JR 2026 MLB,Pete Alonso,HR,16.0,8.636,SB,Bateador
+B-Strong,Kazuma Okamoto,HR,15.0,8.636,SB,Bateador
++ MONA QUE FE,José Caballero,SB,15.0,6.273,"R, HR, RBI",Bateador
+THE PUNISHER X,Trea Turner,SB,14.0,6.273,N/A,Bateador
+A.Rod Gangs,Luke Raley,HR,14.0,8.636,SB,Bateador
++ MONA QUE FE,Bryson Stott,SB,12.0,6.273,"R, HR, RBI",Bateador
 LOS GORDITOS DAD & JR 2026 MLB,Edwin Díaz,K,10.0,54.0,N/A,Pitcher
-THE PUNISHER X,Cody Ponce,K,3.0,54.0,ERA,Pitcher
+THE PUNISHER X,Cody Ponce,K,3.0,54.0,N/A,Pitcher
 A.Rod Gangs,Emilio Pagán,W,2.0,3.818,N/A,Pitcher
 A.Rod Gangs,Cole Ragans,W,1.0,3.818,N/A,Pitcher
 A.Rod Gangs,Nick Pivetta,W,1.0,3.818,N/A,Pitcher
-Inmesitas Monas,Yordan Alvarez,SLG,0.651,0.406,SB,Bateador
-Inmesitas Monas,Ben Rice,SLG,0.611,0.406,SB,Bateador
-A.Rod Gangs,Byron Buxton,SLG,0.6,0.406,SB,Bateador
-A.Rod Gangs,Jackson Chourio,SLG,0.572,0.406,SB,Bateador
-A.Rod Gangs,Drake Baldwin,SLG,0.543,0.406,SB,Bateador
-Inmesitas Monas,Max Muncy,SLG,0.532,0.406,SB,Bateador
-Inmesitas Monas,Yordan Alvarez,OBP,0.433,0.322,SB,Bateador
-Inmesitas Monas,Yandy Díaz,OBP,0.399,0.322,SB,Bateador
-Inmesitas Monas,Ben Rice,OBP,0.387,0.322,SB,Bateador
-Team Frank Yankee,Ranger Suarez,NSV,0.0,2.818,W,Pitcher
-Team Frank Yankee,Freddy Peralta,NSV,0.0,2.818,W,Pitcher
+Inmesitas Monas,Yordan Alvarez,SLG,0.653,0.417,SB,Bateador
+Inmesitas Monas,Ben Rice,SLG,0.611,0.417,SB,Bateador
+Inmesitas Monas,Max Muncy,SLG,0.53,0.417,SB,Bateador
 Team Frank Yankee,Dustin May,NSV,0.0,2.818,W,Pitcher
-A.Rod Gangs,Will Warren,NSV,0.0,2.818,N/A,Pitcher
-A.Rod Gangs,MacKenzie Gore,NSV,0.0,2.818,N/A,Pitcher
-A.Rod Gangs,Nick Pivetta,NSV,0.0,2.818,N/A,Pitcher
-LOS GORDITOS DAD & JR 2026 MLB,Parker Messick,NSV,0.0,2.818,N/A,Pitcher
+Team Frank Yankee,Gerrit Cole,NSV,0.0,2.818,W,Pitcher
+Team Frank Yankee,Freddy Peralta,NSV,0.0,2.818,W,Pitcher
 LOS GORDITOS DAD & JR 2026 MLB,Jack Flaherty,NSV,0.0,2.818,N/A,Pitcher
-LOS GORDITOS DAD & JR 2026 MLB,Tanner Bibee,NSV,0.0,2.818,N/A,Pitcher
+A.Rod Gangs,José Soriano,NSV,0.0,2.818,N/A,Pitcher
+A.Rod Gangs,Jacob deGrom,NSV,0.0,2.818,N/A,Pitcher
+LOS GORDITOS DAD & JR 2026 MLB,Clay Holmes,NSV,0.0,2.818,N/A,Pitcher
+A.Rod Gangs,Sonny Gray,NSV,0.0,2.818,N/A,Pitcher
+LOS GORDITOS DAD & JR 2026 MLB,Jesús Luzardo,NSV,0.0,2.818,N/A,Pitcher
