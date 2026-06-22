@@ -1,49 +1,49 @@
 {
-  "semana": 14,
-  "oponente": "B-Strong",
-  "oponente_id": 5,
-  "week_start": "2026-06-22",
-  "week_end": "2026-06-28",
+  "semana": 15,
+  "oponente": "LOS GORDITOS DAD & JR 2026 MLB",
+  "oponente_id": 4,
+  "week_start": "2026-06-29",
+  "week_end": "2026-07-05",
   "mis_bat": {
     "equipo": "Dando Tabla",
     "jugadores": 11,
-    "HR_avg": 10.1,
+    "HR_avg": 10.4,
     "OPS": 0.748,
-    "wOBA": 0.329,
-    "xwOBA": 0.33,
+    "wOBA": 0.328,
+    "xwOBA": 0.329,
     "EV": 89.6,
     "Barrel%": 8.9
   },
   "opp_bat": {
-    "equipo": "B-Strong",
+    "equipo": "LOS GORDITOS DAD & JR 2026 MLB",
     "jugadores": 12,
-    "HR_avg": 10.5,
-    "OPS": 0.839,
-    "wOBA": 0.365,
-    "xwOBA": 0.341,
-    "EV": 89.1,
-    "Barrel%": 9.3
+    "HR_avg": 11.1,
+    "OPS": 0.8,
+    "wOBA": 0.348,
+    "xwOBA": 0.331,
+    "EV": 89.7,
+    "Barrel%": 9.7
   },
   "mis_pit": {
     "equipo": "Dando Tabla",
     "jugadores": 11,
-    "ERA": 3.66,
+    "ERA": 3.65,
     "xERA": 3.72,
-    "Ks": 61.1,
+    "Ks": 62.0,
     "xwOBA": 0.298,
     "EV_against": 88.8
   },
   "opp_pit": {
-    "equipo": "B-Strong",
+    "equipo": "LOS GORDITOS DAD & JR 2026 MLB",
     "jugadores": 12,
-    "ERA": 2.64,
-    "xERA": 3.14,
-    "Ks": 74.2,
-    "xwOBA": 0.275,
-    "EV_against": 88.3
+    "ERA": 3.52,
+    "xERA": 3.73,
+    "Ks": 60.7,
+    "xwOBA": 0.299,
+    "EV_against": 88.8
   },
-  "prob_ganar": 46.1,
-  "prob_perder": 53.9,
-  "odds_ganar": "+117",
-  "odds_perder": "-117"
+  "prob_ganar": 49.2,
+  "prob_perder": 50.8,
+  "odds_ganar": "+103",
+  "odds_perder": "-103"
 }
