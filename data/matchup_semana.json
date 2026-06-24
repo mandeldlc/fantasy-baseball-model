@@ -7,43 +7,43 @@
   "mis_bat": {
     "equipo": "Dando Tabla",
     "jugadores": 11,
-    "HR_avg": 10.5,
-    "OPS": 0.746,
-    "wOBA": 0.328,
+    "HR_avg": 10.6,
+    "OPS": 0.75,
+    "wOBA": 0.33,
     "xwOBA": 0.329,
     "EV": 89.6,
-    "Barrel%": 8.9
+    "Barrel%": 9.0
   },
   "opp_bat": {
     "equipo": "B-Strong",
-    "jugadores": 13,
+    "jugadores": 14,
     "HR_avg": 10.1,
-    "OPS": 0.821,
-    "wOBA": 0.359,
-    "xwOBA": 0.337,
-    "EV": 88.8,
-    "Barrel%": 8.7
+    "OPS": 0.804,
+    "wOBA": 0.352,
+    "xwOBA": 0.333,
+    "EV": 88.9,
+    "Barrel%": 8.5
   },
   "mis_pit": {
     "equipo": "Dando Tabla",
     "jugadores": 11,
-    "ERA": 3.65,
-    "xERA": 3.71,
-    "Ks": 62.1,
-    "xwOBA": 0.298,
+    "ERA": 3.71,
+    "xERA": 3.77,
+    "Ks": 62.6,
+    "xwOBA": 0.301,
     "EV_against": 88.8
   },
   "opp_pit": {
     "equipo": "B-Strong",
     "jugadores": 11,
-    "ERA": 2.74,
-    "xERA": 3.17,
-    "Ks": 77.0,
+    "ERA": 2.73,
+    "xERA": 3.15,
+    "Ks": 78.2,
     "xwOBA": 0.276,
     "EV_against": 88.4
   },
-  "prob_ganar": 46.7,
-  "prob_perder": 53.3,
-  "odds_ganar": "+114",
-  "odds_perder": "-114"
+  "prob_ganar": 46.6,
+  "prob_perder": 53.4,
+  "odds_ganar": "+115",
+  "odds_perder": "-115"
 }
