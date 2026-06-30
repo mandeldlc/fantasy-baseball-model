@@ -7,43 +7,43 @@
   "mis_bat": {
     "equipo": "Dando Tabla",
     "jugadores": 12,
-    "HR_avg": 10.6,
-    "OPS": 0.756,
-    "wOBA": 0.331,
-    "xwOBA": 0.328,
-    "EV": 90.0,
-    "Barrel%": 9.4
+    "HR_avg": 10.7,
+    "OPS": 0.754,
+    "wOBA": 0.33,
+    "xwOBA": 0.329,
+    "EV": 89.9,
+    "Barrel%": 9.2
   },
   "opp_bat": {
     "equipo": "De espalda al aro mmg",
     "jugadores": 12,
     "HR_avg": 9.8,
-    "OPS": 0.772,
-    "wOBA": 0.337,
+    "OPS": 0.77,
+    "wOBA": 0.336,
     "xwOBA": 0.327,
     "EV": 90.2,
-    "Barrel%": 9.4
+    "Barrel%": 9.5
   },
   "mis_pit": {
     "equipo": "Dando Tabla",
     "jugadores": 11,
     "ERA": 3.69,
-    "xERA": 3.79,
+    "xERA": 3.84,
     "Ks": 66.6,
-    "xwOBA": 0.301,
+    "xwOBA": 0.303,
     "EV_against": 88.8
   },
   "opp_pit": {
     "equipo": "De espalda al aro mmg",
-    "jugadores": 12,
-    "ERA": 3.46,
-    "xERA": 3.68,
-    "Ks": 72.2,
-    "xwOBA": 0.297,
-    "EV_against": 88.4
+    "jugadores": 13,
+    "ERA": 3.48,
+    "xERA": 3.7,
+    "Ks": 73.2,
+    "xwOBA": 0.298,
+    "EV_against": 88.5
   },
-  "prob_ganar": 49.3,
-  "prob_perder": 50.7,
+  "prob_ganar": 49.2,
+  "prob_perder": 50.8,
   "odds_ganar": "+103",
   "odds_perder": "-103"
 }
