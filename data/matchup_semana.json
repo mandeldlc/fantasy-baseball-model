@@ -8,9 +8,9 @@
     "equipo": "Dando Tabla",
     "jugadores": 12,
     "HR_avg": 11.9,
-    "OPS": 0.741,
-    "wOBA": 0.324,
-    "xwOBA": 0.326,
+    "OPS": 0.736,
+    "wOBA": 0.322,
+    "xwOBA": 0.324,
     "EV": 89.9,
     "Barrel%": 9.5
   },
@@ -18,29 +18,29 @@
     "equipo": "De espalda al aro mmg",
     "jugadores": 12,
     "HR_avg": 10.8,
-    "OPS": 0.792,
-    "wOBA": 0.345,
+    "OPS": 0.789,
+    "wOBA": 0.344,
     "xwOBA": 0.337,
     "EV": 90.4,
-    "Barrel%": 9.7
+    "Barrel%": 9.6
   },
   "mis_pit": {
     "equipo": "Dando Tabla",
     "jugadores": 12,
-    "ERA": 3.88,
-    "xERA": 4.17,
-    "Ks": 69.7,
-    "xwOBA": 0.311,
-    "EV_against": 89.0
+    "ERA": 3.9,
+    "xERA": 4.16,
+    "Ks": 70.5,
+    "xwOBA": 0.31,
+    "EV_against": 88.9
   },
   "opp_pit": {
     "equipo": "De espalda al aro mmg",
     "jugadores": 12,
-    "ERA": 3.77,
-    "xERA": 3.81,
-    "Ks": 82.2,
-    "xwOBA": 0.301,
-    "EV_against": 88.1
+    "ERA": 3.76,
+    "xERA": 3.83,
+    "Ks": 82.9,
+    "xwOBA": 0.302,
+    "EV_against": 88.2
   },
   "prob_ganar": 48.7,
   "prob_perder": 51.3,
