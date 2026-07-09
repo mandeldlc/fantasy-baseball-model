@@ -8,16 +8,16 @@
     "equipo": "Dando Tabla",
     "jugadores": 12,
     "HR_avg": 11.9,
-    "OPS": 0.736,
-    "wOBA": 0.322,
+    "OPS": 0.734,
+    "wOBA": 0.321,
     "xwOBA": 0.324,
-    "EV": 89.9,
-    "Barrel%": 9.5
+    "EV": 89.8,
+    "Barrel%": 9.4
   },
   "opp_bat": {
     "equipo": "De espalda al aro mmg",
     "jugadores": 12,
-    "HR_avg": 10.8,
+    "HR_avg": 11.0,
     "OPS": 0.789,
     "wOBA": 0.344,
     "xwOBA": 0.337,
@@ -27,18 +27,18 @@
   "mis_pit": {
     "equipo": "Dando Tabla",
     "jugadores": 12,
-    "ERA": 3.9,
+    "ERA": 3.88,
     "xERA": 4.16,
-    "Ks": 70.5,
+    "Ks": 71.1,
     "xwOBA": 0.31,
-    "EV_against": 88.9
+    "EV_against": 89.0
   },
   "opp_pit": {
     "equipo": "De espalda al aro mmg",
     "jugadores": 12,
-    "ERA": 3.76,
+    "ERA": 3.8,
     "xERA": 3.83,
-    "Ks": 82.9,
+    "Ks": 83.4,
     "xwOBA": 0.302,
     "EV_against": 88.2
   },
