@@ -1,133 +1,128 @@
 Name,Señales,Score_Explosion,Detalle,ERA,xERA,xwOBA,EV,diff_era
-Samy Natera Jr.,4,11,ERA 3.97 pero xERA 1.92 — diferencia +2.05 | xwOBA élite 0.216 — domina contacto | EV permitida baja 85.3 mph | xBA permitida muy baja 0.114,3.97,1.92,0.216,85.3,2.05
-Mason Fluharty,4,11,ERA 4.58 pero xERA 2.92 — diferencia +1.66 | xwOBA élite 0.267 — domina contacto | EV permitida baja 85.5 mph | xBA permitida muy baja 0.197,4.58,2.92,0.267,85.5,1.66
 Drew Sommers,4,11,ERA 6.00 pero xERA 2.55 — diferencia +3.45 | xwOBA élite 0.250 — domina contacto | EV permitida baja 85.1 mph | xBA permitida muy baja 0.180,6.0,2.55,0.25,85.1,3.45
-Cam Sanders,4,10,ERA 6.23 pero xERA 3.70 — diferencia +2.53 | xwOBA bajo 0.299 | EV permitida baja 85.1 mph | xBA permitida muy baja 0.192,6.23,3.7,0.299,85.1,2.53
-Ryan Yarbrough,4,10,ERA 4.29 pero xERA 3.08 — diferencia +1.21 | xwOBA élite 0.274 — domina contacto | EV permitida baja 83.8 mph | xBA permitida muy baja 0.209,4.29,3.08,0.274,83.8,1.21
-Tyron Guerrero,3,8,xwOBA élite 0.255 — domina contacto | EV permitida baja 84.5 mph | xBA permitida muy baja 0.201,2.7,2.66,0.255,84.5,0.04
-Greg Weissert,3,8,xwOBA élite 0.279 — domina contacto | EV permitida baja 86.7 mph | xBA permitida muy baja 0.214,3.89,3.19,0.279,86.7,0.7
-Cade Gibson,3,8,ERA 6.63 pero xERA 3.59 — diferencia +3.04 | xwOBA bajo 0.295 | EV permitida baja 86.8 mph,6.63,3.59,0.295,86.8,3.04
-William Kempner,3,8,xwOBA élite 0.208 — domina contacto | EV permitida baja 82.7 mph | xBA permitida muy baja 0.165,0.0,1.79,0.208,82.7,-1.79
-Zach Brzykcy,3,8,ERA 4.50 pero xERA 2.96 — diferencia +1.54 | xwOBA élite 0.269 — domina contacto | xBA permitida muy baja 0.161,4.5,2.96,0.269,93.5,1.54
-Riley Cornelio,3,8,ERA 7.82 pero xERA 4.43 — diferencia +3.39 | EV permitida baja 86.2 mph | xBA permitida muy baja 0.212,7.82,4.43,0.325,86.2,3.39
-Jeff Hoffman,4,8,ERA 4.35 pero xERA 3.01 — diferencia +1.34 | xwOBA élite 0.271 — domina contacto | EV permitida normal-baja 87.0 mph | xBA permitida muy baja 0.203,4.35,3.01,0.271,87.0,1.34
+Mason Fluharty,4,11,ERA 4.58 pero xERA 2.92 — diferencia +1.66 | xwOBA élite 0.267 — domina contacto | EV permitida baja 85.5 mph | xBA permitida muy baja 0.197,4.58,2.92,0.267,85.5,1.66
+Samy Natera Jr.,4,10,ERA 3.38 pero xERA 1.92 — diferencia +1.46 | xwOBA élite 0.216 — domina contacto | EV permitida baja 85.3 mph | xBA permitida muy baja 0.114,3.38,1.92,0.216,85.3,1.46
+Ryan Yarbrough,4,10,ERA 4.29 pero xERA 3.10 — diferencia +1.19 | xwOBA élite 0.275 — domina contacto | EV permitida baja 84.0 mph | xBA permitida muy baja 0.212,4.29,3.1,0.275,84.0,1.19
+Adrian Morejon,4,10,ERA 3.52 pero xERA 2.51 — diferencia +1.01 | xwOBA élite 0.248 — domina contacto | EV permitida baja 85.8 mph | xBA permitida muy baja 0.213,3.52,2.51,0.248,85.8,1.01
+Cade Gibson,3,8,ERA 6.00 pero xERA 3.59 — diferencia +2.41 | xwOBA bajo 0.295 | EV permitida baja 86.8 mph,6.0,3.59,0.295,86.8,2.41
+Justin Slaten,3,8,ERA 6.10 pero xERA 3.10 — diferencia +3.00 | xwOBA élite 0.275 — domina contacto | xBA permitida muy baja 0.229,6.1,3.1,0.275,88.9,3.0
 Craig Yoho,3,8,xwOBA élite 0.256 — domina contacto | EV permitida baja 86.1 mph | xBA permitida muy baja 0.178,3.6,2.68,0.256,86.1,0.92
-TJ Shook,3,8,ERA 4.91 pero xERA 2.66 — diferencia +2.25 | xwOBA élite 0.255 — domina contacto | xBA permitida muy baja 0.222,4.91,2.66,0.255,88.7,2.25
-Juan Morillo,3,8,xwOBA élite 0.245 — domina contacto | EV permitida baja 86.2 mph | xBA permitida muy baja 0.185,2.62,2.45,0.245,86.2,0.17
-Huascar Brazobán,3,8,xwOBA élite 0.271 — domina contacto | EV permitida baja 83.3 mph | xBA permitida muy baja 0.207,2.86,3.01,0.271,83.3,-0.15
+Riley Cornelio,3,8,ERA 7.82 pero xERA 4.43 — diferencia +3.39 | EV permitida baja 86.2 mph | xBA permitida muy baja 0.212,7.82,4.43,0.325,86.2,3.39
+Edgardo Henriquez,3,8,xwOBA élite 0.246 — domina contacto | EV permitida baja 83.1 mph | xBA permitida muy baja 0.178,2.43,2.47,0.246,83.1,-0.04
+Dylan Lee,3,8,xwOBA élite 0.214 — domina contacto | EV permitida baja 86.7 mph | xBA permitida muy baja 0.178,1.52,1.89,0.214,86.7,-0.37
 Andrew Morris,3,8,xwOBA élite 0.269 — domina contacto | EV permitida baja 86.3 mph | xBA permitida muy baja 0.221,3.64,2.96,0.269,86.3,0.68
-Edgardo Henriquez,3,8,xwOBA élite 0.246 — domina contacto | EV permitida baja 83.1 mph | xBA permitida muy baja 0.178,2.45,2.47,0.246,83.1,-0.02
-Camilo Doval,3,8,ERA 4.67 pero xERA 3.01 — diferencia +1.66 | xwOBA élite 0.271 — domina contacto | xBA permitida muy baja 0.221,4.67,3.01,0.271,90.5,1.66
-Adrian Morejon,3,8,xwOBA élite 0.252 — domina contacto | EV permitida baja 85.7 mph | xBA permitida muy baja 0.216,3.52,2.59,0.252,85.7,0.93
-Jonathan Bowlan,3,8,xwOBA élite 0.249 — domina contacto | EV permitida baja 86.8 mph | xBA permitida muy baja 0.203,3.25,2.53,0.249,86.8,0.72
-Fernando Cruz,3,8,xwOBA élite 0.270 — domina contacto | EV permitida baja 85.1 mph | xBA permitida muy baja 0.180,2.39,2.98,0.27,85.1,-0.59
-José A. Ferrer,3,8,xwOBA élite 0.272 — domina contacto | EV permitida baja 86.2 mph | xBA permitida muy baja 0.218,2.37,3.03,0.272,86.2,-0.66
-Dylan Lee,3,8,xwOBA élite 0.214 — domina contacto | EV permitida baja 86.7 mph | xBA permitida muy baja 0.178,1.56,1.89,0.214,86.7,-0.33
+Tyron Guerrero,3,8,xwOBA élite 0.246 — domina contacto | EV permitida baja 84.3 mph | xBA permitida muy baja 0.198,2.7,2.47,0.246,84.3,0.23
+Jonathan Bowlan,3,8,xwOBA élite 0.244 — domina contacto | EV permitida baja 86.6 mph | xBA permitida muy baja 0.199,3.25,2.43,0.244,86.6,0.82
+Jeff Hoffman,4,8,ERA 4.35 pero xERA 3.01 — diferencia +1.34 | xwOBA élite 0.271 — domina contacto | EV permitida normal-baja 87.0 mph | xBA permitida muy baja 0.203,4.35,3.01,0.271,87.0,1.34
+Camilo Doval,3,8,ERA 4.67 pero xERA 3.12 — diferencia +1.55 | xwOBA élite 0.276 — domina contacto | xBA permitida muy baja 0.221,4.67,3.12,0.276,90.7,1.55
+Juan Morillo,3,8,xwOBA élite 0.245 — domina contacto | EV permitida baja 86.2 mph | xBA permitida muy baja 0.185,3.06,2.45,0.245,86.2,0.61
 Brock Stewart,3,8,xwOBA élite 0.212 — domina contacto | EV permitida baja 81.0 mph | xBA permitida muy baja 0.164,1.17,1.85,0.212,81.0,-0.68
-Steven Okert,3,8,xwOBA élite 0.258 — domina contacto | EV permitida baja 86.7 mph | xBA permitida muy baja 0.188,2.42,2.72,0.258,86.7,-0.3
-Alimber Santa,3,8,xwOBA élite 0.268 — domina contacto | EV permitida baja 83.8 mph | xBA permitida muy baja 0.207,1.35,2.94,0.268,83.8,-1.59
+Huascar Brazobán,3,8,xwOBA élite 0.267 — domina contacto | EV permitida baja 83.4 mph | xBA permitida muy baja 0.204,2.86,2.92,0.267,83.4,-0.06
 Julian Garcia,3,8,xwOBA élite 0.265 — domina contacto | EV permitida baja 86.0 mph | xBA permitida muy baja 0.159,1.93,2.87,0.265,86.0,-0.94
-Rico Garcia,3,8,xwOBA élite 0.276 — domina contacto | EV permitida baja 86.5 mph | xBA permitida muy baja 0.210,2.37,3.12,0.276,86.5,-0.75
-Alex Vesia,3,8,xwOBA élite 0.255 — domina contacto | EV permitida baja 86.7 mph | xBA permitida muy baja 0.170,2.4,2.66,0.255,86.7,-0.26
-Hogan Harris,3,8,xwOBA élite 0.278 — domina contacto | EV permitida baja 86.1 mph | xBA permitida muy baja 0.189,3.38,3.17,0.278,86.1,0.21
+Alimber Santa,3,8,xwOBA élite 0.268 — domina contacto | EV permitida baja 83.8 mph | xBA permitida muy baja 0.207,1.17,2.94,0.268,83.8,-1.77
+Rico Garcia,3,8,xwOBA élite 0.276 — domina contacto | EV permitida baja 86.5 mph | xBA permitida muy baja 0.210,2.75,3.12,0.276,86.5,-0.37
+Peyton Gray,3,8,xwOBA élite 0.273 — domina contacto | EV permitida baja 86.8 mph | xBA permitida muy baja 0.226,2.78,3.05,0.273,86.8,-0.27
 Jacob Waguespack,3,8,xwOBA élite 0.238 — domina contacto | EV permitida baja 83.8 mph | xBA permitida muy baja 0.194,1.54,2.32,0.238,83.8,-0.78
 Orion Kerkering,3,8,xwOBA élite 0.271 — domina contacto | EV permitida baja 83.7 mph | xBA permitida muy baja 0.176,2.5,3.01,0.271,83.7,-0.51
-Abner Uribe,3,8,xwOBA élite 0.256 — domina contacto | EV permitida baja 86.8 mph | xBA permitida muy baja 0.215,2.7,2.68,0.256,86.8,0.02
-Carson Palmquist,3,7,ERA 7.11 pero xERA 3.67 — diferencia +3.44 | xwOBA bajo 0.298 | xBA permitida muy baja 0.228,7.11,3.67,0.298,90.1,3.44
-Orlando Ribalta,3,7,xwOBA bajo 0.293 | EV permitida baja 84.5 mph | xBA permitida muy baja 0.214,3.42,3.54,0.293,84.5,-0.12
-Brandon Eisert,3,7,ERA 5.93 pero xERA 3.41 — diferencia +2.52 | xwOBA bajo 0.288 | xBA permitida muy baja 0.223,5.93,3.41,0.288,89.2,2.52
+Fernando Cruz,3,8,xwOBA élite 0.270 — domina contacto | EV permitida baja 85.1 mph | xBA permitida muy baja 0.180,2.35,2.98,0.27,85.1,-0.63
+José A. Ferrer,3,8,xwOBA élite 0.272 — domina contacto | EV permitida baja 86.2 mph | xBA permitida muy baja 0.218,2.37,3.03,0.272,86.2,-0.66
+Alex Vesia,3,8,xwOBA élite 0.255 — domina contacto | EV permitida baja 86.7 mph | xBA permitida muy baja 0.170,2.35,2.66,0.255,86.7,-0.31
+Bradgley Rodriguez,3,8,xwOBA élite 0.235 — domina contacto | EV permitida baja 86.9 mph | xBA permitida muy baja 0.187,2.15,2.26,0.235,86.9,-0.11
+Steven Okert,3,8,xwOBA élite 0.258 — domina contacto | EV permitida baja 86.7 mph | xBA permitida muy baja 0.188,2.42,2.72,0.258,86.7,-0.3
+Greg Weissert,3,8,xwOBA élite 0.279 — domina contacto | EV permitida baja 86.7 mph | xBA permitida muy baja 0.214,3.79,3.19,0.279,86.7,0.6
 Garrett Cleavinger,3,7,xwOBA bajo 0.287 | EV permitida baja 85.9 mph | xBA permitida muy baja 0.219,3.86,3.39,0.287,85.9,0.47
-Chris Murphy,4,7,ERA 5.03 pero xERA 3.59 — diferencia +1.44 | xwOBA bajo 0.295 | EV permitida normal-baja 87.2 mph | xBA permitida muy baja 0.208,5.03,3.59,0.295,87.2,1.44
+Hogan Harris,3,7,xwOBA bajo 0.288 | EV permitida baja 86.5 mph | xBA permitida muy baja 0.195,3.38,3.41,0.288,86.5,-0.03
 Daniel Lynch IV,3,7,xwOBA bajo 0.287 | EV permitida baja 86.9 mph | xBA permitida muy baja 0.223,2.41,3.39,0.287,86.9,-0.98
-Chase Silseth,3,7,xwOBA bajo 0.295 | EV permitida baja 85.9 mph | xBA permitida muy baja 0.212,3.27,3.59,0.295,85.9,-0.32
-Mason Montgomery,4,7,ERA 4.37 pero xERA 3.29 — diferencia +1.08 | xwOBA bajo 0.283 | EV permitida normal-baja 87.2 mph | xBA permitida muy baja 0.211,4.37,3.29,0.283,87.2,1.08
-Brad Keller,3,7,xwOBA bajo 0.284 | EV permitida baja 85.5 mph | xBA permitida muy baja 0.226,4.15,3.31,0.284,85.5,0.84
-Matt Strahm,3,7,ERA 5.46 pero xERA 3.70 — diferencia +1.76 | xwOBA bajo 0.299 | xBA permitida muy baja 0.223,5.46,3.7,0.299,89.2,1.76
-Justin Sterner,3,7,ERA 3.98 pero xERA 2.87 — diferencia +1.11 | xwOBA élite 0.265 — domina contacto | xBA permitida muy baja 0.209,3.98,2.87,0.265,90.0,1.11
-Jonathan Loáisiga,2,6,xwOBA élite 0.278 — domina contacto | EV permitida baja 86.3 mph,2.29,3.17,0.278,86.3,-0.88
-Jacob Lopez,2,6,ERA 7.04 pero xERA 4.05 — diferencia +2.99 | EV permitida baja 85.0 mph,7.04,4.05,0.312,85.0,2.99
-James Karinchak,3,6,xwOBA élite 0.244 — domina contacto | EV permitida normal-baja 87.2 mph | xBA permitida muy baja 0.130,2.08,2.43,0.244,87.2,-0.35
-Jordan Romano,3,6,ERA 7.36 pero xERA 4.00 — diferencia +3.36 | EV permitida normal-baja 87.6 mph | xBA permitida muy baja 0.227,7.36,4.0,0.31,87.6,3.36
-Michael Rucker,3,6,ERA 6.23 pero xERA 4.34 — diferencia +1.89 | EV permitida normal-baja 88.1 mph | xBA permitida muy baja 0.228,6.23,4.34,0.322,88.1,1.89
-Kyle Hurt,3,6,ERA 4.55 pero xERA 3.31 — diferencia +1.24 | xwOBA bajo 0.284 | xBA permitida muy baja 0.209,4.55,3.31,0.284,88.7,1.24
+William Kempner,3,7,xwOBA bajo 0.285 | EV permitida baja 83.9 mph | xBA permitida muy baja 0.205,0.0,3.34,0.285,83.9,-3.34
+Brad Keller,3,7,xwOBA bajo 0.284 | EV permitida baja 85.5 mph | xBA permitida muy baja 0.226,4.02,3.31,0.284,85.5,0.71
+Cam Sanders,3,7,ERA 6.23 pero xERA 5.07 — diferencia +1.16 | EV permitida baja 86.1 mph | xBA permitida muy baja 0.217,6.23,5.07,0.345,86.1,1.16
+Orlando Ribalta,3,7,xwOBA bajo 0.293 | EV permitida baja 84.5 mph | xBA permitida muy baja 0.214,3.29,3.54,0.293,84.5,-0.25
+Matt Strahm,3,7,ERA 5.40 pero xERA 3.70 — diferencia +1.70 | xwOBA bajo 0.299 | xBA permitida muy baja 0.223,5.4,3.7,0.299,89.2,1.7
+Justin Sterner,3,7,ERA 3.92 pero xERA 2.87 — diferencia +1.05 | xwOBA élite 0.265 — domina contacto | xBA permitida muy baja 0.209,3.92,2.87,0.265,90.0,1.05
+Chris Murphy,4,7,ERA 4.79 pero xERA 3.59 — diferencia +1.20 | xwOBA bajo 0.295 | EV permitida normal-baja 87.2 mph | xBA permitida muy baja 0.208,4.79,3.59,0.295,87.2,1.2
+Carson Palmquist,3,7,ERA 7.11 pero xERA 3.67 — diferencia +3.44 | xwOBA bajo 0.298 | xBA permitida muy baja 0.228,7.11,3.67,0.298,90.1,3.44
+Angel Chivilli,3,7,xwOBA bajo 0.297 | EV permitida baja 83.9 mph | xBA permitida muy baja 0.175,1.93,3.64,0.297,83.9,-1.71
+Brandon Eisert,3,7,ERA 5.93 pero xERA 3.41 — diferencia +2.52 | xwOBA bajo 0.288 | xBA permitida muy baja 0.223,5.93,3.41,0.288,89.2,2.52
+Eric Orze,2,6,ERA 5.66 pero xERA 4.08 — diferencia +1.58 | EV permitida baja 86.3 mph,5.66,4.08,0.313,86.3,1.58
 A.J. Minter,3,6,xwOBA élite 0.238 — domina contacto | EV permitida normal-baja 88.3 mph | xBA permitida muy baja 0.199,0.53,2.32,0.238,88.3,-1.79
-Bradgley Rodriguez,3,6,xwOBA élite 0.241 — domina contacto | EV permitida normal-baja 87.1 mph | xBA permitida muy baja 0.192,2.15,2.37,0.241,87.1,-0.22
-Peyton Gray,3,6,xwOBA élite 0.265 — domina contacto | EV permitida normal-baja 87.1 mph | xBA permitida muy baja 0.218,2.78,2.87,0.265,87.1,-0.09
-Aaron Ashby,3,6,xwOBA élite 0.274 — domina contacto | EV permitida normal-baja 87.4 mph | xBA permitida muy baja 0.204,3.19,3.08,0.274,87.4,0.11
-Evan Phillips,2,6,xwOBA élite 0.213 — domina contacto | EV permitida baja 70.7 mph,0.0,1.87,0.213,70.7,-1.87
-Jovani Morán,3,6,xwOBA élite 0.263 — domina contacto | EV permitida normal-baja 87.6 mph | xBA permitida muy baja 0.177,3.03,2.83,0.263,87.6,0.2
-Tyler Davis,3,6,ERA 4.63 pero xERA 3.36 — diferencia +1.27 | xwOBA bajo 0.286 | xBA permitida muy baja 0.222,4.63,3.36,0.286,90.1,1.27
-Ryan Walker,2,6,ERA 6.75 pero xERA 4.40 — diferencia +2.35 | EV permitida baja 85.4 mph,6.75,4.4,0.324,85.4,2.35
-Chris Roycroft,2,6,ERA 13.50 pero xERA 7.09 — diferencia +6.41 | EV permitida baja 86.1 mph,13.5,7.09,0.397,86.1,6.41
-Garrett Stallings,3,6,xwOBA élite 0.236 — domina contacto | EV permitida normal-baja 87.3 mph | xBA permitida muy baja 0.205,0.0,2.28,0.236,87.3,-2.28
-Brent Headrick,3,6,xwOBA élite 0.273 — domina contacto | EV permitida normal-baja 87.8 mph | xBA permitida muy baja 0.217,1.42,3.05,0.273,87.8,-1.63
-Tyler Alexander,3,6,xwOBA élite 0.273 — domina contacto | EV permitida normal-baja 87.3 mph | xBA permitida muy baja 0.224,2.37,3.05,0.273,87.3,-0.68
 Luke Weaver,3,6,xwOBA élite 0.260 — domina contacto | EV permitida normal-baja 88.0 mph | xBA permitida muy baja 0.199,1.89,2.76,0.26,88.0,-0.87
-Gabriel Hughes,3,6,xwOBA élite 0.256 — domina contacto | EV permitida normal-baja 87.8 mph | xBA permitida muy baja 0.215,0.0,2.68,0.256,87.8,-2.68
-Tyler Rogers,2,6,xwOBA élite 0.263 — domina contacto | EV permitida baja 84.2 mph,1.77,2.83,0.263,84.2,-1.06
-Danny Young,2,5,xwOBA élite 0.207 — domina contacto | xBA permitida muy baja 0.135,0.0,1.77,0.207,96.6,-1.77
-Sam Hentges,2,5,EV permitida baja 86.0 mph | xBA permitida muy baja 0.210,2.2,4.49,0.327,86.0,-2.29
-Gavin Collyer,2,5,EV permitida baja 85.8 mph | xBA permitida muy baja 0.194,3.2,4.02,0.311,85.8,-0.82
-Colin Holderman,2,5,xwOBA élite 0.275 — domina contacto | xBA permitida muy baja 0.200,1.95,3.1,0.275,89.0,-1.15
+Jonathan Loáisiga,2,6,xwOBA élite 0.278 — domina contacto | EV permitida baja 86.3 mph,2.29,3.17,0.278,86.3,-0.88
+Kyle Hurt,3,6,ERA 4.55 pero xERA 3.31 — diferencia +1.24 | xwOBA bajo 0.284 | xBA permitida muy baja 0.209,4.55,3.31,0.284,88.7,1.24
+Tyler Davis,3,6,ERA 4.63 pero xERA 3.36 — diferencia +1.27 | xwOBA bajo 0.286 | xBA permitida muy baja 0.218,4.63,3.36,0.286,89.9,1.27
+Evan Phillips,2,6,xwOBA élite 0.213 — domina contacto | EV permitida baja 70.7 mph,0.0,1.87,0.213,70.7,-1.87
+Gabriel Hughes,3,6,xwOBA élite 0.256 — domina contacto | EV permitida normal-baja 87.8 mph | xBA permitida muy baja 0.215,3.0,2.68,0.256,87.8,0.32
+Ryan Zeferjahn,3,6,xwOBA élite 0.278 — domina contacto | EV permitida normal-baja 88.3 mph | xBA permitida muy baja 0.161,3.89,3.17,0.278,88.3,0.72
+Robby Ahlstrom,2,6,ERA 6.39 pero xERA 4.78 — diferencia +1.61 | EV permitida baja 85.2 mph,6.39,4.78,0.336,85.2,1.61
+Jordan Romano,3,6,ERA 7.36 pero xERA 4.00 — diferencia +3.36 | EV permitida normal-baja 87.6 mph | xBA permitida muy baja 0.227,7.36,4.0,0.31,87.6,3.36
+Chris Roycroft,2,6,ERA 13.50 pero xERA 7.45 — diferencia +6.05 | EV permitida baja 86.7 mph,13.5,7.45,0.405,86.7,6.05
+Tyler Alexander,3,6,xwOBA élite 0.275 — domina contacto | EV permitida normal-baja 87.5 mph | xBA permitida muy baja 0.228,2.37,3.1,0.275,87.5,-0.73
+Aaron Ashby,3,6,xwOBA élite 0.272 — domina contacto | EV permitida normal-baja 87.5 mph | xBA permitida muy baja 0.201,3.19,3.03,0.272,87.5,0.16
+Abner Uribe,3,6,xwOBA élite 0.258 — domina contacto | EV permitida normal-baja 87.0 mph | xBA permitida muy baja 0.215,2.7,2.72,0.258,87.0,-0.02
+Brent Headrick,3,6,xwOBA élite 0.271 — domina contacto | EV permitida normal-baja 88.0 mph | xBA permitida muy baja 0.219,1.42,3.01,0.271,88.0,-1.59
+James Karinchak,3,6,xwOBA élite 0.268 — domina contacto | EV permitida normal-baja 88.4 mph | xBA permitida muy baja 0.158,2.08,2.94,0.268,88.4,-0.86
+Tyler Rogers,2,6,xwOBA élite 0.263 — domina contacto | EV permitida baja 84.2 mph,1.73,2.83,0.263,84.2,-1.1
+Jacob Lopez,2,6,ERA 7.04 pero xERA 4.05 — diferencia +2.99 | EV permitida baja 85.0 mph,7.04,4.05,0.312,85.0,2.99
+Jovani Morán,3,6,xwOBA élite 0.263 — domina contacto | EV permitida normal-baja 87.6 mph | xBA permitida muy baja 0.177,2.95,2.83,0.263,87.6,0.12
+Sam Hentges,2,5,EV permitida baja 86.0 mph | xBA permitida muy baja 0.210,2.2,4.46,0.326,86.0,-2.26
 Franco Aleman,2,5,xwOBA élite 0.265 — domina contacto | xBA permitida muy baja 0.188,1.5,2.87,0.265,88.5,-1.37
-Brooks Raley,3,5,xwOBA bajo 0.299 | EV permitida normal-baja 87.5 mph | xBA permitida muy baja 0.226,2.23,3.7,0.299,87.5,-1.47
-Didier Fuentes,2,5,xwOBA élite 0.277 — domina contacto | xBA permitida muy baja 0.227,2.6,3.15,0.277,89.5,-0.55
-Jhony Brito,2,5,xwOBA élite 0.156 — domina contacto | xBA permitida muy baja 0.165,0.0,1.05,0.156,90.2,-1.05
-Cam Booser,2,5,xwOBA élite 0.234 — domina contacto | xBA permitida muy baja 0.138,1.35,2.24,0.234,92.1,-0.89
-Alan Rangel,3,5,xwOBA bajo 0.291 | EV permitida normal-baja 88.3 mph | xBA permitida muy baja 0.214,3.38,3.49,0.291,88.3,-0.11
+Danny Young,2,5,xwOBA élite 0.197 — domina contacto | xBA permitida muy baja 0.137,0.0,1.61,0.197,96.7,-1.61
+Brooks Raley,3,5,xwOBA bajo 0.299 | EV permitida normal-baja 87.5 mph | xBA permitida muy baja 0.226,2.16,3.7,0.299,87.5,-1.54
+Kendry Rojas,2,5,EV permitida baja 86.1 mph | xBA permitida muy baja 0.184,1.65,3.83,0.304,86.1,-2.18
+Kirby Yates,2,5,xwOBA élite 0.273 — domina contacto | xBA permitida muy baja 0.194,2.75,3.05,0.273,92.3,-0.3
 Bryan King,2,5,xwOBA bajo 0.292 | EV permitida baja 86.8 mph,2.03,3.51,0.292,86.8,-1.48
-Erik Miller,2,5,EV permitida baja 84.4 mph | xBA permitida muy baja 0.190,3.75,3.94,0.308,84.4,-0.19
-Nate Pearson,2,5,EV permitida baja 84.8 mph | xBA permitida muy baja 0.229,3.79,4.43,0.325,84.8,-0.64
-Grant Taylor,2,5,xwOBA élite 0.237 — domina contacto | xBA permitida muy baja 0.180,2.96,2.3,0.237,89.3,0.66
-Sam Bachman,3,5,xwOBA bajo 0.294 | EV permitida normal-baja 87.5 mph | xBA permitida muy baja 0.218,4.35,3.57,0.294,87.5,0.78
-Ryan Zeferjahn,3,5,xwOBA bajo 0.282 | EV permitida normal-baja 88.4 mph | xBA permitida muy baja 0.163,3.98,3.27,0.282,88.4,0.71
-Eric Orze,2,5,ERA 5.27 pero xERA 4.08 — diferencia +1.19 | EV permitida baja 86.3 mph,5.27,4.08,0.313,86.3,1.19
-Andrew Kittredge,3,5,ERA 4.91 pero xERA 3.44 — diferencia +1.47 | xwOBA bajo 0.289 | EV permitida normal-baja 87.5 mph,4.91,3.44,0.289,87.5,1.47
-Kyle Hart,3,5,ERA 5.28 pero xERA 3.86 — diferencia +1.42 | EV permitida normal-baja 87.8 mph | xBA permitida muy baja 0.225,5.28,3.86,0.305,87.8,1.42
+Erik Miller,2,5,EV permitida baja 84.8 mph | xBA permitida muy baja 0.187,3.75,3.78,0.302,84.8,-0.03
+Tejay Antone,2,5,xwOBA élite 0.275 — domina contacto | xBA permitida muy baja 0.203,2.42,3.1,0.275,89.2,-0.68
+Didier Fuentes,2,5,xwOBA élite 0.277 — domina contacto | xBA permitida muy baja 0.227,2.52,3.15,0.277,89.5,-0.63
+Dylan Dodd,2,5,xwOBA élite 0.256 — domina contacto | xBA permitida muy baja 0.194,2.16,2.68,0.256,89.7,-0.52
+Mason Montgomery,3,5,xwOBA bajo 0.283 | EV permitida normal-baja 87.2 mph | xBA permitida muy baja 0.211,4.25,3.29,0.283,87.2,0.96
+Alan Rangel,3,5,xwOBA bajo 0.291 | EV permitida normal-baja 88.3 mph | xBA permitida muy baja 0.213,4.19,3.49,0.291,88.3,0.7
+Sam Bachman,3,5,xwOBA bajo 0.290 | EV permitida normal-baja 87.1 mph | xBA permitida muy baja 0.215,4.35,3.46,0.29,87.1,0.89
 Tayler Saucedo,3,5,ERA 5.40 pero xERA 4.00 — diferencia +1.40 | EV permitida normal-baja 87.3 mph | xBA permitida muy baja 0.210,5.4,4.0,0.31,87.3,1.4
-Ranger Suarez,2,5,xwOBA bajo 0.283 | EV permitida baja 86.0 mph,3.15,3.29,0.283,86.0,-0.14
-Taylor Rogers,2,5,ERA 5.73 pero xERA 4.46 — diferencia +1.27 | EV permitida baja 86.3 mph,5.73,4.46,0.326,86.3,1.27
-Justin Slaten,2,5,ERA 6.10 pero xERA 3.22 — diferencia +2.88 | xwOBA bajo 0.280,6.1,3.22,0.28,88.8,2.88
-Caleb Ferguson,2,5,xwOBA bajo 0.282 | EV permitida baja 84.7 mph,2.12,3.27,0.282,84.7,-1.15
-Spencer Miles,2,5,xwOBA bajo 0.281 | EV permitida baja 86.4 mph,2.95,3.24,0.281,86.4,-0.29
-Angel Chivilli,2,5,EV permitida baja 86.4 mph | xBA permitida muy baja 0.194,2.45,5.11,0.346,86.4,-2.66
-Dylan Dodd,2,5,xwOBA élite 0.255 — domina contacto | xBA permitida muy baja 0.195,2.25,2.66,0.255,89.9,-0.41
-Chad Dallas,2,5,xwOBA élite 0.235 — domina contacto | xBA permitida muy baja 0.155,2.45,2.26,0.235,90.9,0.19
-Brandyn Garcia,2,5,xwOBA élite 0.223 — domina contacto | xBA permitida muy baja 0.170,2.11,2.04,0.223,89.6,0.07
-Jack Dreyer,2,5,xwOBA élite 0.277 — domina contacto | xBA permitida muy baja 0.220,3.19,3.15,0.277,88.8,0.04
-Yohan Ramírez,2,5,EV permitida baja 84.4 mph | xBA permitida muy baja 0.222,3.51,3.72,0.3,84.4,-0.21
-Kirby Yates,2,5,xwOBA élite 0.271 — domina contacto | xBA permitida muy baja 0.191,2.75,3.01,0.271,91.9,-0.26
+Andrew Kittredge,3,5,ERA 4.91 pero xERA 3.49 — diferencia +1.42 | xwOBA bajo 0.291 | EV permitida normal-baja 88.0 mph,4.91,3.49,0.291,88.0,1.42
+Grant Taylor,2,5,xwOBA élite 0.241 — domina contacto | xBA permitida muy baja 0.182,2.96,2.37,0.241,89.6,0.59
+Spencer Miles,2,5,xwOBA bajo 0.280 | EV permitida baja 86.4 mph,2.95,3.22,0.28,86.4,-0.27
+Antwone Kelly,2,5,ERA 7.71 pero xERA 3.62 — diferencia +4.09 | xwOBA bajo 0.296,7.71,3.62,0.296,90.7,4.09
+Kyle Hart,3,5,ERA 5.23 pero xERA 3.86 — diferencia +1.37 | EV permitida normal-baja 87.8 mph | xBA permitida muy baja 0.225,5.23,3.86,0.305,87.8,1.37
+Caleb Ferguson,2,5,xwOBA bajo 0.281 | EV permitida baja 84.7 mph,2.0,3.24,0.281,84.7,-1.24
+Taylor Rogers,2,5,ERA 5.61 pero xERA 4.46 — diferencia +1.15 | EV permitida baja 86.3 mph,5.61,4.46,0.326,86.3,1.15
+Jhony Brito,2,5,xwOBA élite 0.156 — domina contacto | xBA permitida muy baja 0.165,0.0,1.05,0.156,90.2,-1.05
+Cam Booser,2,5,xwOBA élite 0.238 — domina contacto | xBA permitida muy baja 0.147,1.35,2.32,0.238,91.9,-0.97
+Paul Blackburn,2,5,xwOBA bajo 0.294 | EV permitida baja 86.2 mph,2.22,3.57,0.294,86.2,-1.35
 Spencer Bivens,2,5,xwOBA élite 0.250 — domina contacto | xBA permitida muy baja 0.204,0.0,2.55,0.25,92.9,-2.55
-Paul Blackburn,2,5,xwOBA bajo 0.292 | EV permitida baja 86.4 mph,2.22,3.51,0.292,86.4,-1.29
-Erik Sabrowski,2,5,xwOBA élite 0.271 — domina contacto | xBA permitida muy baja 0.154,3.33,3.01,0.271,92.0,0.32
-Drew Rom,2,4,xwOBA bajo 0.290 | xBA permitida muy baja 0.183,3.18,3.46,0.29,94.1,-0.28
-Tejay Antone,2,4,xwOBA bajo 0.281 | xBA permitida muy baja 0.207,2.42,3.24,0.281,89.2,-0.82
+Jack Dreyer,2,5,xwOBA élite 0.277 — domina contacto | xBA permitida muy baja 0.220,3.11,3.15,0.277,88.8,-0.04
+Yohan Ramírez,2,5,EV permitida baja 84.3 mph | xBA permitida muy baja 0.222,3.51,3.72,0.3,84.3,-0.21
+Brandyn Garcia,2,5,xwOBA élite 0.223 — domina contacto | xBA permitida muy baja 0.170,2.05,2.04,0.223,89.6,0.01
+Chad Dallas,2,5,xwOBA élite 0.235 — domina contacto | xBA permitida muy baja 0.155,2.45,2.26,0.235,90.9,0.19
+Gavin Collyer,2,5,EV permitida baja 85.8 mph | xBA permitida muy baja 0.194,3.92,4.02,0.311,85.8,-0.1
+Chase Silseth,2,5,EV permitida baja 86.6 mph | xBA permitida muy baja 0.222,3.27,3.94,0.308,86.6,-0.67
+Colin Holderman,2,5,xwOBA élite 0.275 — domina contacto | xBA permitida muy baja 0.200,1.87,3.1,0.275,89.0,-1.23
+Nate Pearson,2,5,EV permitida baja 84.8 mph | xBA permitida muy baja 0.229,3.6,4.43,0.325,84.8,-0.83
+Erik Sabrowski,2,5,xwOBA élite 0.270 — domina contacto | xBA permitida muy baja 0.154,3.33,2.98,0.27,92.0,0.35
+Cole Winn,2,4,ERA 6.39 pero xERA 4.59 — diferencia +1.80 | EV permitida normal-baja 88.2 mph,6.39,4.59,0.33,88.2,1.8
+Yennier Cano,2,4,xwOBA bajo 0.287 | xBA permitida muy baja 0.225,2.48,3.39,0.287,89.4,-0.91
+Lake Bachar,2,4,xwOBA bajo 0.283 | xBA permitida muy baja 0.198,3.83,3.29,0.283,90.1,0.54
 Clayton Beeter,2,4,xwOBA bajo 0.288 | xBA permitida muy baja 0.184,3.0,3.41,0.288,89.0,-0.41
-Michael Petersen,2,4,xwOBA bajo 0.284 | xBA permitida muy baja 0.190,3.0,3.31,0.284,91.0,-0.31
-John King,2,4,xwOBA bajo 0.283 | xBA permitida muy baja 0.209,2.48,3.29,0.283,89.1,-0.81
-Tanner Banks,2,4,ERA 5.97 pero xERA 4.37 — diferencia +1.60 | EV permitida normal-baja 87.4 mph,5.97,4.37,0.323,87.4,1.6
-Tyler Zuber,2,4,ERA 5.23 pero xERA 3.83 — diferencia +1.40 | xBA permitida muy baja 0.228,5.23,3.83,0.304,89.9,1.4
-José Alvarado,2,4,ERA 6.10 pero xERA 3.86 — diferencia +2.24 | EV permitida normal-baja 87.2 mph,6.1,3.86,0.305,87.2,2.24
-Grant Anderson,2,4,xwOBA bajo 0.283 | xBA permitida muy baja 0.214,3.2,3.29,0.283,88.8,-0.09
+Grant Anderson,2,4,xwOBA bajo 0.283 | xBA permitida muy baja 0.214,3.32,3.29,0.283,88.8,0.03
+José Alvarado,2,4,ERA 7.03 pero xERA 3.86 — diferencia +3.17 | EV permitida normal-baja 87.2 mph,7.03,3.86,0.305,87.2,3.17
+Hunter Stratton,2,4,ERA 9.00 pero xERA 6.49 — diferencia +2.51 | EV permitida normal-baja 87.0 mph,9.0,6.49,0.383,87.0,2.51
 Jimmy Herget,2,4,xwOBA bajo 0.290 | xBA permitida muy baja 0.218,3.52,3.46,0.29,89.1,0.06
-Yennier Cano,2,4,xwOBA bajo 0.284 | xBA permitida muy baja 0.219,2.48,3.31,0.284,89.0,-0.83
-Travis Adams,2,4,ERA 6.75 pero xERA 4.59 — diferencia +2.16 | EV permitida normal-baja 87.3 mph,6.75,4.59,0.33,87.3,2.16
+Grant Wolfram,2,4,ERA 5.06 pero xERA 3.67 — diferencia +1.39 | xwOBA bajo 0.298,5.06,3.67,0.298,88.9,1.39
 Drew Anderson,2,4,xwOBA bajo 0.285 | xBA permitida muy baja 0.209,4.28,3.34,0.285,90.6,0.94
-Lake Bachar,2,4,xwOBA bajo 0.288 | xBA permitida muy baja 0.201,3.83,3.41,0.288,90.1,0.42
-Cole Winn,2,4,ERA 6.39 pero xERA 4.49 — diferencia +1.90 | EV permitida normal-baja 88.0 mph,6.39,4.49,0.327,88.0,1.9
-Jeffrey Springs,2,3,ERA 5.79 pero xERA 4.59 — diferencia +1.20 | EV permitida normal-baja 87.8 mph,5.79,4.59,0.33,87.8,1.2
-Sean Manaea,2,3,ERA 5.16 pero xERA 4.14 — diferencia +1.02 | EV permitida normal-baja 88.2 mph,5.16,4.14,0.315,88.2,1.02
-Andre Pallante,2,3,xwOBA bajo 0.299 | EV permitida normal-baja 87.3 mph,3.6,3.7,0.299,87.3,-0.1
+Jordan Hicks,2,4,xwOBA bajo 0.291 | xBA permitida muy baja 0.222,4.3,3.49,0.291,89.5,0.81
+Travis Adams,2,4,ERA 6.46 pero xERA 4.59 — diferencia +1.87 | EV permitida normal-baja 87.3 mph,6.46,4.59,0.33,87.3,1.87
+Michael Petersen,2,4,xwOBA bajo 0.284 | xBA permitida muy baja 0.190,2.93,3.31,0.284,91.0,-0.38
+Kevin Ginkel,2,4,xwOBA bajo 0.291 | xBA permitida muy baja 0.225,3.06,3.49,0.291,90.5,-0.43
+Drew Rom,2,4,xwOBA bajo 0.290 | xBA permitida muy baja 0.183,3.18,3.46,0.29,94.1,-0.28
 Gabe Speier,2,3,EV permitida normal-baja 88.1 mph | xBA permitida muy baja 0.221,1.96,4.05,0.312,88.1,-2.09
-José Suarez,2,3,ERA 4.76 pero xERA 3.75 — diferencia +1.01 | EV permitida normal-baja 87.7 mph,4.76,3.75,0.301,87.7,1.01
-Antonio Senzatela,2,3,xwOBA bajo 0.293 | EV permitida normal-baja 87.8 mph,2.93,3.54,0.293,87.8,-0.61
-Caleb Thielbar,2,3,EV permitida normal-baja 87.6 mph | xBA permitida muy baja 0.218,4.01,4.59,0.33,87.6,-0.58
-Ryan Thompson,2,3,xwOBA bajo 0.292 | EV permitida normal-baja 88.4 mph,3.06,3.51,0.292,88.4,-0.45
+José Suarez,2,3,xwOBA bajo 0.295 | EV permitida normal-baja 87.7 mph,4.56,3.59,0.295,87.7,0.97
+Antonio Senzatela,2,3,xwOBA bajo 0.293 | EV permitida normal-baja 87.8 mph,3.06,3.54,0.293,87.8,-0.48
+Jeffrey Springs,2,3,ERA 6.08 pero xERA 4.59 — diferencia +1.49 | EV permitida normal-baja 87.8 mph,6.08,4.59,0.33,87.8,1.49
+Caleb Thielbar,2,3,EV permitida normal-baja 87.3 mph | xBA permitida muy baja 0.215,4.56,4.43,0.325,87.3,0.13
 Sean Newcomb,2,3,xwOBA bajo 0.295 | EV permitida normal-baja 87.0 mph,2.58,3.59,0.295,87.0,-1.01
-Sam Moll,2,3,EV permitida normal-baja 88.3 mph | xBA permitida muy baja 0.220,3.82,4.34,0.322,88.3,-0.52
-Tim Herrin,2,3,EV permitida normal-baja 87.1 mph | xBA permitida muy baja 0.207,3.13,4.23,0.318,87.1,-1.1
-Garrett Whitlock,2,3,xwOBA bajo 0.288 | EV permitida normal-baja 87.3 mph,2.4,3.41,0.288,87.3,-1.01
-Yuki Matsui,2,3,EV permitida normal-baja 87.8 mph | xBA permitida muy baja 0.187,2.01,3.72,0.3,87.8,-1.71
+Ryan Thompson,2,3,xwOBA bajo 0.292 | EV permitida normal-baja 88.4 mph,2.97,3.51,0.292,88.4,-0.54
+Garrett Whitlock,2,3,xwOBA bajo 0.281 | EV permitida normal-baja 87.4 mph,2.4,3.24,0.281,87.4,-0.84
+Sam Moll,2,3,EV permitida normal-baja 88.3 mph | xBA permitida muy baja 0.217,3.82,4.23,0.318,88.3,-0.41
+Bryan Hudson,2,3,xwOBA bajo 0.294 | EV permitida normal-baja 87.8 mph,2.25,3.57,0.294,87.8,-1.32
 Dylan Smith,2,3,EV permitida normal-baja 87.8 mph | xBA permitida muy baja 0.222,3.86,4.53,0.328,87.8,-0.67
-Bryan Hudson,2,3,xwOBA bajo 0.294 | EV permitida normal-baja 87.8 mph,2.31,3.57,0.294,87.8,-1.26
+Yuki Matsui,2,3,EV permitida normal-baja 88.0 mph | xBA permitida muy baja 0.194,2.01,4.05,0.312,88.0,-2.04
 Ben Peoples,2,3,xwOBA bajo 0.287 | EV permitida normal-baja 88.0 mph,0.0,3.39,0.287,88.0,-3.39

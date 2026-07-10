@@ -40,7 +40,6 @@ Michael Conforto,michaelconforto,OF,active,freeagent
 Alex Jackson,alexjackson,C,active,freeagent
 Jeff Hoffman,jeffhoffman,RP,active,freeagent
 Michael Lorenzen (Pitcher),michaellorenzen,"SP,RP",active,freeagent
-Matthew Boyd,matthewboyd,SP,active,freeagent
 Shawn Armstrong,shawnarmstrong,RP,active,freeagent
 Colin Rea,colinrea,"SP,RP",active,freeagent
 Luke Maile,lukemaile,C,active,freeagent
@@ -82,7 +81,6 @@ Bryan Hudson,bryanhudson,"SP,RP",active,freeagent
 Tyler Stephenson,tylerstephenson,C,active,freeagent
 Tyler Alexander,tyleralexander,"SP,RP",active,freeagent
 Garrett Stubbs,garrettstubbs,C,active,freeagent
-Jahmai Jones,jahmaijones,OF,active,freeagent
 Miguel Andujar,miguelandujar,"3B,OF",active,freeagent
 Grant Holmes,grantholmes,SP,active,freeagent
 Rhys Hoskins,rhyshoskins,1B,active,freeagent
@@ -113,7 +111,6 @@ Drew Anderson,drewanderson,RP,active,freeagent
 Tim Mayza,timmayza,"SP,RP",active,freeagent
 Mitch Garver,mitchgarver,C,active,freeagent
 A.J. Minter,ajminter,RP,active,freeagent
-Pavin Smith,pavinsmith,1B,active,freeagent
 Daulton Varsho,daultonvarsho,OF,active,freeagent
 Jose Siri,josesiri,OF,active,freeagent
 Taylor Trammell,taylortrammell,OF,active,freeagent
@@ -128,7 +125,7 @@ Jake Rogers,jakerogers,C,active,freeagent
 Dennis Santana,dennissantana,RP,active,freeagent
 Andrés Giménez,andresgimenez,"2B,SS",active,freeagent
 David Peterson,davidpeterson,"SP,RP",active,freeagent
-Mark Vientos,markvientos,"1B,3B",active,freeagent
+Mark Vientos,markvientos,"1B,3B",DTD,freeagent
 JoJo Romero,jojoromero,RP,active,freeagent
 Jordan Hicks,jordanhicks,"SP,RP",active,freeagent
 Jesús Sánchez,jesussanchez,OF,IL10,freeagent
@@ -149,7 +146,6 @@ Eric Haase,erichaase,C,active,freeagent
 Nathaniel Lowe,nathaniellowe,1B,active,freeagent
 Joey Bart,joeybart,C,active,freeagent
 Zac Gallen,zacgallen,SP,active,freeagent
-Ranger Suarez,rangersuarez,SP,DTD,freeagent
 Jeff McNeil,jeffmcneil,"2B,OF",active,freeagent
 Jeffrey Springs,jeffreysprings,SP,active,freeagent
 Myles Straw,mylesstraw,OF,active,freeagent
@@ -226,6 +222,7 @@ Yohan Ramírez,yohanramirez,RP,active,freeagent
 Drey Jameson,dreyjameson,RP,active,freeagent
 Braden Shewmake,bradenshewmake,"2B,3B,SS",active,freeagent
 Tyler Callihan,tylercallihan,"2B,OF",active,freeagent
+Rece Hinds,recehinds,OF,active,freeagent
 Ivan Johnson,ivanjohnson,2B,active,freeagent
 Tyler Freeman,tylerfreeman,"2B,OF",active,freeagent
 Jonathan Bowlan,jonathanbowlan,RP,active,freeagent
@@ -239,6 +236,7 @@ Rodolfo Durán,rodolfoduran,C,active,freeagent
 Rafael Marchán,rafaelmarchan,C,active,freeagent
 Erik Miller,erikmiller,RP,active,freeagent
 Greg Jones,gregjones,OF,active,freeagent
+Josh Jung,joshjung,3B,active,freeagent
 Alejandro Kirk,alejandrokirk,C,active,freeagent
 Gabriel Moreno,gabrielmoreno,C,active,freeagent
 Andrew Vaughn,andrewvaughn,1B,active,freeagent
@@ -251,6 +249,7 @@ Brian Navarreto,briannavarreto,C,active,freeagent
 Alex Vesia,alexvesia,RP,active,freeagent
 Sebastián Rivero,sebastianrivero,C,IL10,freeagent
 Tyler Zuber,tylerzuber,RP,active,freeagent
+Codi Heuer,codiheuer,RP,active,freeagent
 Cole Wilcox,colewilcox,RP,active,freeagent
 Logan O'Hoppe,loganohoppe,C,active,freeagent
 Freddy Fermin,freddyfermin,C,IL10,freeagent
@@ -258,20 +257,18 @@ Clayton Beeter,claytonbeeter,RP,active,freeagent
 Masyn Winn,masynwinn,SS,active,freeagent
 Austin Martin,austinmartin,"2B,OF",active,freeagent
 Isaac Mattson,isaacmattson,RP,active,freeagent
-Garrett Stallings,garrettstallings,"SP,RP",active,freeagent
 Patrick Bailey,patrickbailey,C,active,freeagent
-John King,johnking,RP,active,freeagent
 Brett Sullivan,brettsullivan,C,active,freeagent
 Justin Foscue,justinfoscue,"1B,2B",active,freeagent
 Eduard Bazardo,eduardbazardo,RP,active,freeagent
+Bailey Ober,baileyober,SP,active,freeagent
 Oswald Peraza,oswaldperaza,"1B,2B,3B,SS",active,freeagent
 Ha-Seong Kim,haseongkim,"2B,SS",IL10,freeagent
+Bryce Elder,bryceelder,SP,active,freeagent
 Blaze Jordan,blazejordan,"1B,3B",active,freeagent
-Owen Caissie,owencaissie,OF,DTD,freeagent
+Owen Caissie,owencaissie,OF,IL10,freeagent
 Drew Romo,drewromo,C,active,freeagent
 Brenton Doyle,brentondoyle,OF,IL10,freeagent
-Nick Loftin,nickloftin,"2B,3B,OF",active,freeagent
-Garrett Mitchell,garrettmitchell,OF,active,freeagent
 Endy Rodríguez,endyrodriguez,"C,1B",IL10,freeagent
 Austin Wells,austinwells,C,active,freeagent
 Junior Perez,juniorperez,OF,active,freeagent
@@ -282,6 +279,7 @@ Tayler Saucedo,taylersaucedo,RP,active,freeagent
 Matt Vierling,mattvierling,OF,active,freeagent
 Lars Nootbaar,larsnootbaar,OF,active,freeagent
 Justin Bruihl,justinbruihl,RP,active,freeagent
+Janson Junk,jansonjunk,"SP,RP",active,freeagent
 Ryan Feltner,ryanfeltner,SP,active,freeagent
 Jovani Morán,jovanimoran,"SP,RP",active,freeagent
 Nick Fortes,nickfortes,C,active,freeagent
@@ -306,8 +304,9 @@ Coby Mayo,cobymayo,"1B,3B",active,freeagent
 Joey Ortiz,joeyortiz,"3B,SS",active,freeagent
 Marcelo Mayer,marcelomayer,"2B,3B,SS",IL10,freeagent
 Chris Murphy,chrismurphy,RP,active,freeagent
-Matt McLain,mattmclain,"2B,SS",active,freeagent
+Matt McLain,mattmclain,"2B,SS",DTD,freeagent
 Angel Martínez,angelmartinez,"2B,OF",IL10,freeagent
+Petey Halpin,peteyhalpin,OF,active,freeagent
 Lenyn Sosa,lenynsosa,"1B,2B",IL10,freeagent
 Dylan Smith,dylansmith,RP,active,freeagent
 Ryan Kreidler,ryankreidler,"SS,OF",active,freeagent
@@ -318,6 +317,7 @@ Denzer Guzman,denzerguzman,"3B,SS",active,freeagent
 Joe Mack,joemack,C,active,freeagent
 Sal Frelick,salfrelick,OF,active,freeagent
 Carlos Cortes,carloscortes,OF,active,freeagent
+Zack Gelof,zackgelof,"2B,3B,OF",DTD,freeagent
 Henry Davis,henrydavis,C,active,freeagent
 Bubba Chandler,bubbachandler,SP,active,freeagent
 Brandon Valenzuela,brandonvalenzuela,"C,1B",active,freeagent
@@ -325,14 +325,12 @@ Edwin Arroyo,edwinarroyo,"2B,SS",active,freeagent
 Adam Macko,adammacko,"SP,RP",active,freeagent
 Michael McGreevy,michaelmcgreevy,SP,active,freeagent
 Heriberto Hernández,heribertohernandez,OF,active,freeagent
-Josh Smith,joshsmith,"1B,2B,3B,SS,OF",active,freeagent
 Evan Carter,evancarter,OF,active,freeagent
 Cameron Cauley,cameroncauley,"2B,SS,OF",active,freeagent
 Samad Taylor,samadtaylor,"2B,OF",IL10,freeagent
 Chad Dallas,chaddallas,"SP,RP",active,freeagent
 Drew Millas,drewmillas,C,active,freeagent
 Andre Pallante,andrepallante,SP,active,freeagent
-Tanner Banks,tannerbanks,RP,active,freeagent
 Beau Brieske,beaubrieske,RP,active,freeagent
 Tyler Holton,tylerholton,"SP,RP",active,freeagent
 Danny Young,dannyyoung,RP,active,freeagent
@@ -371,7 +369,6 @@ Casey Legumina,caseylegumina,RP,active,freeagent
 Edouard Julien,edouardjulien,"1B,2B",active,freeagent
 Wilyer Abreu,wilyerabreu,OF,active,freeagent
 David Hamilton,davidhamilton,"2B,3B,SS",IL10,freeagent
-Tim Herrin,timherrin,RP,DTD,freeagent
 Addison Barger,addisonbarger,"3B,OF",IL10,freeagent
 Abner Uribe,abneruribe,RP,active,freeagent
 Jorge Barrosa,jorgebarrosa,OF,active,freeagent
@@ -404,16 +401,18 @@ Kyle Hurt,kylehurt,RP,active,freeagent
 Edgardo Henriquez,edgardohenriquez,RP,active,freeagent
 Victor Mesa Jr.,victormesajr,OF,active,freeagent
 Luis Lara,luislara,OF,active,freeagent
-Connor Prielipp,connorprielipp,SP,active,freeagent
 Eric Orze,ericorze,RP,active,freeagent
 Christian Scott,christianscott,SP,active,freeagent
 Daniel Susac,danielsusac,C,IL10,freeagent
 Henry Bolte,henrybolte,OF,active,freeagent
 Colby Thomas,colbythomas,OF,active,freeagent
+Brett Harris,brettharris,3B,active,freeagent
 Justin Crawford,justincrawford,OF,active,freeagent
 Hao-Yu Lee,haoyulee,"2B,3B",active,freeagent
 Gabriel Rincones Jr.,gabrielrinconesjr,OF,active,freeagent
 Orion Kerkering,orionkerkering,RP,active,freeagent
+Thomas Harrington,thomasharrington,"SP,RP",active,freeagent
+Carson Whisenhunt,carsonwhisenhunt,SP,active,freeagent
 Gordon Graceffo,gordongraceffo,RP,active,freeagent
 Jimmy Crooks,jimmycrooks,C,active,freeagent
 Kyle Manzardo,kylemanzardo,1B,active,freeagent
@@ -421,7 +420,6 @@ Mason Montgomery,masonmontgomery,"SP,RP",active,freeagent
 Chandler Simpson,chandlersimpson,OF,active,freeagent
 Tristan Peters,tristanpeters,OF,active,freeagent
 Alejandro Osuna,alejandroosuna,OF,active,freeagent
-Zach Brzykcy,zachbrzykcy,RP,active,freeagent
 Alan Roden,alanroden,OF,active,freeagent
 Carlos Narváez,carlosnarvaez,C,active,freeagent
 Steven Cruz,stevencruz,RP,active,freeagent
@@ -431,7 +429,9 @@ Troy Johnston,troyjohnston,"1B,OF",active,freeagent
 Jake Mangum,jakemangum,OF,active,freeagent
 Braxton Fulford,braxtonfulford,C,active,freeagent
 Brandon Eisert,brandoneisert,"SP,RP",active,freeagent
+José Caballero,josecaballero,"2B,3B,SS,OF",active,freeagent
 Justin Dean,justindean,OF,active,freeagent
+Chase Shugart,chaseshugart,RP,active,freeagent
 Nick Sogard,nicksogard,"1B,2B",IL10,freeagent
 Ryan Watson,ryanwatson,RP,active,freeagent
 David Fry,davidfry,OF,active,freeagent
@@ -443,19 +443,17 @@ Andrés Chaparro,andreschaparro,1B,active,freeagent
 Cam Booser,cambooser,RP,active,freeagent
 Cody Freeman,codyfreeman,2B,IL10,freeagent
 Andruw Monasterio,andruwmonasterio,"1B,2B,3B,SS",active,freeagent
-Kyle Leahy,kyleleahy,"SP,RP",active,freeagent
 Pedro Pagés,pedropages,C,active,freeagent
-Ryan Walker,ryanwalker,RP,active,freeagent
 Kody Funderburk,kodyfunderburk,RP,active,freeagent
 Chad Patrick,chadpatrick,"SP,RP",active,freeagent
 Tyler Ferguson,tylerferguson,RP,active,freeagent
-Kyler Fedko,kylerfedko,OF,active,freeagent
 Rafael Flores Jr.,rafaelfloresjr,"C,1B",active,freeagent
 Tristan Gray,tristangray,"2B,3B,SS",active,freeagent
 TJ Rumfield,tjrumfield,1B,active,freeagent
 Jesus Rodriguez,jesusrodriguez,C,active,freeagent
 Wade Meckler,wademeckler,OF,active,freeagent
 Isaac Collins,isaaccollins,OF,active,freeagent
+Nathan Church,nathanchurch,OF,active,freeagent
 Franco Aleman,francoaleman,RP,active,freeagent
 Hunter Stratton,hunterstratton,RP,active,freeagent
 Daniel Schneemann,danielschneemann,"2B,3B,SS,OF",active,freeagent
@@ -487,10 +485,10 @@ Jacob Lopez,jacoblopez,SP,active,freeagent
 Jase Bowen,jasebowen,OF,active,freeagent
 PJ Poulin,pjpoulin,"SP,RP",active,freeagent
 Brice Matthews,bricematthews,"2B,OF",active,freeagent
-Cooper Ingle,cooperingle,C,active,freeagent
 Jonah Cox,jonahcox,OF,IL10,freeagent
 Nolan Schanuel,nolanschanuel,1B,active,freeagent
 Colt Emerson,coltemerson,"3B,SS",active,freeagent
+Bryce Eldridge,bryceeldridge,1B,active,freeagent
 Hurston Waldrep,hurstonwaldrep,SP,active,freeagent
 Dylan Crews,dylancrews,OF,active,freeagent
 Jacob Wilson,jacobwilson,SS,active,freeagent
@@ -499,10 +497,10 @@ Jacob Gonzalez,jacobgonzalez,"1B,2B,SS",active,freeagent
 Matt Shaw,mattshaw,"3B,OF",IL10,freeagent
 Tommy Troy,tommytroy,"2B,OF",active,freeagent
 Cooper Pratt,cooperpratt,SS,active,freeagent
-Luke Keaschall,lukekeaschall,"2B,OF",active,freeagent
 Grant Taylor,granttaylor,"SP,RP",active,freeagent
 Erik Sabrowski,eriksabrowski,RP,active,freeagent
 Ben Williamson,benwilliamson,"2B,3B,SS",active,freeagent
+Philip Abner,philipabner,RP,active,freeagent
 Craig Yoho,craigyoho,RP,active,freeagent
 Tanner Gordon,tannergordon,"SP,RP",active,freeagent
 Matt Svanson,mattsvanson,RP,active,freeagent
@@ -517,11 +515,13 @@ Yuki Matsui,yukimatsui,RP,active,freeagent
 Woo-Suk Go,woosukgo,RP,active,freeagent
 Luinder Avila,luinderavila,"SP,RP",active,freeagent
 Andrew Morris,andrewmorris,"SP,RP",active,freeagent
+Kendry Rojas,kendryrojas,"SP,RP",active,freeagent
 Grant Wolfram,grantwolfram,RP,active,freeagent
 Chris Roycroft,chrisroycroft,RP,active,freeagent
 Justin Sterner,justinsterner,RP,active,freeagent
 Julian Garcia,juliangarcia,RP,active,freeagent
 AJ Blubaugh,ajblubaugh,"SP,RP",active,freeagent
+Ryan Gusto,ryangusto,"SP,RP",active,freeagent
 Nick Davila,nickdavila,RP,active,freeagent
 Andrew Alvarez,andrewalvarez,"SP,RP",active,freeagent
 Robby Ahlstrom,robbyahlstrom,RP,active,freeagent
@@ -532,14 +532,17 @@ Sung-Mun Song,sungmunsong,"2B,3B,SS",active,freeagent
 Bryan Torres,bryantorres,"2B,OF",active,freeagent
 Pedro Ramirez,pedroramirez,"2B,3B",active,freeagent
 Zach Agnos,zachagnos,RP,active,freeagent
+Jac Caglianone,jaccaglianone,"1B,OF",active,freeagent
 Braden Montgomery,bradenmontgomery,OF,active,freeagent
 Konnor Griffin,konnorgriffin,"SS,OF",IL10,freeagent
 Cam Smith,camsmith,OF,active,freeagent
 Ryan Johnson,ryanjohnson,"SP,RP",active,freeagent
 Joshua Kuroda-Grauer,joshuakurodagrauer,SS,active,freeagent
+Ryan Waldschmidt,ryanwaldschmidt,OF,active,freeagent
 Sean Keys,seankeys,"1B,3B",active,freeagent
 Orlando Ribalta,orlandoribalta,RP,active,freeagent
 Travis Adams,travisadams,"SP,RP",active,freeagent
+Dan Hammer,danhammer,RP,active,freeagent
 Mitch Farris,mitchfarris,"SP,RP",active,freeagent
 Luis Gastelum,luisgastelum,RP,active,freeagent
 Bradgley Rodriguez,bradgleyrodriguez,"SP,RP",active,freeagent
@@ -547,15 +550,15 @@ Spencer Miles,spencermiles,"SP,RP",active,freeagent
 Samy Natera Jr.,samynaterajr,RP,active,freeagent
 William Kempner,williamkempner,RP,active,freeagent
 José Fermin,josefermin,RP,active,freeagent
-Brad Lord,bradlord,"SP,RP",active,freeagent
 Ben Peoples,benpeoples,RP,active,freeagent
 Drew Sommers,drewsommers,RP,active,freeagent
-Jose Cabrera,josecabrera,SP,active,freeagent
 Ryan Harbin,ryanharbin,RP,IL7,freeagent
 Jim Jarvis,jimjarvis,SS,active,freeagent
 Tyler Davis,tylerdavis,RP,active,freeagent
 Anthony Nunez,anthonynunez,RP,active,freeagent
 Riley Cornelio,rileycornelio,"SP,RP",active,freeagent
+Eduardo Valencia,eduardovalencia,"C,1B",active,freeagent
+Antwone Kelly,antwonekelly,SP,active,freeagent
 Drew Cavanaugh,drewcavanaugh,C,active,freeagent
 Gavin Collyer,gavincollyer,RP,active,freeagent
 Mike Paredes,mikeparedes,"SP,RP",active,freeagent
